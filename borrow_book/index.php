@@ -1,7 +1,7 @@
 <?php
 /**
  * index.php
- 
+ * Handles the routing of requests to the borrow controller.
  */
 
 require_once 'config/database.php';
@@ -20,3 +20,4 @@ else
     $controller->show_borrow_form();
 }
 ?>
+
