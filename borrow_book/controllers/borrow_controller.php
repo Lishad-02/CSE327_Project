@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file borrow_controller.php
  * 
@@ -14,8 +15,8 @@
  * @author Md Aurongojeb Lishad
  */
 
-require_once 'models/book.php'; 
-require_once 'models/borrow.php'; 
+require_once 'models/book.php';
+require_once 'models/borrow.php';
 
 /**
  * Class borrow_controller
@@ -25,18 +26,18 @@ require_once 'models/borrow.php';
  * when a book is borrowed.
  */
 
-
-class borrow_controller 
+class borrow_controller
 {
-     /**
+
+    /**
      * Shows the borrow form to the user.
      * 
      * @brief Show the page where users can enter their borrowing details.
      * 
      * @return void
      */
-    
-    public function show_borrow_form() 
+
+    public function show_borrow_form()
     {
         include 'views/borrow_form.php';
     }
@@ -61,44 +62,37 @@ class borrow_controller
      * 
      * @return type: void
      */
-    
-     
 
-    public function borrow_book() 
+
+
+    public function borrow_book()
     {
-     /** 
-      *
-      * **Inline Details** */
-        global $conn; /**< The database connection. */
+        global $conn;
 
-        $user_email = $_POST['email']; /**< user_email: Get user's email from the form. */
-        $book_id = $_POST['book_id'];  /**< book_id: Get Book ID from the form. */
+        $user_email = $_POST['email'];
+        $book_id = $_POST['book_id'];
 
-        $book = new book();  /**< Create a Book object to manage book-related actions. */
-        $borrow = new borrow();  /**< Create a Borrow object to handle borrowing actions. */
+        //Create a Book object & borrow object
+        $book = new book();
+        $borrow = new borrow();
 
         // Check if the book is available
-        if ($book->is_available($book_id)) 
-        {
-            // Borrow the book
-            $due_date = date('Y-m-d', strtotime('+7 days')); /**< Sets the due date 7 days from now. */
-            if ($borrow->create_borrow_record($user_email, $book_id, $due_date)) 
-            {
+        if ($book->is_available($book_id)) {
+            //Sets the due date 7 days
+            $due_date = date('Y-m-d', strtotime('+7 days'));
+            if ($borrow->create_borrow_record($user_email, $book_id, $due_date)) {
                 // Update available copies
-                $book->decrement_copies($book_id); /**< Reduces the number of available copies. */
-                include 'views/borrow_success.php'; /**< Shows the success message. */
-            } 
-            else 
-            {
-                $error = "Error occurred while borrowing the book."; /**< Error message for failure. */
-                include 'views/borrow_error.php'; /**< Shows the error message. */
+                $book->decrement_copies($book_id);
+                include 'views/borrow_success.php';
+            } else {
+                //Error message for failure.
+                $error = "Error occurred while borrowing the book.";
+                include 'views/borrow_error.php';
             }
-        } 
-        else 
-        {
-            $error = "No available copies for this book."; /**< Error message for unavailable books. */
-            include 'views/borrow_error.php'; /**< Shows the error message */
+        } else {
+            //Error message for unavailable books.
+            $error = "No available copies for this book.";
+            include 'views/borrow_error.php';
         }
     }
 }
-?>
