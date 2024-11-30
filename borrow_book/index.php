@@ -2,7 +2,7 @@
 
 /**
  * @file index.php
- * The main purpose of this file is to handle book borrowing requests by routing them to the appropriate methods in the borrow_controller.
+ * @brief The main purpose of this file is to handle book borrowing requests by routing them to the appropriate methods in the borrow_controller.
  * 
  * @date 21-11-2024
  * 

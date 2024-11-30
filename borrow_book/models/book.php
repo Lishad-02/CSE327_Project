@@ -2,8 +2,7 @@
 
 /**
  * @file book.php
- * 
- *The main purpose of this file is to manage book-related operations
+ * @brief The main purpose of this file is to manage book-related operations
  * 
  * @date 23-11-2024
  * 

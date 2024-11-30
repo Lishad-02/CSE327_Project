@@ -1,0 +1,38 @@
+\doxysection{index.\+php}
+\hypertarget{index_8php_source}{}\label{index_8php_source}\mbox{\hyperlink{index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00001}00001\ <?php}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00012}00012\ require\_once\ \textcolor{stringliteral}{'config/database.php'};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00013}00013\ require\_once\ \textcolor{stringliteral}{'controllers/borrow\_controller.php'};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00021}\mbox{\hyperlink{classborrow__handler}{00021}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classborrow__handler}{borrow\_handler}}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00028}00028\ \ \ \ \ \textcolor{keyword}{private}\ \$controller;}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00033}\mbox{\hyperlink{classborrow__handler_a095c5d389db211932136b53f25f39685}{00033}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classborrow__handler_a095c5d389db211932136b53f25f39685}{\_\_construct}}()}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00034}00034\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00035}00035\ \ \ \ \ \ \ \ \ \$this-\/>controller\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classborrow__controller}{borrow\_controller}}();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00036}00036\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00045}\mbox{\hyperlink{classborrow__handler_a114337f8c42339e46471c5fffe4920df}{00045}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classborrow__handler_a114337f8c42339e46471c5fffe4920df}{handle\_request}}()}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00046}00046\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$\_SERVER[\textcolor{stringliteral}{'REQUEST\_METHOD'}]\ ===\ \textcolor{stringliteral}{'POST'})\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Call\ the\ borrow\_book\ method\ to\ process\ the\ borrowing\ request.}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>controller-\/>borrow\_book();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00051}00051\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Call\ the\ show\_borrow\_form\ method\ to\ display\ the\ borrow\ form.}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>controller-\/>show\_borrow\_form();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00055}00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00057}00057\ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00059}00059\ \textcolor{comment}{//\ create\ object\ of\ the\ borrow\_handler\ class\ and\ handle\ the\ request.}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00060}\mbox{\hyperlink{index_8php_a95ef133f022bc59071221851f82836c4}{00060}}\ \mbox{\hyperlink{index_8php_a95ef133f022bc59071221851f82836c4}{\$borrow\_handler}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classborrow__handler}{borrow\_handler}}();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00061}00061\ \mbox{\hyperlink{index_8php_a95ef133f022bc59071221851f82836c4}{\$borrow\_handler}}-\/>handle\_request();}
+
+\end{DoxyCode}

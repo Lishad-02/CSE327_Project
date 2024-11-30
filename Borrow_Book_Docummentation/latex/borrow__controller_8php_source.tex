@@ -1,0 +1,50 @@
+\doxysection{borrow\+\_\+controller.\+php}
+\hypertarget{borrow__controller_8php_source}{}\label{borrow__controller_8php_source}\index{controllers/borrow\_controller.php@{controllers/borrow\_controller.php}}
+\mbox{\hyperlink{borrow__controller_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00001}00001\ <?php}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00018}00018\ require\_once\ \textcolor{stringliteral}{'models/book.php'};}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00019}00019\ require\_once\ \textcolor{stringliteral}{'models/borrow.php'};}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00029}\mbox{\hyperlink{classborrow__controller}{00029}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classborrow__controller}{borrow\_controller}}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00030}00030\ \{}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00040}\mbox{\hyperlink{classborrow__controller_a72a8d3be956945cfe2455b791fd82c3d}{00040}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classborrow__controller_a72a8d3be956945cfe2455b791fd82c3d}{show\_borrow\_form}}()}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00041}00041\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00042}00042\ \ \ \ \ \ \ \ \ include\ \textcolor{stringliteral}{'views/borrow\_form.php'};}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00043}00043\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00068}\mbox{\hyperlink{classborrow__controller_af8a51442c6e6f662b1827926ebcfb14b}{00068}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classborrow__controller_af8a51442c6e6f662b1827926ebcfb14b}{borrow\_book}}()}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00069}00069\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00070}00070\ \ \ \ \ \ \ \ \ global\ \mbox{\hyperlink{database_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn}};}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00072}00072\ \ \ \ \ \ \ \ \ \$user\_email\ =\ \$\_POST[\textcolor{stringliteral}{'email'}];}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00073}00073\ \ \ \ \ \ \ \ \ \$book\_id\ =\ \$\_POST[\textcolor{stringliteral}{'book\_id'}];}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Create\ a\ Book\ object\ \&\ borrow\ object}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00076}00076\ \ \ \ \ \ \ \ \ \$book\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classbook}{book}}();}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00077}00077\ \ \ \ \ \ \ \ \ \$borrow\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classborrow}{borrow}}();}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Check\ if\ the\ book\ is\ available}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00080}00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$book-\/>is\_available(\$book\_id))\ \{}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sets\ the\ due\ date\ 7\ days}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \$due\_date\ =\ date(\textcolor{stringliteral}{'Y-\/m-\/d'},\ strtotime(\textcolor{stringliteral}{'+7\ days'}));}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$borrow-\/>create\_borrow\_record(\$user\_email,\ \$book\_id,\ \$due\_date))\ \{}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Update\ available\ copies}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$book-\/>decrement\_copies(\$book\_id);}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ include\ \textcolor{stringliteral}{'views/borrow\_success.php'};}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Error\ message\ for\ failure.}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$error\ =\ \textcolor{stringliteral}{"{}Error\ occurred\ while\ borrowing\ the\ book."{}};}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ include\ \textcolor{stringliteral}{'views/borrow\_error.php'};}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00092}00092\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Error\ message\ for\ unavailable\ books.}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \$error\ =\ \textcolor{stringliteral}{"{}No\ available\ copies\ for\ this\ book."{}};}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ include\ \textcolor{stringliteral}{'views/borrow\_error.php'};}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00096}00096\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00097}00097\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{borrow__controller_8php_source_l00098}00098\ \}}
+
+\end{DoxyCode}

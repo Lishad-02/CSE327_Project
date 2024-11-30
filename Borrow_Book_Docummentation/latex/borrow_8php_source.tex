@@ -1,0 +1,31 @@
+\doxysection{borrow.\+php}
+\hypertarget{borrow_8php_source}{}\label{borrow_8php_source}\index{models/borrow.php@{models/borrow.php}}
+\mbox{\hyperlink{borrow_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00001}00001\ <?php}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00018}\mbox{\hyperlink{classborrow}{00018}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classborrow}{borrow}}\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00019}00019\ \{}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00030}\mbox{\hyperlink{classborrow_ac0c4188cabf9a736e66f2451755b391d}{00030}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classborrow_ac0c4188cabf9a736e66f2451755b391d}{create\_borrow\_record}}(\$user\_email,\ \$book\_id,\ \$due\_date)\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00031}00031\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{//the\ global\ database\ connection}}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00033}00033\ \ \ \ \ \ \ \ \ global\ \mbox{\hyperlink{database_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn}};}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{comment}{//SQL\ query\ for\ insert\ borrow\ record\ in\ databse}}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00036}00036\ \ \ \ \ \ \ \ \ \$query\ =\ \textcolor{stringliteral}{"{}INSERT\ INTO\ borrow\ (user\_email,\ book\_id,\ borrow\_date,\ due\_date)\ VALUES\ (?,\ ?,\ NOW(),\ ?)"{}};}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00038}00038\ \ \ \ \ \ \ \ \ \$stmt\ =\ \mbox{\hyperlink{database_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn}}-\/>prepare(\$query);}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00040}00040\ \ \ \ \ \ \ \ \ \$stmt-\/>bind\_param(\textcolor{stringliteral}{"{}sis"{}},\ \$user\_email,\ \$book\_id,\ \$due\_date);}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00042}00042\ \ \ \ \ \ \ \ \ \$result\ =\ \$stmt-\/>execute();}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00044}00044\ \ \ \ \ \ \ \ \ \$stmt-\/>close();}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00046}00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$result;}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00047}00047\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00048}00048\ \}}
+\DoxyCodeLine{\Hypertarget{borrow_8php_source_l00049}00049\ ?>}
+
+\end{DoxyCode}

@@ -1,0 +1,79 @@
+\doxysection{borrow\+\_\+controller Class Reference}
+\hypertarget{classborrow__controller}{}\label{classborrow__controller}\index{borrow\_controller@{borrow\_controller}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classborrow__controller_a72a8d3be956945cfe2455b791fd82c3d}{show\+\_\+borrow\+\_\+form}} ()
+\begin{DoxyCompactList}\small\item\em Show the page where users can enter their borrowing details. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classborrow__controller_af8a51442c6e6f662b1827926ebcfb14b}{borrow\+\_\+book}} ()
+\begin{DoxyCompactList}\small\item\em This Method checks if a book is available or not, creates a borrow record, and updates the book\textquotesingle{}s available copies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \doxylink{classborrow__controller}{borrow\+\_\+controller}
+
+This class is used to handle the borrowing of books. It shows the borrow form for taking input from user, checks book availability, and updates the database when a book is borrowed. 
+
+Definition at line \mbox{\hyperlink{borrow__controller_8php_source_l00029}{29}} of file \mbox{\hyperlink{borrow__controller_8php_source}{borrow\+\_\+controller.\+php}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classborrow__controller_af8a51442c6e6f662b1827926ebcfb14b}\index{borrow\_controller@{borrow\_controller}!borrow\_book@{borrow\_book}}
+\index{borrow\_book@{borrow\_book}!borrow\_controller@{borrow\_controller}}
+\doxysubsubsection{\texorpdfstring{borrow\_book()}{borrow\_book()}}
+{\footnotesize\ttfamily \label{classborrow__controller_af8a51442c6e6f662b1827926ebcfb14b} 
+borrow\+\_\+book (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+This Method checks if a book is available or not, creates a borrow record, and updates the book\textquotesingle{}s available copies. 
+
+Handles the process of borrowing a book.
+
+{\bfseries{Steps\+:}}
+\begin{DoxyItemize}
+\item Gets the user email and book ID from the form.
+\item Checks if the book is available.
+\item If available, creates a borrow record and updates the number of available copies.
+\item If not available or if there is an error, shows an error page.
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+is\+\_\+available() --- Check if the \doxylink{classbook}{book} has available copies. 
+
+create\+\_\+borrow\+\_\+record() --- Create a record for the borrowed \doxylink{classbook}{book}. 
+
+decrement\+\_\+copies() --- Reduce the number of available copies in the database.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+type\+: void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{borrow__controller_8php_source_l00068}{68}} of file \mbox{\hyperlink{borrow__controller_8php_source}{borrow\+\_\+controller.\+php}}.
+
+\Hypertarget{classborrow__controller_a72a8d3be956945cfe2455b791fd82c3d}\index{borrow\_controller@{borrow\_controller}!show\_borrow\_form@{show\_borrow\_form}}
+\index{show\_borrow\_form@{show\_borrow\_form}!borrow\_controller@{borrow\_controller}}
+\doxysubsubsection{\texorpdfstring{show\_borrow\_form()}{show\_borrow\_form()}}
+{\footnotesize\ttfamily \label{classborrow__controller_a72a8d3be956945cfe2455b791fd82c3d} 
+show\+\_\+borrow\+\_\+form (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Show the page where users can enter their borrowing details. 
+
+Shows the borrow form to the user.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{borrow__controller_8php_source_l00040}{40}} of file \mbox{\hyperlink{borrow__controller_8php_source}{borrow\+\_\+controller.\+php}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+controllers/\mbox{\hyperlink{borrow__controller_8php}{borrow\+\_\+controller.\+php}}\end{DoxyCompactItemize}

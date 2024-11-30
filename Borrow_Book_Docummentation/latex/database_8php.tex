@@ -1,0 +1,90 @@
+\doxysection{config/database.php File Reference}
+\hypertarget{database_8php}{}\label{database_8php}\index{config/database.php@{config/database.php}}
+
+
+This file sets up the connection to the database for Borrowing Function.  
+
+
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database_8php_a26d95fc7e65c52080643099fed9f0057}{\$server\+\_\+name}} = "{}localhost"{}
+\item 
+\mbox{\hyperlink{database_8php_a820e0b38cf4374967d8018835e9b755d}{\$db\+\_\+username}} = "{}root"{}
+\item 
+\mbox{\hyperlink{database_8php_a2962c2bda65ca19dd4dd12d7160f1bf8}{\$db\+\_\+password}} = "{}"{}
+\item 
+\mbox{\hyperlink{database_8php_a26dcb19f4431598ddd5f58147f131bee}{\$db\+\_\+name}} = "{}library\+\_\+db2"{}
+\item 
+\mbox{\hyperlink{database_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn}} = new mysqli(\$server\+\_\+name, \$db\+\_\+username, \$db\+\_\+password, \$db\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file sets up the connection to the database for Borrowing Function. 
+
+It defines database credentials (servername,username,password and database name) then perform to establish a connection with the database.\+It checks whether the connection is successful or not if not, it terminates the script and displays the error message.
+
+\begin{DoxyDate}{Date}
+22-\/11-\/2024
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Md Aurongojeb Lishad 
+\end{DoxyAuthor}
+
+
+Definition in file \mbox{\hyperlink{database_8php_source}{database.\+php}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{database_8php_aa8a5a87b9c1a6a0819b88447cbe41877}\index{database.php@{database.php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!database.php@{database.php}}
+\doxysubsubsection{\texorpdfstring{\$conn}{\$conn}}
+{\footnotesize\ttfamily \label{database_8php_aa8a5a87b9c1a6a0819b88447cbe41877} 
+\$conn = new mysqli(\$server\+\_\+name, \$db\+\_\+username, \$db\+\_\+password, \$db\+\_\+name)}
+
+Execute database connection 
+
+Definition at line \mbox{\hyperlink{database_8php_source_l00024}{24}} of file \mbox{\hyperlink{database_8php_source}{database.\+php}}.
+
+\Hypertarget{database_8php_a26dcb19f4431598ddd5f58147f131bee}\index{database.php@{database.php}!\$db\_name@{\$db\_name}}
+\index{\$db\_name@{\$db\_name}!database.php@{database.php}}
+\doxysubsubsection{\texorpdfstring{\$db\_name}{\$db\_name}}
+{\footnotesize\ttfamily \label{database_8php_a26dcb19f4431598ddd5f58147f131bee} 
+\$db\+\_\+name = "{}library\+\_\+db2"{}}
+
+Name of the database 
+
+Definition at line \mbox{\hyperlink{database_8php_source_l00021}{21}} of file \mbox{\hyperlink{database_8php_source}{database.\+php}}.
+
+\Hypertarget{database_8php_a2962c2bda65ca19dd4dd12d7160f1bf8}\index{database.php@{database.php}!\$db\_password@{\$db\_password}}
+\index{\$db\_password@{\$db\_password}!database.php@{database.php}}
+\doxysubsubsection{\texorpdfstring{\$db\_password}{\$db\_password}}
+{\footnotesize\ttfamily \label{database_8php_a2962c2bda65ca19dd4dd12d7160f1bf8} 
+\$db\+\_\+password = "{}"{}}
+
+The password for the database( Empty by default as it is a local server) 
+
+Definition at line \mbox{\hyperlink{database_8php_source_l00020}{20}} of file \mbox{\hyperlink{database_8php_source}{database.\+php}}.
+
+\Hypertarget{database_8php_a820e0b38cf4374967d8018835e9b755d}\index{database.php@{database.php}!\$db\_username@{\$db\_username}}
+\index{\$db\_username@{\$db\_username}!database.php@{database.php}}
+\doxysubsubsection{\texorpdfstring{\$db\_username}{\$db\_username}}
+{\footnotesize\ttfamily \label{database_8php_a820e0b38cf4374967d8018835e9b755d} 
+\$db\+\_\+username = "{}root"{}}
+
+The username for the databse 
+
+Definition at line \mbox{\hyperlink{database_8php_source_l00019}{19}} of file \mbox{\hyperlink{database_8php_source}{database.\+php}}.
+
+\Hypertarget{database_8php_a26d95fc7e65c52080643099fed9f0057}\index{database.php@{database.php}!\$server\_name@{\$server\_name}}
+\index{\$server\_name@{\$server\_name}!database.php@{database.php}}
+\doxysubsubsection{\texorpdfstring{\$server\_name}{\$server\_name}}
+{\footnotesize\ttfamily \label{database_8php_a26d95fc7e65c52080643099fed9f0057} 
+\$server\+\_\+name = "{}localhost"{}}
+
+The server where the databse hosted(\+Localhost) 
+
+Definition at line \mbox{\hyperlink{database_8php_source_l00018}{18}} of file \mbox{\hyperlink{database_8php_source}{database.\+php}}.
+
