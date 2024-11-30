@@ -1,3 +1,4 @@
+
 <?php
 
 /** 
@@ -17,7 +18,7 @@ if (isset($_GET['search_term'])) {
         $error = "No search results found!";
         include 'views/search_book_input.php';
     } else {
-        include 'views/search_book_result.php'; // Include the search result view
+        include 'views/search_book_result.php'; 
     }
 } else {
     include 'views/search_book_input.php';

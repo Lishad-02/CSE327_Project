@@ -1,46 +1,45 @@
 <?php
 
-/** 
+/**
  * Book Model
  * 
- * Manages book-related data interactions with the database.
+ * Handles all database operations related to books.
  */
 
-class book
+class book_model
 {
-    private $db_connection;
-    private $table_name = 'books';
+    private $database_connection;
 
     /**
-     * Constructor to initialize database connection
+     * Constructor to initialize the database connection.
      *
-     * @param mysqli $db_connection
+     * @param mysqli $database_connection
      */
-    public function __construct($db_connection)
+    public function __construct($database_connection)
     {
-        $this->db_connection = $db_connection;
+        $this->database_connection = $database_connection;
     }
 
     /**
-     * Search books by title or author
+     * Search books by title or author.
      *
      * @param string $search_term
      * @return array
      */
-    public function search_books_by_title_or_author($search_term)
+    public function search_books($search_term)
     {
-        $query = "SELECT * FROM " . $this->table_name . " WHERE title LIKE ? OR author LIKE ?";
-        $stmt = $this->db_connection->prepare($query);
-        $search_term_with_wildcards = "%" . $search_term . "%";
-        $stmt->bind_param('ss', $search_term_with_wildcards, $search_term_with_wildcards);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $books = [];
+        $query = "Select * From books where title Like ? OR author Like ?  ";
+        $statement = $this->database_connection->prepare($query);
 
-        while ($row = $result->fetch_assoc()) {
-            $books[] = $row;
-        }
+        $search_term = "%" . $search_term . "%";
+        $statement->bind_param('ss', $search_term, $search_term);
 
+        $statement->execute();
+        $result = $statement->get_result();
+
+        $books = $result->fetch_all(MYSQLI_ASSOC);
+
+        $statement->close();
         return $books;
     }
 }

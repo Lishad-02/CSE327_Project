@@ -1,9 +1,9 @@
 <?php
 
-/** 
- * Database connection configuration
+/**
+ * Database Connection
  * 
- * This file contains the settings required to connect to the database.
+ * Handles the connection to the database.
  */
 
 class database_connection
@@ -12,22 +12,22 @@ class database_connection
     private $username = 'root';
     private $password = '';
     private $db_name = 'library_db2';
-    private $connection;
 
     /**
-     * Establish a database connection
+     * Establish a database connection.
      *
      * @return mysqli
      */
-    public function get_connection()
+    public function connect_to_database()
     {
-        $this->connection = new mysqli($this->host, $this->username, $this->password, $this->db_name);
+        $connection = new mysqli($this->host, $this->username, $this->password, $this->db_name);
 
-        if ($this->connection->connect_error) {
-            die("Connection failed: " . $this->connection->connect_error);
+        if ($connection->connect_error)
+        {
+            die("Database connection failed: " . $connection->connect_error);
         }
 
-        return $this->connection;
+        return $connection;
     }
 }
 ?>

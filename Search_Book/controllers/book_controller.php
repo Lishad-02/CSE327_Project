@@ -1,44 +1,43 @@
 <?php
 
-/** 
+/**
  * Book Controller
  * 
- * Handles all book-related operations such as searching, displaying, and managing books.
+ * Handles requests related to books and connects the view with the model.
  */
 
 require_once 'config/database.php';
 require_once 'models/book.php';
 
-/**
- * Book controller class to manage book-related functionalities
- */
 class book_controller
 {
-    private $database_connection;
-    private $book;
+    private $book_model;
 
     /**
-     * Constructor to initialize database and book model
+     * Constructor to initialize the book model.
      */
     public function __construct()
     {
-        $this->database_connection = new database_connection();
-        $this->book = new book($this->database_connection->get_connection());
+        $database = new database_connection();
+        $connection = $database->connect_to_database();
+        $this->book_model = new book_model($connection);
     }
 
     /**
-     * Search books based on a search term
+     * Search books based on a search term.
      *
      * @param string $search_term
      * @return array
      */
     public function search_books($search_term)
     {
-        if (empty($search_term)) {
+        if (empty($search_term))
+        {
             return [];
         }
 
-        return $this->book->search_books_by_title_or_author($search_term);
+        return $this->book_model->search_books($search_term);
     }
 }
 ?>
+
