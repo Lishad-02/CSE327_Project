@@ -19,8 +19,7 @@
     <div style="color: white; margin-left: 60px; font-size: 20px;">
       <?php
         if (isset($_SESSION['login_user'])) {
-          echo "<img class='img-circle profile_img' height=120 width=120 src='images/" . $_SESSION['pic'] . "'>";
-          echo "<br><br>Welcome " . $_SESSION['login_user'];
+          echo "Welcome " . $_SESSION['login_user'];
         }
       ?>
     </div><br><br>
@@ -54,3 +53,4 @@
   </div>
 </body>
 </html>
+
