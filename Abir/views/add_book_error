@@ -1,0 +1,4 @@
+<div class="error-page">
+    <h2>Oops! Something went wrong.</h2>
+    <p><?php echo $error; ?></p>
+</div>
