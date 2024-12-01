@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body style="background-color: #004528;">
+    <div class="container">
+        <h2 style="text-align: center; color: #fff;">Edit Information</h2>
+
+        <div class="profile_info" style="text-align: center;">
+            <span style="color: white;">Welcome,</span>    
+            <h4 style="color: white;"><?php echo $_SESSION['login_user']; ?></h4>
+        </div><br><br>
+        
+        <div class="form1">
+            <form action="edit_profile.php" method="post" enctype="multipart/form-data">
+                <input class="form-control" type="file" name="file">
+                
+                <label><h4><b>First Name: </b></h4></label>
+                <input class="form-control" type="text" name="first" value="<?php echo htmlspecialchars($first); ?>">
+
+                <label><h4><b>Last Name</b></h4></label>
+                <input class="form-control" type="text" name="last" value="<?php echo htmlspecialchars($last); ?>">
+
+                <label><h4><b>Username</b></h4></label>
+                <input class="form-control" type="text" name="username" value="<?php echo htmlspecialchars($username); ?>">
+
+                <label><h4><b>Password</b></h4></label>
+                <input class="form-control" type="password" name="password" value="<?php echo htmlspecialchars($password); ?>">
+
+                <label><h4><b>Email</b></h4></label>
+                <input class="form-control" type="email" name="email" value="<?php echo htmlspecialchars($email); ?>">
+
+                <label><h4><b>Contact No</b></h4></label>
+                <input class="form-control" type="text" name="contact" value="<?php echo htmlspecialchars($contact); ?>">
+
+                <br>
+                <div style="padding-left: 100px;">
+                    <button class="btn btn-default" type="submit" name="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
