@@ -1,0 +1,38 @@
+\doxysection{D\+:/\+New folder/\+New folder/index.php File Reference}
+\hypertarget{index_8php}{}\label{index_8php}\index{D:/New folder/New folder/index.php@{D:/New folder/New folder/index.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}} = "{}SELECT \texorpdfstring{$\ast$}{*} FROM books ORDER BY id DESC"{}
+\item 
+\mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \$conn-\/$>$query(\$sql)
+\item 
+if(\$result-\/$>$num\+\_\+rows $>$ 0) \mbox{\hyperlink{index_8php_ad908b96d32f6275bf3ab9e93283a8588}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}\index{index.php@{index.php}!\$result@{\$result}}
+\index{\$result@{\$result}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$result}{\$result}}
+{\footnotesize\ttfamily \label{index_8php_a112ef069ddc0454086e3d1e6d8d55d07} 
+\$result = \$conn-\/$>$query(\$sql)}
+
+\Hypertarget{index_8php_a047170d6020a882807665812a27e2525}\index{index.php@{index.php}!\$sql@{\$sql}}
+\index{\$sql@{\$sql}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$sql}{\$sql}}
+{\footnotesize\ttfamily \label{index_8php_a047170d6020a882807665812a27e2525} 
+\$sql = "{}SELECT \texorpdfstring{$\ast$}{*} FROM books ORDER BY id DESC"{}}
+
+\Hypertarget{index_8php_ad908b96d32f6275bf3ab9e93283a8588}\index{index.php@{index.php}!else@{else}}
+\index{else@{else}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \label{index_8php_ad908b96d32f6275bf3ab9e93283a8588} 
+if ( \$result-\/$>$num\+\_\+rows $>$ 0) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ echo\ \textcolor{stringliteral}{"{}No\ books\ added\ yet."{}}}
+
+\end{DoxyCode}

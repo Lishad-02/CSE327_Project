@@ -1,0 +1,104 @@
+\doxysection{Asymmetric\+Visibility\+Token\+Emulator Class Reference}
+\hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator}{}\label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator}\index{AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}}
+Inheritance diagram for Asymmetric\+Visibility\+Token\+Emulator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_a3387e708ca19a61036f28cf50a6e7adc}{get\+Php\+Version}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_ab0087663ed946a09732df2270a8b5192}{is\+Emulation\+Needed}} (string \$code)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_acceeb4bc65c6a28fc228c225577a2d4b}{emulate}} (string \$code, array \$tokens)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_ac580542e28f099e28efa0730c052454b}{reverse\+Emulate}} (string \$code, array \$tokens)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator}{Token\+Emulator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_aa244c881c8ea78a22dcc98239b4c5c66}{preprocess\+Code}} (string \$code, array \&\$patches)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_a73319ccbf5c35550711443f098832280}{is\+Keyword\+Context}} (array \$tokens, int \$pos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_acceeb4bc65c6a28fc228c225577a2d4b}\index{AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}!emulate@{emulate}}
+\index{emulate@{emulate}!AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}}
+\doxysubsubsection{\texorpdfstring{emulate()}{emulate()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_acceeb4bc65c6a28fc228c225577a2d4b} 
+emulate (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{array}]{\$tokens}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Token\mbox{[}$\,$\mbox{]} & {\em \$tokens} & Original tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Token\mbox{[}\mbox{]} Modified Tokens 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_acceeb4bc65c6a28fc228c225577a2d4b}{Token\+Emulator}}.
+
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_a3387e708ca19a61036f28cf50a6e7adc}\index{AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}!getPhpVersion@{getPhpVersion}}
+\index{getPhpVersion@{getPhpVersion}!AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}}
+\doxysubsubsection{\texorpdfstring{getPhpVersion()}{getPhpVersion()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_a3387e708ca19a61036f28cf50a6e7adc} 
+get\+Php\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_a3387e708ca19a61036f28cf50a6e7adc}{Token\+Emulator}}.
+
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_ab0087663ed946a09732df2270a8b5192}\index{AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}!isEmulationNeeded@{isEmulationNeeded}}
+\index{isEmulationNeeded@{isEmulationNeeded}!AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}}
+\doxysubsubsection{\texorpdfstring{isEmulationNeeded()}{isEmulationNeeded()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_ab0087663ed946a09732df2270a8b5192} 
+is\+Emulation\+Needed (\begin{DoxyParamCaption}\item[{string}]{\$code}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_ab0087663ed946a09732df2270a8b5192}{Token\+Emulator}}.
+
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_a73319ccbf5c35550711443f098832280}\index{AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}!isKeywordContext@{isKeywordContext}}
+\index{isKeywordContext@{isKeywordContext}!AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}}
+\doxysubsubsection{\texorpdfstring{isKeywordContext()}{isKeywordContext()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_a73319ccbf5c35550711443f098832280} 
+is\+Keyword\+Context (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{, }\item[{int}]{\$pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Token\mbox{[}$\,$\mbox{]} & {\em \$tokens} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_ac580542e28f099e28efa0730c052454b}\index{AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}!reverseEmulate@{reverseEmulate}}
+\index{reverseEmulate@{reverseEmulate}!AsymmetricVisibilityTokenEmulator@{AsymmetricVisibilityTokenEmulator}}
+\doxysubsubsection{\texorpdfstring{reverseEmulate()}{reverseEmulate()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_ac580542e28f099e28efa0730c052454b} 
+reverse\+Emulate (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{array}]{\$tokens}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Token\mbox{[}$\,$\mbox{]} & {\em \$tokens} & Original tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Token\mbox{[}\mbox{]} Modified Tokens 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_ac580542e28f099e28efa0730c052454b}{Token\+Emulator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Lexer/\+Token\+Emulator/\mbox{\hyperlink{_asymmetric_visibility_token_emulator_8php}{Asymmetric\+Visibility\+Token\+Emulator.\+php}}\end{DoxyCompactItemize}

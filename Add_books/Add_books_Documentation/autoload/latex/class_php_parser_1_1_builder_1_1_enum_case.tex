@@ -1,0 +1,147 @@
+\doxysection{Enum\+Case Class Reference}
+\hypertarget{class_php_parser_1_1_builder_1_1_enum_case}{}\label{class_php_parser_1_1_builder_1_1_enum_case}\index{EnumCase@{EnumCase}}
+Inheritance diagram for Enum\+Case\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_builder_1_1_enum_case}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum_case_a4717bbfc70a40a57ee741ed70766c309}{\+\_\+\+\_\+construct}} (\$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum_case_a7494441b6ed08a391704971873f31432}{set\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum_case_a7331d24646c54f9d8f98ecf7bc5827bd}{set\+Doc\+Comment}} (\$doc\+Comment)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum_case_ace927af3c97e66624a7b251c59f2ece2}{add\+Attribute}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum_case_a3a0d17930cbcc57bef84064afcc1a837}{get\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_builder}{Builder}}}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum_case_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}} \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum_case_a770a24a29af1871dc931c2fd1fc35ba4}{\$value}} = null
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum_case_ac89f2733f3f084f1e693e13afbb67739}{\$attributes}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum_case_a6545e4b9fa532870993841cc05875124}{\$attribute\+Groups}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_enum_case_a4717bbfc70a40a57ee741ed70766c309}\index{EnumCase@{EnumCase}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!EnumCase@{EnumCase}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_enum_case_a4717bbfc70a40a57ee741ed70766c309} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates an enum case builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Identifier & {\em \$name} & Name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_enum_case_ace927af3c97e66624a7b251c59f2ece2}\index{EnumCase@{EnumCase}!addAttribute@{addAttribute}}
+\index{addAttribute@{addAttribute}!EnumCase@{EnumCase}}
+\doxysubsubsection{\texorpdfstring{addAttribute()}{addAttribute()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_enum_case_ace927af3c97e66624a7b251c59f2ece2} 
+add\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})}
+
+Adds an attribute group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Attribute | Node\textbackslash{}\+Attribute\+Group & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_enum_case_a3a0d17930cbcc57bef84064afcc1a837}\index{EnumCase@{EnumCase}!getNode@{getNode}}
+\index{getNode@{getNode}!EnumCase@{EnumCase}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_enum_case_a3a0d17930cbcc57bef84064afcc1a837} 
+get\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the built enum case node.
+
+\begin{DoxyReturn}{Returns}
+Stmt\textbackslash{}\+Enum\+Case The built constant node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_builder_a3a0d17930cbcc57bef84064afcc1a837}{Builder}}.
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_enum_case_a7331d24646c54f9d8f98ecf7bc5827bd}\index{EnumCase@{EnumCase}!setDocComment@{setDocComment}}
+\index{setDocComment@{setDocComment}!EnumCase@{EnumCase}}
+\doxysubsubsection{\texorpdfstring{setDocComment()}{setDocComment()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_enum_case_a7331d24646c54f9d8f98ecf7bc5827bd} 
+set\+Doc\+Comment (\begin{DoxyParamCaption}\item[{}]{\$doc\+Comment}{}\end{DoxyParamCaption})}
+
+Sets doc comment for the constant.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Php\+Parser\textbackslash{}\+Comment\textbackslash{}\+Doc | string & {\em \$doc\+Comment} & Doc comment to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_enum_case_a7494441b6ed08a391704971873f31432}\index{EnumCase@{EnumCase}!setValue@{setValue}}
+\index{setValue@{setValue}!EnumCase@{EnumCase}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_enum_case_a7494441b6ed08a391704971873f31432} 
+set\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Sets the value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Expr | string | int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_enum_case_a6545e4b9fa532870993841cc05875124}\index{EnumCase@{EnumCase}!\$attributeGroups@{\$attributeGroups}}
+\index{\$attributeGroups@{\$attributeGroups}!EnumCase@{EnumCase}}
+\doxysubsubsection{\texorpdfstring{\$attributeGroups}{\$attributeGroups}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_enum_case_a6545e4b9fa532870993841cc05875124} 
+array \$attribute\+Groups = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_enum_case_ac89f2733f3f084f1e693e13afbb67739}\index{EnumCase@{EnumCase}!\$attributes@{\$attributes}}
+\index{\$attributes@{\$attributes}!EnumCase@{EnumCase}}
+\doxysubsubsection{\texorpdfstring{\$attributes}{\$attributes}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_enum_case_ac89f2733f3f084f1e693e13afbb67739} 
+array \$attributes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_enum_case_ab2fc40d43824ea3e1ce5d86dee0d763b}\index{EnumCase@{EnumCase}!\$name@{\$name}}
+\index{\$name@{\$name}!EnumCase@{EnumCase}}
+\doxysubsubsection{\texorpdfstring{\$name}{\$name}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_enum_case_ab2fc40d43824ea3e1ce5d86dee0d763b} 
+\$name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_enum_case_a770a24a29af1871dc931c2fd1fc35ba4}\index{EnumCase@{EnumCase}!\$value@{\$value}}
+\index{\$value@{\$value}!EnumCase@{EnumCase}}
+\doxysubsubsection{\texorpdfstring{\$value}{\$value}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_enum_case_a770a24a29af1871dc931c2fd1fc35ba4} 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}} \$value = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Builder/\mbox{\hyperlink{_builder_2_enum_case_8php}{Enum\+Case.\+php}}\end{DoxyCompactItemize}

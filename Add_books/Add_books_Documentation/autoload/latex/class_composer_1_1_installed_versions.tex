@@ -1,0 +1,246 @@
+\doxysection{Installed\+Versions Class Reference}
+\hypertarget{class_composer_1_1_installed_versions}{}\label{class_composer_1_1_installed_versions}\index{InstalledVersions@{InstalledVersions}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_a9cb7471a8b6134787cbd06973c4336d3}{get\+Installed\+Packages}} ()
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_aa3ef32a5757a433a28cbe63ea9fff2df}{get\+Installed\+Packages\+By\+Type}} (\$type)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_ac9863ed3d65259cb0a9a5bcc5afffa7e}{is\+Installed}} (\$package\+Name, \$include\+Dev\+Requirements=true)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_a309342b07e5af8c14d76e2c50b7543d4}{satisfies}} (Version\+Parser \$parser, \$package\+Name, \$constraint)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_a6025d8d3ea9ca84bd6e2a7409b7404a6}{get\+Version\+Ranges}} (\$package\+Name)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_af424daaec3a1ccfb2d1bbd55733c9121}{get\+Version}} (\$package\+Name)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_a0e688c2f203f84ce4bddafdf3828144e}{get\+Pretty\+Version}} (\$package\+Name)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_abd701ad696ab5b5b77b6cc5e46a35f36}{get\+Reference}} (\$package\+Name)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_a8ad0cf11b4859b96de3c34fd4851342f}{get\+Install\+Path}} (\$package\+Name)
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_ac82ce683d4615705dc55ed67d2804e55}{get\+Root\+Package}} ()
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_a6ecee8643c03c515b55686f03d117665}{get\+Raw\+Data}} ()
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_a3a09ac4f4e098f4c04c31cfb88a8e256}{get\+All\+Raw\+Data}} ()
+\item 
+static \mbox{\hyperlink{class_composer_1_1_installed_versions_a01b4ca6bbbb1e3337f987c9461405985}{reload}} (\$data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is copied in every \doxylink{namespace_composer}{Composer} installed project and available to all
+
+See also \href{https://getcomposer.org/doc/07-runtime.md\#installed-versions}{\texttt{ https\+://getcomposer.\+org/doc/07-\/runtime.\+md\#installed-\/versions}}
+
+To require its presence, you can require {\ttfamily composer-\/runtime-\/api \texorpdfstring{$^\wedge$}{\string^}2.0}
+
+@final 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_composer_1_1_installed_versions_a3a09ac4f4e098f4c04c31cfb88a8e256}\index{InstalledVersions@{InstalledVersions}!getAllRawData@{getAllRawData}}
+\index{getAllRawData@{getAllRawData}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getAllRawData()}{getAllRawData()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_a3a09ac4f4e098f4c04c31cfb88a8e256} 
+static get\+All\+Raw\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the raw data of all \doxylink{installed_8php}{installed.\+php} which are currently loaded for custom implementations
+
+\begin{DoxyReturn}{Returns}
+array\mbox{[}\mbox{]} @psalm-\/return list\texorpdfstring{$<$}{<}array\{root\+: array\{name\+: string, pretty\+\_\+version\+: string, version\+: string, reference\+: string\texorpdfstring{$\vert$}{|}null, type\+: string, install\+\_\+path\+: string, aliases\+: string\mbox{[}\mbox{]}, dev\+: bool\}, versions\+: array\texorpdfstring{$<$}{<}string, array\{pretty\+\_\+version?\+: string, version?\+: string, reference?\+: string\texorpdfstring{$\vert$}{|}null, type?\+: string, install\+\_\+path?\+: string, aliases?\+: string\mbox{[}\mbox{]}, dev\+\_\+requirement\+: bool, replaced?\+: string\mbox{[}\mbox{]}, provided?\+: string\mbox{[}\mbox{]}\}\texorpdfstring{$>$}{>}\}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_a9cb7471a8b6134787cbd06973c4336d3}\index{InstalledVersions@{InstalledVersions}!getInstalledPackages@{getInstalledPackages}}
+\index{getInstalledPackages@{getInstalledPackages}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getInstalledPackages()}{getInstalledPackages()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_a9cb7471a8b6134787cbd06973c4336d3} 
+static get\+Installed\+Packages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a list of all package names which are present, either by being installed, replaced or provided
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} @psalm-\/return list$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_aa3ef32a5757a433a28cbe63ea9fff2df}\index{InstalledVersions@{InstalledVersions}!getInstalledPackagesByType@{getInstalledPackagesByType}}
+\index{getInstalledPackagesByType@{getInstalledPackagesByType}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getInstalledPackagesByType()}{getInstalledPackagesByType()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_aa3ef32a5757a433a28cbe63ea9fff2df} 
+static get\+Installed\+Packages\+By\+Type (\begin{DoxyParamCaption}\item[{}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a list of all package names with a specific type e.\+g. \textquotesingle{}library\textquotesingle{}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} @psalm-\/return list$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_a8ad0cf11b4859b96de3c34fd4851342f}\index{InstalledVersions@{InstalledVersions}!getInstallPath@{getInstallPath}}
+\index{getInstallPath@{getInstallPath}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getInstallPath()}{getInstallPath()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_a8ad0cf11b4859b96de3c34fd4851342f} 
+static get\+Install\+Path (\begin{DoxyParamCaption}\item[{}]{\$package\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$package\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null If the package is being replaced or provided but is not really installed, null will be returned as install path. Packages of type metapackages also have a null install path. 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_a0e688c2f203f84ce4bddafdf3828144e}\index{InstalledVersions@{InstalledVersions}!getPrettyVersion@{getPrettyVersion}}
+\index{getPrettyVersion@{getPrettyVersion}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getPrettyVersion()}{getPrettyVersion()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_a0e688c2f203f84ce4bddafdf3828144e} 
+static get\+Pretty\+Version (\begin{DoxyParamCaption}\item[{}]{\$package\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$package\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null If the package is being replaced or provided but is not really installed, null will be returned as version, use satisfies or get\+Version\+Ranges if you need to know if a given version is present 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_a6ecee8643c03c515b55686f03d117665}\index{InstalledVersions@{InstalledVersions}!getRawData@{getRawData}}
+\index{getRawData@{getRawData}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getRawData()}{getRawData()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_a6ecee8643c03c515b55686f03d117665} 
+static get\+Raw\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the raw \doxylink{installed_8php}{installed.\+php} data for custom implementations
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]Use get\+All\+Raw\+Data() instead which returns all datasets for all autoloaders present in the process. get\+Raw\+Data only returns the first dataset loaded, which may not be what you expect. \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+array\mbox{[}\mbox{]} @psalm-\/return array\{root\+: array\{name\+: string, pretty\+\_\+version\+: string, version\+: string, reference\+: string\texorpdfstring{$\vert$}{|}null, type\+: string, install\+\_\+path\+: string, aliases\+: string\mbox{[}\mbox{]}, dev\+: bool\}, versions\+: array\texorpdfstring{$<$}{<}string, array\{pretty\+\_\+version?\+: string, version?\+: string, reference?\+: string\texorpdfstring{$\vert$}{|}null, type?\+: string, install\+\_\+path?\+: string, aliases?\+: string\mbox{[}\mbox{]}, dev\+\_\+requirement\+: bool, replaced?\+: string\mbox{[}\mbox{]}, provided?\+: string\mbox{[}\mbox{]}\}\texorpdfstring{$>$}{>}\} 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_abd701ad696ab5b5b77b6cc5e46a35f36}\index{InstalledVersions@{InstalledVersions}!getReference@{getReference}}
+\index{getReference@{getReference}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getReference()}{getReference()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_abd701ad696ab5b5b77b6cc5e46a35f36} 
+static get\+Reference (\begin{DoxyParamCaption}\item[{}]{\$package\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$package\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null If the package is being replaced or provided but is not really installed, null will be returned as reference 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_ac82ce683d4615705dc55ed67d2804e55}\index{InstalledVersions@{InstalledVersions}!getRootPackage@{getRootPackage}}
+\index{getRootPackage@{getRootPackage}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getRootPackage()}{getRootPackage()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_ac82ce683d4615705dc55ed67d2804e55} 
+static get\+Root\+Package (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+array @psalm-\/return array\{name\+: string, pretty\+\_\+version\+: string, version\+: string, reference\+: string\texorpdfstring{$\vert$}{|}null, type\+: string, install\+\_\+path\+: string, aliases\+: string\mbox{[}\mbox{]}, dev\+: bool\} 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_af424daaec3a1ccfb2d1bbd55733c9121}\index{InstalledVersions@{InstalledVersions}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getVersion()}{getVersion()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_af424daaec3a1ccfb2d1bbd55733c9121} 
+static get\+Version (\begin{DoxyParamCaption}\item[{}]{\$package\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$package\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null If the package is being replaced or provided but is not really installed, null will be returned as version, use satisfies or get\+Version\+Ranges if you need to know if a given version is present 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_a6025d8d3ea9ca84bd6e2a7409b7404a6}\index{InstalledVersions@{InstalledVersions}!getVersionRanges@{getVersionRanges}}
+\index{getVersionRanges@{getVersionRanges}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{getVersionRanges()}{getVersionRanges()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_a6025d8d3ea9ca84bd6e2a7409b7404a6} 
+static get\+Version\+Ranges (\begin{DoxyParamCaption}\item[{}]{\$package\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a version constraint representing all the range(s) which are installed for a given package
+
+It is easier to use this via is\+Installed() with the \$constraint argument if you need to check whether a given version of a package is installed, and not just whether it exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$package\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Version constraint usable with composer/semver 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_ac9863ed3d65259cb0a9a5bcc5afffa7e}\index{InstalledVersions@{InstalledVersions}!isInstalled@{isInstalled}}
+\index{isInstalled@{isInstalled}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{isInstalled()}{isInstalled()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_ac9863ed3d65259cb0a9a5bcc5afffa7e} 
+static is\+Installed (\begin{DoxyParamCaption}\item[{}]{\$package\+Name}{, }\item[{}]{\$include\+Dev\+Requirements}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether the given package is installed
+
+This also returns true if the package name is provided or replaced by another package
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$package\+Name} & \\
+\hline
+bool & {\em \$include\+Dev\+Requirements} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_composer_1_1_installed_versions_a01b4ca6bbbb1e3337f987c9461405985}\index{InstalledVersions@{InstalledVersions}!reload@{reload}}
+\index{reload@{reload}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_a01b4ca6bbbb1e3337f987c9461405985} 
+static reload (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Lets you reload the static array from another file
+
+This is only useful for complex integrations in which a project needs to use this class but then also needs to execute another project\textquotesingle{}s autoloader in process, and wants to ensure both projects have access to their version of \doxylink{installed_8php}{installed.\+php}.
+
+A typical case would be \doxylink{namespace_p_h_p_unit}{PHPUnit}, where it would need to make sure it reads all the data it needs from this class, then call reload() with {\ttfamily require \$CWD/vendor/composer/installed.\+php} (or similar) as input to make sure the project in which it runs can then also use this class safely, without interference between \doxylink{namespace_p_h_p_unit}{PHPUnit}\textquotesingle{}s dependencies and the project\textquotesingle{}s dependencies.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array\mbox{[}$\,$\mbox{]} & {\em \$data} & A \doxylink{installed_8php}{vendor/composer/installed.\+php} data set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+@psalm-\/param array\{root\+: array\{name\+: string, pretty\+\_\+version\+: string, version\+: string, reference\+: string\texorpdfstring{$\vert$}{|}null, type\+: string, install\+\_\+path\+: string, aliases\+: string\mbox{[}\mbox{]}, dev\+: bool\}, versions\+: array\texorpdfstring{$<$}{<}string, array\{pretty\+\_\+version?\+: string, version?\+: string, reference?\+: string\texorpdfstring{$\vert$}{|}null, type?\+: string, install\+\_\+path?\+: string, aliases?\+: string\mbox{[}\mbox{]}, dev\+\_\+requirement\+: bool, replaced?\+: string\mbox{[}\mbox{]}, provided?\+: string\mbox{[}\mbox{]}\}\texorpdfstring{$>$}{>}\} \$data \Hypertarget{class_composer_1_1_installed_versions_a309342b07e5af8c14d76e2c50b7543d4}\index{InstalledVersions@{InstalledVersions}!satisfies@{satisfies}}
+\index{satisfies@{satisfies}!InstalledVersions@{InstalledVersions}}
+\doxysubsubsection{\texorpdfstring{satisfies()}{satisfies()}}
+{\footnotesize\ttfamily \label{class_composer_1_1_installed_versions_a309342b07e5af8c14d76e2c50b7543d4} 
+static satisfies (\begin{DoxyParamCaption}\item[{Version\+Parser}]{\$parser}{, }\item[{}]{\$package\+Name}{, }\item[{}]{\$constraint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether the given package satisfies a version constraint
+
+e.\+g. If you want to know whether version 2.\+3+ of package foo/bar is installed, you would call\+:
+
+\doxylink{namespace_composer}{Composer}\textbackslash{}\+Installed\+Versions\+::satisfies(new Version\+Parser, \textquotesingle{}foo/bar\textquotesingle{}, \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}2.3\textquotesingle{})
+
+
+\begin{DoxyParams}[1]{Parameters}
+Version\+Parser & {\em \$parser} & Install composer/semver to have access to this class and functionality \\
+\hline
+string & {\em \$package\+Name} & \\
+\hline
+string | null & {\em \$constraint} & A version constraint to check for, if you pass one you have to make sure composer/semver is required by your package \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/composer/\mbox{\hyperlink{_installed_versions_8php}{Installed\+Versions.\+php}}\end{DoxyCompactItemize}

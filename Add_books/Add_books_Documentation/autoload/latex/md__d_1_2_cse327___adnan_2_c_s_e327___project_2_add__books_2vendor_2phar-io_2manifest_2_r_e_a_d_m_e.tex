@@ -1,0 +1,189 @@
+\chapter{Manifest}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e}{}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e}\index{Manifest@{Manifest}}
+\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md38}%
+\Hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md38}%
+
+
+Component for reading \href{https://phar.io/}{\texttt{ phar.\+io}} manifest information from a \href{http://php.net/phar}{\texttt{ PHP Archive (PHAR)}}.\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md39}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md39}
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\texttt{ Composer}}\+: \begin{DoxyVerb}composer require phar-io/manifest
+\end{DoxyVerb}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+: \begin{DoxyVerb}composer require --dev phar-io/manifest
+\end{DoxyVerb}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md40}{}\doxysection{\texorpdfstring{Usage Examples}{Usage Examples}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md40}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md41}{}\doxysubsection{\texorpdfstring{Read from {\ttfamily manifest.\+xml}}{Read from {\ttfamily manifest.\+xml}}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md41}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_phar_io_1_1_manifest_1_1_manifest_loader}{PharIo\(\backslash\)Manifest\(\backslash\)ManifestLoader}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_phar_io_1_1_manifest_1_1_manifest_serializer}{PharIo\(\backslash\)Manifest\(\backslash\)ManifestSerializer}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$manifest\ =\ ManifestLoader::fromFile(\textcolor{stringliteral}{'manifest.xml'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\_dump(\$manifest);}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo\ (\textcolor{keyword}{new}\ ManifestSerializer)-\/>serializeToString(\$manifest);}
+
+\end{DoxyCode}
+
+
+
+
+{\bfseries{Output}}\begin{adjustwidth}{1em}{0em}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{object(PharIo\(\backslash\)Manifest\(\backslash\)Manifest)\#14\ (6)\ \{}
+\DoxyCodeLine{\ \ ["{}name"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Manifest"{}:private]=>}
+\DoxyCodeLine{\ \ object(PharIo\(\backslash\)Manifest\(\backslash\)ApplicationName)\#10\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ ["{}name"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)ApplicationName"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ string(12)\ "{}some/library"{}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ ["{}version"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Manifest"{}:private]=>}
+\DoxyCodeLine{\ \ object(PharIo\(\backslash\)Version\(\backslash\)Version)\#12\ (5)\ \{}
+\DoxyCodeLine{\ \ \ \ ["{}originalVersionString"{}:"{}PharIo\(\backslash\)Version\(\backslash\)Version"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ string(5)\ "{}1.0.0"{}}
+\DoxyCodeLine{\ \ \ \ ["{}major"{}:"{}PharIo\(\backslash\)Version\(\backslash\)Version"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ object(PharIo\(\backslash\)Version\(\backslash\)VersionNumber)\#13\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ ["{}value"{}:"{}PharIo\(\backslash\)Version\(\backslash\)VersionNumber"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ int(1)}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ ["{}minor"{}:"{}PharIo\(\backslash\)Version\(\backslash\)Version"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ object(PharIo\(\backslash\)Version\(\backslash\)VersionNumber)\#23\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ ["{}value"{}:"{}PharIo\(\backslash\)Version\(\backslash\)VersionNumber"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ int(0)}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ ["{}patch"{}:"{}PharIo\(\backslash\)Version\(\backslash\)Version"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ object(PharIo\(\backslash\)Version\(\backslash\)VersionNumber)\#22\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ ["{}value"{}:"{}PharIo\(\backslash\)Version\(\backslash\)VersionNumber"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ int(0)}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ ["{}preReleaseSuffix"{}:"{}PharIo\(\backslash\)Version\(\backslash\)Version"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ NULL}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ ["{}type"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Manifest"{}:private]=>}
+\DoxyCodeLine{\ \ object(PharIo\(\backslash\)Manifest\(\backslash\)Library)\#6\ (0)\ \{}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ ["{}copyrightInformation"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Manifest"{}:private]=>}
+\DoxyCodeLine{\ \ object(PharIo\(\backslash\)Manifest\(\backslash\)CopyrightInformation)\#19\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ ["{}authors"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)CopyrightInformation"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ object(PharIo\(\backslash\)Manifest\(\backslash\)AuthorCollection)\#9\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ ["{}authors"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)AuthorCollection"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ array(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [0]=>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ object(PharIo\(\backslash\)Manifest\(\backslash\)Author)\#15\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ ["{}name"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Author"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ string(13)\ "{}Reiner\ Zufall"{}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ ["{}email"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Author"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ object(PharIo\(\backslash\)Manifest\(\backslash\)Email)\#16\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ["{}email"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Email"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ string(16)\ "{}reiner@zufall.de"{}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ ["{}license"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)CopyrightInformation"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ object(PharIo\(\backslash\)Manifest\(\backslash\)License)\#11\ (2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ ["{}name"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)License"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ string(12)\ "{}BSD-\/3-\/Clause"{}}
+\DoxyCodeLine{\ \ \ \ \ \ ["{}url"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)License"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ object(PharIo\(\backslash\)Manifest\(\backslash\)Url)\#18\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ["{}url"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Url"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ string(26)\ "{}https://domain.tld/LICENSE"{}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ ["{}requirements"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Manifest"{}:private]=>}
+\DoxyCodeLine{\ \ object(PharIo\(\backslash\)Manifest\(\backslash\)RequirementCollection)\#17\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ ["{}requirements"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)RequirementCollection"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ array(1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ [0]=>}
+\DoxyCodeLine{\ \ \ \ \ \ object(PharIo\(\backslash\)Manifest\(\backslash\)PhpVersionRequirement)\#20\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ["{}versionConstraint"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)PhpVersionRequirement"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ object(PharIo\(\backslash\)Version\(\backslash\)SpecificMajorAndMinorVersionConstraint)\#24\ (3)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ ["{}originalValue"{}:"{}PharIo\(\backslash\)Version\(\backslash\)AbstractVersionConstraint"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ string(3)\ "{}7.0"{}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ ["{}major"{}:"{}PharIo\(\backslash\)Version\(\backslash\)SpecificMajorAndMinorVersionConstraint"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ int(7)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ ["{}minor"{}:"{}PharIo\(\backslash\)Version\(\backslash\)SpecificMajorAndMinorVersionConstraint"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ int(0)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ ["{}bundledComponents"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)Manifest"{}:private]=>}
+\DoxyCodeLine{\ \ object(PharIo\(\backslash\)Manifest\(\backslash\)BundledComponentCollection)\#8\ (1)\ \{}
+\DoxyCodeLine{\ \ \ \ ["{}bundledComponents"{}:"{}PharIo\(\backslash\)Manifest\(\backslash\)BundledComponentCollection"{}:private]=>}
+\DoxyCodeLine{\ \ \ \ array(0)\ \{}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{<?xml\ version="{}1.0"{}\ encoding="{}UTF-\/8"{}?>}
+\DoxyCodeLine{<phar\ xmlns="{}https://phar.io/xml/manifest/1.0"{}>}
+\DoxyCodeLine{\ \ \ \ <contains\ name="{}some/library"{}\ version="{}1.0.0"{}\ type="{}library"{}/>}
+\DoxyCodeLine{\ \ \ \ <copyright>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <author\ name="{}Reiner\ Zufall"{}\ email="{}reiner@zufall.de"{}/>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <license\ type="{}BSD-\/3-\/Clause"{}\ url="{}https://domain.tld/LICENSE"{}/>}
+\DoxyCodeLine{\ \ \ \ </copyright>}
+\DoxyCodeLine{\ \ \ \ <requires>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <php\ version="{}7.0"{}/>}
+\DoxyCodeLine{\ \ \ \ </requires>}
+\DoxyCodeLine{</phar>}
+
+\end{DoxyCode}
+ \end{adjustwidth}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md42}{}\doxysubsection{\texorpdfstring{Create via API}{Create via API}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2manifest_2_r_e_a_d_m_e_autotoc_md42}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$bundled\ =\ new\ \(\backslash\)PharIo\(\backslash\)Manifest\(\backslash\)BundledComponentCollection();}
+\DoxyCodeLine{\$bundled-\/>add(}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Manifest\(\backslash\)BundledComponent(\textcolor{stringliteral}{'vendor/packageA'},\ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Version\(\backslash\)Version(\textcolor{stringliteral}{'1.2.3-\/dev'})}
+\DoxyCodeLine{\ \ \ \ )}
+\DoxyCodeLine{);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$manifest\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_phar_io_1_1_manifest_1_1_manifest}{PharIo\(\backslash\)Manifest\(\backslash\)Manifest}}(}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Manifest\(\backslash\)ApplicationName(\textcolor{stringliteral}{'vendor/package'}),}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Version\(\backslash\)Version(\textcolor{stringliteral}{'1.0.0'}),}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Manifest\(\backslash\)Library(),}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Manifest\(\backslash\)CopyrightInformation(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Manifest\(\backslash\)AuthorCollection(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Manifest\(\backslash\)License(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'BSD-\/3-\/Clause'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Manifest\(\backslash\)Url(\textcolor{stringliteral}{'https://spdx.org/licenses/BSD-\/3-\/Clause.html'})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ \(\backslash\)PharIo\(\backslash\)Manifest\(\backslash\)RequirementCollection(),}
+\DoxyCodeLine{\ \ \ \ \$bundled}
+\DoxyCodeLine{);}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo\ (\textcolor{keyword}{new}\ ManifestSerializer)-\/>serializeToString(\$manifest);}
+
+\end{DoxyCode}
+
+
+
+
+{\bfseries{Output}}\begin{adjustwidth}{1em}{0em}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\textcolor{keyword}{xml}\ \textcolor{keyword}{version}=\textcolor{stringliteral}{"{}1.0"{}}\ \textcolor{keyword}{encoding}=\textcolor{stringliteral}{"{}UTF-\/8"{}}?>}
+\DoxyCodeLine{<\textcolor{keywordtype}{phar}\ \textcolor{keyword}{xmlns}=\textcolor{stringliteral}{"{}https://phar.io/xml/manifest/1.0"{}}>}
+\DoxyCodeLine{\ \ \ \ <\textcolor{keywordtype}{contains}\ \textcolor{keyword}{name}=\textcolor{stringliteral}{"{}vendor/package"{}}\ \textcolor{keyword}{version}=\textcolor{stringliteral}{"{}1.0.0"{}}\ \textcolor{keyword}{type}=\textcolor{stringliteral}{"{}library"{}}/>}
+\DoxyCodeLine{\ \ \ \ <\textcolor{keywordtype}{copyright}>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <\textcolor{keywordtype}{license}\ \textcolor{keyword}{type}=\textcolor{stringliteral}{"{}BSD-\/3-\/Clause"{}}\ \textcolor{keyword}{url}=\textcolor{stringliteral}{"{}https://spdx.org/licenses/BSD-\/3-\/Clause.html"{}}/>}
+\DoxyCodeLine{\ \ \ \ </\textcolor{keywordtype}{copyright}>}
+\DoxyCodeLine{\ \ \ \ <\textcolor{keywordtype}{requires}>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <\textcolor{keywordtype}{php}\ \textcolor{keyword}{version}=\textcolor{stringliteral}{"{}*"{}}/>}
+\DoxyCodeLine{\ \ \ \ </\textcolor{keywordtype}{requires}>}
+\DoxyCodeLine{\ \ \ \ <\textcolor{keywordtype}{bundles}>}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ <\textcolor{keywordtype}{component}\ \textcolor{keyword}{name}=\textcolor{stringliteral}{"{}vendor/packageA"{}}\ \textcolor{keyword}{version}=\textcolor{stringliteral}{"{}1.2.3-\/dev"{}}/>}
+\DoxyCodeLine{\ \ \ \ </\textcolor{keywordtype}{bundles}>}
+\DoxyCodeLine{</\textcolor{keywordtype}{phar}>}
+
+\end{DoxyCode}
+
+
+\end{adjustwidth}

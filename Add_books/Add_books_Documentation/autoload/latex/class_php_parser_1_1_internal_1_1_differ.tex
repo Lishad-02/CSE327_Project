@@ -1,0 +1,80 @@
+\doxysection{Differ Class Reference}
+\hypertarget{class_php_parser_1_1_internal_1_1_differ}{}\label{class_php_parser_1_1_internal_1_1_differ}\index{Differ@{Differ}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_differ_a5a1358ae5ba5717eecd25cc37e729636}{\+\_\+\+\_\+construct}} (callable \$is\+Equal)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_differ_aa3e5fc36e72602e792f4afd9e0ec47c6}{diff}} (array \$old, array \$new)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_differ_a02f4a29dde3061642d70eb574f4aaaef}{diff\+With\+Replacements}} (array \$old, array \$new)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements the Myers diff algorithm.
+
+Myers, Eugene W. "{}\+An O (\+ND) difference algorithm and its variations."{} Algorithmica 1.\+1 (1986)\+: 251-\/266.
+
+@template T 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_internal_1_1_differ_a5a1358ae5ba5717eecd25cc37e729636}\index{Differ@{Differ}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_differ_a5a1358ae5ba5717eecd25cc37e729636} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{callable}]{\$is\+Equal}{}\end{DoxyParamCaption})}
+
+Create differ over the given equality relation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(T,T)} & bool \$is\+Equal Equality relation \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_internal_1_1_differ_aa3e5fc36e72602e792f4afd9e0ec47c6}\index{Differ@{Differ}!diff@{diff}}
+\index{diff@{diff}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{diff()}{diff()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_differ_aa3e5fc36e72602e792f4afd9e0ec47c6} 
+diff (\begin{DoxyParamCaption}\item[{array}]{\$old}{, }\item[{array}]{\$new}{}\end{DoxyParamCaption})}
+
+Calculate diff (edit script) from \$old to \$new.
+
+
+\begin{DoxyParams}[1]{Parameters}
+T\mbox{[}$\,$\mbox{]} & {\em \$old} & Original array \\
+\hline
+T\mbox{[}$\,$\mbox{]} & {\em \$new} & New array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Diff\+Elem\mbox{[}\mbox{]} Diff (edit script) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_internal_1_1_differ_a02f4a29dde3061642d70eb574f4aaaef}\index{Differ@{Differ}!diffWithReplacements@{diffWithReplacements}}
+\index{diffWithReplacements@{diffWithReplacements}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{diffWithReplacements()}{diffWithReplacements()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_differ_a02f4a29dde3061642d70eb574f4aaaef} 
+diff\+With\+Replacements (\begin{DoxyParamCaption}\item[{array}]{\$old}{, }\item[{array}]{\$new}{}\end{DoxyParamCaption})}
+
+Calculate diff, including "{}replace"{} operations.
+
+If a sequence of remove operations is followed by the same number of add operations, these will be coalesced into replace operations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+T\mbox{[}$\,$\mbox{]} & {\em \$old} & Original array \\
+\hline
+T\mbox{[}$\,$\mbox{]} & {\em \$new} & New array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Diff\+Elem\mbox{[}\mbox{]} Diff (edit script), including replace operations 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Internal/\mbox{\hyperlink{nikic_2php-parser_2lib_2_php_parser_2_internal_2_differ_8php}{Differ.\+php}}\end{DoxyCompactItemize}

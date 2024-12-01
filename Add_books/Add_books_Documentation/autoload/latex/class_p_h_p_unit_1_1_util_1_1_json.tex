@@ -1,0 +1,46 @@
+\doxysection{Json Class Reference}
+\hypertarget{class_p_h_p_unit_1_1_util_1_1_json}{}\label{class_p_h_p_unit_1_1_util_1_1_json}\index{Json@{Json}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_json_a9b09cbf4ba74e54a0a7e5476bc56b4b0}{prettify}} (string \$json)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_json_a596c367126a6eea05ce11a17b7d4f008}{canonicalize}} (string \$json)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \doxylink{namespace_p_h_p_unit}{PHPUnit} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_util_1_1_json_a596c367126a6eea05ce11a17b7d4f008}\index{Json@{Json}!canonicalize@{canonicalize}}
+\index{canonicalize@{canonicalize}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{canonicalize()}{canonicalize()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_util_1_1_json_a596c367126a6eea05ce11a17b7d4f008} 
+static canonicalize (\begin{DoxyParamCaption}\item[{string}]{\$json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Element 0 is true and element 1 is null when JSON decoding did not work.
+\begin{DoxyItemize}
+\item Element 0 is false and element 1 has the decoded value when JSON decoding did work.
+\item This is used to avoid ambiguity with JSON strings consisting entirely of \textquotesingle{}null\textquotesingle{} or \textquotesingle{}false\textquotesingle{}.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+array\{0\+: false, 1\+: mixed\}\texorpdfstring{$\vert$}{|}array\{0\+: true, 1\+: null\} 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_unit_1_1_util_1_1_json_a9b09cbf4ba74e54a0a7e5476bc56b4b0}\index{Json@{Json}!prettify@{prettify}}
+\index{prettify@{prettify}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{prettify()}{prettify()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_util_1_1_json_a9b09cbf4ba74e54a0a7e5476bc56b4b0} 
+static prettify (\begin{DoxyParamCaption}\item[{string}]{\$json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Json\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/phpunit/src/\+Util/\mbox{\hyperlink{_json_8php}{Json.\+php}}\end{DoxyCompactItemize}

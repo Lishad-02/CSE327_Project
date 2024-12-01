@@ -1,0 +1,199 @@
+\doxysection{Trait\+Use\+Adaptation Class Reference}
+\hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation}{}\label{class_php_parser_1_1_builder_1_1_trait_use_adaptation}\index{TraitUseAdaptation@{TraitUseAdaptation}}
+Inheritance diagram for Trait\+Use\+Adaptation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_builder_1_1_trait_use_adaptation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a4b9eee02f769bf4c00decad6a3764648}{\+\_\+\+\_\+construct}} (\$trait, \$method)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a59095231e0b5425639be02c03fc02b14}{as}} (\$alias)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a41ed4b9d914f6b2eac84909a9f3d4fe4}{make\+Public}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_aef351d1dc94a77a9e4851fbd274b30a0}{make\+Protected}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a99aa3141cb057030f2aadfb9649aab8e}{make\+Private}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a40c4f778188ab265cae883d2a77bb3cf}{insteadof}} (... \$traits)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a3a0d17930cbcc57bef84064afcc1a837}{get\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_builder}{Builder}}}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_ac32fab6d0fbded9ab1edcc253df6de3d}{set\+Modifier}} (int \$modifier)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a3b3d1b08364961741f0c27210ff38289}{\$type}}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_ace6005e57b177efbcc0451704c12be38}{\$trait}}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_identifier}{Identifier}} \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a7b02973df3f6bb01a7a925c866840f38}{\$method}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a159c0971daf9f74a482e3cb0aa0d8ed0}{\$modifier}} = null
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_identifier}{Identifier}} \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a32de6cfcb5d8b69acebcb1a2758a5195}{\$alias}} = null
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a4a402748856cac1f432c9828aaffa307}{\$insteadof}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a4b9eee02f769bf4c00decad6a3764648}\index{TraitUseAdaptation@{TraitUseAdaptation}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a4b9eee02f769bf4c00decad6a3764648} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$trait}{, }\item[{}]{\$method}{}\end{DoxyParamCaption})}
+
+Creates a trait use adaptation builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Name | string | null & {\em \$trait} & Name of adapted trait \\
+\hline
+Node\textbackslash{}\+Identifier | string & {\em \$method} & Name of adapted method \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a59095231e0b5425639be02c03fc02b14}\index{TraitUseAdaptation@{TraitUseAdaptation}!as@{as}}
+\index{as@{as}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{as()}{as()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a59095231e0b5425639be02c03fc02b14} 
+as (\begin{DoxyParamCaption}\item[{}]{\$alias}{}\end{DoxyParamCaption})}
+
+Sets alias of method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Identifier | string & {\em \$alias} & Alias for adapted method\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a3a0d17930cbcc57bef84064afcc1a837}\index{TraitUseAdaptation@{TraitUseAdaptation}!getNode@{getNode}}
+\index{getNode@{getNode}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a3a0d17930cbcc57bef84064afcc1a837} 
+get\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the built node.
+
+\begin{DoxyReturn}{Returns}
+Node The built node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_builder_a3a0d17930cbcc57bef84064afcc1a837}{Builder}}.
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a40c4f778188ab265cae883d2a77bb3cf}\index{TraitUseAdaptation@{TraitUseAdaptation}!insteadof@{insteadof}}
+\index{insteadof@{insteadof}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{insteadof()}{insteadof()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a40c4f778188ab265cae883d2a77bb3cf} 
+insteadof (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Adds overwritten traits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Node} & \\
+\hline
+\end{DoxyParams}
+Name\texorpdfstring{$\vert$}{|}string ...\$traits Traits for overwrite
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a99aa3141cb057030f2aadfb9649aab8e}\index{TraitUseAdaptation@{TraitUseAdaptation}!makePrivate@{makePrivate}}
+\index{makePrivate@{makePrivate}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{makePrivate()}{makePrivate()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a99aa3141cb057030f2aadfb9649aab8e} 
+make\+Private (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sets adapted method private.
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_aef351d1dc94a77a9e4851fbd274b30a0}\index{TraitUseAdaptation@{TraitUseAdaptation}!makeProtected@{makeProtected}}
+\index{makeProtected@{makeProtected}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{makeProtected()}{makeProtected()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_aef351d1dc94a77a9e4851fbd274b30a0} 
+make\+Protected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sets adapted method protected.
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a41ed4b9d914f6b2eac84909a9f3d4fe4}\index{TraitUseAdaptation@{TraitUseAdaptation}!makePublic@{makePublic}}
+\index{makePublic@{makePublic}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{makePublic()}{makePublic()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a41ed4b9d914f6b2eac84909a9f3d4fe4} 
+make\+Public (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sets adapted method public.
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_ac32fab6d0fbded9ab1edcc253df6de3d}\index{TraitUseAdaptation@{TraitUseAdaptation}!setModifier@{setModifier}}
+\index{setModifier@{setModifier}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{setModifier()}{setModifier()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_ac32fab6d0fbded9ab1edcc253df6de3d} 
+set\+Modifier (\begin{DoxyParamCaption}\item[{int}]{\$modifier}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a32de6cfcb5d8b69acebcb1a2758a5195}\index{TraitUseAdaptation@{TraitUseAdaptation}!\$alias@{\$alias}}
+\index{\$alias@{\$alias}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{\$alias}{\$alias}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a32de6cfcb5d8b69acebcb1a2758a5195} 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_identifier}{Identifier}} \$alias = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a4a402748856cac1f432c9828aaffa307}\index{TraitUseAdaptation@{TraitUseAdaptation}!\$insteadof@{\$insteadof}}
+\index{\$insteadof@{\$insteadof}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{\$insteadof}{\$insteadof}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a4a402748856cac1f432c9828aaffa307} 
+array \$insteadof = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a7b02973df3f6bb01a7a925c866840f38}\index{TraitUseAdaptation@{TraitUseAdaptation}!\$method@{\$method}}
+\index{\$method@{\$method}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{\$method}{\$method}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a7b02973df3f6bb01a7a925c866840f38} 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_identifier}{Identifier}} \$method\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a159c0971daf9f74a482e3cb0aa0d8ed0}\index{TraitUseAdaptation@{TraitUseAdaptation}!\$modifier@{\$modifier}}
+\index{\$modifier@{\$modifier}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{\$modifier}{\$modifier}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a159c0971daf9f74a482e3cb0aa0d8ed0} 
+int \$modifier = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_ace6005e57b177efbcc0451704c12be38}\index{TraitUseAdaptation@{TraitUseAdaptation}!\$trait@{\$trait}}
+\index{\$trait@{\$trait}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{\$trait}{\$trait}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_ace6005e57b177efbcc0451704c12be38} 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \$trait\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a3b3d1b08364961741f0c27210ff38289}\index{TraitUseAdaptation@{TraitUseAdaptation}!\$type@{\$type}}
+\index{\$type@{\$type}!TraitUseAdaptation@{TraitUseAdaptation}}
+\doxysubsubsection{\texorpdfstring{\$type}{\$type}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_trait_use_adaptation_a3b3d1b08364961741f0c27210ff38289} 
+int \$type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Builder/\mbox{\hyperlink{_builder_2_trait_use_adaptation_8php}{Trait\+Use\+Adaptation.\+php}}\end{DoxyCompactItemize}

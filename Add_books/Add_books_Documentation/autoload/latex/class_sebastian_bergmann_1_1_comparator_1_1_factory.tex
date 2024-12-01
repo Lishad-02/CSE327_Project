@@ -1,0 +1,71 @@
+\doxysection{Factory Class Reference}
+\hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory}{}\label{class_sebastian_bergmann_1_1_comparator_1_1_factory}\index{Factory@{Factory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory_a5778d9655a4f6bcd8cf6428287e08468}{get\+Comparator\+For}} (mixed \$expected, mixed \$actual)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory_ad375a6b8e3b1ad05beaf311b6c05d4d6}{register}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}} \$comparator)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory_a52e6511e6a6737ca95bc42fa9ff0f07e}{unregister}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}} \$comparator)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory_ac93fbec81f07e5d15f80db907e63dc10}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_a095c5d389db211932136b53f25f39685}\index{Factory@{Factory}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_factory_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_a5778d9655a4f6bcd8cf6428287e08468}\index{Factory@{Factory}!getComparatorFor@{getComparatorFor}}
+\index{getComparatorFor@{getComparatorFor}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{getComparatorFor()}{getComparatorFor()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_factory_a5778d9655a4f6bcd8cf6428287e08468} 
+get\+Comparator\+For (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_ac93fbec81f07e5d15f80db907e63dc10}\index{Factory@{Factory}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_factory_ac93fbec81f07e5d15f80db907e63dc10} 
+static get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_ad375a6b8e3b1ad05beaf311b6c05d4d6}\index{Factory@{Factory}!register@{register}}
+\index{register@{register}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_factory_ad375a6b8e3b1ad05beaf311b6c05d4d6} 
+register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}}}]{\$comparator}{}\end{DoxyParamCaption})}
+
+Registers a new comparator.
+
+This comparator will be returned by get\+Comparator\+For() if its accept() method returns TRUE for the compared values. It has higher priority than the existing comparators, meaning that its accept() method will be invoked before those of the other comparators. \Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_a4a20559544fdf4dcb457e258dc976cf8}\index{Factory@{Factory}!reset@{reset}}
+\index{reset@{reset}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_factory_a4a20559544fdf4dcb457e258dc976cf8} 
+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_a52e6511e6a6737ca95bc42fa9ff0f07e}\index{Factory@{Factory}!unregister@{unregister}}
+\index{unregister@{unregister}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_factory_a52e6511e6a6737ca95bc42fa9ff0f07e} 
+unregister (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}}}]{\$comparator}{}\end{DoxyParamCaption})}
+
+Unregisters a comparator.
+
+This comparator will no longer be considered by get\+Comparator\+For(). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/sebastian/comparator/src/\mbox{\hyperlink{sebastian_2comparator_2src_2_factory_8php}{Factory.\+php}}\end{DoxyCompactItemize}

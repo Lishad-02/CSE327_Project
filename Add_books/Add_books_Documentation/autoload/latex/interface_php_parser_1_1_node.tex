@@ -1,0 +1,336 @@
+\doxysection{Node Interface Reference}
+\hypertarget{interface_php_parser_1_1_node}{}\label{interface_php_parser_1_1_node}\index{Node@{Node}}
+Inheritance diagram for Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_php_parser_1_1_node}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a830b5c75df72b32396701bc563fbe3c7}{get\+Type}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a7e06a91cc526dc52826d18313e64798a}{get\+Sub\+Node\+Names}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_aef9c32f6066788a101028a1d4150f8cb}{get\+Line}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a0c5336ffcf8d85709d6f212bd49c7bb4}{get\+Start\+Line}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a7ad149e4075bba710a8933065263fe0e}{get\+End\+Line}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a2071892dabcf856e81bb5fdf4ea0d365}{get\+Start\+Token\+Pos}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_ae97bed5b5ce902777f7c749aea714262}{get\+End\+Token\+Pos}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_aada4875e3d94d2987234f496bcd86970}{get\+Start\+File\+Pos}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_ada2c7786e2cd53a4f78cf5fbacf84088}{get\+End\+File\+Pos}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_af3034ead082330d2c046a69814009808}{get\+Comments}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a7ad315042ad7fc45bd7e7d979647738a}{get\+Doc\+Comment}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a49368ce706cdb1cbdd2b68039788dfee}{set\+Doc\+Comment}} (\mbox{\hyperlink{class_php_parser_1_1_comment_1_1_doc}{Comment\textbackslash{}\+Doc}} \$doc\+Comment)
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a5d036ff8a979c733d4b44be513ebff63}{set\+Attribute}} (string \$key, \$value)
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a79a755c05ccf0aae60a84dae8d3aaa23}{has\+Attribute}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a8326238c49c45406cddb3625e0dadf67}{get\+Attribute}} (string \$key, \$default=null)
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_afbe85ec4b9947cc951c67d63911cf0a4}{get\+Attributes}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_ad4c58c23f94923a1ba4ad37b24a80504}{set\+Attributes}} (array \$attributes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_php_parser_1_1_node_a8326238c49c45406cddb3625e0dadf67}\index{Node@{Node}!getAttribute@{getAttribute}}
+\index{getAttribute@{getAttribute}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getAttribute()}{getAttribute()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a8326238c49c45406cddb3625e0dadf67} 
+get\+Attribute (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the value of an attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_a8326238c49c45406cddb3625e0dadf67}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_afbe85ec4b9947cc951c67d63911cf0a4}\index{Node@{Node}!getAttributes@{getAttributes}}
+\index{getAttributes@{getAttributes}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getAttributes()}{getAttributes()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_afbe85ec4b9947cc951c67d63911cf0a4} 
+get\+Attributes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all the attributes of this node.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_afbe85ec4b9947cc951c67d63911cf0a4}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_af3034ead082330d2c046a69814009808}\index{Node@{Node}!getComments@{getComments}}
+\index{getComments@{getComments}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getComments()}{getComments()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_af3034ead082330d2c046a69814009808} 
+get\+Comments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets all comments directly preceding this node.
+
+The comments are also available through the "{}comments"{} attribute.
+
+\begin{DoxyReturn}{Returns}
+Comment\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_af3034ead082330d2c046a69814009808}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_a7ad315042ad7fc45bd7e7d979647738a}\index{Node@{Node}!getDocComment@{getDocComment}}
+\index{getDocComment@{getDocComment}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getDocComment()}{getDocComment()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a7ad315042ad7fc45bd7e7d979647738a} 
+get\+Doc\+Comment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the doc comment of the node.
+
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Comment\textbackslash{}\+Doc Doc comment object or null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_a7ad315042ad7fc45bd7e7d979647738a}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_ada2c7786e2cd53a4f78cf5fbacf84088}\index{Node@{Node}!getEndFilePos@{getEndFilePos}}
+\index{getEndFilePos@{getEndFilePos}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getEndFilePos()}{getEndFilePos()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_ada2c7786e2cd53a4f78cf5fbacf84088} 
+get\+End\+File\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the file offset of the last character that is part of this node.
+
+Requires the \textquotesingle{}end\+File\+Pos\textquotesingle{} attribute to be enabled in the lexer (DISABLED by default).
+
+\begin{DoxyReturn}{Returns}
+int File end position (or -\/1 if not available) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_ada2c7786e2cd53a4f78cf5fbacf84088}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_a7ad149e4075bba710a8933065263fe0e}\index{Node@{Node}!getEndLine@{getEndLine}}
+\index{getEndLine@{getEndLine}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getEndLine()}{getEndLine()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a7ad149e4075bba710a8933065263fe0e} 
+get\+End\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the line the node ended in.
+
+Requires the \textquotesingle{}end\+Line\textquotesingle{} attribute to be enabled in the lexer (enabled by default).
+
+\begin{DoxyReturn}{Returns}
+int End line (or -\/1 if not available) @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_a7ad149e4075bba710a8933065263fe0e}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_ae97bed5b5ce902777f7c749aea714262}\index{Node@{Node}!getEndTokenPos@{getEndTokenPos}}
+\index{getEndTokenPos@{getEndTokenPos}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getEndTokenPos()}{getEndTokenPos()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_ae97bed5b5ce902777f7c749aea714262} 
+get\+End\+Token\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the token offset of the last token that is part of this node.
+
+The offset is an index into the array returned by Lexer\+::get\+Tokens().
+
+Requires the \textquotesingle{}end\+Token\+Pos\textquotesingle{} attribute to be enabled in the lexer (DISABLED by default).
+
+\begin{DoxyReturn}{Returns}
+int Token end position (or -\/1 if not available) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_ae97bed5b5ce902777f7c749aea714262}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_aef9c32f6066788a101028a1d4150f8cb}\index{Node@{Node}!getLine@{getLine}}
+\index{getLine@{getLine}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getLine()}{getLine()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_aef9c32f6066788a101028a1d4150f8cb} 
+get\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets line the node started in (alias of get\+Start\+Line).
+
+\begin{DoxyReturn}{Returns}
+int Start line (or -\/1 if not available) @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000004}{Deprecated}}]Use get\+Start\+Line() instead \end{DoxyRefDesc}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_aef9c32f6066788a101028a1d4150f8cb}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_aada4875e3d94d2987234f496bcd86970}\index{Node@{Node}!getStartFilePos@{getStartFilePos}}
+\index{getStartFilePos@{getStartFilePos}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getStartFilePos()}{getStartFilePos()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_aada4875e3d94d2987234f496bcd86970} 
+get\+Start\+File\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the file offset of the first character that is part of this node.
+
+Requires the \textquotesingle{}start\+File\+Pos\textquotesingle{} attribute to be enabled in the lexer (DISABLED by default).
+
+\begin{DoxyReturn}{Returns}
+int File start position (or -\/1 if not available) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_aada4875e3d94d2987234f496bcd86970}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_a0c5336ffcf8d85709d6f212bd49c7bb4}\index{Node@{Node}!getStartLine@{getStartLine}}
+\index{getStartLine@{getStartLine}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getStartLine()}{getStartLine()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a0c5336ffcf8d85709d6f212bd49c7bb4} 
+get\+Start\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets line the node started in.
+
+Requires the \textquotesingle{}start\+Line\textquotesingle{} attribute to be enabled in the lexer (enabled by default).
+
+\begin{DoxyReturn}{Returns}
+int Start line (or -\/1 if not available) @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_a0c5336ffcf8d85709d6f212bd49c7bb4}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_a2071892dabcf856e81bb5fdf4ea0d365}\index{Node@{Node}!getStartTokenPos@{getStartTokenPos}}
+\index{getStartTokenPos@{getStartTokenPos}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getStartTokenPos()}{getStartTokenPos()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a2071892dabcf856e81bb5fdf4ea0d365} 
+get\+Start\+Token\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the token offset of the first token that is part of this node.
+
+The offset is an index into the array returned by Lexer\+::get\+Tokens().
+
+Requires the \textquotesingle{}start\+Token\+Pos\textquotesingle{} attribute to be enabled in the lexer (DISABLED by default).
+
+\begin{DoxyReturn}{Returns}
+int Token start position (or -\/1 if not available) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_a2071892dabcf856e81bb5fdf4ea0d365}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_a7e06a91cc526dc52826d18313e64798a}\index{Node@{Node}!getSubNodeNames@{getSubNodeNames}}
+\index{getSubNodeNames@{getSubNodeNames}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getSubNodeNames()}{getSubNodeNames()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a7e06a91cc526dc52826d18313e64798a} 
+get\+Sub\+Node\+Names (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the names of the sub nodes.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} Names of sub nodes 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a7e06a91cc526dc52826d18313e64798a}{Printable\+New\+Anon\+Class\+Node}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_arg_a7e06a91cc526dc52826d18313e64798a}{Arg}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_array_item_a7e06a91cc526dc52826d18313e64798a}{Array\+Item}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_attribute_a7e06a91cc526dc52826d18313e64798a}{Attribute}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_attribute_group_a7e06a91cc526dc52826d18313e64798a}{Attribute\+Group}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_closure_use_a7e06a91cc526dc52826d18313e64798a}{Closure\+Use}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_const___a7e06a91cc526dc52826d18313e64798a}{Const\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_declare_item_a7e06a91cc526dc52826d18313e64798a}{Declare\+Item}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_array___a7e06a91cc526dc52826d18313e64798a}{Array\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_array_dim_fetch_a7e06a91cc526dc52826d18313e64798a}{Array\+Dim\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_arrow_function_a7e06a91cc526dc52826d18313e64798a}{Arrow\+Function}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_a7e06a91cc526dc52826d18313e64798a}{Assign}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_a7e06a91cc526dc52826d18313e64798a}{Assign\+Op}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_ref_a7e06a91cc526dc52826d18313e64798a}{Assign\+Ref}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_a7e06a91cc526dc52826d18313e64798a}{Binary\+Op}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_bitwise_not_a7e06a91cc526dc52826d18313e64798a}{Bitwise\+Not}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_boolean_not_a7e06a91cc526dc52826d18313e64798a}{Boolean\+Not}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_cast_a7e06a91cc526dc52826d18313e64798a}{Cast}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_class_const_fetch_a7e06a91cc526dc52826d18313e64798a}{Class\+Const\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_clone___a7e06a91cc526dc52826d18313e64798a}{Clone\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_closure_a7e06a91cc526dc52826d18313e64798a}{Closure}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_const_fetch_a7e06a91cc526dc52826d18313e64798a}{Const\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_empty___a7e06a91cc526dc52826d18313e64798a}{Empty\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_error_a7e06a91cc526dc52826d18313e64798a}{Error}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_error_suppress_a7e06a91cc526dc52826d18313e64798a}{Error\+Suppress}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_eval___a7e06a91cc526dc52826d18313e64798a}{Eval\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_exit___a7e06a91cc526dc52826d18313e64798a}{Exit\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_func_call_a7e06a91cc526dc52826d18313e64798a}{Func\+Call}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_include___a7e06a91cc526dc52826d18313e64798a}{Include\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_instanceof___a7e06a91cc526dc52826d18313e64798a}{Instanceof\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_isset___a7e06a91cc526dc52826d18313e64798a}{Isset\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_list___a7e06a91cc526dc52826d18313e64798a}{List\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_match___a7e06a91cc526dc52826d18313e64798a}{Match\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_method_call_a7e06a91cc526dc52826d18313e64798a}{Method\+Call}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_new___a7e06a91cc526dc52826d18313e64798a}{New\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_nullsafe_method_call_a7e06a91cc526dc52826d18313e64798a}{Nullsafe\+Method\+Call}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_nullsafe_property_fetch_a7e06a91cc526dc52826d18313e64798a}{Nullsafe\+Property\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_post_dec_a7e06a91cc526dc52826d18313e64798a}{Post\+Dec}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_post_inc_a7e06a91cc526dc52826d18313e64798a}{Post\+Inc}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_pre_dec_a7e06a91cc526dc52826d18313e64798a}{Pre\+Dec}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_pre_inc_a7e06a91cc526dc52826d18313e64798a}{Pre\+Inc}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_print___a7e06a91cc526dc52826d18313e64798a}{Print\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_property_fetch_a7e06a91cc526dc52826d18313e64798a}{Property\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_shell_exec_a7e06a91cc526dc52826d18313e64798a}{Shell\+Exec}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_static_call_a7e06a91cc526dc52826d18313e64798a}{Static\+Call}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_static_property_fetch_a7e06a91cc526dc52826d18313e64798a}{Static\+Property\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_ternary_a7e06a91cc526dc52826d18313e64798a}{Ternary}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_throw___a7e06a91cc526dc52826d18313e64798a}{Throw\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_unary_minus_a7e06a91cc526dc52826d18313e64798a}{Unary\+Minus}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_unary_plus_a7e06a91cc526dc52826d18313e64798a}{Unary\+Plus}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_variable_a7e06a91cc526dc52826d18313e64798a}{Variable}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_yield___a7e06a91cc526dc52826d18313e64798a}{Yield\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_yield_from_a7e06a91cc526dc52826d18313e64798a}{Yield\+From}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_identifier_a7e06a91cc526dc52826d18313e64798a}{Identifier}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_interpolated_string_part_a7e06a91cc526dc52826d18313e64798a}{Interpolated\+String\+Part}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_intersection_type_a7e06a91cc526dc52826d18313e64798a}{Intersection\+Type}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_match_arm_a7e06a91cc526dc52826d18313e64798a}{Match\+Arm}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_name_a7e06a91cc526dc52826d18313e64798a}{Name}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_nullable_type_a7e06a91cc526dc52826d18313e64798a}{Nullable\+Type}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_param_a7e06a91cc526dc52826d18313e64798a}{Param}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_property_hook_a7e06a91cc526dc52826d18313e64798a}{Property\+Hook}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_property_item_a7e06a91cc526dc52826d18313e64798a}{Property\+Item}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_float___a7e06a91cc526dc52826d18313e64798a}{Float\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_int___a7e06a91cc526dc52826d18313e64798a}{Int\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_interpolated_string_a7e06a91cc526dc52826d18313e64798a}{Interpolated\+String}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_a7e06a91cc526dc52826d18313e64798a}{Magic\+Const}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_string___a7e06a91cc526dc52826d18313e64798a}{String\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_static_var_a7e06a91cc526dc52826d18313e64798a}{Static\+Var}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_block_a7e06a91cc526dc52826d18313e64798a}{Block}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_break___a7e06a91cc526dc52826d18313e64798a}{Break\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_case___a7e06a91cc526dc52826d18313e64798a}{Case\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_catch___a7e06a91cc526dc52826d18313e64798a}{Catch\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class___a7e06a91cc526dc52826d18313e64798a}{Class\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_const_a7e06a91cc526dc52826d18313e64798a}{Class\+Const}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_method_a7e06a91cc526dc52826d18313e64798a}{Class\+Method}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_const___a7e06a91cc526dc52826d18313e64798a}{Const\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_continue___a7e06a91cc526dc52826d18313e64798a}{Continue\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_declare___a7e06a91cc526dc52826d18313e64798a}{Declare\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_do___a7e06a91cc526dc52826d18313e64798a}{Do\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_echo___a7e06a91cc526dc52826d18313e64798a}{Echo\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_else___a7e06a91cc526dc52826d18313e64798a}{Else\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_else_if___a7e06a91cc526dc52826d18313e64798a}{Else\+If\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_enum___a7e06a91cc526dc52826d18313e64798a}{Enum\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_enum_case_a7e06a91cc526dc52826d18313e64798a}{Enum\+Case}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_expression_a7e06a91cc526dc52826d18313e64798a}{Expression}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_finally___a7e06a91cc526dc52826d18313e64798a}{Finally\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_for___a7e06a91cc526dc52826d18313e64798a}{For\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_foreach___a7e06a91cc526dc52826d18313e64798a}{Foreach\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_function___a7e06a91cc526dc52826d18313e64798a}{Function\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_global___a7e06a91cc526dc52826d18313e64798a}{Global\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_goto___a7e06a91cc526dc52826d18313e64798a}{Goto\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_group_use_a7e06a91cc526dc52826d18313e64798a}{Group\+Use}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_halt_compiler_a7e06a91cc526dc52826d18313e64798a}{Halt\+Compiler}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_if___a7e06a91cc526dc52826d18313e64798a}{If\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_inline_h_t_m_l_a7e06a91cc526dc52826d18313e64798a}{Inline\+HTML}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_interface___a7e06a91cc526dc52826d18313e64798a}{Interface\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_label_a7e06a91cc526dc52826d18313e64798a}{Label}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_namespace___a7e06a91cc526dc52826d18313e64798a}{Namespace\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_nop_a7e06a91cc526dc52826d18313e64798a}{Nop}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_property_a7e06a91cc526dc52826d18313e64798a}{Property}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_return___a7e06a91cc526dc52826d18313e64798a}{Return\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_static___a7e06a91cc526dc52826d18313e64798a}{Static\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_switch___a7e06a91cc526dc52826d18313e64798a}{Switch\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait___a7e06a91cc526dc52826d18313e64798a}{Trait\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait_use_a7e06a91cc526dc52826d18313e64798a}{Trait\+Use}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait_use_adaptation_1_1_alias_a7e06a91cc526dc52826d18313e64798a}{Alias}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait_use_adaptation_1_1_precedence_a7e06a91cc526dc52826d18313e64798a}{Precedence}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_try_catch_a7e06a91cc526dc52826d18313e64798a}{Try\+Catch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_unset___a7e06a91cc526dc52826d18313e64798a}{Unset\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_use___a7e06a91cc526dc52826d18313e64798a}{Use\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_while___a7e06a91cc526dc52826d18313e64798a}{While\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_union_type_a7e06a91cc526dc52826d18313e64798a}{Union\+Type}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_use_item_a7e06a91cc526dc52826d18313e64798a}{Use\+Item}}, and \mbox{\hyperlink{class_php_parser_1_1_node_1_1_variadic_placeholder_a7e06a91cc526dc52826d18313e64798a}{Variadic\+Placeholder}}.
+
+\Hypertarget{interface_php_parser_1_1_node_a830b5c75df72b32396701bc563fbe3c7}\index{Node@{Node}!getType@{getType}}
+\index{getType@{getType}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a830b5c75df72b32396701bc563fbe3c7} 
+get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the type of the node.
+
+@psalm-\/return non-\/empty-\/string \begin{DoxyReturn}{Returns}
+string Type of the node 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a830b5c75df72b32396701bc563fbe3c7}{Printable\+New\+Anon\+Class\+Node}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_arg_a830b5c75df72b32396701bc563fbe3c7}{Arg}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_array_item_a830b5c75df72b32396701bc563fbe3c7}{Array\+Item}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_attribute_a830b5c75df72b32396701bc563fbe3c7}{Attribute}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_attribute_group_a830b5c75df72b32396701bc563fbe3c7}{Attribute\+Group}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_closure_use_a830b5c75df72b32396701bc563fbe3c7}{Closure\+Use}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_const___a830b5c75df72b32396701bc563fbe3c7}{Const\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_declare_item_a830b5c75df72b32396701bc563fbe3c7}{Declare\+Item}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_array___a830b5c75df72b32396701bc563fbe3c7}{Array\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_array_dim_fetch_a830b5c75df72b32396701bc563fbe3c7}{Array\+Dim\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_arrow_function_a830b5c75df72b32396701bc563fbe3c7}{Arrow\+Function}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_a830b5c75df72b32396701bc563fbe3c7}{Assign}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_bitwise_and_a830b5c75df72b32396701bc563fbe3c7}{Bitwise\+And}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_bitwise_or_a830b5c75df72b32396701bc563fbe3c7}{Bitwise\+Or}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_bitwise_xor_a830b5c75df72b32396701bc563fbe3c7}{Bitwise\+Xor}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_coalesce_a830b5c75df72b32396701bc563fbe3c7}{Coalesce}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_concat_a830b5c75df72b32396701bc563fbe3c7}{Concat}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_div_a830b5c75df72b32396701bc563fbe3c7}{Div}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_minus_a830b5c75df72b32396701bc563fbe3c7}{Minus}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_mod_a830b5c75df72b32396701bc563fbe3c7}{Mod}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_mul_a830b5c75df72b32396701bc563fbe3c7}{Mul}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_plus_a830b5c75df72b32396701bc563fbe3c7}{Plus}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_pow_a830b5c75df72b32396701bc563fbe3c7}{Pow}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_shift_left_a830b5c75df72b32396701bc563fbe3c7}{Shift\+Left}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_op_1_1_shift_right_a830b5c75df72b32396701bc563fbe3c7}{Shift\+Right}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_assign_ref_a830b5c75df72b32396701bc563fbe3c7}{Assign\+Ref}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_bitwise_and_a830b5c75df72b32396701bc563fbe3c7}{Bitwise\+And}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_bitwise_or_a830b5c75df72b32396701bc563fbe3c7}{Bitwise\+Or}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_bitwise_xor_a830b5c75df72b32396701bc563fbe3c7}{Bitwise\+Xor}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_boolean_and_a830b5c75df72b32396701bc563fbe3c7}{Boolean\+And}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_boolean_or_a830b5c75df72b32396701bc563fbe3c7}{Boolean\+Or}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_coalesce_a830b5c75df72b32396701bc563fbe3c7}{Coalesce}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_concat_a830b5c75df72b32396701bc563fbe3c7}{Concat}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_div_a830b5c75df72b32396701bc563fbe3c7}{Div}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_equal_a830b5c75df72b32396701bc563fbe3c7}{Equal}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_greater_a830b5c75df72b32396701bc563fbe3c7}{Greater}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_greater_or_equal_a830b5c75df72b32396701bc563fbe3c7}{Greater\+Or\+Equal}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_identical_a830b5c75df72b32396701bc563fbe3c7}{Identical}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_logical_and_a830b5c75df72b32396701bc563fbe3c7}{Logical\+And}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_logical_or_a830b5c75df72b32396701bc563fbe3c7}{Logical\+Or}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_logical_xor_a830b5c75df72b32396701bc563fbe3c7}{Logical\+Xor}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_minus_a830b5c75df72b32396701bc563fbe3c7}{Minus}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_mod_a830b5c75df72b32396701bc563fbe3c7}{Mod}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_mul_a830b5c75df72b32396701bc563fbe3c7}{Mul}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_not_equal_a830b5c75df72b32396701bc563fbe3c7}{Not\+Equal}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_not_identical_a830b5c75df72b32396701bc563fbe3c7}{Not\+Identical}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_plus_a830b5c75df72b32396701bc563fbe3c7}{Plus}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_pow_a830b5c75df72b32396701bc563fbe3c7}{Pow}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_shift_left_a830b5c75df72b32396701bc563fbe3c7}{Shift\+Left}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_shift_right_a830b5c75df72b32396701bc563fbe3c7}{Shift\+Right}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_smaller_a830b5c75df72b32396701bc563fbe3c7}{Smaller}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_smaller_or_equal_a830b5c75df72b32396701bc563fbe3c7}{Smaller\+Or\+Equal}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_binary_op_1_1_spaceship_a830b5c75df72b32396701bc563fbe3c7}{Spaceship}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_bitwise_not_a830b5c75df72b32396701bc563fbe3c7}{Bitwise\+Not}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_boolean_not_a830b5c75df72b32396701bc563fbe3c7}{Boolean\+Not}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_cast_1_1_array___a830b5c75df72b32396701bc563fbe3c7}{Array\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_cast_1_1_bool___a830b5c75df72b32396701bc563fbe3c7}{Bool\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_cast_1_1_double_a830b5c75df72b32396701bc563fbe3c7}{Double}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_cast_1_1_int___a830b5c75df72b32396701bc563fbe3c7}{Int\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_cast_1_1_object___a830b5c75df72b32396701bc563fbe3c7}{Object\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_cast_1_1_string___a830b5c75df72b32396701bc563fbe3c7}{String\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_cast_1_1_unset___a830b5c75df72b32396701bc563fbe3c7}{Unset\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_class_const_fetch_a830b5c75df72b32396701bc563fbe3c7}{Class\+Const\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_clone___a830b5c75df72b32396701bc563fbe3c7}{Clone\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_closure_a830b5c75df72b32396701bc563fbe3c7}{Closure}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_const_fetch_a830b5c75df72b32396701bc563fbe3c7}{Const\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_empty___a830b5c75df72b32396701bc563fbe3c7}{Empty\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_error_a830b5c75df72b32396701bc563fbe3c7}{Error}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_error_suppress_a830b5c75df72b32396701bc563fbe3c7}{Error\+Suppress}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_eval___a830b5c75df72b32396701bc563fbe3c7}{Eval\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_exit___a830b5c75df72b32396701bc563fbe3c7}{Exit\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_func_call_a830b5c75df72b32396701bc563fbe3c7}{Func\+Call}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_include___a830b5c75df72b32396701bc563fbe3c7}{Include\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_instanceof___a830b5c75df72b32396701bc563fbe3c7}{Instanceof\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_isset___a830b5c75df72b32396701bc563fbe3c7}{Isset\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_list___a830b5c75df72b32396701bc563fbe3c7}{List\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_match___a830b5c75df72b32396701bc563fbe3c7}{Match\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_method_call_a830b5c75df72b32396701bc563fbe3c7}{Method\+Call}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_new___a830b5c75df72b32396701bc563fbe3c7}{New\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_nullsafe_method_call_a830b5c75df72b32396701bc563fbe3c7}{Nullsafe\+Method\+Call}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_nullsafe_property_fetch_a830b5c75df72b32396701bc563fbe3c7}{Nullsafe\+Property\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_post_dec_a830b5c75df72b32396701bc563fbe3c7}{Post\+Dec}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_post_inc_a830b5c75df72b32396701bc563fbe3c7}{Post\+Inc}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_pre_dec_a830b5c75df72b32396701bc563fbe3c7}{Pre\+Dec}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_pre_inc_a830b5c75df72b32396701bc563fbe3c7}{Pre\+Inc}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_print___a830b5c75df72b32396701bc563fbe3c7}{Print\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_property_fetch_a830b5c75df72b32396701bc563fbe3c7}{Property\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_shell_exec_a830b5c75df72b32396701bc563fbe3c7}{Shell\+Exec}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_static_call_a830b5c75df72b32396701bc563fbe3c7}{Static\+Call}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_static_property_fetch_a830b5c75df72b32396701bc563fbe3c7}{Static\+Property\+Fetch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_ternary_a830b5c75df72b32396701bc563fbe3c7}{Ternary}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_throw___a830b5c75df72b32396701bc563fbe3c7}{Throw\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_unary_minus_a830b5c75df72b32396701bc563fbe3c7}{Unary\+Minus}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_unary_plus_a830b5c75df72b32396701bc563fbe3c7}{Unary\+Plus}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_variable_a830b5c75df72b32396701bc563fbe3c7}{Variable}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_yield___a830b5c75df72b32396701bc563fbe3c7}{Yield\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_yield_from_a830b5c75df72b32396701bc563fbe3c7}{Yield\+From}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_identifier_a830b5c75df72b32396701bc563fbe3c7}{Identifier}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_interpolated_string_part_a830b5c75df72b32396701bc563fbe3c7}{Interpolated\+String\+Part}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_intersection_type_a830b5c75df72b32396701bc563fbe3c7}{Intersection\+Type}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_match_arm_a830b5c75df72b32396701bc563fbe3c7}{Match\+Arm}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_name_1_1_fully_qualified_a830b5c75df72b32396701bc563fbe3c7}{Fully\+Qualified}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_name_a830b5c75df72b32396701bc563fbe3c7}{Name}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_name_1_1_relative_a830b5c75df72b32396701bc563fbe3c7}{Relative}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_nullable_type_a830b5c75df72b32396701bc563fbe3c7}{Nullable\+Type}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_param_a830b5c75df72b32396701bc563fbe3c7}{Param}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_property_hook_a830b5c75df72b32396701bc563fbe3c7}{Property\+Hook}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_property_item_a830b5c75df72b32396701bc563fbe3c7}{Property\+Item}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_float___a830b5c75df72b32396701bc563fbe3c7}{Float\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_int___a830b5c75df72b32396701bc563fbe3c7}{Int\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_interpolated_string_a830b5c75df72b32396701bc563fbe3c7}{Interpolated\+String}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_1_1_class___a830b5c75df72b32396701bc563fbe3c7}{Class\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_1_1_dir_a830b5c75df72b32396701bc563fbe3c7}{Dir}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_1_1_file_a830b5c75df72b32396701bc563fbe3c7}{File}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_1_1_function___a830b5c75df72b32396701bc563fbe3c7}{Function\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_1_1_line_a830b5c75df72b32396701bc563fbe3c7}{Line}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_1_1_method_a830b5c75df72b32396701bc563fbe3c7}{Method}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_1_1_namespace___a830b5c75df72b32396701bc563fbe3c7}{Namespace\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_1_1_property_a830b5c75df72b32396701bc563fbe3c7}{Property}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_1_1_trait___a830b5c75df72b32396701bc563fbe3c7}{Trait\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_string___a830b5c75df72b32396701bc563fbe3c7}{String\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_static_var_a830b5c75df72b32396701bc563fbe3c7}{Static\+Var}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_block_a830b5c75df72b32396701bc563fbe3c7}{Block}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_break___a830b5c75df72b32396701bc563fbe3c7}{Break\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_case___a830b5c75df72b32396701bc563fbe3c7}{Case\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_catch___a830b5c75df72b32396701bc563fbe3c7}{Catch\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class___a830b5c75df72b32396701bc563fbe3c7}{Class\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_const_a830b5c75df72b32396701bc563fbe3c7}{Class\+Const}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_method_a830b5c75df72b32396701bc563fbe3c7}{Class\+Method}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_const___a830b5c75df72b32396701bc563fbe3c7}{Const\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_continue___a830b5c75df72b32396701bc563fbe3c7}{Continue\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_declare___a830b5c75df72b32396701bc563fbe3c7}{Declare\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_do___a830b5c75df72b32396701bc563fbe3c7}{Do\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_echo___a830b5c75df72b32396701bc563fbe3c7}{Echo\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_else___a830b5c75df72b32396701bc563fbe3c7}{Else\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_else_if___a830b5c75df72b32396701bc563fbe3c7}{Else\+If\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_enum___a830b5c75df72b32396701bc563fbe3c7}{Enum\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_enum_case_a830b5c75df72b32396701bc563fbe3c7}{Enum\+Case}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_expression_a830b5c75df72b32396701bc563fbe3c7}{Expression}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_finally___a830b5c75df72b32396701bc563fbe3c7}{Finally\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_for___a830b5c75df72b32396701bc563fbe3c7}{For\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_foreach___a830b5c75df72b32396701bc563fbe3c7}{Foreach\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_function___a830b5c75df72b32396701bc563fbe3c7}{Function\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_global___a830b5c75df72b32396701bc563fbe3c7}{Global\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_goto___a830b5c75df72b32396701bc563fbe3c7}{Goto\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_group_use_a830b5c75df72b32396701bc563fbe3c7}{Group\+Use}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_halt_compiler_a830b5c75df72b32396701bc563fbe3c7}{Halt\+Compiler}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_if___a830b5c75df72b32396701bc563fbe3c7}{If\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_inline_h_t_m_l_a830b5c75df72b32396701bc563fbe3c7}{Inline\+HTML}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_interface___a830b5c75df72b32396701bc563fbe3c7}{Interface\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_label_a830b5c75df72b32396701bc563fbe3c7}{Label}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_namespace___a830b5c75df72b32396701bc563fbe3c7}{Namespace\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_nop_a830b5c75df72b32396701bc563fbe3c7}{Nop}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_property_a830b5c75df72b32396701bc563fbe3c7}{Property}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_return___a830b5c75df72b32396701bc563fbe3c7}{Return\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_static___a830b5c75df72b32396701bc563fbe3c7}{Static\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_switch___a830b5c75df72b32396701bc563fbe3c7}{Switch\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait___a830b5c75df72b32396701bc563fbe3c7}{Trait\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait_use_a830b5c75df72b32396701bc563fbe3c7}{Trait\+Use}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait_use_adaptation_1_1_alias_a830b5c75df72b32396701bc563fbe3c7}{Alias}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_trait_use_adaptation_1_1_precedence_a830b5c75df72b32396701bc563fbe3c7}{Precedence}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_try_catch_a830b5c75df72b32396701bc563fbe3c7}{Try\+Catch}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_unset___a830b5c75df72b32396701bc563fbe3c7}{Unset\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_use___a830b5c75df72b32396701bc563fbe3c7}{Use\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_while___a830b5c75df72b32396701bc563fbe3c7}{While\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_union_type_a830b5c75df72b32396701bc563fbe3c7}{Union\+Type}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_use_item_a830b5c75df72b32396701bc563fbe3c7}{Use\+Item}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_variadic_placeholder_a830b5c75df72b32396701bc563fbe3c7}{Variadic\+Placeholder}}, and \mbox{\hyperlink{class_php_parser_1_1_node_1_1_var_like_identifier_a830b5c75df72b32396701bc563fbe3c7}{Var\+Like\+Identifier}}.
+
+\Hypertarget{interface_php_parser_1_1_node_a79a755c05ccf0aae60a84dae8d3aaa23}\index{Node@{Node}!hasAttribute@{hasAttribute}}
+\index{hasAttribute@{hasAttribute}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{hasAttribute()}{hasAttribute()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a79a755c05ccf0aae60a84dae8d3aaa23} 
+has\+Attribute (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns whether an attribute exists. 
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_a79a755c05ccf0aae60a84dae8d3aaa23}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_a5d036ff8a979c733d4b44be513ebff63}\index{Node@{Node}!setAttribute@{setAttribute}}
+\index{setAttribute@{setAttribute}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{setAttribute()}{setAttribute()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a5d036ff8a979c733d4b44be513ebff63} 
+set\+Attribute (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Sets an attribute on a node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_a5d036ff8a979c733d4b44be513ebff63}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_ad4c58c23f94923a1ba4ad37b24a80504}\index{Node@{Node}!setAttributes@{setAttributes}}
+\index{setAttributes@{setAttributes}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{setAttributes()}{setAttributes()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_ad4c58c23f94923a1ba4ad37b24a80504} 
+set\+Attributes (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{}\end{DoxyParamCaption})}
+
+Replaces all the attributes of this node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$attributes \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_ad4c58c23f94923a1ba4ad37b24a80504}{Node\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_node_a49368ce706cdb1cbdd2b68039788dfee}\index{Node@{Node}!setDocComment@{setDocComment}}
+\index{setDocComment@{setDocComment}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{setDocComment()}{setDocComment()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_node_a49368ce706cdb1cbdd2b68039788dfee} 
+set\+Doc\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_comment_1_1_doc}{Comment\textbackslash{}\+Doc}}}]{\$doc\+Comment}{}\end{DoxyParamCaption})}
+
+Sets the doc comment of the node.
+
+This will either replace an existing doc comment or add it to the comments array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Comment\textbackslash{}\+Doc & {\em \$doc\+Comment} & Doc comment to set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_node_abstract_a49368ce706cdb1cbdd2b68039788dfee}{Node\+Abstract}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{nikic_2php-parser_2lib_2_php_parser_2_node_8php}{Node.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,2751 @@
+\doxysection{Assert Class Reference}
+\hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert}{}\label{class_p_h_p_unit_1_1_framework_1_1_assert}\index{Assert@{Assert}}
+Inheritance diagram for Assert\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p_unit_1_1_framework_1_1_assert}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ac2884c6e8222b732bcef146794431e44}{assert\+Array\+Is\+Equal\+To\+Array\+Only\+Considering\+List\+Of\+Keys}} (array \$expected, array \$actual, array \$keys\+To\+Be\+Considered, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a5a4e62ca80b26bbe22c3d758963fd235}{assert\+Array\+Is\+Equal\+To\+Array\+Ignoring\+List\+Of\+Keys}} (array \$expected, array \$actual, array \$keys\+To\+Be\+Ignored, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a7a33f0c1a0b0b9ab95a44f61d8460949}{assert\+Array\+Is\+Identical\+To\+Array\+Only\+Considering\+List\+Of\+Keys}} (array \$expected, array \$actual, array \$keys\+To\+Be\+Considered, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a559ca184dd189ed3eed6012f95691faa}{assert\+Array\+Is\+Identical\+To\+Array\+Ignoring\+List\+Of\+Keys}} (array \$expected, array \$actual, array \$keys\+To\+Be\+Ignored, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a041b3197769d29109beb98e7801ea60e}{assert\+Array\+Has\+Key}} (int\texorpdfstring{$\vert$}{|}string \$key, array\texorpdfstring{$\vert$}{|}Array\+Access \$array, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a3475e54d7d5c9469b682d7da99e9807d}{assert\+Array\+Not\+Has\+Key}} (int\texorpdfstring{$\vert$}{|}string \$key, array\texorpdfstring{$\vert$}{|}Array\+Access \$array, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a6c6b9a3c0ef33643900fb917fa40ee80}{assert\+Is\+List}} (mixed \$array, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ae1a0485d2b8ad91f85552f9dd3d7ff61}{assert\+Contains}} (mixed \$needle, iterable \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_abd0b1d8d3996d090cc9e9bfcb558445c}{assert\+Contains\+Equals}} (mixed \$needle, iterable \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a82575ee8c3122e290b8a492fa2833c27}{assert\+Not\+Contains}} (mixed \$needle, iterable \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aef81f831a8571b4ad56c06c09b60e27e}{assert\+Not\+Contains\+Equals}} (mixed \$needle, iterable \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_af310d60ea5fc3a984b3b5870aa6972ab}{assert\+Contains\+Only}} (string \$type, iterable \$haystack, ?bool \$is\+Native\+Type=null, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a73329c33d57d616ae704cb32a42bad5c}{assert\+Contains\+Only\+Instances\+Of}} (string \$class\+Name, iterable \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a0a6312eb3534a806acd7375544bf7528}{assert\+Not\+Contains\+Only}} (string \$type, iterable \$haystack, ?bool \$is\+Native\+Type=null, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a74377355835b29abd7bd09dd1157803f}{assert\+Count}} (int \$expected\+Count, Countable\texorpdfstring{$\vert$}{|}iterable \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a35ee3dd4520599388a847c5503715795}{assert\+Not\+Count}} (int \$expected\+Count, Countable\texorpdfstring{$\vert$}{|}iterable \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a67df56b19f501963a47ccb679e5eb1f6}{assert\+Equals}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a1762e3901c66c78ce853626151561cdb}{assert\+Equals\+Canonicalizing}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_af7342d9f33868e3d67947fe656b7957c}{assert\+Equals\+Ignoring\+Case}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad26d03824d05d1327eab538c90452c82}{assert\+Equals\+With\+Delta}} (mixed \$expected, mixed \$actual, float \$delta, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a2d1aa021aa02be313ecf0683fb0206e4}{assert\+Not\+Equals}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a5338fa41d6019d301e48934e8d9fd55c}{assert\+Not\+Equals\+Canonicalizing}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a211ce63af987671e056b550472179e70}{assert\+Not\+Equals\+Ignoring\+Case}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a2acf30cdc332b5124fcc5db7aae90c1f}{assert\+Not\+Equals\+With\+Delta}} (mixed \$expected, mixed \$actual, float \$delta, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad2489679b93b342bf25fafa667f7f3a7}{assert\+Object\+Equals}} (object \$expected, object \$actual, string \$method=\textquotesingle{}equals\textquotesingle{}, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a90108839e38951f6b614de2f1c66dc6d}{assert\+Object\+Not\+Equals}} (object \$expected, object \$actual, string \$method=\textquotesingle{}equals\textquotesingle{}, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a7ac34f7369797a9c4b0dd4b0ecda722a}{assert\+Empty}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a1e09f1490e3d4ea5ff9a4e7ece4ea019}{assert\+Not\+Empty}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a54c7c03880aa96fc495e64434b7aabb7}{assert\+Greater\+Than}} (mixed \$minimum, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a4a2b021c5c61c68482c7af8b130739b4}{assert\+Greater\+Than\+Or\+Equal}} (mixed \$minimum, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a3fe3e8868c6f4b0bae5f02a5253d808d}{assert\+Less\+Than}} (mixed \$maximum, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ae55d1f9d2462bf6d8d1bde6e85e7e196}{assert\+Less\+Than\+Or\+Equal}} (mixed \$maximum, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a6507429c2d186d2f485b74e4ea283f8b}{assert\+File\+Equals}} (string \$expected, string \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a5cb88b814532490378f606e5f223b99f}{assert\+File\+Equals\+Canonicalizing}} (string \$expected, string \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a50a832caa6afca5d322ec11a89c10810}{assert\+File\+Equals\+Ignoring\+Case}} (string \$expected, string \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a99667d18419ee7c668f876e36bd601c9}{assert\+File\+Not\+Equals}} (string \$expected, string \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad52982d0987fb78a505dd830d0db31d1}{assert\+File\+Not\+Equals\+Canonicalizing}} (string \$expected, string \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a43518be11f51b82b244838dfc3b0a911}{assert\+File\+Not\+Equals\+Ignoring\+Case}} (string \$expected, string \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a14da31220e1507487e76926e4b1984e6}{assert\+String\+Equals\+File}} (string \$expected\+File, string \$actual\+String, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a963bbe481044527d5df00db3b103f7c5}{assert\+String\+Equals\+File\+Canonicalizing}} (string \$expected\+File, string \$actual\+String, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a633e0e31fc861bc8665ae17ea15c9a08}{assert\+String\+Equals\+File\+Ignoring\+Case}} (string \$expected\+File, string \$actual\+String, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a3bb53457a720f6c06799f1ebbd1fedae}{assert\+String\+Not\+Equals\+File}} (string \$expected\+File, string \$actual\+String, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_adaf0343a303c0beb5ce10c09056dd6a0}{assert\+String\+Not\+Equals\+File\+Canonicalizing}} (string \$expected\+File, string \$actual\+String, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aba4c58d881780cfec17bc9d3834160b6}{assert\+String\+Not\+Equals\+File\+Ignoring\+Case}} (string \$expected\+File, string \$actual\+String, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ab64b440a811d6067de0a407d0b883f94}{assert\+Is\+Readable}} (string \$filename, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a41e589169a036d522009af2b2970304c}{assert\+Is\+Not\+Readable}} (string \$filename, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a066b032ebbe4cfe48f4416e55112455e}{assert\+Is\+Writable}} (string \$filename, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_af07e51cb19a0e72962e00cc5aa876328}{assert\+Is\+Not\+Writable}} (string \$filename, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ab4d35046aa759459e04df0c103eb6f3b}{assert\+Directory\+Exists}} (string \$directory, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a2942d8c227c9db9e24a6617e24dff4c9}{assert\+Directory\+Does\+Not\+Exist}} (string \$directory, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a6dd08d204ba94f96efe959fd999016a0}{assert\+Directory\+Is\+Readable}} (string \$directory, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a5bb4ccd876f47c4f1f0ca2f4b7ee6b8e}{assert\+Directory\+Is\+Not\+Readable}} (string \$directory, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_abfffc9426a665c8a4200b62ab1cdb518}{assert\+Directory\+Is\+Writable}} (string \$directory, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a6ca69792fb0a05186bdfe9dd60baef2f}{assert\+Directory\+Is\+Not\+Writable}} (string \$directory, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ae3baeea35f4ff8c3525d9a026c80f74d}{assert\+File\+Exists}} (string \$filename, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a7080e505859b9f7b7e2ad5680a70a8da}{assert\+File\+Does\+Not\+Exist}} (string \$filename, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aeafa7e2acb854a8ded868e54d84fb4e9}{assert\+File\+Is\+Readable}} (string \$file, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aaada0bac74fc77353618c35dc6bfea05}{assert\+File\+Is\+Not\+Readable}} (string \$file, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a47a2e3bc5c9c6020810439c06ce8d106}{assert\+File\+Is\+Writable}} (string \$file, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aa3f2f2034b59ea83a322936bfb6f14d6}{assert\+File\+Is\+Not\+Writable}} (string \$file, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a965043a39c8c43a9c984eb8521c52923}{assert\+True}} (mixed \$condition, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a8e1f9084f356f40e982f6773d466edc5}{assert\+Not\+True}} (mixed \$condition, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ae85bda96368797c094f8f968cd00a832}{assert\+False}} (mixed \$condition, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a4daa15d4312eac25b1150cf260ef1ad2}{assert\+Not\+False}} (mixed \$condition, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a97a5527166fbd3e9e6af9d7b0b42a95e}{assert\+Null}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a8834930c042243b3c08c9506ac48d026}{assert\+Not\+Null}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a68d85a73b5eedb23de0368501bda7e8d}{assert\+Finite}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad9d2ba4782577eaca66374045a50e234}{assert\+Infinite}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a7e7b6572c08855890174b3b3a553b09b}{assert\+Nan}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a058bac8f3e9ca2e3c9e30527730d45a0}{assert\+Object\+Has\+Property}} (string \$property\+Name, object \$object, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a5bb61846cf93713ef92c12cd9ffe5164}{assert\+Object\+Not\+Has\+Property}} (string \$property\+Name, object \$object, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_af5adc032d45997fecad544f65e5eb1c0}{assert\+Same}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_abe098a98984b37cca5617c1f8240ced1}{assert\+Not\+Same}} (mixed \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a4cd257981aaa929788f4fe2377a71feb}{assert\+Instance\+Of}} (string \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a8cd62e50a519e281e43744f6fd0c7122}{assert\+Not\+Instance\+Of}} (string \$expected, mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a4bd92e6137df567b5cad72c20899ec0c}{assert\+Is\+Array}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a78703ee1e3d325a38b65635fc8c94ea9}{assert\+Is\+Bool}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a0d161f48d75cae7256c9a1257d1fe470}{assert\+Is\+Float}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_afa19e4706d6f6ba93c8ff0b765864779}{assert\+Is\+Int}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_acb8a658c03537c50d4b03dc624eccdd4}{assert\+Is\+Numeric}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aec903393ea5a2edc38088d0e1eb70983}{assert\+Is\+Object}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a683b2d672f71eaa402df45866fb5ab2f}{assert\+Is\+Resource}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ac940869396c46dfdb971d8ca7360a3ca}{assert\+Is\+Closed\+Resource}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a321be67c4f7a41b0ac01e8b726170e35}{assert\+Is\+String}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a53d4561b8abef5e6410ead2c0d0c5b5d}{assert\+Is\+Scalar}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_af394e37af4c9ddb66e2e47c0dda395d9}{assert\+Is\+Callable}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a3914538762377c7312837fea70aea2f1}{assert\+Is\+Iterable}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aaee84b8a67bcc71c5a9ffcb5b2a757a6}{assert\+Is\+Not\+Array}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aea770f7be6930081f3fb298a7aa4d78e}{assert\+Is\+Not\+Bool}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ace13cc8fb47c36cbb7fd16d0da62bd9a}{assert\+Is\+Not\+Float}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a6d5ae27072b7971c858db1b6b0c2dc9b}{assert\+Is\+Not\+Int}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a63d90390e857ac55ee6151ffbfdce33d}{assert\+Is\+Not\+Numeric}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aebe2b9bed0020ede860205748b29faac}{assert\+Is\+Not\+Object}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a2025fbcfb2c4aebffad334747dd7d088}{assert\+Is\+Not\+Resource}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a2e8ed3687e1f54fdf9961b4a07f9b5ee}{assert\+Is\+Not\+Closed\+Resource}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a4bc5e02157a8e5d35c7cfc66a5ea3175}{assert\+Is\+Not\+String}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a04f849742d8dd87cb0b2681a28ea922d}{assert\+Is\+Not\+Scalar}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ab79546c84d4d2a9409e738dfbc53fb77}{assert\+Is\+Not\+Callable}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aa5d089c892b905ffc6cdcc903aaff57b}{assert\+Is\+Not\+Iterable}} (mixed \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_abb9e6dc1935beac6885d54bea09d76e0}{assert\+Matches\+Regular\+Expression}} (string \$pattern, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a4e6e35543242be7bf361a6306bf7501e}{assert\+Does\+Not\+Match\+Regular\+Expression}} (string \$pattern, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a28bbde7dbdd8ef6f7ca7b991a6ae7442}{assert\+Same\+Size}} (Countable\texorpdfstring{$\vert$}{|}iterable \$expected, Countable\texorpdfstring{$\vert$}{|}iterable \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a7c1c6cb51ff92ed97ee12ed4af54c1a6}{assert\+Not\+Same\+Size}} (Countable\texorpdfstring{$\vert$}{|}iterable \$expected, Countable\texorpdfstring{$\vert$}{|}iterable \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_adba770c9bd340cad58687c1aea4f7dee}{assert\+String\+Contains\+String\+Ignoring\+Line\+Endings}} (string \$needle, string \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aa6a05c1ffab4aaa0ad00a68644d3844b}{assert\+String\+Equals\+String\+Ignoring\+Line\+Endings}} (string \$expected, string \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad70f8a1ce104f80f11040a555383a75f}{assert\+File\+Matches\+Format}} (string \$format, string \$actual\+File, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a9f845ab9361fa1b5031703bd9ae9ba29}{assert\+File\+Matches\+Format\+File}} (string \$format\+File, string \$actual\+File, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad596faffb607b6fc297aecf5bdeec780}{assert\+String\+Matches\+Format}} (string \$format, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a60343b0763f808380a0d6ae669ede96e}{assert\+String\+Not\+Matches\+Format}} (string \$format, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a3bffdbf6735c798a9b4da15d5baf87e5}{assert\+String\+Matches\+Format\+File}} (string \$format\+File, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a2d7501729a15c4a790a9020a15fe5cad}{assert\+String\+Not\+Matches\+Format\+File}} (string \$format\+File, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a603b325e36a4ac9b670103acd93dae6f}{assert\+String\+Starts\+With}} (string \$prefix, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a606927f209841f6861547b089bfe206a}{assert\+String\+Starts\+Not\+With}} (string \$prefix, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a340acaf1255e21429685dade1496b9bc}{assert\+String\+Contains\+String}} (string \$needle, string \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a724895efd04321936cc1ccc3f743dd59}{assert\+String\+Contains\+String\+Ignoring\+Case}} (string \$needle, string \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a84c919b220b7d7e3ad9c00b1130f22ca}{assert\+String\+Not\+Contains\+String}} (string \$needle, string \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a03ba666bf099052df7c8b289d4fd2bea}{assert\+String\+Not\+Contains\+String\+Ignoring\+Case}} (string \$needle, string \$haystack, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aa9da10a86a8effa5f2880a1f2c3ea7a4}{assert\+String\+Ends\+With}} (string \$suffix, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_af364aea2cba4b3a10a4b205fa26dee2d}{assert\+String\+Ends\+Not\+With}} (string \$suffix, string \$string, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_afb3743f9a65f1d58ce5f41a133a5d735}{assert\+Xml\+File\+Equals\+Xml\+File}} (string \$expected\+File, string \$actual\+File, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ade71c006efbb52859e75d227228dbd6e}{assert\+Xml\+File\+Not\+Equals\+Xml\+File}} (string \$expected\+File, string \$actual\+File, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a74c8035de5bc0bf49376aff4f3795567}{assert\+Xml\+String\+Equals\+Xml\+File}} (string \$expected\+File, string \$actual\+Xml, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad326c9a10f7e85d9b05c52c38f29a181}{assert\+Xml\+String\+Not\+Equals\+Xml\+File}} (string \$expected\+File, string \$actual\+Xml, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ac9ae57dc320765cb05c586bcc814a58c}{assert\+Xml\+String\+Equals\+Xml\+String}} (string \$expected\+Xml, string \$actual\+Xml, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_afb64a1e1f02e3bb1ce274c455c0af923}{assert\+Xml\+String\+Not\+Equals\+Xml\+String}} (string \$expected\+Xml, string \$actual\+Xml, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aa6f6a8f1474e2c8381d50438e814972b}{assert\+That}} (mixed \$value, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}} \$constraint, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a1106aeaf74bee1ed55e2780db59a0835}{assert\+Json}} (string \$actual, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aafd11473992a4d9c535f6cfde60e533d}{assert\+Json\+String\+Equals\+Json\+String}} (string \$expected\+Json, string \$actual\+Json, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a84eac50a4b851670595621f5b493b00a}{assert\+Json\+String\+Not\+Equals\+Json\+String}} (string \$expected\+Json, string \$actual\+Json, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a9045f3311081aee57269a7bfe0a124b4}{assert\+Json\+String\+Equals\+Json\+File}} (string \$expected\+File, string \$actual\+Json, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a0fc0d30107422f3871892aba3bc5d6e8}{assert\+Json\+String\+Not\+Equals\+Json\+File}} (string \$expected\+File, string \$actual\+Json, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aa066c1c1df17e6355f345aa7418a3f33}{assert\+Json\+File\+Equals\+Json\+File}} (string \$expected\+File, string \$actual\+File, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a243643de233dbc4d3c0119c6cc70ed6d}{assert\+Json\+File\+Not\+Equals\+Json\+File}} (string \$expected\+File, string \$actual\+File, string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a1fcc4041547f22a860f6fdb541799215}{logical\+And}} (mixed ... \$constraints)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a2b7fc41f080a81e900a8a87de96daa4a}{logical\+Or}} (mixed ... \$constraints)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a3f226a30b83faac9dbeef65b35483ec7}{logical\+Not}} (\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}} \$constraint)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a1fa3089ad063842a7d381e71544442ea}{logical\+Xor}} (mixed ... \$constraints)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_add735b7ec3aa72ba4f692c82df884ed1}{anything}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aec0d388399b30713c0f555e4939f8f68}{is\+True}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a4dc3eb4ee7caba1b62415ac1f8f128ef}{callback}} (callable \$callback)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad9c918506615e9b2507e0bc9d70add8b}{is\+False}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a41ac5e3bef6aa36256a212ec69f04905}{is\+Json}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a84113959d7b6e3a8f79f3d4e6d3ff792}{is\+Null}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a991e411ffff9642316db83969d8ffc20}{is\+Finite}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ac8cfcd770d31fd4f4dfb7c2a6111fe73}{is\+Infinite}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a4c62604014a69d13ca70d0b35e94092a}{is\+Nan}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a88e29926dab8e1f2809ab3ae3185a06a}{contains\+Equal}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a515ee49bf01105aba6bfe086a88cc9ef}{contains\+Identical}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a8d25447129d11edcbf91f80c7d82cae2}{contains\+Only}} (string \$type)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad2c944eaa956d20cc12d412158dd4f81}{contains\+Only\+Instances\+Of}} (string \$class\+Name)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad65d0cf77e31f1af5977d1772753a1dd}{array\+Has\+Key}} (int\texorpdfstring{$\vert$}{|}string \$key)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a0a04de523828ef1f578ef4e9779e5ae9}{is\+List}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a8ef54617999c8783df344f3c6d6ed7cb}{equal\+To}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a1a90ec425fe9e55973bceba60fcb59df}{equal\+To\+Canonicalizing}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ae93659c69312d03bb32fc87abaa7c261}{equal\+To\+Ignoring\+Case}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a455f65bbe17a6020a6bc79624735c78a}{equal\+To\+With\+Delta}} (mixed \$value, float \$delta)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aa4780c055395206e57fb4ec8aa33ce52}{is\+Empty}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a849d18b134751834110a62dc298ec945}{is\+Writable}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a2e5a9a2013055d503a04a9902f32fa30}{is\+Readable}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aeff6357919ac620ffb892dc627f6b90b}{directory\+Exists}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_af38b35545d38d249c689615a4bc46ec1}{file\+Exists}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a8033bee23a2181c2127f58b3143837c1}{greater\+Than}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a33d3294ad28147d0a7469707da4aacb8}{greater\+Than\+Or\+Equal}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a7d41f7152ff13f7619084bcf1989fd5d}{identical\+To}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a35c02eedde5d3ec9f0d45d4d6e81c104}{is\+Instance\+Of}} (string \$class\+Name)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a9f01b36b8494d8848d90022057da9d87}{is\+Type}} (string \$type)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a1cd1e3f9307f852e92f7aca59d18c27e}{less\+Than}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a0f6ca61e6e7a30de3dc934d6cb731ed1}{less\+Than\+Or\+Equal}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a89cdbe840883070761dac6447c7a4c76}{matches\+Regular\+Expression}} (string \$pattern)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a5137720917fe5b8ee98c15cfdc55f735}{matches}} (string \$string)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aef5b7bfb7ed8d42ab7092e25d370c0b2}{string\+Starts\+With}} (string \$prefix)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aec04bcfa564420df2448109331d01136}{string\+Contains}} (string \$string, bool \$case=true)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_af7191764370bfc900c613f2b24d6f296}{string\+Ends\+With}} (string \$suffix)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_ad1144ebb8f692082bda883ae574f57e1}{string\+Equals\+String\+Ignoring\+Line\+Endings}} (string \$string)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_aa97dae09b094bb2e42b4c0eafe28e697}{count\+Of}} (int \$count)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a176c566f5a7ccbd4d8947646e4fc7cc3}{object\+Equals}} (object \$object, string \$method=\textquotesingle{}equals\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_adae14ceb5ba097c3b1e1a4e7c7c609c5}{fail}} (string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a53f993e89f17988ec2ec184c2d5dc4e1}{mark\+Test\+Incomplete}} (string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a9a40e1270a1151b23b67727cf1a7eea3}{mark\+Test\+Skipped}} (string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a9f70d3865f00e8c356111d4e246bb50d}{get\+Count}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assert_a56100b6464827054cd04d4004eae393c}{reset\+Count}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \doxylink{namespace_p_h_p_unit}{PHPUnit} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_add735b7ec3aa72ba4f692c82df884ed1}\index{Assert@{Assert}!anything@{anything}}
+\index{anything@{anything}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{anything()}{anything()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_add735b7ec3aa72ba4f692c82df884ed1} 
+static anything (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad65d0cf77e31f1af5977d1772753a1dd}\index{Assert@{Assert}!arrayHasKey@{arrayHasKey}}
+\index{arrayHasKey@{arrayHasKey}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{arrayHasKey()}{arrayHasKey()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad65d0cf77e31f1af5977d1772753a1dd} 
+static array\+Has\+Key (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}string}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a041b3197769d29109beb98e7801ea60e}\index{Assert@{Assert}!assertArrayHasKey@{assertArrayHasKey}}
+\index{assertArrayHasKey@{assertArrayHasKey}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertArrayHasKey()}{assertArrayHasKey()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a041b3197769d29109beb98e7801ea60e} 
+static assert\+Array\+Has\+Key (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}string}]{\$key}{, }\item[{array\texorpdfstring{$\vert$}{|}Array\+Access}]{\$array}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that an array has a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$\texorpdfstring{$\vert$}{|}\+Array\+Access$<$array-\/key,mixed$>$} & \$array\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a5a4e62ca80b26bbe22c3d758963fd235}\index{Assert@{Assert}!assertArrayIsEqualToArrayIgnoringListOfKeys@{assertArrayIsEqualToArrayIgnoringListOfKeys}}
+\index{assertArrayIsEqualToArrayIgnoringListOfKeys@{assertArrayIsEqualToArrayIgnoringListOfKeys}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertArrayIsEqualToArrayIgnoringListOfKeys()}{assertArrayIsEqualToArrayIgnoringListOfKeys()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a5a4e62ca80b26bbe22c3d758963fd235} 
+static assert\+Array\+Is\+Equal\+To\+Array\+Ignoring\+List\+Of\+Keys (\begin{DoxyParamCaption}\item[{array}]{\$expected}{, }\item[{array}]{\$actual}{, }\item[{array}]{\$keys\+To\+Be\+Ignored}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two arrays are equal while ignoring a list of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$} & \$expected \\
+\hline
+{\em array$<$mixed$>$} & \$actual \\
+\hline
+{\em non-\/empty-\/list$<$array-\/key$>$} & \$keys\+To\+Be\+Ignored\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ac2884c6e8222b732bcef146794431e44}\index{Assert@{Assert}!assertArrayIsEqualToArrayOnlyConsideringListOfKeys@{assertArrayIsEqualToArrayOnlyConsideringListOfKeys}}
+\index{assertArrayIsEqualToArrayOnlyConsideringListOfKeys@{assertArrayIsEqualToArrayOnlyConsideringListOfKeys}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertArrayIsEqualToArrayOnlyConsideringListOfKeys()}{assertArrayIsEqualToArrayOnlyConsideringListOfKeys()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ac2884c6e8222b732bcef146794431e44} 
+static assert\+Array\+Is\+Equal\+To\+Array\+Only\+Considering\+List\+Of\+Keys (\begin{DoxyParamCaption}\item[{array}]{\$expected}{, }\item[{array}]{\$actual}{, }\item[{array}]{\$keys\+To\+Be\+Considered}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two arrays are equal while only considering a list of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$} & \$expected \\
+\hline
+{\em array$<$mixed$>$} & \$actual \\
+\hline
+{\em non-\/empty-\/list$<$array-\/key$>$} & \$keys\+To\+Be\+Considered\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a559ca184dd189ed3eed6012f95691faa}\index{Assert@{Assert}!assertArrayIsIdenticalToArrayIgnoringListOfKeys@{assertArrayIsIdenticalToArrayIgnoringListOfKeys}}
+\index{assertArrayIsIdenticalToArrayIgnoringListOfKeys@{assertArrayIsIdenticalToArrayIgnoringListOfKeys}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertArrayIsIdenticalToArrayIgnoringListOfKeys()}{assertArrayIsIdenticalToArrayIgnoringListOfKeys()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a559ca184dd189ed3eed6012f95691faa} 
+static assert\+Array\+Is\+Identical\+To\+Array\+Ignoring\+List\+Of\+Keys (\begin{DoxyParamCaption}\item[{array}]{\$expected}{, }\item[{array}]{\$actual}{, }\item[{array}]{\$keys\+To\+Be\+Ignored}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two arrays are equal while ignoring a list of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$} & \$expected \\
+\hline
+{\em array$<$mixed$>$} & \$actual \\
+\hline
+{\em non-\/empty-\/list$<$array-\/key$>$} & \$keys\+To\+Be\+Ignored\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a7a33f0c1a0b0b9ab95a44f61d8460949}\index{Assert@{Assert}!assertArrayIsIdenticalToArrayOnlyConsideringListOfKeys@{assertArrayIsIdenticalToArrayOnlyConsideringListOfKeys}}
+\index{assertArrayIsIdenticalToArrayOnlyConsideringListOfKeys@{assertArrayIsIdenticalToArrayOnlyConsideringListOfKeys}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertArrayIsIdenticalToArrayOnlyConsideringListOfKeys()}{assertArrayIsIdenticalToArrayOnlyConsideringListOfKeys()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a7a33f0c1a0b0b9ab95a44f61d8460949} 
+static assert\+Array\+Is\+Identical\+To\+Array\+Only\+Considering\+List\+Of\+Keys (\begin{DoxyParamCaption}\item[{array}]{\$expected}{, }\item[{array}]{\$actual}{, }\item[{array}]{\$keys\+To\+Be\+Considered}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two arrays are identical while only considering a list of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$} & \$expected \\
+\hline
+{\em array$<$mixed$>$} & \$actual \\
+\hline
+{\em non-\/empty-\/list$<$array-\/key$>$} & \$keys\+To\+Be\+Considered\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a3475e54d7d5c9469b682d7da99e9807d}\index{Assert@{Assert}!assertArrayNotHasKey@{assertArrayNotHasKey}}
+\index{assertArrayNotHasKey@{assertArrayNotHasKey}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertArrayNotHasKey()}{assertArrayNotHasKey()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a3475e54d7d5c9469b682d7da99e9807d} 
+static assert\+Array\+Not\+Has\+Key (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}string}]{\$key}{, }\item[{array\texorpdfstring{$\vert$}{|}Array\+Access}]{\$array}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that an array does not have a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$\texorpdfstring{$\vert$}{|}\+Array\+Access$<$array-\/key,mixed$>$} & \$array\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ae1a0485d2b8ad91f85552f9dd3d7ff61}\index{Assert@{Assert}!assertContains@{assertContains}}
+\index{assertContains@{assertContains}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertContains()}{assertContains()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ae1a0485d2b8ad91f85552f9dd3d7ff61} 
+static assert\+Contains (\begin{DoxyParamCaption}\item[{mixed}]{\$needle}{, }\item[{iterable}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a haystack contains a needle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$mixed$>$} & \$haystack\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_abd0b1d8d3996d090cc9e9bfcb558445c}\index{Assert@{Assert}!assertContainsEquals@{assertContainsEquals}}
+\index{assertContainsEquals@{assertContainsEquals}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertContainsEquals()}{assertContainsEquals()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_abd0b1d8d3996d090cc9e9bfcb558445c} 
+static assert\+Contains\+Equals (\begin{DoxyParamCaption}\item[{mixed}]{\$needle}{, }\item[{iterable}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$mixed$>$} & \$haystack\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_af310d60ea5fc3a984b3b5870aa6972ab}\index{Assert@{Assert}!assertContainsOnly@{assertContainsOnly}}
+\index{assertContainsOnly@{assertContainsOnly}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertContainsOnly()}{assertContainsOnly()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_af310d60ea5fc3a984b3b5870aa6972ab} 
+static assert\+Contains\+Only (\begin{DoxyParamCaption}\item[{string}]{\$type}{, }\item[{iterable}]{\$haystack}{, }\item[{?bool}]{\$is\+Native\+Type}{ = {\ttfamily null}, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a haystack contains only values of a given type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}array\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}bool\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}boolean\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}callable\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}double\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}float\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}int\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}integer\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}iterable\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}null\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}numeric\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}object\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}real\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}resource} & (closed)\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}resource\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}scalar\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}string\textquotesingle{} \$type \\
+\hline
+{\em iterable$<$mixed$>$} & \$haystack\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a73329c33d57d616ae704cb32a42bad5c}\index{Assert@{Assert}!assertContainsOnlyInstancesOf@{assertContainsOnlyInstancesOf}}
+\index{assertContainsOnlyInstancesOf@{assertContainsOnlyInstancesOf}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertContainsOnlyInstancesOf()}{assertContainsOnlyInstancesOf()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a73329c33d57d616ae704cb32a42bad5c} 
+static assert\+Contains\+Only\+Instances\+Of (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{, }\item[{iterable}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a haystack contains only instances of a given class name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$class\+Name} & \\
+\hline
+ & {\em iterable$<$mixed$>$} & \$haystack\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a74377355835b29abd7bd09dd1157803f}\index{Assert@{Assert}!assertCount@{assertCount}}
+\index{assertCount@{assertCount}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertCount()}{assertCount()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a74377355835b29abd7bd09dd1157803f} 
+static assert\+Count (\begin{DoxyParamCaption}\item[{int}]{\$expected\+Count}{, }\item[{Countable\texorpdfstring{$\vert$}{|}iterable}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts the number of elements of an array, Countable or Traversable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Countable\texorpdfstring{$\vert$}{|}iterable$<$mixed$>$} & \$haystack\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Generator\+Not\+Supported\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a2942d8c227c9db9e24a6617e24dff4c9}\index{Assert@{Assert}!assertDirectoryDoesNotExist@{assertDirectoryDoesNotExist}}
+\index{assertDirectoryDoesNotExist@{assertDirectoryDoesNotExist}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertDirectoryDoesNotExist()}{assertDirectoryDoesNotExist()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a2942d8c227c9db9e24a6617e24dff4c9} 
+static assert\+Directory\+Does\+Not\+Exist (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a directory does not exist.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ab4d35046aa759459e04df0c103eb6f3b}\index{Assert@{Assert}!assertDirectoryExists@{assertDirectoryExists}}
+\index{assertDirectoryExists@{assertDirectoryExists}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertDirectoryExists()}{assertDirectoryExists()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ab4d35046aa759459e04df0c103eb6f3b} 
+static assert\+Directory\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a directory exists.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a5bb4ccd876f47c4f1f0ca2f4b7ee6b8e}\index{Assert@{Assert}!assertDirectoryIsNotReadable@{assertDirectoryIsNotReadable}}
+\index{assertDirectoryIsNotReadable@{assertDirectoryIsNotReadable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertDirectoryIsNotReadable()}{assertDirectoryIsNotReadable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a5bb4ccd876f47c4f1f0ca2f4b7ee6b8e} 
+static assert\+Directory\+Is\+Not\+Readable (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a directory exists and is not readable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a6ca69792fb0a05186bdfe9dd60baef2f}\index{Assert@{Assert}!assertDirectoryIsNotWritable@{assertDirectoryIsNotWritable}}
+\index{assertDirectoryIsNotWritable@{assertDirectoryIsNotWritable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertDirectoryIsNotWritable()}{assertDirectoryIsNotWritable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a6ca69792fb0a05186bdfe9dd60baef2f} 
+static assert\+Directory\+Is\+Not\+Writable (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a directory exists and is not writable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a6dd08d204ba94f96efe959fd999016a0}\index{Assert@{Assert}!assertDirectoryIsReadable@{assertDirectoryIsReadable}}
+\index{assertDirectoryIsReadable@{assertDirectoryIsReadable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertDirectoryIsReadable()}{assertDirectoryIsReadable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a6dd08d204ba94f96efe959fd999016a0} 
+static assert\+Directory\+Is\+Readable (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a directory exists and is readable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_abfffc9426a665c8a4200b62ab1cdb518}\index{Assert@{Assert}!assertDirectoryIsWritable@{assertDirectoryIsWritable}}
+\index{assertDirectoryIsWritable@{assertDirectoryIsWritable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertDirectoryIsWritable()}{assertDirectoryIsWritable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_abfffc9426a665c8a4200b62ab1cdb518} 
+static assert\+Directory\+Is\+Writable (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a directory exists and is writable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a4e6e35543242be7bf361a6306bf7501e}\index{Assert@{Assert}!assertDoesNotMatchRegularExpression@{assertDoesNotMatchRegularExpression}}
+\index{assertDoesNotMatchRegularExpression@{assertDoesNotMatchRegularExpression}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertDoesNotMatchRegularExpression()}{assertDoesNotMatchRegularExpression()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a4e6e35543242be7bf361a6306bf7501e} 
+static assert\+Does\+Not\+Match\+Regular\+Expression (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string does not match a given regular expression.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a7ac34f7369797a9c4b0dd4b0ecda722a}\index{Assert@{Assert}!assertEmpty@{assertEmpty}}
+\index{assertEmpty@{assertEmpty}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertEmpty()}{assertEmpty()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a7ac34f7369797a9c4b0dd4b0ecda722a} 
+static assert\+Empty (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is empty.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Generator\+Not\+Supported\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert empty \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a67df56b19f501963a47ccb679e5eb1f6}\index{Assert@{Assert}!assertEquals@{assertEquals}}
+\index{assertEquals@{assertEquals}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertEquals()}{assertEquals()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a67df56b19f501963a47ccb679e5eb1f6} 
+static assert\+Equals (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables are equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a1762e3901c66c78ce853626151561cdb}\index{Assert@{Assert}!assertEqualsCanonicalizing@{assertEqualsCanonicalizing}}
+\index{assertEqualsCanonicalizing@{assertEqualsCanonicalizing}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertEqualsCanonicalizing()}{assertEqualsCanonicalizing()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a1762e3901c66c78ce853626151561cdb} 
+static assert\+Equals\+Canonicalizing (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables are equal (canonicalizing).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_af7342d9f33868e3d67947fe656b7957c}\index{Assert@{Assert}!assertEqualsIgnoringCase@{assertEqualsIgnoringCase}}
+\index{assertEqualsIgnoringCase@{assertEqualsIgnoringCase}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertEqualsIgnoringCase()}{assertEqualsIgnoringCase()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_af7342d9f33868e3d67947fe656b7957c} 
+static assert\+Equals\+Ignoring\+Case (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables are equal (ignoring case).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad26d03824d05d1327eab538c90452c82}\index{Assert@{Assert}!assertEqualsWithDelta@{assertEqualsWithDelta}}
+\index{assertEqualsWithDelta@{assertEqualsWithDelta}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertEqualsWithDelta()}{assertEqualsWithDelta()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad26d03824d05d1327eab538c90452c82} 
+static assert\+Equals\+With\+Delta (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{float}]{\$delta}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables are equal (with delta).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ae85bda96368797c094f8f968cd00a832}\index{Assert@{Assert}!assertFalse@{assertFalse}}
+\index{assertFalse@{assertFalse}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFalse()}{assertFalse()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ae85bda96368797c094f8f968cd00a832} 
+static assert\+False (\begin{DoxyParamCaption}\item[{mixed}]{\$condition}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a condition is false.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert false \$condition \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a7080e505859b9f7b7e2ad5680a70a8da}\index{Assert@{Assert}!assertFileDoesNotExist@{assertFileDoesNotExist}}
+\index{assertFileDoesNotExist@{assertFileDoesNotExist}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileDoesNotExist()}{assertFileDoesNotExist()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a7080e505859b9f7b7e2ad5680a70a8da} 
+static assert\+File\+Does\+Not\+Exist (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file does not exist.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a6507429c2d186d2f485b74e4ea283f8b}\index{Assert@{Assert}!assertFileEquals@{assertFileEquals}}
+\index{assertFileEquals@{assertFileEquals}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileEquals()}{assertFileEquals()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a6507429c2d186d2f485b74e4ea283f8b} 
+static assert\+File\+Equals (\begin{DoxyParamCaption}\item[{string}]{\$expected}{, }\item[{string}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of one file is equal to the contents of another file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a5cb88b814532490378f606e5f223b99f}\index{Assert@{Assert}!assertFileEqualsCanonicalizing@{assertFileEqualsCanonicalizing}}
+\index{assertFileEqualsCanonicalizing@{assertFileEqualsCanonicalizing}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileEqualsCanonicalizing()}{assertFileEqualsCanonicalizing()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a5cb88b814532490378f606e5f223b99f} 
+static assert\+File\+Equals\+Canonicalizing (\begin{DoxyParamCaption}\item[{string}]{\$expected}{, }\item[{string}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of one file is equal to the contents of another file (canonicalizing).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a50a832caa6afca5d322ec11a89c10810}\index{Assert@{Assert}!assertFileEqualsIgnoringCase@{assertFileEqualsIgnoringCase}}
+\index{assertFileEqualsIgnoringCase@{assertFileEqualsIgnoringCase}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileEqualsIgnoringCase()}{assertFileEqualsIgnoringCase()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a50a832caa6afca5d322ec11a89c10810} 
+static assert\+File\+Equals\+Ignoring\+Case (\begin{DoxyParamCaption}\item[{string}]{\$expected}{, }\item[{string}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of one file is equal to the contents of another file (ignoring case).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ae3baeea35f4ff8c3525d9a026c80f74d}\index{Assert@{Assert}!assertFileExists@{assertFileExists}}
+\index{assertFileExists@{assertFileExists}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileExists()}{assertFileExists()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ae3baeea35f4ff8c3525d9a026c80f74d} 
+static assert\+File\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file exists.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aaada0bac74fc77353618c35dc6bfea05}\index{Assert@{Assert}!assertFileIsNotReadable@{assertFileIsNotReadable}}
+\index{assertFileIsNotReadable@{assertFileIsNotReadable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileIsNotReadable()}{assertFileIsNotReadable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aaada0bac74fc77353618c35dc6bfea05} 
+static assert\+File\+Is\+Not\+Readable (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file exists and is not readable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aa3f2f2034b59ea83a322936bfb6f14d6}\index{Assert@{Assert}!assertFileIsNotWritable@{assertFileIsNotWritable}}
+\index{assertFileIsNotWritable@{assertFileIsNotWritable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileIsNotWritable()}{assertFileIsNotWritable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aa3f2f2034b59ea83a322936bfb6f14d6} 
+static assert\+File\+Is\+Not\+Writable (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file exists and is not writable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aeafa7e2acb854a8ded868e54d84fb4e9}\index{Assert@{Assert}!assertFileIsReadable@{assertFileIsReadable}}
+\index{assertFileIsReadable@{assertFileIsReadable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileIsReadable()}{assertFileIsReadable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aeafa7e2acb854a8ded868e54d84fb4e9} 
+static assert\+File\+Is\+Readable (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file exists and is readable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a47a2e3bc5c9c6020810439c06ce8d106}\index{Assert@{Assert}!assertFileIsWritable@{assertFileIsWritable}}
+\index{assertFileIsWritable@{assertFileIsWritable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileIsWritable()}{assertFileIsWritable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a47a2e3bc5c9c6020810439c06ce8d106} 
+static assert\+File\+Is\+Writable (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file exists and is writable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad70f8a1ce104f80f11040a555383a75f}\index{Assert@{Assert}!assertFileMatchesFormat@{assertFileMatchesFormat}}
+\index{assertFileMatchesFormat@{assertFileMatchesFormat}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileMatchesFormat()}{assertFileMatchesFormat()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad70f8a1ce104f80f11040a555383a75f} 
+static assert\+File\+Matches\+Format (\begin{DoxyParamCaption}\item[{string}]{\$format}{, }\item[{string}]{\$actual\+File}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string matches a given format string.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a9f845ab9361fa1b5031703bd9ae9ba29}\index{Assert@{Assert}!assertFileMatchesFormatFile@{assertFileMatchesFormatFile}}
+\index{assertFileMatchesFormatFile@{assertFileMatchesFormatFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileMatchesFormatFile()}{assertFileMatchesFormatFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a9f845ab9361fa1b5031703bd9ae9ba29} 
+static assert\+File\+Matches\+Format\+File (\begin{DoxyParamCaption}\item[{string}]{\$format\+File}{, }\item[{string}]{\$actual\+File}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string matches a given format string.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a99667d18419ee7c668f876e36bd601c9}\index{Assert@{Assert}!assertFileNotEquals@{assertFileNotEquals}}
+\index{assertFileNotEquals@{assertFileNotEquals}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileNotEquals()}{assertFileNotEquals()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a99667d18419ee7c668f876e36bd601c9} 
+static assert\+File\+Not\+Equals (\begin{DoxyParamCaption}\item[{string}]{\$expected}{, }\item[{string}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of one file is not equal to the contents of another file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad52982d0987fb78a505dd830d0db31d1}\index{Assert@{Assert}!assertFileNotEqualsCanonicalizing@{assertFileNotEqualsCanonicalizing}}
+\index{assertFileNotEqualsCanonicalizing@{assertFileNotEqualsCanonicalizing}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileNotEqualsCanonicalizing()}{assertFileNotEqualsCanonicalizing()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad52982d0987fb78a505dd830d0db31d1} 
+static assert\+File\+Not\+Equals\+Canonicalizing (\begin{DoxyParamCaption}\item[{string}]{\$expected}{, }\item[{string}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of one file is not equal to the contents of another file (canonicalizing).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a43518be11f51b82b244838dfc3b0a911}\index{Assert@{Assert}!assertFileNotEqualsIgnoringCase@{assertFileNotEqualsIgnoringCase}}
+\index{assertFileNotEqualsIgnoringCase@{assertFileNotEqualsIgnoringCase}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFileNotEqualsIgnoringCase()}{assertFileNotEqualsIgnoringCase()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a43518be11f51b82b244838dfc3b0a911} 
+static assert\+File\+Not\+Equals\+Ignoring\+Case (\begin{DoxyParamCaption}\item[{string}]{\$expected}{, }\item[{string}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of one file is not equal to the contents of another file (ignoring case).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a68d85a73b5eedb23de0368501bda7e8d}\index{Assert@{Assert}!assertFinite@{assertFinite}}
+\index{assertFinite@{assertFinite}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertFinite()}{assertFinite()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a68d85a73b5eedb23de0368501bda7e8d} 
+static assert\+Finite (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is finite.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a54c7c03880aa96fc495e64434b7aabb7}\index{Assert@{Assert}!assertGreaterThan@{assertGreaterThan}}
+\index{assertGreaterThan@{assertGreaterThan}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertGreaterThan()}{assertGreaterThan()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a54c7c03880aa96fc495e64434b7aabb7} 
+static assert\+Greater\+Than (\begin{DoxyParamCaption}\item[{mixed}]{\$minimum}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a value is greater than another value.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a4a2b021c5c61c68482c7af8b130739b4}\index{Assert@{Assert}!assertGreaterThanOrEqual@{assertGreaterThanOrEqual}}
+\index{assertGreaterThanOrEqual@{assertGreaterThanOrEqual}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertGreaterThanOrEqual()}{assertGreaterThanOrEqual()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a4a2b021c5c61c68482c7af8b130739b4} 
+static assert\+Greater\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{mixed}]{\$minimum}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a value is greater than or equal to another value.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad9d2ba4782577eaca66374045a50e234}\index{Assert@{Assert}!assertInfinite@{assertInfinite}}
+\index{assertInfinite@{assertInfinite}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertInfinite()}{assertInfinite()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad9d2ba4782577eaca66374045a50e234} 
+static assert\+Infinite (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is infinite.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a4cd257981aaa929788f4fe2377a71feb}\index{Assert@{Assert}!assertInstanceOf@{assertInstanceOf}}
+\index{assertInstanceOf@{assertInstanceOf}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertInstanceOf()}{assertInstanceOf()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a4cd257981aaa929788f4fe2377a71feb} 
+static assert\+Instance\+Of (\begin{DoxyParamCaption}\item[{string}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of a given type.
+
+@template Expected\+Type of object
+
+
+\begin{DoxyParams}{Parameters}
+{\em class-\/string$<$\+Expected\+Type$>$} & \$expected\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Unknown\+Class\+Or\+Interface\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert =Expected\+Type \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a4bd92e6137df567b5cad72c20899ec0c}\index{Assert@{Assert}!assertIsArray@{assertIsArray}}
+\index{assertIsArray@{assertIsArray}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsArray()}{assertIsArray()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a4bd92e6137df567b5cad72c20899ec0c} 
+static assert\+Is\+Array (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type array.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert array$<$mixed$>$ \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a78703ee1e3d325a38b65635fc8c94ea9}\index{Assert@{Assert}!assertIsBool@{assertIsBool}}
+\index{assertIsBool@{assertIsBool}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsBool()}{assertIsBool()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a78703ee1e3d325a38b65635fc8c94ea9} 
+static assert\+Is\+Bool (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type bool.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert bool \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_af394e37af4c9ddb66e2e47c0dda395d9}\index{Assert@{Assert}!assertIsCallable@{assertIsCallable}}
+\index{assertIsCallable@{assertIsCallable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsCallable()}{assertIsCallable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_af394e37af4c9ddb66e2e47c0dda395d9} 
+static assert\+Is\+Callable (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type callable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert callable \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ac940869396c46dfdb971d8ca7360a3ca}\index{Assert@{Assert}!assertIsClosedResource@{assertIsClosedResource}}
+\index{assertIsClosedResource@{assertIsClosedResource}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsClosedResource()}{assertIsClosedResource()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ac940869396c46dfdb971d8ca7360a3ca} 
+static assert\+Is\+Closed\+Resource (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type resource and is closed.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert resource \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a0d161f48d75cae7256c9a1257d1fe470}\index{Assert@{Assert}!assertIsFloat@{assertIsFloat}}
+\index{assertIsFloat@{assertIsFloat}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsFloat()}{assertIsFloat()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a0d161f48d75cae7256c9a1257d1fe470} 
+static assert\+Is\+Float (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type float.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert float \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_afa19e4706d6f6ba93c8ff0b765864779}\index{Assert@{Assert}!assertIsInt@{assertIsInt}}
+\index{assertIsInt@{assertIsInt}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsInt()}{assertIsInt()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_afa19e4706d6f6ba93c8ff0b765864779} 
+static assert\+Is\+Int (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type int.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert int \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a3914538762377c7312837fea70aea2f1}\index{Assert@{Assert}!assertIsIterable@{assertIsIterable}}
+\index{assertIsIterable@{assertIsIterable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsIterable()}{assertIsIterable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a3914538762377c7312837fea70aea2f1} 
+static assert\+Is\+Iterable (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type iterable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert iterable$<$mixed$>$ \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a6c6b9a3c0ef33643900fb917fa40ee80}\index{Assert@{Assert}!assertIsList@{assertIsList}}
+\index{assertIsList@{assertIsList}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsList()}{assertIsList()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a6c6b9a3c0ef33643900fb917fa40ee80} 
+static assert\+Is\+List (\begin{DoxyParamCaption}\item[{mixed}]{\$array}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+@phpstan-\/assert list$<$mixed$>$ \$array
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aaee84b8a67bcc71c5a9ffcb5b2a757a6}\index{Assert@{Assert}!assertIsNotArray@{assertIsNotArray}}
+\index{assertIsNotArray@{assertIsNotArray}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotArray()}{assertIsNotArray()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aaee84b8a67bcc71c5a9ffcb5b2a757a6} 
+static assert\+Is\+Not\+Array (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type array.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !array$<$mixed$>$ \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aea770f7be6930081f3fb298a7aa4d78e}\index{Assert@{Assert}!assertIsNotBool@{assertIsNotBool}}
+\index{assertIsNotBool@{assertIsNotBool}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotBool()}{assertIsNotBool()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aea770f7be6930081f3fb298a7aa4d78e} 
+static assert\+Is\+Not\+Bool (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type bool.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !bool \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ab79546c84d4d2a9409e738dfbc53fb77}\index{Assert@{Assert}!assertIsNotCallable@{assertIsNotCallable}}
+\index{assertIsNotCallable@{assertIsNotCallable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotCallable()}{assertIsNotCallable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ab79546c84d4d2a9409e738dfbc53fb77} 
+static assert\+Is\+Not\+Callable (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type callable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !callable \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a2e8ed3687e1f54fdf9961b4a07f9b5ee}\index{Assert@{Assert}!assertIsNotClosedResource@{assertIsNotClosedResource}}
+\index{assertIsNotClosedResource@{assertIsNotClosedResource}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotClosedResource()}{assertIsNotClosedResource()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a2e8ed3687e1f54fdf9961b4a07f9b5ee} 
+static assert\+Is\+Not\+Closed\+Resource (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type resource.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !resource \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ace13cc8fb47c36cbb7fd16d0da62bd9a}\index{Assert@{Assert}!assertIsNotFloat@{assertIsNotFloat}}
+\index{assertIsNotFloat@{assertIsNotFloat}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotFloat()}{assertIsNotFloat()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ace13cc8fb47c36cbb7fd16d0da62bd9a} 
+static assert\+Is\+Not\+Float (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type float.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !float \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a6d5ae27072b7971c858db1b6b0c2dc9b}\index{Assert@{Assert}!assertIsNotInt@{assertIsNotInt}}
+\index{assertIsNotInt@{assertIsNotInt}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotInt()}{assertIsNotInt()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a6d5ae27072b7971c858db1b6b0c2dc9b} 
+static assert\+Is\+Not\+Int (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type int.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !int \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aa5d089c892b905ffc6cdcc903aaff57b}\index{Assert@{Assert}!assertIsNotIterable@{assertIsNotIterable}}
+\index{assertIsNotIterable@{assertIsNotIterable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotIterable()}{assertIsNotIterable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aa5d089c892b905ffc6cdcc903aaff57b} 
+static assert\+Is\+Not\+Iterable (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type iterable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !iterable$<$mixed$>$ \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a63d90390e857ac55ee6151ffbfdce33d}\index{Assert@{Assert}!assertIsNotNumeric@{assertIsNotNumeric}}
+\index{assertIsNotNumeric@{assertIsNotNumeric}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotNumeric()}{assertIsNotNumeric()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a63d90390e857ac55ee6151ffbfdce33d} 
+static assert\+Is\+Not\+Numeric (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type numeric.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !numeric \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aebe2b9bed0020ede860205748b29faac}\index{Assert@{Assert}!assertIsNotObject@{assertIsNotObject}}
+\index{assertIsNotObject@{assertIsNotObject}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotObject()}{assertIsNotObject()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aebe2b9bed0020ede860205748b29faac} 
+static assert\+Is\+Not\+Object (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type object.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !object \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a41e589169a036d522009af2b2970304c}\index{Assert@{Assert}!assertIsNotReadable@{assertIsNotReadable}}
+\index{assertIsNotReadable@{assertIsNotReadable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotReadable()}{assertIsNotReadable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a41e589169a036d522009af2b2970304c} 
+static assert\+Is\+Not\+Readable (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file/dir exists and is not readable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a2025fbcfb2c4aebffad334747dd7d088}\index{Assert@{Assert}!assertIsNotResource@{assertIsNotResource}}
+\index{assertIsNotResource@{assertIsNotResource}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotResource()}{assertIsNotResource()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a2025fbcfb2c4aebffad334747dd7d088} 
+static assert\+Is\+Not\+Resource (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type resource.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !resource \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a04f849742d8dd87cb0b2681a28ea922d}\index{Assert@{Assert}!assertIsNotScalar@{assertIsNotScalar}}
+\index{assertIsNotScalar@{assertIsNotScalar}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotScalar()}{assertIsNotScalar()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a04f849742d8dd87cb0b2681a28ea922d} 
+static assert\+Is\+Not\+Scalar (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type scalar.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !scalar \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a4bc5e02157a8e5d35c7cfc66a5ea3175}\index{Assert@{Assert}!assertIsNotString@{assertIsNotString}}
+\index{assertIsNotString@{assertIsNotString}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotString()}{assertIsNotString()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a4bc5e02157a8e5d35c7cfc66a5ea3175} 
+static assert\+Is\+Not\+String (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of type string.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !string \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_af07e51cb19a0e72962e00cc5aa876328}\index{Assert@{Assert}!assertIsNotWritable@{assertIsNotWritable}}
+\index{assertIsNotWritable@{assertIsNotWritable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNotWritable()}{assertIsNotWritable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_af07e51cb19a0e72962e00cc5aa876328} 
+static assert\+Is\+Not\+Writable (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file/dir exists and is not writable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_acb8a658c03537c50d4b03dc624eccdd4}\index{Assert@{Assert}!assertIsNumeric@{assertIsNumeric}}
+\index{assertIsNumeric@{assertIsNumeric}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsNumeric()}{assertIsNumeric()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_acb8a658c03537c50d4b03dc624eccdd4} 
+static assert\+Is\+Numeric (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type numeric.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert numeric \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aec903393ea5a2edc38088d0e1eb70983}\index{Assert@{Assert}!assertIsObject@{assertIsObject}}
+\index{assertIsObject@{assertIsObject}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsObject()}{assertIsObject()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aec903393ea5a2edc38088d0e1eb70983} 
+static assert\+Is\+Object (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type object.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert object \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ab64b440a811d6067de0a407d0b883f94}\index{Assert@{Assert}!assertIsReadable@{assertIsReadable}}
+\index{assertIsReadable@{assertIsReadable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsReadable()}{assertIsReadable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ab64b440a811d6067de0a407d0b883f94} 
+static assert\+Is\+Readable (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file/dir is readable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a683b2d672f71eaa402df45866fb5ab2f}\index{Assert@{Assert}!assertIsResource@{assertIsResource}}
+\index{assertIsResource@{assertIsResource}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsResource()}{assertIsResource()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a683b2d672f71eaa402df45866fb5ab2f} 
+static assert\+Is\+Resource (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type resource.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert resource \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a53d4561b8abef5e6410ead2c0d0c5b5d}\index{Assert@{Assert}!assertIsScalar@{assertIsScalar}}
+\index{assertIsScalar@{assertIsScalar}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsScalar()}{assertIsScalar()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a53d4561b8abef5e6410ead2c0d0c5b5d} 
+static assert\+Is\+Scalar (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type scalar.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert scalar \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a321be67c4f7a41b0ac01e8b726170e35}\index{Assert@{Assert}!assertIsString@{assertIsString}}
+\index{assertIsString@{assertIsString}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsString()}{assertIsString()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a321be67c4f7a41b0ac01e8b726170e35} 
+static assert\+Is\+String (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is of type string.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert string \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a066b032ebbe4cfe48f4416e55112455e}\index{Assert@{Assert}!assertIsWritable@{assertIsWritable}}
+\index{assertIsWritable@{assertIsWritable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertIsWritable()}{assertIsWritable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a066b032ebbe4cfe48f4416e55112455e} 
+static assert\+Is\+Writable (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a file/dir exists and is writable.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a1106aeaf74bee1ed55e2780db59a0835}\index{Assert@{Assert}!assertJson@{assertJson}}
+\index{assertJson@{assertJson}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertJson()}{assertJson()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a1106aeaf74bee1ed55e2780db59a0835} 
+static assert\+Json (\begin{DoxyParamCaption}\item[{string}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string is a valid JSON string.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aa066c1c1df17e6355f345aa7418a3f33}\index{Assert@{Assert}!assertJsonFileEqualsJsonFile@{assertJsonFileEqualsJsonFile}}
+\index{assertJsonFileEqualsJsonFile@{assertJsonFileEqualsJsonFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertJsonFileEqualsJsonFile()}{assertJsonFileEqualsJsonFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aa066c1c1df17e6355f345aa7418a3f33} 
+static assert\+Json\+File\+Equals\+Json\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+File}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two JSON files are equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a243643de233dbc4d3c0119c6cc70ed6d}\index{Assert@{Assert}!assertJsonFileNotEqualsJsonFile@{assertJsonFileNotEqualsJsonFile}}
+\index{assertJsonFileNotEqualsJsonFile@{assertJsonFileNotEqualsJsonFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertJsonFileNotEqualsJsonFile()}{assertJsonFileNotEqualsJsonFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a243643de233dbc4d3c0119c6cc70ed6d} 
+static assert\+Json\+File\+Not\+Equals\+Json\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+File}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two JSON files are not equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a9045f3311081aee57269a7bfe0a124b4}\index{Assert@{Assert}!assertJsonStringEqualsJsonFile@{assertJsonStringEqualsJsonFile}}
+\index{assertJsonStringEqualsJsonFile@{assertJsonStringEqualsJsonFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertJsonStringEqualsJsonFile()}{assertJsonStringEqualsJsonFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a9045f3311081aee57269a7bfe0a124b4} 
+static assert\+Json\+String\+Equals\+Json\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+Json}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the generated JSON encoded object and the content of the given file are equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aafd11473992a4d9c535f6cfde60e533d}\index{Assert@{Assert}!assertJsonStringEqualsJsonString@{assertJsonStringEqualsJsonString}}
+\index{assertJsonStringEqualsJsonString@{assertJsonStringEqualsJsonString}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertJsonStringEqualsJsonString()}{assertJsonStringEqualsJsonString()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aafd11473992a4d9c535f6cfde60e533d} 
+static assert\+Json\+String\+Equals\+Json\+String (\begin{DoxyParamCaption}\item[{string}]{\$expected\+Json}{, }\item[{string}]{\$actual\+Json}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two given JSON encoded objects or arrays are equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a0fc0d30107422f3871892aba3bc5d6e8}\index{Assert@{Assert}!assertJsonStringNotEqualsJsonFile@{assertJsonStringNotEqualsJsonFile}}
+\index{assertJsonStringNotEqualsJsonFile@{assertJsonStringNotEqualsJsonFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertJsonStringNotEqualsJsonFile()}{assertJsonStringNotEqualsJsonFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a0fc0d30107422f3871892aba3bc5d6e8} 
+static assert\+Json\+String\+Not\+Equals\+Json\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+Json}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the generated JSON encoded object and the content of the given file are not equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a84eac50a4b851670595621f5b493b00a}\index{Assert@{Assert}!assertJsonStringNotEqualsJsonString@{assertJsonStringNotEqualsJsonString}}
+\index{assertJsonStringNotEqualsJsonString@{assertJsonStringNotEqualsJsonString}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertJsonStringNotEqualsJsonString()}{assertJsonStringNotEqualsJsonString()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a84eac50a4b851670595621f5b493b00a} 
+static assert\+Json\+String\+Not\+Equals\+Json\+String (\begin{DoxyParamCaption}\item[{string}]{\$expected\+Json}{, }\item[{string}]{\$actual\+Json}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two given JSON encoded objects or arrays are not equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a3fe3e8868c6f4b0bae5f02a5253d808d}\index{Assert@{Assert}!assertLessThan@{assertLessThan}}
+\index{assertLessThan@{assertLessThan}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertLessThan()}{assertLessThan()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a3fe3e8868c6f4b0bae5f02a5253d808d} 
+static assert\+Less\+Than (\begin{DoxyParamCaption}\item[{mixed}]{\$maximum}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a value is smaller than another value.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ae55d1f9d2462bf6d8d1bde6e85e7e196}\index{Assert@{Assert}!assertLessThanOrEqual@{assertLessThanOrEqual}}
+\index{assertLessThanOrEqual@{assertLessThanOrEqual}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertLessThanOrEqual()}{assertLessThanOrEqual()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ae55d1f9d2462bf6d8d1bde6e85e7e196} 
+static assert\+Less\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{mixed}]{\$maximum}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a value is smaller than or equal to another value.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_abb9e6dc1935beac6885d54bea09d76e0}\index{Assert@{Assert}!assertMatchesRegularExpression@{assertMatchesRegularExpression}}
+\index{assertMatchesRegularExpression@{assertMatchesRegularExpression}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertMatchesRegularExpression()}{assertMatchesRegularExpression()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_abb9e6dc1935beac6885d54bea09d76e0} 
+static assert\+Matches\+Regular\+Expression (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string matches a given regular expression.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a7e7b6572c08855890174b3b3a553b09b}\index{Assert@{Assert}!assertNan@{assertNan}}
+\index{assertNan@{assertNan}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNan()}{assertNan()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a7e7b6572c08855890174b3b3a553b09b} 
+static assert\+Nan (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is nan.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a82575ee8c3122e290b8a492fa2833c27}\index{Assert@{Assert}!assertNotContains@{assertNotContains}}
+\index{assertNotContains@{assertNotContains}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotContains()}{assertNotContains()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a82575ee8c3122e290b8a492fa2833c27} 
+static assert\+Not\+Contains (\begin{DoxyParamCaption}\item[{mixed}]{\$needle}{, }\item[{iterable}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a haystack does not contain a needle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$mixed$>$} & \$haystack\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aef81f831a8571b4ad56c06c09b60e27e}\index{Assert@{Assert}!assertNotContainsEquals@{assertNotContainsEquals}}
+\index{assertNotContainsEquals@{assertNotContainsEquals}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotContainsEquals()}{assertNotContainsEquals()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aef81f831a8571b4ad56c06c09b60e27e} 
+static assert\+Not\+Contains\+Equals (\begin{DoxyParamCaption}\item[{mixed}]{\$needle}{, }\item[{iterable}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$mixed$>$} & \$haystack\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a0a6312eb3534a806acd7375544bf7528}\index{Assert@{Assert}!assertNotContainsOnly@{assertNotContainsOnly}}
+\index{assertNotContainsOnly@{assertNotContainsOnly}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotContainsOnly()}{assertNotContainsOnly()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a0a6312eb3534a806acd7375544bf7528} 
+static assert\+Not\+Contains\+Only (\begin{DoxyParamCaption}\item[{string}]{\$type}{, }\item[{iterable}]{\$haystack}{, }\item[{?bool}]{\$is\+Native\+Type}{ = {\ttfamily null}, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a haystack does not contain only values of a given type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}array\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}bool\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}boolean\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}callable\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}double\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}float\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}int\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}integer\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}iterable\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}null\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}numeric\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}object\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}real\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}resource} & (closed)\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}resource\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}scalar\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}string\textquotesingle{} \$type \\
+\hline
+{\em iterable$<$mixed$>$} & \$haystack\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a35ee3dd4520599388a847c5503715795}\index{Assert@{Assert}!assertNotCount@{assertNotCount}}
+\index{assertNotCount@{assertNotCount}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotCount()}{assertNotCount()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a35ee3dd4520599388a847c5503715795} 
+static assert\+Not\+Count (\begin{DoxyParamCaption}\item[{int}]{\$expected\+Count}{, }\item[{Countable\texorpdfstring{$\vert$}{|}iterable}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts the number of elements of an array, Countable or Traversable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Countable\texorpdfstring{$\vert$}{|}iterable$<$mixed$>$} & \$haystack\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Generator\+Not\+Supported\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a1e09f1490e3d4ea5ff9a4e7ece4ea019}\index{Assert@{Assert}!assertNotEmpty@{assertNotEmpty}}
+\index{assertNotEmpty@{assertNotEmpty}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotEmpty()}{assertNotEmpty()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a1e09f1490e3d4ea5ff9a4e7ece4ea019} 
+static assert\+Not\+Empty (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not empty.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Generator\+Not\+Supported\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !empty \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a2d1aa021aa02be313ecf0683fb0206e4}\index{Assert@{Assert}!assertNotEquals@{assertNotEquals}}
+\index{assertNotEquals@{assertNotEquals}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotEquals()}{assertNotEquals()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a2d1aa021aa02be313ecf0683fb0206e4} 
+static assert\+Not\+Equals (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables are not equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a5338fa41d6019d301e48934e8d9fd55c}\index{Assert@{Assert}!assertNotEqualsCanonicalizing@{assertNotEqualsCanonicalizing}}
+\index{assertNotEqualsCanonicalizing@{assertNotEqualsCanonicalizing}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotEqualsCanonicalizing()}{assertNotEqualsCanonicalizing()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a5338fa41d6019d301e48934e8d9fd55c} 
+static assert\+Not\+Equals\+Canonicalizing (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables are not equal (canonicalizing).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a211ce63af987671e056b550472179e70}\index{Assert@{Assert}!assertNotEqualsIgnoringCase@{assertNotEqualsIgnoringCase}}
+\index{assertNotEqualsIgnoringCase@{assertNotEqualsIgnoringCase}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotEqualsIgnoringCase()}{assertNotEqualsIgnoringCase()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a211ce63af987671e056b550472179e70} 
+static assert\+Not\+Equals\+Ignoring\+Case (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables are not equal (ignoring case).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a2acf30cdc332b5124fcc5db7aae90c1f}\index{Assert@{Assert}!assertNotEqualsWithDelta@{assertNotEqualsWithDelta}}
+\index{assertNotEqualsWithDelta@{assertNotEqualsWithDelta}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotEqualsWithDelta()}{assertNotEqualsWithDelta()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a2acf30cdc332b5124fcc5db7aae90c1f} 
+static assert\+Not\+Equals\+With\+Delta (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{float}]{\$delta}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables are not equal (with delta).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a4daa15d4312eac25b1150cf260ef1ad2}\index{Assert@{Assert}!assertNotFalse@{assertNotFalse}}
+\index{assertNotFalse@{assertNotFalse}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotFalse()}{assertNotFalse()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a4daa15d4312eac25b1150cf260ef1ad2} 
+static assert\+Not\+False (\begin{DoxyParamCaption}\item[{mixed}]{\$condition}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a condition is not false.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !false \$condition \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a8cd62e50a519e281e43744f6fd0c7122}\index{Assert@{Assert}!assertNotInstanceOf@{assertNotInstanceOf}}
+\index{assertNotInstanceOf@{assertNotInstanceOf}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotInstanceOf()}{assertNotInstanceOf()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a8cd62e50a519e281e43744f6fd0c7122} 
+static assert\+Not\+Instance\+Of (\begin{DoxyParamCaption}\item[{string}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not of a given type.
+
+@template Expected\+Type of object
+
+
+\begin{DoxyParams}{Parameters}
+{\em class-\/string$<$\+Expected\+Type$>$} & \$expected\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !\+Expected\+Type \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a8834930c042243b3c08c9506ac48d026}\index{Assert@{Assert}!assertNotNull@{assertNotNull}}
+\index{assertNotNull@{assertNotNull}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotNull()}{assertNotNull()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a8834930c042243b3c08c9506ac48d026} 
+static assert\+Not\+Null (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is not null.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !null \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_abe098a98984b37cca5617c1f8240ced1}\index{Assert@{Assert}!assertNotSame@{assertNotSame}}
+\index{assertNotSame@{assertNotSame}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotSame()}{assertNotSame()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_abe098a98984b37cca5617c1f8240ced1} 
+static assert\+Not\+Same (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables do not have the same type and value. Used on objects, it asserts that two variables do not reference the same object.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a7c1c6cb51ff92ed97ee12ed4af54c1a6}\index{Assert@{Assert}!assertNotSameSize@{assertNotSameSize}}
+\index{assertNotSameSize@{assertNotSameSize}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotSameSize()}{assertNotSameSize()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a7c1c6cb51ff92ed97ee12ed4af54c1a6} 
+static assert\+Not\+Same\+Size (\begin{DoxyParamCaption}\item[{Countable\texorpdfstring{$\vert$}{|}iterable}]{\$expected}{, }\item[{Countable\texorpdfstring{$\vert$}{|}iterable}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Assert that the size of two arrays (or {\ttfamily Countable} or {\ttfamily Traversable} objects) is not the same.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Countable\texorpdfstring{$\vert$}{|}iterable$<$mixed$>$} & \$expected \\
+\hline
+{\em Countable\texorpdfstring{$\vert$}{|}iterable$<$mixed$>$} & \$actual\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Generator\+Not\+Supported\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a8e1f9084f356f40e982f6773d466edc5}\index{Assert@{Assert}!assertNotTrue@{assertNotTrue}}
+\index{assertNotTrue@{assertNotTrue}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNotTrue()}{assertNotTrue()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a8e1f9084f356f40e982f6773d466edc5} 
+static assert\+Not\+True (\begin{DoxyParamCaption}\item[{mixed}]{\$condition}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a condition is not true.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert !true \$condition \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a97a5527166fbd3e9e6af9d7b0b42a95e}\index{Assert@{Assert}!assertNull@{assertNull}}
+\index{assertNull@{assertNull}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertNull()}{assertNull()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a97a5527166fbd3e9e6af9d7b0b42a95e} 
+static assert\+Null (\begin{DoxyParamCaption}\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a variable is null.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert null \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad2489679b93b342bf25fafa667f7f3a7}\index{Assert@{Assert}!assertObjectEquals@{assertObjectEquals}}
+\index{assertObjectEquals@{assertObjectEquals}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertObjectEquals()}{assertObjectEquals()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad2489679b93b342bf25fafa667f7f3a7} 
+static assert\+Object\+Equals (\begin{DoxyParamCaption}\item[{object}]{\$expected}{, }\item[{object}]{\$actual}{, }\item[{string}]{\$method}{ = {\ttfamily \textquotesingle{}equals\textquotesingle{}}, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a058bac8f3e9ca2e3c9e30527730d45a0}\index{Assert@{Assert}!assertObjectHasProperty@{assertObjectHasProperty}}
+\index{assertObjectHasProperty@{assertObjectHasProperty}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertObjectHasProperty()}{assertObjectHasProperty()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a058bac8f3e9ca2e3c9e30527730d45a0} 
+static assert\+Object\+Has\+Property (\begin{DoxyParamCaption}\item[{string}]{\$property\+Name}{, }\item[{object}]{\$object}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that an object has a specified property.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a90108839e38951f6b614de2f1c66dc6d}\index{Assert@{Assert}!assertObjectNotEquals@{assertObjectNotEquals}}
+\index{assertObjectNotEquals@{assertObjectNotEquals}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertObjectNotEquals()}{assertObjectNotEquals()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a90108839e38951f6b614de2f1c66dc6d} 
+static assert\+Object\+Not\+Equals (\begin{DoxyParamCaption}\item[{object}]{\$expected}{, }\item[{object}]{\$actual}{, }\item[{string}]{\$method}{ = {\ttfamily \textquotesingle{}equals\textquotesingle{}}, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a5bb61846cf93713ef92c12cd9ffe5164}\index{Assert@{Assert}!assertObjectNotHasProperty@{assertObjectNotHasProperty}}
+\index{assertObjectNotHasProperty@{assertObjectNotHasProperty}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertObjectNotHasProperty()}{assertObjectNotHasProperty()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a5bb61846cf93713ef92c12cd9ffe5164} 
+static assert\+Object\+Not\+Has\+Property (\begin{DoxyParamCaption}\item[{string}]{\$property\+Name}{, }\item[{object}]{\$object}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that an object does not have a specified property.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_af5adc032d45997fecad544f65e5eb1c0}\index{Assert@{Assert}!assertSame@{assertSame}}
+\index{assertSame@{assertSame}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertSame()}{assertSame()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_af5adc032d45997fecad544f65e5eb1c0} 
+static assert\+Same (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two variables have the same type and value. Used on objects, it asserts that two variables reference the same object.
+
+@template Expected\+Type
+
+
+\begin{DoxyParams}[1]{Parameters}
+Expected\+Type & {\em \$expected} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert =Expected\+Type \$actual \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a28bbde7dbdd8ef6f7ca7b991a6ae7442}\index{Assert@{Assert}!assertSameSize@{assertSameSize}}
+\index{assertSameSize@{assertSameSize}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertSameSize()}{assertSameSize()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a28bbde7dbdd8ef6f7ca7b991a6ae7442} 
+static assert\+Same\+Size (\begin{DoxyParamCaption}\item[{Countable\texorpdfstring{$\vert$}{|}iterable}]{\$expected}{, }\item[{Countable\texorpdfstring{$\vert$}{|}iterable}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Assert that the size of two arrays (or {\ttfamily Countable} or {\ttfamily Traversable} objects) is the same.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Countable\texorpdfstring{$\vert$}{|}iterable$<$mixed$>$} & \$expected \\
+\hline
+{\em Countable\texorpdfstring{$\vert$}{|}iterable$<$mixed$>$} & \$actual\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Generator\+Not\+Supported\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a340acaf1255e21429685dade1496b9bc}\index{Assert@{Assert}!assertStringContainsString@{assertStringContainsString}}
+\index{assertStringContainsString@{assertStringContainsString}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringContainsString()}{assertStringContainsString()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a340acaf1255e21429685dade1496b9bc} 
+static assert\+String\+Contains\+String (\begin{DoxyParamCaption}\item[{string}]{\$needle}{, }\item[{string}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a724895efd04321936cc1ccc3f743dd59}\index{Assert@{Assert}!assertStringContainsStringIgnoringCase@{assertStringContainsStringIgnoringCase}}
+\index{assertStringContainsStringIgnoringCase@{assertStringContainsStringIgnoringCase}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringContainsStringIgnoringCase()}{assertStringContainsStringIgnoringCase()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a724895efd04321936cc1ccc3f743dd59} 
+static assert\+String\+Contains\+String\+Ignoring\+Case (\begin{DoxyParamCaption}\item[{string}]{\$needle}{, }\item[{string}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_adba770c9bd340cad58687c1aea4f7dee}\index{Assert@{Assert}!assertStringContainsStringIgnoringLineEndings@{assertStringContainsStringIgnoringLineEndings}}
+\index{assertStringContainsStringIgnoringLineEndings@{assertStringContainsStringIgnoringLineEndings}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringContainsStringIgnoringLineEndings()}{assertStringContainsStringIgnoringLineEndings()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_adba770c9bd340cad58687c1aea4f7dee} 
+static assert\+String\+Contains\+String\+Ignoring\+Line\+Endings (\begin{DoxyParamCaption}\item[{string}]{\$needle}{, }\item[{string}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_af364aea2cba4b3a10a4b205fa26dee2d}\index{Assert@{Assert}!assertStringEndsNotWith@{assertStringEndsNotWith}}
+\index{assertStringEndsNotWith@{assertStringEndsNotWith}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringEndsNotWith()}{assertStringEndsNotWith()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_af364aea2cba4b3a10a4b205fa26dee2d} 
+static assert\+String\+Ends\+Not\+With (\begin{DoxyParamCaption}\item[{string}]{\$suffix}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string ends not with a given suffix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$suffix} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aa9da10a86a8effa5f2880a1f2c3ea7a4}\index{Assert@{Assert}!assertStringEndsWith@{assertStringEndsWith}}
+\index{assertStringEndsWith@{assertStringEndsWith}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringEndsWith()}{assertStringEndsWith()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aa9da10a86a8effa5f2880a1f2c3ea7a4} 
+static assert\+String\+Ends\+With (\begin{DoxyParamCaption}\item[{string}]{\$suffix}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string ends with a given suffix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$suffix} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a14da31220e1507487e76926e4b1984e6}\index{Assert@{Assert}!assertStringEqualsFile@{assertStringEqualsFile}}
+\index{assertStringEqualsFile@{assertStringEqualsFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringEqualsFile()}{assertStringEqualsFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a14da31220e1507487e76926e4b1984e6} 
+static assert\+String\+Equals\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+String}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of a string is equal to the contents of a file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a963bbe481044527d5df00db3b103f7c5}\index{Assert@{Assert}!assertStringEqualsFileCanonicalizing@{assertStringEqualsFileCanonicalizing}}
+\index{assertStringEqualsFileCanonicalizing@{assertStringEqualsFileCanonicalizing}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringEqualsFileCanonicalizing()}{assertStringEqualsFileCanonicalizing()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a963bbe481044527d5df00db3b103f7c5} 
+static assert\+String\+Equals\+File\+Canonicalizing (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+String}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of a string is equal to the contents of a file (canonicalizing).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a633e0e31fc861bc8665ae17ea15c9a08}\index{Assert@{Assert}!assertStringEqualsFileIgnoringCase@{assertStringEqualsFileIgnoringCase}}
+\index{assertStringEqualsFileIgnoringCase@{assertStringEqualsFileIgnoringCase}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringEqualsFileIgnoringCase()}{assertStringEqualsFileIgnoringCase()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a633e0e31fc861bc8665ae17ea15c9a08} 
+static assert\+String\+Equals\+File\+Ignoring\+Case (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+String}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of a string is equal to the contents of a file (ignoring case).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aa6a05c1ffab4aaa0ad00a68644d3844b}\index{Assert@{Assert}!assertStringEqualsStringIgnoringLineEndings@{assertStringEqualsStringIgnoringLineEndings}}
+\index{assertStringEqualsStringIgnoringLineEndings@{assertStringEqualsStringIgnoringLineEndings}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringEqualsStringIgnoringLineEndings()}{assertStringEqualsStringIgnoringLineEndings()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aa6a05c1ffab4aaa0ad00a68644d3844b} 
+static assert\+String\+Equals\+String\+Ignoring\+Line\+Endings (\begin{DoxyParamCaption}\item[{string}]{\$expected}{, }\item[{string}]{\$actual}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two strings are equal except for line endings.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad596faffb607b6fc297aecf5bdeec780}\index{Assert@{Assert}!assertStringMatchesFormat@{assertStringMatchesFormat}}
+\index{assertStringMatchesFormat@{assertStringMatchesFormat}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringMatchesFormat()}{assertStringMatchesFormat()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad596faffb607b6fc297aecf5bdeec780} 
+static assert\+String\+Matches\+Format (\begin{DoxyParamCaption}\item[{string}]{\$format}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string matches a given format string.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a3bffdbf6735c798a9b4da15d5baf87e5}\index{Assert@{Assert}!assertStringMatchesFormatFile@{assertStringMatchesFormatFile}}
+\index{assertStringMatchesFormatFile@{assertStringMatchesFormatFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringMatchesFormatFile()}{assertStringMatchesFormatFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a3bffdbf6735c798a9b4da15d5baf87e5} 
+static assert\+String\+Matches\+Format\+File (\begin{DoxyParamCaption}\item[{string}]{\$format\+File}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string matches a given format file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a84c919b220b7d7e3ad9c00b1130f22ca}\index{Assert@{Assert}!assertStringNotContainsString@{assertStringNotContainsString}}
+\index{assertStringNotContainsString@{assertStringNotContainsString}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringNotContainsString()}{assertStringNotContainsString()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a84c919b220b7d7e3ad9c00b1130f22ca} 
+static assert\+String\+Not\+Contains\+String (\begin{DoxyParamCaption}\item[{string}]{\$needle}{, }\item[{string}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a03ba666bf099052df7c8b289d4fd2bea}\index{Assert@{Assert}!assertStringNotContainsStringIgnoringCase@{assertStringNotContainsStringIgnoringCase}}
+\index{assertStringNotContainsStringIgnoringCase@{assertStringNotContainsStringIgnoringCase}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringNotContainsStringIgnoringCase()}{assertStringNotContainsStringIgnoringCase()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a03ba666bf099052df7c8b289d4fd2bea} 
+static assert\+String\+Not\+Contains\+String\+Ignoring\+Case (\begin{DoxyParamCaption}\item[{string}]{\$needle}{, }\item[{string}]{\$haystack}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a3bb53457a720f6c06799f1ebbd1fedae}\index{Assert@{Assert}!assertStringNotEqualsFile@{assertStringNotEqualsFile}}
+\index{assertStringNotEqualsFile@{assertStringNotEqualsFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringNotEqualsFile()}{assertStringNotEqualsFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a3bb53457a720f6c06799f1ebbd1fedae} 
+static assert\+String\+Not\+Equals\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+String}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of a string is not equal to the contents of a file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_adaf0343a303c0beb5ce10c09056dd6a0}\index{Assert@{Assert}!assertStringNotEqualsFileCanonicalizing@{assertStringNotEqualsFileCanonicalizing}}
+\index{assertStringNotEqualsFileCanonicalizing@{assertStringNotEqualsFileCanonicalizing}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringNotEqualsFileCanonicalizing()}{assertStringNotEqualsFileCanonicalizing()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_adaf0343a303c0beb5ce10c09056dd6a0} 
+static assert\+String\+Not\+Equals\+File\+Canonicalizing (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+String}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of a string is not equal to the contents of a file (canonicalizing).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aba4c58d881780cfec17bc9d3834160b6}\index{Assert@{Assert}!assertStringNotEqualsFileIgnoringCase@{assertStringNotEqualsFileIgnoringCase}}
+\index{assertStringNotEqualsFileIgnoringCase@{assertStringNotEqualsFileIgnoringCase}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringNotEqualsFileIgnoringCase()}{assertStringNotEqualsFileIgnoringCase()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aba4c58d881780cfec17bc9d3834160b6} 
+static assert\+String\+Not\+Equals\+File\+Ignoring\+Case (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+String}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that the contents of a string is not equal to the contents of a file (ignoring case).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a60343b0763f808380a0d6ae669ede96e}\index{Assert@{Assert}!assertStringNotMatchesFormat@{assertStringNotMatchesFormat}}
+\index{assertStringNotMatchesFormat@{assertStringNotMatchesFormat}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringNotMatchesFormat()}{assertStringNotMatchesFormat()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a60343b0763f808380a0d6ae669ede96e} 
+static assert\+String\+Not\+Matches\+Format (\begin{DoxyParamCaption}\item[{string}]{\$format}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string does not match a given format string.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000019}{Deprecated}}]\href{https://github.com/sebastianbergmann/phpunit/issues/5472}{\texttt{ https\+://github.\+com/sebastianbergmann/phpunit/issues/5472}} \end{DoxyRefDesc}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a2d7501729a15c4a790a9020a15fe5cad}\index{Assert@{Assert}!assertStringNotMatchesFormatFile@{assertStringNotMatchesFormatFile}}
+\index{assertStringNotMatchesFormatFile@{assertStringNotMatchesFormatFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringNotMatchesFormatFile()}{assertStringNotMatchesFormatFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a2d7501729a15c4a790a9020a15fe5cad} 
+static assert\+String\+Not\+Matches\+Format\+File (\begin{DoxyParamCaption}\item[{string}]{\$format\+File}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string does not match a given format string.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000020}{Deprecated}}]\href{https://github.com/sebastianbergmann/phpunit/issues/5472}{\texttt{ https\+://github.\+com/sebastianbergmann/phpunit/issues/5472}} \end{DoxyRefDesc}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a606927f209841f6861547b089bfe206a}\index{Assert@{Assert}!assertStringStartsNotWith@{assertStringStartsNotWith}}
+\index{assertStringStartsNotWith@{assertStringStartsNotWith}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringStartsNotWith()}{assertStringStartsNotWith()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a606927f209841f6861547b089bfe206a} 
+static assert\+String\+Starts\+Not\+With (\begin{DoxyParamCaption}\item[{string}]{\$prefix}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string starts not with a given prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a603b325e36a4ac9b670103acd93dae6f}\index{Assert@{Assert}!assertStringStartsWith@{assertStringStartsWith}}
+\index{assertStringStartsWith@{assertStringStartsWith}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertStringStartsWith()}{assertStringStartsWith()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a603b325e36a4ac9b670103acd93dae6f} 
+static assert\+String\+Starts\+With (\begin{DoxyParamCaption}\item[{string}]{\$prefix}{, }\item[{string}]{\$string}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a string starts with a given prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aa6f6a8f1474e2c8381d50438e814972b}\index{Assert@{Assert}!assertThat@{assertThat}}
+\index{assertThat@{assertThat}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertThat()}{assertThat()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aa6f6a8f1474e2c8381d50438e814972b} 
+static assert\+That (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}}}]{\$constraint}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Evaluates a \doxylink{namespace_p_h_p_unit}{PHPUnit}\textbackslash{}\+Framework\textbackslash{}\+Constraint matcher object.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a965043a39c8c43a9c984eb8521c52923}\index{Assert@{Assert}!assertTrue@{assertTrue}}
+\index{assertTrue@{assertTrue}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertTrue()}{assertTrue()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a965043a39c8c43a9c984eb8521c52923} 
+static assert\+True (\begin{DoxyParamCaption}\item[{mixed}]{\$condition}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that a condition is true.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/assert true \$condition \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_afb3743f9a65f1d58ce5f41a133a5d735}\index{Assert@{Assert}!assertXmlFileEqualsXmlFile@{assertXmlFileEqualsXmlFile}}
+\index{assertXmlFileEqualsXmlFile@{assertXmlFileEqualsXmlFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertXmlFileEqualsXmlFile()}{assertXmlFileEqualsXmlFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_afb3743f9a65f1d58ce5f41a133a5d735} 
+static assert\+Xml\+File\+Equals\+Xml\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+File}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two XML files are equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Xml\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ade71c006efbb52859e75d227228dbd6e}\index{Assert@{Assert}!assertXmlFileNotEqualsXmlFile@{assertXmlFileNotEqualsXmlFile}}
+\index{assertXmlFileNotEqualsXmlFile@{assertXmlFileNotEqualsXmlFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertXmlFileNotEqualsXmlFile()}{assertXmlFileNotEqualsXmlFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ade71c006efbb52859e75d227228dbd6e} 
+static assert\+Xml\+File\+Not\+Equals\+Xml\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+File}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two XML files are not equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{namespace_p_h_p_unit}{PHPUnit}\textbackslash{}\+Util\textbackslash{}\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a74c8035de5bc0bf49376aff4f3795567}\index{Assert@{Assert}!assertXmlStringEqualsXmlFile@{assertXmlStringEqualsXmlFile}}
+\index{assertXmlStringEqualsXmlFile@{assertXmlStringEqualsXmlFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertXmlStringEqualsXmlFile()}{assertXmlStringEqualsXmlFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a74c8035de5bc0bf49376aff4f3795567} 
+static assert\+Xml\+String\+Equals\+Xml\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+Xml}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two XML documents are equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Xml\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ac9ae57dc320765cb05c586bcc814a58c}\index{Assert@{Assert}!assertXmlStringEqualsXmlString@{assertXmlStringEqualsXmlString}}
+\index{assertXmlStringEqualsXmlString@{assertXmlStringEqualsXmlString}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertXmlStringEqualsXmlString()}{assertXmlStringEqualsXmlString()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ac9ae57dc320765cb05c586bcc814a58c} 
+static assert\+Xml\+String\+Equals\+Xml\+String (\begin{DoxyParamCaption}\item[{string}]{\$expected\+Xml}{, }\item[{string}]{\$actual\+Xml}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two XML documents are equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Xml\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad326c9a10f7e85d9b05c52c38f29a181}\index{Assert@{Assert}!assertXmlStringNotEqualsXmlFile@{assertXmlStringNotEqualsXmlFile}}
+\index{assertXmlStringNotEqualsXmlFile@{assertXmlStringNotEqualsXmlFile}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertXmlStringNotEqualsXmlFile()}{assertXmlStringNotEqualsXmlFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad326c9a10f7e85d9b05c52c38f29a181} 
+static assert\+Xml\+String\+Not\+Equals\+Xml\+File (\begin{DoxyParamCaption}\item[{string}]{\$expected\+File}{, }\item[{string}]{\$actual\+Xml}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two XML documents are not equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Xml\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_afb64a1e1f02e3bb1ce274c455c0af923}\index{Assert@{Assert}!assertXmlStringNotEqualsXmlString@{assertXmlStringNotEqualsXmlString}}
+\index{assertXmlStringNotEqualsXmlString@{assertXmlStringNotEqualsXmlString}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{assertXmlStringNotEqualsXmlString()}{assertXmlStringNotEqualsXmlString()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_afb64a1e1f02e3bb1ce274c455c0af923} 
+static assert\+Xml\+String\+Not\+Equals\+Xml\+String (\begin{DoxyParamCaption}\item[{string}]{\$expected\+Xml}{, }\item[{string}]{\$actual\+Xml}{, }\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Asserts that two XML documents are not equal.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Expectation\+Failed\+Exception} & \\
+\hline
+{\em Xml\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a4dc3eb4ee7caba1b62415ac1f8f128ef}\index{Assert@{Assert}!callback@{callback}}
+\index{callback@{callback}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a4dc3eb4ee7caba1b62415ac1f8f128ef} 
+static callback (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+@template Callback\+Input of mixed
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+Callback\+Input} & \$callback)\+: bool \$callback\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Callback$<$\+Callback\+Input$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a88e29926dab8e1f2809ab3ae3185a06a}\index{Assert@{Assert}!containsEqual@{containsEqual}}
+\index{containsEqual@{containsEqual}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{containsEqual()}{containsEqual()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a88e29926dab8e1f2809ab3ae3185a06a} 
+static contains\+Equal (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a515ee49bf01105aba6bfe086a88cc9ef}\index{Assert@{Assert}!containsIdentical@{containsIdentical}}
+\index{containsIdentical@{containsIdentical}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{containsIdentical()}{containsIdentical()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a515ee49bf01105aba6bfe086a88cc9ef} 
+static contains\+Identical (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a8d25447129d11edcbf91f80c7d82cae2}\index{Assert@{Assert}!containsOnly@{containsOnly}}
+\index{containsOnly@{containsOnly}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{containsOnly()}{containsOnly()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a8d25447129d11edcbf91f80c7d82cae2} 
+static contains\+Only (\begin{DoxyParamCaption}\item[{string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}array\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}bool\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}boolean\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}callable\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}double\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}float\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}int\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}integer\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}iterable\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}null\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}numeric\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}object\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}real\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}resource} & (closed)\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}resource\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}scalar\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}string\textquotesingle{} \$type\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad2c944eaa956d20cc12d412158dd4f81}\index{Assert@{Assert}!containsOnlyInstancesOf@{containsOnlyInstancesOf}}
+\index{containsOnlyInstancesOf@{containsOnlyInstancesOf}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{containsOnlyInstancesOf()}{containsOnlyInstancesOf()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad2c944eaa956d20cc12d412158dd4f81} 
+static contains\+Only\+Instances\+Of (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$class\+Name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aa97dae09b094bb2e42b4c0eafe28e697}\index{Assert@{Assert}!countOf@{countOf}}
+\index{countOf@{countOf}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{countOf()}{countOf()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aa97dae09b094bb2e42b4c0eafe28e697} 
+static count\+Of (\begin{DoxyParamCaption}\item[{int}]{\$count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aeff6357919ac620ffb892dc627f6b90b}\index{Assert@{Assert}!directoryExists@{directoryExists}}
+\index{directoryExists@{directoryExists}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{directoryExists()}{directoryExists()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aeff6357919ac620ffb892dc627f6b90b} 
+static directory\+Exists (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a8ef54617999c8783df344f3c6d6ed7cb}\index{Assert@{Assert}!equalTo@{equalTo}}
+\index{equalTo@{equalTo}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{equalTo()}{equalTo()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a8ef54617999c8783df344f3c6d6ed7cb} 
+static equal\+To (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a1a90ec425fe9e55973bceba60fcb59df}\index{Assert@{Assert}!equalToCanonicalizing@{equalToCanonicalizing}}
+\index{equalToCanonicalizing@{equalToCanonicalizing}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{equalToCanonicalizing()}{equalToCanonicalizing()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a1a90ec425fe9e55973bceba60fcb59df} 
+static equal\+To\+Canonicalizing (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ae93659c69312d03bb32fc87abaa7c261}\index{Assert@{Assert}!equalToIgnoringCase@{equalToIgnoringCase}}
+\index{equalToIgnoringCase@{equalToIgnoringCase}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{equalToIgnoringCase()}{equalToIgnoringCase()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ae93659c69312d03bb32fc87abaa7c261} 
+static equal\+To\+Ignoring\+Case (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a455f65bbe17a6020a6bc79624735c78a}\index{Assert@{Assert}!equalToWithDelta@{equalToWithDelta}}
+\index{equalToWithDelta@{equalToWithDelta}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{equalToWithDelta()}{equalToWithDelta()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a455f65bbe17a6020a6bc79624735c78a} 
+static equal\+To\+With\+Delta (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{float}]{\$delta}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_adae14ceb5ba097c3b1e1a4e7c7c609c5}\index{Assert@{Assert}!fail@{fail}}
+\index{fail@{fail}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_adae14ceb5ba097c3b1e1a4e7c7c609c5} 
+static fail (\begin{DoxyParamCaption}\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Fails a test with the given message.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Assertion\+Failed\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_af38b35545d38d249c689615a4bc46ec1}\index{Assert@{Assert}!fileExists@{fileExists}}
+\index{fileExists@{fileExists}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{fileExists()}{fileExists()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_af38b35545d38d249c689615a4bc46ec1} 
+static file\+Exists (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a9f70d3865f00e8c356111d4e246bb50d}\index{Assert@{Assert}!getCount@{getCount}}
+\index{getCount@{getCount}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a9f70d3865f00e8c356111d4e246bb50d} 
+static get\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Return the current assertion count. \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a8033bee23a2181c2127f58b3143837c1}\index{Assert@{Assert}!greaterThan@{greaterThan}}
+\index{greaterThan@{greaterThan}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{greaterThan()}{greaterThan()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a8033bee23a2181c2127f58b3143837c1} 
+static greater\+Than (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a33d3294ad28147d0a7469707da4aacb8}\index{Assert@{Assert}!greaterThanOrEqual@{greaterThanOrEqual}}
+\index{greaterThanOrEqual@{greaterThanOrEqual}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{greaterThanOrEqual()}{greaterThanOrEqual()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a33d3294ad28147d0a7469707da4aacb8} 
+static greater\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a7d41f7152ff13f7619084bcf1989fd5d}\index{Assert@{Assert}!identicalTo@{identicalTo}}
+\index{identicalTo@{identicalTo}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{identicalTo()}{identicalTo()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a7d41f7152ff13f7619084bcf1989fd5d} 
+static identical\+To (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aa4780c055395206e57fb4ec8aa33ce52}\index{Assert@{Assert}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aa4780c055395206e57fb4ec8aa33ce52} 
+static is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad9c918506615e9b2507e0bc9d70add8b}\index{Assert@{Assert}!isFalse@{isFalse}}
+\index{isFalse@{isFalse}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isFalse()}{isFalse()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad9c918506615e9b2507e0bc9d70add8b} 
+static is\+False (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a991e411ffff9642316db83969d8ffc20}\index{Assert@{Assert}!isFinite@{isFinite}}
+\index{isFinite@{isFinite}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isFinite()}{isFinite()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a991e411ffff9642316db83969d8ffc20} 
+static is\+Finite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ac8cfcd770d31fd4f4dfb7c2a6111fe73}\index{Assert@{Assert}!isInfinite@{isInfinite}}
+\index{isInfinite@{isInfinite}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isInfinite()}{isInfinite()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ac8cfcd770d31fd4f4dfb7c2a6111fe73} 
+static is\+Infinite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a35c02eedde5d3ec9f0d45d4d6e81c104}\index{Assert@{Assert}!isInstanceOf@{isInstanceOf}}
+\index{isInstanceOf@{isInstanceOf}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isInstanceOf()}{isInstanceOf()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a35c02eedde5d3ec9f0d45d4d6e81c104} 
+static is\+Instance\+Of (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unknown\+Class\+Or\+Interface\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a41ac5e3bef6aa36256a212ec69f04905}\index{Assert@{Assert}!isJson@{isJson}}
+\index{isJson@{isJson}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isJson()}{isJson()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a41ac5e3bef6aa36256a212ec69f04905} 
+static is\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a0a04de523828ef1f578ef4e9779e5ae9}\index{Assert@{Assert}!isList@{isList}}
+\index{isList@{isList}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isList()}{isList()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a0a04de523828ef1f578ef4e9779e5ae9} 
+static is\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a4c62604014a69d13ca70d0b35e94092a}\index{Assert@{Assert}!isNan@{isNan}}
+\index{isNan@{isNan}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isNan()}{isNan()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a4c62604014a69d13ca70d0b35e94092a} 
+static is\+Nan (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a84113959d7b6e3a8f79f3d4e6d3ff792}\index{Assert@{Assert}!isNull@{isNull}}
+\index{isNull@{isNull}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isNull()}{isNull()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a84113959d7b6e3a8f79f3d4e6d3ff792} 
+static is\+Null (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a2e5a9a2013055d503a04a9902f32fa30}\index{Assert@{Assert}!isReadable@{isReadable}}
+\index{isReadable@{isReadable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isReadable()}{isReadable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a2e5a9a2013055d503a04a9902f32fa30} 
+static is\+Readable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aec0d388399b30713c0f555e4939f8f68}\index{Assert@{Assert}!isTrue@{isTrue}}
+\index{isTrue@{isTrue}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isTrue()}{isTrue()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aec0d388399b30713c0f555e4939f8f68} 
+static is\+True (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a9f01b36b8494d8848d90022057da9d87}\index{Assert@{Assert}!isType@{isType}}
+\index{isType@{isType}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isType()}{isType()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a9f01b36b8494d8848d90022057da9d87} 
+static is\+Type (\begin{DoxyParamCaption}\item[{string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}array\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}bool\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}boolean\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}callable\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}double\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}float\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}int\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}integer\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}iterable\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}null\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}numeric\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}object\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}real\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}resource} & (closed)\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}resource\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}scalar\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}string\textquotesingle{} \$type\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a849d18b134751834110a62dc298ec945}\index{Assert@{Assert}!isWritable@{isWritable}}
+\index{isWritable@{isWritable}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{isWritable()}{isWritable()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a849d18b134751834110a62dc298ec945} 
+static is\+Writable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a1cd1e3f9307f852e92f7aca59d18c27e}\index{Assert@{Assert}!lessThan@{lessThan}}
+\index{lessThan@{lessThan}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{lessThan()}{lessThan()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a1cd1e3f9307f852e92f7aca59d18c27e} 
+static less\+Than (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a0f6ca61e6e7a30de3dc934d6cb731ed1}\index{Assert@{Assert}!lessThanOrEqual@{lessThanOrEqual}}
+\index{lessThanOrEqual@{lessThanOrEqual}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{lessThanOrEqual()}{lessThanOrEqual()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a0f6ca61e6e7a30de3dc934d6cb731ed1} 
+static less\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a1fcc4041547f22a860f6fdb541799215}\index{Assert@{Assert}!logicalAnd@{logicalAnd}}
+\index{logicalAnd@{logicalAnd}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{logicalAnd()}{logicalAnd()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a1fcc4041547f22a860f6fdb541799215} 
+static logical\+And (\begin{DoxyParamCaption}\item[{mixed ...}]{\$constraints}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a3f226a30b83faac9dbeef65b35483ec7}\index{Assert@{Assert}!logicalNot@{logicalNot}}
+\index{logicalNot@{logicalNot}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{logicalNot()}{logicalNot()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a3f226a30b83faac9dbeef65b35483ec7} 
+static logical\+Not (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}}}]{\$constraint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a2b7fc41f080a81e900a8a87de96daa4a}\index{Assert@{Assert}!logicalOr@{logicalOr}}
+\index{logicalOr@{logicalOr}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{logicalOr()}{logicalOr()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a2b7fc41f080a81e900a8a87de96daa4a} 
+static logical\+Or (\begin{DoxyParamCaption}\item[{mixed ...}]{\$constraints}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a1fa3089ad063842a7d381e71544442ea}\index{Assert@{Assert}!logicalXor@{logicalXor}}
+\index{logicalXor@{logicalXor}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{logicalXor()}{logicalXor()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a1fa3089ad063842a7d381e71544442ea} 
+static logical\+Xor (\begin{DoxyParamCaption}\item[{mixed ...}]{\$constraints}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a53f993e89f17988ec2ec184c2d5dc4e1}\index{Assert@{Assert}!markTestIncomplete@{markTestIncomplete}}
+\index{markTestIncomplete@{markTestIncomplete}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{markTestIncomplete()}{markTestIncomplete()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a53f993e89f17988ec2ec184c2d5dc4e1} 
+static mark\+Test\+Incomplete (\begin{DoxyParamCaption}\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Mark the test as incomplete.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Incomplete\+Test\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a9a40e1270a1151b23b67727cf1a7eea3}\index{Assert@{Assert}!markTestSkipped@{markTestSkipped}}
+\index{markTestSkipped@{markTestSkipped}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{markTestSkipped()}{markTestSkipped()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a9a40e1270a1151b23b67727cf1a7eea3} 
+static mark\+Test\+Skipped (\begin{DoxyParamCaption}\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Mark the test as skipped.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Skipped\+With\+Message\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a5137720917fe5b8ee98c15cfdc55f735}\index{Assert@{Assert}!matches@{matches}}
+\index{matches@{matches}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a5137720917fe5b8ee98c15cfdc55f735} 
+static matches (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a89cdbe840883070761dac6447c7a4c76}\index{Assert@{Assert}!matchesRegularExpression@{matchesRegularExpression}}
+\index{matchesRegularExpression@{matchesRegularExpression}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{matchesRegularExpression()}{matchesRegularExpression()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a89cdbe840883070761dac6447c7a4c76} 
+static matches\+Regular\+Expression (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a176c566f5a7ccbd4d8947646e4fc7cc3}\index{Assert@{Assert}!objectEquals@{objectEquals}}
+\index{objectEquals@{objectEquals}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{objectEquals()}{objectEquals()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a176c566f5a7ccbd4d8947646e4fc7cc3} 
+static object\+Equals (\begin{DoxyParamCaption}\item[{object}]{\$object}{, }\item[{string}]{\$method}{ = {\ttfamily \textquotesingle{}equals\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_a56100b6464827054cd04d4004eae393c}\index{Assert@{Assert}!resetCount@{resetCount}}
+\index{resetCount@{resetCount}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{resetCount()}{resetCount()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_a56100b6464827054cd04d4004eae393c} 
+static reset\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+Reset the assertion counter. \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aec04bcfa564420df2448109331d01136}\index{Assert@{Assert}!stringContains@{stringContains}}
+\index{stringContains@{stringContains}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{stringContains()}{stringContains()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aec04bcfa564420df2448109331d01136} 
+static string\+Contains (\begin{DoxyParamCaption}\item[{string}]{\$string}{, }\item[{bool}]{\$case}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_af7191764370bfc900c613f2b24d6f296}\index{Assert@{Assert}!stringEndsWith@{stringEndsWith}}
+\index{stringEndsWith@{stringEndsWith}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{stringEndsWith()}{stringEndsWith()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_af7191764370bfc900c613f2b24d6f296} 
+static string\+Ends\+With (\begin{DoxyParamCaption}\item[{string}]{\$suffix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$suffix} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_ad1144ebb8f692082bda883ae574f57e1}\index{Assert@{Assert}!stringEqualsStringIgnoringLineEndings@{stringEqualsStringIgnoringLineEndings}}
+\index{stringEqualsStringIgnoringLineEndings@{stringEqualsStringIgnoringLineEndings}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{stringEqualsStringIgnoringLineEndings()}{stringEqualsStringIgnoringLineEndings()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_ad1144ebb8f692082bda883ae574f57e1} 
+static string\+Equals\+String\+Ignoring\+Line\+Endings (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_assert_aef5b7bfb7ed8d42ab7092e25d370c0b2}\index{Assert@{Assert}!stringStartsWith@{stringStartsWith}}
+\index{stringStartsWith@{stringStartsWith}!Assert@{Assert}}
+\doxysubsubsection{\texorpdfstring{stringStartsWith()}{stringStartsWith()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_assert_aef5b7bfb7ed8d42ab7092e25d370c0b2} 
+static string\+Starts\+With (\begin{DoxyParamCaption}\item[{string}]{\$prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/phpunit/src/\+Framework/\mbox{\hyperlink{_assert_8php}{Assert.\+php}}\end{DoxyCompactItemize}

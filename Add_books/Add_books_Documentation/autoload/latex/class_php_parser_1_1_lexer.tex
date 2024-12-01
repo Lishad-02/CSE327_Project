@@ -1,0 +1,63 @@
+\doxysection{Lexer Class Reference}
+\hypertarget{class_php_parser_1_1_lexer}{}\label{class_php_parser_1_1_lexer}\index{Lexer@{Lexer}}
+Inheritance diagram for Lexer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_lexer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_a73ce5cbd9e4c4ca98b3aa58c9c20afec}{tokenize}} (string \$code, ?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} \$error\+Handler=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_abd2997cc612fe6fb5feb11091ae06516}{postprocess\+Tokens}} (array \&\$tokens, \mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} \$error\+Handler)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_lexer_abd2997cc612fe6fb5feb11091ae06516}\index{Lexer@{Lexer}!postprocessTokens@{postprocessTokens}}
+\index{postprocessTokens@{postprocessTokens}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{postprocessTokens()}{postprocessTokens()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_abd2997cc612fe6fb5feb11091ae06516} 
+postprocess\+Tokens (\begin{DoxyParamCaption}\item[{array \&}]{\$tokens}{, }\item[{\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}}}]{\$error\+Handler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$\+Token$>$} & \$tokens \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_lexer_a73ce5cbd9e4c4ca98b3aa58c9c20afec}\index{Lexer@{Lexer}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!Lexer@{Lexer}}
+\doxysubsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_a73ce5cbd9e4c4ca98b3aa58c9c20afec} 
+tokenize (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}}}]{\$error\+Handler}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Tokenize the provided source code.
+
+The token array is in the same format as provided by the Php\+Token\+::tokenize() method in PHP 8.\+0. The tokens are instances of \doxylink{namespace_php_parser}{Php\+Parser}\textbackslash{}\+Token, to abstract over a polyfill implementation in earlier PHP version.
+
+The token array is terminated by a sentinel token with token ID 0. The token array does not discard any tokens (i.\+e. whitespace and comments are included). The token position attributes are against this token array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & The source code to tokenize. \\
+\hline
+Error\+Handler | null & {\em \$error\+Handler} & Error handler to use for lexing errors. Defaults to Error\+Handler\textbackslash{}\+Throwing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Token\mbox{[}\mbox{]} Tokens 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_emulative_a73ce5cbd9e4c4ca98b3aa58c9c20afec}{Emulative}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{_lexer_8php}{Lexer.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\chapter{phpunit/php-\/timer}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e}{}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e}\index{phpunit/php-\/timer@{phpunit/php-\/timer}}
+\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md240}%
+\Hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md240}%
+
+
+\href{https://packagist.org/packages/phpunit/php-timer}{\texttt{ }} \href{https://github.com/sebastianbergmann/php-timer/actions}{\texttt{ }} \href{https://codecov.io/gh/sebastianbergmann/php-timer}{\texttt{ }}
+
+Utility class for timing things, factored out of \doxylink{namespace_p_h_p_unit}{PHPUnit} into a stand-\/alone component.\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md241}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md241}
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\texttt{ Composer}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ phpunit/php-\/timer}
+
+\end{DoxyCode}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ -\/-\/dev\ phpunit/php-\/timer}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md242}{}\doxysection{\texorpdfstring{Usage}{Usage}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md242}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md243}{}\doxysubsection{\texorpdfstring{Basic Timing}{Basic Timing}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md243}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \_\_DIR\_\_\ .\ \textcolor{stringliteral}{'/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_timer}{SebastianBergmann\(\backslash\)Timer\(\backslash\)Timer}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$timer\ =\ \textcolor{keyword}{new}\ Timer;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$timer-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_timer_af8fa59992209e36dccb3eefb0f75531f}{start}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{foreach}\ (\(\backslash\)range(0,\ 100000)\ as\ \$i)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$duration\ =\ \$timer-\/>stop();}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\_dump(get\_class(\$duration));}
+\DoxyCodeLine{var\_dump(\$duration-\/>asString());}
+\DoxyCodeLine{var\_dump(\$duration-\/>asSeconds());}
+\DoxyCodeLine{var\_dump(\$duration-\/>asMilliseconds());}
+\DoxyCodeLine{var\_dump(\$duration-\/>asMicroseconds());}
+\DoxyCodeLine{var\_dump(\$duration-\/>asNanoseconds());}
+
+\end{DoxyCode}
+
+
+The code above yields the output below\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{string(32)\ "{}SebastianBergmann\(\backslash\)Timer\(\backslash\)Duration"{}}
+\DoxyCodeLine{string(9)\ "{}00:00.002"{}}
+\DoxyCodeLine{float(0.002851062)}
+\DoxyCodeLine{float(2.851062)}
+\DoxyCodeLine{float(2851.062)}
+\DoxyCodeLine{int(2851062)}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md244}{}\doxysubsection{\texorpdfstring{Resource Consumption}{Resource Consumption}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md244}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md245}{}\doxysubsubsection{\texorpdfstring{Explicit duration}{Explicit duration}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md245}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \_\_DIR\_\_\ .\ \textcolor{stringliteral}{'/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter}{SebastianBergmann\(\backslash\)Timer\(\backslash\)ResourceUsageFormatter}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_timer}{SebastianBergmann\(\backslash\)Timer\(\backslash\)Timer}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$timer\ =\ \textcolor{keyword}{new}\ Timer;}
+\DoxyCodeLine{\$timer-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_timer_af8fa59992209e36dccb3eefb0f75531f}{start}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{foreach}\ (\(\backslash\)range(0,\ 100000)\ as\ \$i)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{print\ (\textcolor{keyword}{new}\ ResourceUsageFormatter)-\/>resourceUsage(\$timer-\/>stop());}
+
+\end{DoxyCode}
+
+
+The code above yields the output below\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Time:\ 00:00.002,\ Memory:\ 6.00\ MB}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md246}{}\doxysubsubsection{\texorpdfstring{Duration since PHP Startup (using unreliable `\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REQUEST\+\_\+\+TIME\+\_\+\+FLOAT'\mbox{]}\`{})}{Duration since PHP Startup (using unreliable `\$\+\_\+\+SERVER\mbox{[}\textquotesingle{}REQUEST\+\_\+\+TIME\+\_\+\+FLOAT'\mbox{]}\`{})}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2php-timer_2_r_e_a_d_m_e_autotoc_md246}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \_\_DIR\_\_\ .\ \textcolor{stringliteral}{'/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter}{SebastianBergmann\(\backslash\)Timer\(\backslash\)ResourceUsageFormatter}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{foreach}\ (\(\backslash\)range(0,\ 100000)\ as\ \$i)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{print\ (\textcolor{keyword}{new}\ ResourceUsageFormatter)-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter_a7bfef3809b17a522c10783d3d54b7da6}{resourceUsageSinceStartOfRequest}}();}
+
+\end{DoxyCode}
+
+
+The code above yields the output below\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Time:\ 00:00.002,\ Memory:\ 6.00\ MB}
+
+\end{DoxyCode}
+ 

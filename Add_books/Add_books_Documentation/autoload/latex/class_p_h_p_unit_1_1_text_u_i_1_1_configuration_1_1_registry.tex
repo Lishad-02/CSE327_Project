@@ -1,0 +1,66 @@
+\doxysection{Registry Class Reference}
+\hypertarget{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry}{}\label{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry}\index{Registry@{Registry}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a5e3d26d8d376217fd9d7eaa194cf730f}{save\+To}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a82a8f1803cbf9b8be260431078b818af}{load\+From}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a5ba61361bf0695a285bbaefefc427191}{get}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a6ce0a0c7461e238f4df90255520b9419}{init}} (Cli\+Configuration \$cli\+Configuration, Xml\+Configuration \$xml\+Configuration)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+CLI options and XML configuration are static within a single \doxylink{namespace_p_h_p_unit}{PHPUnit} process. It is therefore okay to use a Singleton registry here.
+
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \doxylink{namespace_p_h_p_unit}{PHPUnit} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a5ba61361bf0695a285bbaefefc427191}\index{Registry@{Registry}!get@{get}}
+\index{get@{get}!Registry@{Registry}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a5ba61361bf0695a285bbaefefc427191} 
+static get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a6ce0a0c7461e238f4df90255520b9419}\index{Registry@{Registry}!init@{init}}
+\index{init@{init}!Registry@{Registry}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a6ce0a0c7461e238f4df90255520b9419} 
+static init (\begin{DoxyParamCaption}\item[{Cli\+Configuration}]{\$cli\+Configuration}{, }\item[{Xml\+Configuration}]{\$xml\+Configuration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{namespace_p_h_p_unit}{PHPUnit}\textbackslash{}\+Text\+UI\textbackslash{}\+Xml\+Configuration\textbackslash{}\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+{\em No\+Custom\+Css\+File\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a82a8f1803cbf9b8be260431078b818af}\index{Registry@{Registry}!loadFrom@{loadFrom}}
+\index{loadFrom@{loadFrom}!Registry@{Registry}}
+\doxysubsubsection{\texorpdfstring{loadFrom()}{loadFrom()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a82a8f1803cbf9b8be260431078b818af} 
+static load\+From (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method is used by the "{}run test(s) in separate process"{} templates.
+
+@noinspection Php\+Unused
+
+@code\+Coverage\+Ignore \Hypertarget{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a5e3d26d8d376217fd9d7eaa194cf730f}\index{Registry@{Registry}!saveTo@{saveTo}}
+\index{saveTo@{saveTo}!Registry@{Registry}}
+\doxysubsubsection{\texorpdfstring{saveTo()}{saveTo()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_registry_a5e3d26d8d376217fd9d7eaa194cf730f} 
+static save\+To (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/phpunit/src/\+Text\+UI/\+Configuration/\mbox{\hyperlink{_text_u_i_2_configuration_2_registry_8php}{Registry.\+php}}\end{DoxyCompactItemize}

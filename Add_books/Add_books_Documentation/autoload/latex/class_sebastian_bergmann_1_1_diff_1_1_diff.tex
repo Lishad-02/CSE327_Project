@@ -1,0 +1,96 @@
+\doxysection{Diff Class Reference}
+\hypertarget{class_sebastian_bergmann_1_1_diff_1_1_diff}{}\label{class_sebastian_bergmann_1_1_diff_1_1_diff}\index{Diff@{Diff}}
+Inheritance diagram for Diff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sebastian_bergmann_1_1_diff_1_1_diff}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_a21334412afb3bb705ed615dcb7763e07}{\+\_\+\+\_\+construct}} (string \$\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_aad8562e0943850410c1a6026d743a991}{from}}, string \$\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_a6f609b4ca69f177673436f99bdaba3e7}{to}}, array \$\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_a7167e878588e11a485a0814e34c79d61}{chunks}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_aad8562e0943850410c1a6026d743a991}{from}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_a6f609b4ca69f177673436f99bdaba3e7}{to}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_a7167e878588e11a485a0814e34c79d61}{chunks}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_a9cc885382e8c61c7bf75b12ac08e9ce6}{set\+Chunks}} (array \$\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_a7167e878588e11a485a0814e34c79d61}{chunks}})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_diff_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@template-\/implements Iterator\+Aggregate$<$int, Chunk$>$ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_diff_a21334412afb3bb705ed615dcb7763e07}\index{Diff@{Diff}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Diff@{Diff}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_diff_1_1_diff_a21334412afb3bb705ed615dcb7763e07} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$from}{, }\item[{string}]{\$to}{, }\item[{array}]{\$chunks}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$from} & \\
+\hline
+non-\/empty-\/string & {\em \$to} & \\
+\hline
+ & {\em list$<$\+Chunk$>$} & \$chunks \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_diff_a7167e878588e11a485a0814e34c79d61}\index{Diff@{Diff}!chunks@{chunks}}
+\index{chunks@{chunks}!Diff@{Diff}}
+\doxysubsubsection{\texorpdfstring{chunks()}{chunks()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_diff_1_1_diff_a7167e878588e11a485a0814e34c79d61} 
+chunks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Chunk$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_diff_aad8562e0943850410c1a6026d743a991}\index{Diff@{Diff}!from@{from}}
+\index{from@{from}!Diff@{Diff}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_diff_1_1_diff_aad8562e0943850410c1a6026d743a991} 
+from (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+non-\/empty-\/string 
+\end{DoxyReturn}
+\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_diff_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{Diff@{Diff}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!Diff@{Diff}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_diff_1_1_diff_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_diff_a9cc885382e8c61c7bf75b12ac08e9ce6}\index{Diff@{Diff}!setChunks@{setChunks}}
+\index{setChunks@{setChunks}!Diff@{Diff}}
+\doxysubsubsection{\texorpdfstring{setChunks()}{setChunks()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_diff_1_1_diff_a9cc885382e8c61c7bf75b12ac08e9ce6} 
+set\+Chunks (\begin{DoxyParamCaption}\item[{array}]{\$chunks}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$\+Chunk$>$} & \$chunks \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_diff_a6f609b4ca69f177673436f99bdaba3e7}\index{Diff@{Diff}!to@{to}}
+\index{to@{to}!Diff@{Diff}}
+\doxysubsubsection{\texorpdfstring{to()}{to()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_diff_1_1_diff_a6f609b4ca69f177673436f99bdaba3e7} 
+to (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+non-\/empty-\/string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/sebastian/diff/src/\mbox{\hyperlink{_diff_8php}{Diff.\+php}}\end{DoxyCompactItemize}

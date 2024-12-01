@@ -1,0 +1,137 @@
+\doxysection{Function\+Like Class Reference}
+\hypertarget{class_php_parser_1_1_builder_1_1_function_like}{}\label{class_php_parser_1_1_builder_1_1_function_like}\index{FunctionLike@{FunctionLike}}
+Inheritance diagram for Function\+Like\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_php_parser_1_1_builder_1_1_function_like}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_function_like_a20889f41cf3034dbbcbfbdc28ad9897e}{make\+Return\+By\+Ref}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_function_like_a717627751ea7581667fcf0ee3f389ac3}{add\+Param}} (\$param)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_function_like_a1c10caa53d12c87ed21af16935f6379b}{add\+Params}} (array \$params)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_function_like_ac0d515fc67f41d733dd7687c1b18fb51}{set\+Return\+Type}} (\$type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration}{Declaration}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_a84285314df11d1a21c01569981967d27}{add\+Stmt}} (\$stmt)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_a5c42f122153c4d02ae24d12b50712f0d}{add\+Stmts}} (array \$stmts)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_a7331d24646c54f9d8f98ecf7bc5827bd}{set\+Doc\+Comment}} (\$doc\+Comment)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_builder}{Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_builder_a3a0d17930cbcc57bef84064afcc1a837}{get\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_function_like_a81cc5fe5cffec775e8e6c0c9f458ecfd}{\$return\+By\+Ref}} = false
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_function_like_a21ae116e22adda72b3971dde67f4ef19}{\$params}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_function_like_ab7977c30c341d600bd35e14bd6cebfe6}{\$return\+Type}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration}{Declaration}}}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_ac89f2733f3f084f1e693e13afbb67739}{\$attributes}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_function_like_a717627751ea7581667fcf0ee3f389ac3}\index{FunctionLike@{FunctionLike}!addParam@{addParam}}
+\index{addParam@{addParam}!FunctionLike@{FunctionLike}}
+\doxysubsubsection{\texorpdfstring{addParam()}{addParam()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_function_like_a717627751ea7581667fcf0ee3f389ac3} 
+add\+Param (\begin{DoxyParamCaption}\item[{}]{\$param}{}\end{DoxyParamCaption})}
+
+Adds a parameter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Param | Param & {\em \$param} & The parameter to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_function_like_a1c10caa53d12c87ed21af16935f6379b}\index{FunctionLike@{FunctionLike}!addParams@{addParams}}
+\index{addParams@{addParams}!FunctionLike@{FunctionLike}}
+\doxysubsubsection{\texorpdfstring{addParams()}{addParams()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_function_like_a1c10caa53d12c87ed21af16935f6379b} 
+add\+Params (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})}
+
+Adds multiple parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (\+Node} & \\
+\hline
+\end{DoxyParams}
+Param\texorpdfstring{$\vert$}{|}\+Param)\mbox{[}\mbox{]} \$params The parameters to add
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_function_like_a20889f41cf3034dbbcbfbdc28ad9897e}\index{FunctionLike@{FunctionLike}!makeReturnByRef@{makeReturnByRef}}
+\index{makeReturnByRef@{makeReturnByRef}!FunctionLike@{FunctionLike}}
+\doxysubsubsection{\texorpdfstring{makeReturnByRef()}{makeReturnByRef()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_function_like_a20889f41cf3034dbbcbfbdc28ad9897e} 
+make\+Return\+By\+Ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Make the function return by reference.
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_function_like_ac0d515fc67f41d733dd7687c1b18fb51}\index{FunctionLike@{FunctionLike}!setReturnType@{setReturnType}}
+\index{setReturnType@{setReturnType}!FunctionLike@{FunctionLike}}
+\doxysubsubsection{\texorpdfstring{setReturnType()}{setReturnType()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_function_like_ac0d515fc67f41d733dd7687c1b18fb51} 
+set\+Return\+Type (\begin{DoxyParamCaption}\item[{}]{\$type}{}\end{DoxyParamCaption})}
+
+Sets the return type for PHP 7.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Node\textbackslash{}\+Name | Node\textbackslash{}\+Identifier | Node\textbackslash{}\+Complex\+Type & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_function_like_a21ae116e22adda72b3971dde67f4ef19}\index{FunctionLike@{FunctionLike}!\$params@{\$params}}
+\index{\$params@{\$params}!FunctionLike@{FunctionLike}}
+\doxysubsubsection{\texorpdfstring{\$params}{\$params}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_function_like_a21ae116e22adda72b3971dde67f4ef19} 
+array \$params = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_function_like_a81cc5fe5cffec775e8e6c0c9f458ecfd}\index{FunctionLike@{FunctionLike}!\$returnByRef@{\$returnByRef}}
+\index{\$returnByRef@{\$returnByRef}!FunctionLike@{FunctionLike}}
+\doxysubsubsection{\texorpdfstring{\$returnByRef}{\$returnByRef}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_function_like_a81cc5fe5cffec775e8e6c0c9f458ecfd} 
+bool \$return\+By\+Ref = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_function_like_ab7977c30c341d600bd35e14bd6cebfe6}\index{FunctionLike@{FunctionLike}!\$returnType@{\$returnType}}
+\index{\$returnType@{\$returnType}!FunctionLike@{FunctionLike}}
+\doxysubsubsection{\texorpdfstring{\$returnType}{\$returnType}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_function_like_ab7977c30c341d600bd35e14bd6cebfe6} 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$return\+Type = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Builder/\mbox{\hyperlink{_builder_2_function_like_8php}{Function\+Like.\+php}}\end{DoxyCompactItemize}

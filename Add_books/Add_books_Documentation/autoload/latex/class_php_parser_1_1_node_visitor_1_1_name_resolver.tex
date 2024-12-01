@@ -1,0 +1,216 @@
+\doxysection{Name\+Resolver Class Reference}
+\hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver}{}\label{class_php_parser_1_1_node_visitor_1_1_name_resolver}\index{NameResolver@{NameResolver}}
+Inheritance diagram for Name\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_php_parser_1_1_node_visitor_1_1_name_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_af9e72be86eb456ba56fb1817b110aeb2}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} \$error\+Handler=null, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_a7426ea45fd9cb51544c7748b8dacdf59}{get\+Name\+Context}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_a61cf9be18190b38cbe8e0778f4cb2fd8}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{Node\+Visitor\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a560dafbb8615947e1fbfa5565bbb832c}{leave\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a85d622872e004eec9219c62ed111a79b}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_ad274adcfa0c60e419a5e7252ac288740}{resolve\+Name}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \$name, int \$type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_a9c84498e95b5be47abccffab4221851b}{resolve\+Class\+Name}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_a6653f6e3c843545e106f8199707c2cd7}{add\+Namespaced\+Name}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_aa161c893fd297f1edfe9b04d0099d07a}{resolve\+Attr\+Groups}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_name_context}{Name\+Context}} \mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_a66850559dc9442695d32cb8db2c369b6}{\$name\+Context}}
+\item 
+bool \mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_ae36d2dbb44b8324ba7a8532da6f0dc58}{\$preserve\+Original\+Names}}
+\item 
+bool \mbox{\hyperlink{class_php_parser_1_1_node_visitor_1_1_name_resolver_a5073fddc03da9a2478c2c9dc728473ae}{\$replace\+Nodes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a6d11bd165a2ecd3a965f1a64df677f96}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a48cbae280b53266294ddbc517de2e59b}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae379b14ba14de6999485d1e6bc22c94f}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae5987b64591d5fb77abdcf3c51cbb238}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_afc3479fd9ddf97109031fee9751f6234}{REPLACE\+\_\+\+WITH\+\_\+\+NULL}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_af9e72be86eb456ba56fb1817b110aeb2}\index{NameResolver@{NameResolver}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_af9e72be86eb456ba56fb1817b110aeb2} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}}}]{\$error\+Handler}{ = {\ttfamily null}, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Constructs a name resolution visitor.
+
+Options\+:
+\begin{DoxyItemize}
+\item preserve\+Original\+Names (default false)\+: An "{}original\+Name"{} attribute will be added to all name nodes that underwent resolution.
+\item replace\+Nodes (default true)\+: Resolved names are replaced in-\/place. Otherwise, a resolved\+Name attribute is added. (Names that cannot be statically resolved receive a namespaced\+Name attribute, as usual.)
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Error\+Handler | null & {\em \$error\+Handler} & Error handler \\
+\hline
+ & {\em array\{preserve\+Original\+Names?} & bool, replace\+Nodes?\+: bool\} \$options Options \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_a6653f6e3c843545e106f8199707c2cd7}\index{NameResolver@{NameResolver}!addNamespacedName@{addNamespacedName}}
+\index{addNamespacedName@{addNamespacedName}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{addNamespacedName()}{addNamespacedName()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_a6653f6e3c843545e106f8199707c2cd7} 
+add\+Namespaced\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_a61cf9be18190b38cbe8e0778f4cb2fd8}\index{NameResolver@{NameResolver}!beforeTraverse@{beforeTraverse}}
+\index{beforeTraverse@{beforeTraverse}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{beforeTraverse()}{beforeTraverse()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_a61cf9be18190b38cbe8e0778f4cb2fd8} 
+before\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+Called once before traversal.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null\+: \$nodes stays as-\/is
+\item otherwise\+: \$nodes is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]} Array of nodes 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a61cf9be18190b38cbe8e0778f4cb2fd8}{Node\+Visitor\+Abstract}}.
+
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_a72d9ab2b97095f3bf1c97eb453a386d1}\index{NameResolver@{NameResolver}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_a72d9ab2b97095f3bf1c97eb453a386d1} 
+enter\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})}
+
+Called when entering a node.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null =\texorpdfstring{$>$}{>} \$node stays as-\/is
+\item array (of Nodes) =\texorpdfstring{$>$}{>} The return value is merged into the parent array (at the position of the \$node)
+\item Node\+Visitor\+::\+REMOVE\+\_\+\+NODE =\texorpdfstring{$>$}{>} \$node is removed from the parent array
+\item Node\+Visitor\+::\+REPLACE\+\_\+\+WITH\+\_\+\+NULL =\texorpdfstring{$>$}{>} \$node is replaced with null
+\item Node\+Visitor\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN =\texorpdfstring{$>$}{>} Children of \$node are not traversed. \$node stays as-\/is
+\item Node\+Visitor\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN =\texorpdfstring{$>$}{>} Further visitors for the current node are skipped, and its children are not traversed. \$node stays as-\/is.
+\item Node\+Visitor\+::\+STOP\+\_\+\+TRAVERSAL =\texorpdfstring{$>$}{>} Traversal is aborted. \$node stays as-\/is
+\item otherwise =\texorpdfstring{$>$}{>} \$node is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & Node\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]} Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a72d9ab2b97095f3bf1c97eb453a386d1}{Node\+Visitor\+Abstract}}.
+
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_a7426ea45fd9cb51544c7748b8dacdf59}\index{NameResolver@{NameResolver}!getNameContext@{getNameContext}}
+\index{getNameContext@{getNameContext}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{getNameContext()}{getNameContext()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_a7426ea45fd9cb51544c7748b8dacdf59} 
+get\+Name\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get name resolution context. \Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_aa161c893fd297f1edfe9b04d0099d07a}\index{NameResolver@{NameResolver}!resolveAttrGroups@{resolveAttrGroups}}
+\index{resolveAttrGroups@{resolveAttrGroups}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{resolveAttrGroups()}{resolveAttrGroups()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_aa161c893fd297f1edfe9b04d0099d07a} 
+resolve\+Attr\+Groups (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_a9c84498e95b5be47abccffab4221851b}\index{NameResolver@{NameResolver}!resolveClassName@{resolveClassName}}
+\index{resolveClassName@{resolveClassName}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{resolveClassName()}{resolveClassName()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_a9c84498e95b5be47abccffab4221851b} 
+resolve\+Class\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}}}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_ad274adcfa0c60e419a5e7252ac288740}\index{NameResolver@{NameResolver}!resolveName@{resolveName}}
+\index{resolveName@{resolveName}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{resolveName()}{resolveName()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_ad274adcfa0c60e419a5e7252ac288740} 
+resolve\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}}}]{\$name}{, }\item[{int}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve name, according to name resolver options.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Name & {\em \$name} & Function or constant name to resolve \\
+\hline
+ & {\em Stmt} & \\
+\hline
+\end{DoxyParams}
+Use\+\_\+\+::\+TYPE\+\_\+\texorpdfstring{$\ast$}{*} \$type One of Stmt\textbackslash{}\+Use\+\_\+\+::\+TYPE\+\_\+\texorpdfstring{$\ast$}{*}
+
+\begin{DoxyReturn}{Returns}
+Name Resolved name, or original name with attribute 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_a66850559dc9442695d32cb8db2c369b6}\index{NameResolver@{NameResolver}!\$nameContext@{\$nameContext}}
+\index{\$nameContext@{\$nameContext}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{\$nameContext}{\$nameContext}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_a66850559dc9442695d32cb8db2c369b6} 
+\mbox{\hyperlink{class_php_parser_1_1_name_context}{Name\+Context}} \$name\+Context\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_ae36d2dbb44b8324ba7a8532da6f0dc58}\index{NameResolver@{NameResolver}!\$preserveOriginalNames@{\$preserveOriginalNames}}
+\index{\$preserveOriginalNames@{\$preserveOriginalNames}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{\$preserveOriginalNames}{\$preserveOriginalNames}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_ae36d2dbb44b8324ba7a8532da6f0dc58} 
+bool \$preserve\+Original\+Names\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_node_visitor_1_1_name_resolver_a5073fddc03da9a2478c2c9dc728473ae}\index{NameResolver@{NameResolver}!\$replaceNodes@{\$replaceNodes}}
+\index{\$replaceNodes@{\$replaceNodes}!NameResolver@{NameResolver}}
+\doxysubsubsection{\texorpdfstring{\$replaceNodes}{\$replaceNodes}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_visitor_1_1_name_resolver_a5073fddc03da9a2478c2c9dc728473ae} 
+bool \$replace\+Nodes\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Node\+Visitor/\mbox{\hyperlink{_name_resolver_8php}{Name\+Resolver.\+php}}\end{DoxyCompactItemize}

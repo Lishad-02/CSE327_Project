@@ -1,0 +1,231 @@
+\doxysection{Builder\+Helpers Class Reference}
+\hypertarget{class_php_parser_1_1_builder_helpers}{}\label{class_php_parser_1_1_builder_helpers}\index{BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_ada887298e99cd9d92233d772dcf9c294}{normalize\+Node}} (\$node)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_a1c85f56bb904a4c7c6a867c2ee3671cd}{normalize\+Stmt}} (\$node)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_a3590b1642ea32c3d84f42afce74c31ed}{normalize\+Identifier}} (\$name)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_a755186b985a4cfb3db0b9acf5d7b2735}{normalize\+Identifier\+Or\+Expr}} (\$name)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_a36360043a5c1569edf12693bb7672073}{normalize\+Name}} (\$name)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_a9b492f55ee4ed6edf46dbba7af6e5009}{normalize\+Name\+Or\+Expr}} (\$name)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_ad6306f5fa4f6c480e7db374b1e9bbff0}{normalize\+Type}} (\$type)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_a9df4acd5dd9e66118c4fa86864d719f2}{normalize\+Value}} (\$value)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_aca1217186198210f89379aff20018518}{normalize\+Doc\+Comment}} (\$doc\+Comment)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_a5ad559387fd11d712f50d6ed03497f10}{normalize\+Attribute}} (\$attribute)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_a4a11d598f1901afa72cd55dfe014b75d}{add\+Modifier}} (int \$modifiers, int \$modifier)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_builder_helpers_a50d786865efcb594c028d76f308e3cfe}{add\+Class\+Modifier}} (int \$existing\+Modifiers, int \$modifier\+To\+Set)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class defines helpers used in the implementation of builders. Don\textquotesingle{}t use it directly. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_builder_helpers_a50d786865efcb594c028d76f308e3cfe}\index{BuilderHelpers@{BuilderHelpers}!addClassModifier@{addClassModifier}}
+\index{addClassModifier@{addClassModifier}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{addClassModifier()}{addClassModifier()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_a50d786865efcb594c028d76f308e3cfe} 
+static add\+Class\+Modifier (\begin{DoxyParamCaption}\item[{int}]{\$existing\+Modifiers}{, }\item[{int}]{\$modifier\+To\+Set}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Adds a modifier and returns new modifier bitmask. \begin{DoxyReturn}{Returns}
+int New modifiers 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_a4a11d598f1901afa72cd55dfe014b75d}\index{BuilderHelpers@{BuilderHelpers}!addModifier@{addModifier}}
+\index{addModifier@{addModifier}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{addModifier()}{addModifier()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_a4a11d598f1901afa72cd55dfe014b75d} 
+static add\+Modifier (\begin{DoxyParamCaption}\item[{int}]{\$modifiers}{, }\item[{int}]{\$modifier}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Adds a modifier and returns new modifier bitmask.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$modifiers} & Existing modifiers \\
+\hline
+int & {\em \$modifier} & Modifier to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int New modifiers 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_a5ad559387fd11d712f50d6ed03497f10}\index{BuilderHelpers@{BuilderHelpers}!normalizeAttribute@{normalizeAttribute}}
+\index{normalizeAttribute@{normalizeAttribute}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeAttribute()}{normalizeAttribute()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_a5ad559387fd11d712f50d6ed03497f10} 
+static normalize\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a attribute\+: Converts attribute to the Attribute Group if needed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Attribute | Node\textbackslash{}\+Attribute\+Group & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\textbackslash{}\+Attribute\+Group The Attribute Group 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_aca1217186198210f89379aff20018518}\index{BuilderHelpers@{BuilderHelpers}!normalizeDocComment@{normalizeDocComment}}
+\index{normalizeDocComment@{normalizeDocComment}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeDocComment()}{normalizeDocComment()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_aca1217186198210f89379aff20018518} 
+static normalize\+Doc\+Comment (\begin{DoxyParamCaption}\item[{}]{\$doc\+Comment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a doc comment\+: Converts plain strings to \doxylink{namespace_php_parser}{Php\+Parser}\textbackslash{}\+Comment\textbackslash{}\+Doc.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Comment\textbackslash{}\+Doc | string & {\em \$doc\+Comment} & The doc comment to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Comment\textbackslash{}\+Doc The normalized doc comment 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_a3590b1642ea32c3d84f42afce74c31ed}\index{BuilderHelpers@{BuilderHelpers}!normalizeIdentifier@{normalizeIdentifier}}
+\index{normalizeIdentifier@{normalizeIdentifier}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeIdentifier()}{normalizeIdentifier()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_a3590b1642ea32c3d84f42afce74c31ed} 
+static normalize\+Identifier (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes strings to Identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Identifier & {\em \$name} & The identifier to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Identifier The normalized identifier 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_a755186b985a4cfb3db0b9acf5d7b2735}\index{BuilderHelpers@{BuilderHelpers}!normalizeIdentifierOrExpr@{normalizeIdentifierOrExpr}}
+\index{normalizeIdentifierOrExpr@{normalizeIdentifierOrExpr}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeIdentifierOrExpr()}{normalizeIdentifierOrExpr()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_a755186b985a4cfb3db0b9acf5d7b2735} 
+static normalize\+Identifier\+Or\+Expr (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes strings to Identifier, also allowing expressions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Identifier | Expr & {\em \$name} & The identifier to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Identifier\texorpdfstring{$\vert$}{|}\+Expr The normalized identifier or expression 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_a36360043a5c1569edf12693bb7672073}\index{BuilderHelpers@{BuilderHelpers}!normalizeName@{normalizeName}}
+\index{normalizeName@{normalizeName}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeName()}{normalizeName()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_a36360043a5c1569edf12693bb7672073} 
+static normalize\+Name (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a name\+: Converts string names to Name nodes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Name | string & {\em \$name} & The name to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Name The normalized name 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_a9b492f55ee4ed6edf46dbba7af6e5009}\index{BuilderHelpers@{BuilderHelpers}!normalizeNameOrExpr@{normalizeNameOrExpr}}
+\index{normalizeNameOrExpr@{normalizeNameOrExpr}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeNameOrExpr()}{normalizeNameOrExpr()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_a9b492f55ee4ed6edf46dbba7af6e5009} 
+static normalize\+Name\+Or\+Expr (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a name\+: Converts string names to Name nodes, while also allowing expressions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Expr | Name | string & {\em \$name} & The name to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Name\texorpdfstring{$\vert$}{|}\+Expr The normalized name or expression 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_ada887298e99cd9d92233d772dcf9c294}\index{BuilderHelpers@{BuilderHelpers}!normalizeNode@{normalizeNode}}
+\index{normalizeNode@{normalizeNode}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeNode()}{normalizeNode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_ada887298e99cd9d92233d772dcf9c294} 
+static normalize\+Node (\begin{DoxyParamCaption}\item[{}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a node\+: Converts builder objects to nodes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node | Builder & {\em \$node} & The node to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node The normalized node 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_a1c85f56bb904a4c7c6a867c2ee3671cd}\index{BuilderHelpers@{BuilderHelpers}!normalizeStmt@{normalizeStmt}}
+\index{normalizeStmt@{normalizeStmt}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeStmt()}{normalizeStmt()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_a1c85f56bb904a4c7c6a867c2ee3671cd} 
+static normalize\+Stmt (\begin{DoxyParamCaption}\item[{}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a node to a statement.
+
+Expressions are wrapped in a Stmt\textbackslash{}\+Expression node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node | Builder & {\em \$node} & The node to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Stmt The normalized statement node 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_ad6306f5fa4f6c480e7db374b1e9bbff0}\index{BuilderHelpers@{BuilderHelpers}!normalizeType@{normalizeType}}
+\index{normalizeType@{normalizeType}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeType()}{normalizeType()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_ad6306f5fa4f6c480e7db374b1e9bbff0} 
+static normalize\+Type (\begin{DoxyParamCaption}\item[{}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a type\+: Converts plain-\/text type names into proper AST representation.
+
+In particular, builtin types become Identifiers, custom types become Names and nullables are wrapped in Nullable\+Type nodes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Name | Identifier | Complex\+Type & {\em \$type} & The type to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Name\texorpdfstring{$\vert$}{|}\+Identifier\texorpdfstring{$\vert$}{|}\+Complex\+Type The normalized type 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_helpers_a9df4acd5dd9e66118c4fa86864d719f2}\index{BuilderHelpers@{BuilderHelpers}!normalizeValue@{normalizeValue}}
+\index{normalizeValue@{normalizeValue}!BuilderHelpers@{BuilderHelpers}}
+\doxysubsubsection{\texorpdfstring{normalizeValue()}{normalizeValue()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_helpers_a9df4acd5dd9e66118c4fa86864d719f2} 
+static normalize\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a value\+: Converts nulls, booleans, integers, floats, strings and arrays into their respective nodes
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Expr | bool | null | int | float | string | array | \textbackslash{}\+Unit\+Enum & {\em \$value} & The value to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Expr The normalized value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{_builder_helpers_8php}{Builder\+Helpers.\+php}}\end{DoxyCompactItemize}

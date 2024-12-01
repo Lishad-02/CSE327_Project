@@ -1,0 +1,37 @@
+\chapter{Security Policy}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2phpunit_2_s_e_c_u_r_i_t_y}{}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2phpunit_2_s_e_c_u_r_i_t_y}\index{Security Policy@{Security Policy}}
+\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2phpunit_2_s_e_c_u_r_i_t_y_autotoc_md275}%
+\Hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2phpunit_2_s_e_c_u_r_i_t_y_autotoc_md275}%
+
+
+If you believe you have found a security vulnerability in \doxylink{namespace_p_h_p_unit}{PHPUnit}, please report it to us through coordinated disclosure.
+
+{\bfseries{Please do not report security vulnerabilities through public Git\+Hub issues, discussions, or pull requests.}}
+
+Instead, please email {\ttfamily sebastian@phpunit.\+de}.
+
+Please include as much of the information listed below as you can to help us better understand and resolve the issue\+:
+
+
+\begin{DoxyItemize}
+\item The type of issue
+\item Full paths of source file(s) related to the manifestation of the issue
+\item The location of the affected source code (tag/branch/commit or direct URL)
+\item Any special configuration required to reproduce the issue
+\item Step-\/by-\/step instructions to reproduce the issue
+\item Proof-\/of-\/concept or exploit code (if possible)
+\item Impact of the issue, including how an attacker might exploit the issue
+\end{DoxyItemize}
+
+This information will help us triage your report more quickly.\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2phpunit_2_s_e_c_u_r_i_t_y_autotoc_md276}{}\doxysection{\texorpdfstring{Web Context}{Web Context}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phpunit_2phpunit_2_s_e_c_u_r_i_t_y_autotoc_md276}
+\doxylink{namespace_p_h_p_unit}{PHPUnit} is a framework for writing as well as a command-\/line tool for running tests. Writing and running tests is a development-\/time activity. There is no reason why \doxylink{namespace_p_h_p_unit}{PHPUnit} should be installed on a webserver and/or in a production environment.
+
+{\bfseries{If you upload \doxylink{namespace_p_h_p_unit}{PHPUnit} to a webserver then your deployment process is broken. On a more general note, if your {\ttfamily vendor} directory is publicly accessible on your webserver then your deployment process is also broken.}}
+
+Please note that if you upload \doxylink{namespace_p_h_p_unit}{PHPUnit} to a webserver "{}bad things"{} may happen. \href{https://thephp.cc/articles/phpunit-a-security-risk?ref=phpunit}{\texttt{ You have been warned.}}
+
+\doxylink{namespace_p_h_p_unit}{PHPUnit} is developed with a focus on development environments and the command-\/line. No specific testing or hardening with regard to using \doxylink{namespace_p_h_p_unit}{PHPUnit} in an HTTP or web context or with untrusted input data is performed. \doxylink{namespace_p_h_p_unit}{PHPUnit} might also contain functionality that intentionally exposes internal application data for debugging purposes.
+
+If \doxylink{namespace_p_h_p_unit}{PHPUnit} is used in a web application, the application developer is responsible for filtering inputs or escaping outputs as necessary and for verifying that the used functionality is safe for use within the intended context.
+
+Vulnerabilities specific to the use outside a development context will be fixed as applicable, provided that the fix does not have an averse effect on the primary use case for development purposes. 

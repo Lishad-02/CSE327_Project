@@ -1,0 +1,105 @@
+\doxysection{Use\+\_\+ Class Reference}
+\hypertarget{class_php_parser_1_1_builder_1_1_use__}{}\label{class_php_parser_1_1_builder_1_1_use__}\index{Use\_@{Use\_}}
+Inheritance diagram for Use\+\_\+\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_builder_1_1_use__}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_use___ae9d2328aa2aa82f183ec522f8b6c03b8}{\+\_\+\+\_\+construct}} (\$name, int \$type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_use___ae11fa93f5d6f384f8a5fff304a10c725}{as}} (string \$alias)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_use___a3a0d17930cbcc57bef84064afcc1a837}{get\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_builder}{Builder}}}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_use___a16632a9359c082c0e1002e1fa60260bb}{\$name}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_use___a3b3d1b08364961741f0c27210ff38289}{\$type}}
+\item 
+string \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_use___ac1b6033540b7af4eeb40b90d3f7c4bf5}{\$alias}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_use___ae9d2328aa2aa82f183ec522f8b6c03b8}\index{Use\_@{Use\_}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Use\_@{Use\_}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_use___ae9d2328aa2aa82f183ec522f8b6c03b8} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{int}]{\$type}{}\end{DoxyParamCaption})}
+
+Creates a name use (alias) builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Name | string & {\em \$name} & Name of the entity (namespace, class, function, constant) to alias \\
+\hline
+ & {\em Stmt} & \\
+\hline
+\end{DoxyParams}
+Use\+\_\+\+::\+TYPE\+\_\+\texorpdfstring{$\ast$}{*} \$type One of the Stmt\textbackslash{}\+Use\+\_\+\+::\+TYPE\+\_\+\texorpdfstring{$\ast$}{*} constants 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_use___ae11fa93f5d6f384f8a5fff304a10c725}\index{Use\_@{Use\_}!as@{as}}
+\index{as@{as}!Use\_@{Use\_}}
+\doxysubsubsection{\texorpdfstring{as()}{as()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_use___ae11fa93f5d6f384f8a5fff304a10c725} 
+as (\begin{DoxyParamCaption}\item[{string}]{\$alias}{}\end{DoxyParamCaption})}
+
+Sets alias for used name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$alias} & Alias to use (last component of full name by default)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_use___a3a0d17930cbcc57bef84064afcc1a837}\index{Use\_@{Use\_}!getNode@{getNode}}
+\index{getNode@{getNode}!Use\_@{Use\_}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_use___a3a0d17930cbcc57bef84064afcc1a837} 
+get\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the built node.
+
+\begin{DoxyReturn}{Returns}
+Stmt\textbackslash{}\+Use\+\_\+ The built node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_builder_a3a0d17930cbcc57bef84064afcc1a837}{Builder}}.
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_use___ac1b6033540b7af4eeb40b90d3f7c4bf5}\index{Use\_@{Use\_}!\$alias@{\$alias}}
+\index{\$alias@{\$alias}!Use\_@{Use\_}}
+\doxysubsubsection{\texorpdfstring{\$alias}{\$alias}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_use___ac1b6033540b7af4eeb40b90d3f7c4bf5} 
+string \$alias = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_use___a16632a9359c082c0e1002e1fa60260bb}\index{Use\_@{Use\_}!\$name@{\$name}}
+\index{\$name@{\$name}!Use\_@{Use\_}}
+\doxysubsubsection{\texorpdfstring{\$name}{\$name}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_use___a16632a9359c082c0e1002e1fa60260bb} 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \$name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_use___a3b3d1b08364961741f0c27210ff38289}\index{Use\_@{Use\_}!\$type@{\$type}}
+\index{\$type@{\$type}!Use\_@{Use\_}}
+\doxysubsubsection{\texorpdfstring{\$type}{\$type}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_use___a3b3d1b08364961741f0c27210ff38289} 
+int \$type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Builder/\mbox{\hyperlink{_builder_2_use___8php}{Use\+\_\+.\+php}}\end{DoxyCompactItemize}

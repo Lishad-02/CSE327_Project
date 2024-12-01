@@ -1,0 +1,779 @@
+\doxysection{Pretty\+Printer\+Abstract Class Reference}
+\hypertarget{class_php_parser_1_1_pretty_printer_abstract}{}\label{class_php_parser_1_1_pretty_printer_abstract}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+Inheritance diagram for Pretty\+Printer\+Abstract\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_php_parser_1_1_pretty_printer_abstract}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a3f8a60e8e1644d4f26da4ca9330794dd}{\+\_\+\+\_\+construct}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_afec805bb7701c2f30a7d83e5aaabf790}{pretty\+Print}} (array \$stmts)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ab571695b95664b233ebf487fd1167925}{pretty\+Print\+Expr}} (Expr \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a18184a824d7ddc0be4570f27350cba20}{pretty\+Print\+File}} (array \$stmts)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ac6dc16fc7c3a5f2a2a23fb5872ec1841}{print\+Format\+Preserving}} (array \$stmts, array \$orig\+Stmts, array \$orig\+Tokens)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_pretty_printer}{Pretty\+Printer}}}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_af3e0425e4fe6c418a0a4b65fe611a0de}{reset\+State}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a9687880609aa29f93cd30c058214181d}{set\+Indent\+Level}} (int \$level)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_aa7717b354f415176888905c002a4e971}{indent}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a94e081f27b780fc88252de3884f154c8}{outdent}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ad7a63f099e67149331735f4cc02d9b0c}{preprocess\+Nodes}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a7f79210eeae84baf8eec95a2ac5f0865}{handle\+Magic\+Tokens}} (string \$str)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a59973b75e81246e1c205cd4568ecccd0}{p\+Stmts}} (array \$nodes, bool \$\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_aa7717b354f415176888905c002a4e971}{indent}}=\mbox{\hyperlink{namespace_php_parser_a930920b2bc42824a5c03be681830f4b2}{true}})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a1a7815fa554c68bfe303198ce8d2bae8}{p\+Infix\+Op}} (string \$class, \mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$left\+Node, string \$operator\+String, \mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$right\+Node, int \$precedence, int \$lhs\+Precedence)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_aee83926b788b343b5f675b762425d1b3}{p\+Prefix\+Op}} (string \$class, string \$operator\+String, \mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node, int \$precedence, int \$lhs\+Precedence)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a85b5c25f106ea6bc6f736d2b52c15c9e}{p\+Postfix\+Op}} (string \$class, \mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node, string \$operator\+String, int \$precedence, int \$lhs\+Precedence)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a8d2943b62822e271ed9f7bfdad17a6cc}{p\+Implode}} (array \$nodes, string \$glue=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_aea8177ce50000bbe2321aa1cf7442e43}{p\+Comma\+Separated}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a2fb83643f7e0d46b98302e8d5ceb0fe0}{p\+Comma\+Separated\+Multiline}} (array \$nodes, bool \$trailing\+Comma)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a841e53070a4dd41fd2ca43e9c913d54a}{p\+Comments}} (array \$comments)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_aa26bcb3cc7535da8c418447297fe3340}{p\+Fallback}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node, int \$precedence, int \$lhs\+Precedence)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a422c7441c0715a46952c6870523fd549}{p\+Fixup}} (int \$fixup, \mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$sub\+Node, ?string \$parent\+Class, int \$sub\+Start\+Pos, int \$sub\+End\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_abaf8841ad6651ab88a008145487f51ae}{safe\+Append}} (string \&\$str, string \$append)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a9b38cec1c60e188722ba19148fa7c490}{call\+Lhs\+Requires\+Parens}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a6375a03d3a9e369b499802185ba23961}{dereference\+Lhs\+Requires\+Parens}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_af5ee6f0e41dc19364aedcca2bd4b2bc5}{static\+Dereference\+Lhs\+Requires\+Parens}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_aae6445086fc651951bf4a30ef70f1d37}{new\+Operand\+Requires\+Parens}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a9bdfba1878eedc74cdc21e2455f3a8ef}{p\+Modifiers}} (int \$modifiers)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ab21de5db1ead476c07c6fefa90b75cfe}{p\+Static}} (bool \$static)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_af5290f6f8303e79bb474fae80c4f577a}{is\+Multiline}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_af38b146ab79d07255764080ee6349730}{FIXUP\+\_\+\+PREC\+\_\+\+LEFT}} = 0
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ab82c145b33fb373e5a1bcaa0a71f2c27}{FIXUP\+\_\+\+PREC\+\_\+\+RIGHT}} = 1
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_adc520a08cb71140f4feae1c4b822cded}{FIXUP\+\_\+\+PREC\+\_\+\+UNARY}} = 2
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a834f8c57d4f538405b13069f483fa64b}{FIXUP\+\_\+\+CALL\+\_\+\+LHS}} = 3
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ae716b634fe46c8d6b6a266904f3c170e}{FIXUP\+\_\+\+DEREF\+\_\+\+LHS}} = 4
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_af83899e9b8fd8b2ad9dbbcb2af00da6c}{FIXUP\+\_\+\+STATIC\+\_\+\+DEREF\+\_\+\+LHS}} = 5
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ae284ab7fcd434f521995c03440e498c0}{FIXUP\+\_\+\+BRACED\+\_\+\+NAME}} = 6
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ad2c10796edd8082fc19606950c5188b0}{FIXUP\+\_\+\+VAR\+\_\+\+BRACED\+\_\+\+NAME}} = 7
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_aaef2ccfb530e16f31cf58d3c45f24398}{FIXUP\+\_\+\+ENCAPSED}} = 8
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a7e65b2cffca286ca943edcd806133d9e}{FIXUP\+\_\+\+NEW}} = 9
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a7ad2067faf7da56dd1f1a8c80fa6ff45}{MAX\+\_\+\+PRECEDENCE}} = 1000
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ae9a74a90c18c5a293f561a8b1cc1b552}{\$precedence\+Map}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a88127c8c93f517c426593c4ed6657e34}{\$indent\+Level}}
+\item 
+string \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a803b85d0e2b0faf32a1ebe2120a4353d}{\$newline}}
+\item 
+string \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a87e782725bcd9b33a08f2bd65c4edc3d}{\$nl}}
+\item 
+string \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a9c9da44df32a2b65deacecff5d685752}{\$doc\+String\+End\+Token}}
+\item 
+bool \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a6903e46c8311d0bfd2d329d7d2be072b}{\$can\+Use\+Semicolon\+Namespaces}}
+\item 
+bool \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ad11f409c72c7395a0f8c79539c589f88}{\$short\+Array\+Syntax}}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a39f66f5b5901aa93b6344b4b570c3cd0}{\$php\+Version}}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream}{Token\+Stream}} \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a69f831c4dcd36fddf254b730faf382d0}{\$orig\+Tokens}}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_differ}{Differ}} \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a3928acdfd63d8551666446f225b987c1}{\$node\+List\+Differ}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_ab76dce3c21cf8faf0f141240a0f8b8c1}{\$label\+Char\+Map}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a40bf53c0fe38368f26f9972951927fdd}{\$fixup\+Map}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a010a609726e1f270b0d81e3aada96ed4}{\$removal\+Map}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a51d271276b345504d4fffb8759b3fcc9}{\$insertion\+Map}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a9787952b85a56eca80e89f970866b443}{\$list\+Insertion\+Map}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a1450916a9ade73333d9db58a22535a17}{\$empty\+List\+Insertion\+Map}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a1b38c0edb0f8727ff4f7969f73cac3b8}{\$modifier\+Change\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a3f8a60e8e1644d4f26da4ca9330794dd}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a3f8a60e8e1644d4f26da4ca9330794dd} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Creates a pretty printer instance using the given options.
+
+Supported options\+:
+\begin{DoxyItemize}
+\item Php\+Version \$php\+Version\+: The PHP version to target (default to PHP 7.\+4). This option controls compatibility of the generated code with older PHP versions in cases where a simple stylistic choice exists (e.\+g. array() vs \mbox{[}\mbox{]}). It is safe to pretty-\/print an AST for a newer PHP version while specifying an older target (but the result will of course not be compatible with the older version in that case).
+\item string \$newline\+: The newline style to use. Should be "{}\textbackslash{}n"{} (default) or "{}\textbackslash{}r\textbackslash{}n"{}.
+\item string \$indent\+: The indentation to use. Should either be all spaces or a single tab. Defaults to four spaces ("{}    "{}).
+\item bool \$short\+Array\+Syntax\+: Whether to use \mbox{[}\mbox{]} instead of array() as the default array syntax, if the node does not specify a format. Defaults to whether the php\+Version support short array syntax.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\{} & php\+Version?\+: Php\+Version, newline?\+: string, indent?\+: string, short\+Array\+Syntax?\+: bool \} \$options Dictionary of formatting options \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a9b38cec1c60e188722ba19148fa7c490}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!callLhsRequiresParens@{callLhsRequiresParens}}
+\index{callLhsRequiresParens@{callLhsRequiresParens}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{callLhsRequiresParens()}{callLhsRequiresParens()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a9b38cec1c60e188722ba19148fa7c490} 
+call\+Lhs\+Requires\+Parens (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines whether the LHS of a call must be wrapped in parenthesis.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & LHS of a call\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether parentheses are required 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a6375a03d3a9e369b499802185ba23961}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!dereferenceLhsRequiresParens@{dereferenceLhsRequiresParens}}
+\index{dereferenceLhsRequiresParens@{dereferenceLhsRequiresParens}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{dereferenceLhsRequiresParens()}{dereferenceLhsRequiresParens()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a6375a03d3a9e369b499802185ba23961} 
+dereference\+Lhs\+Requires\+Parens (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines whether the LHS of an array/object operation must be wrapped in parentheses.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & LHS of dereferencing operation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether parentheses are required 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a7f79210eeae84baf8eec95a2ac5f0865}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!handleMagicTokens@{handleMagicTokens}}
+\index{handleMagicTokens@{handleMagicTokens}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{handleMagicTokens()}{handleMagicTokens()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a7f79210eeae84baf8eec95a2ac5f0865} 
+handle\+Magic\+Tokens (\begin{DoxyParamCaption}\item[{string}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handles (and removes) doc-\/string-\/end tokens. \Hypertarget{class_php_parser_1_1_pretty_printer_abstract_aa7717b354f415176888905c002a4e971}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!indent@{indent}}
+\index{indent@{indent}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{indent()}{indent()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_aa7717b354f415176888905c002a4e971} 
+indent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Increase indentation level. \Hypertarget{class_php_parser_1_1_pretty_printer_abstract_af5290f6f8303e79bb474fae80c4f577a}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!isMultiline@{isMultiline}}
+\index{isMultiline@{isMultiline}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{isMultiline()}{isMultiline()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_af5290f6f8303e79bb474fae80c4f577a} 
+is\+Multiline (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine whether a list of nodes uses multiline formatting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (\+Node\texorpdfstring{$\vert$}{|}null)\mbox{[}$\,$\mbox{]}} & \$nodes Node list\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether multiline formatting is used 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_aae6445086fc651951bf4a30ef70f1d37}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!newOperandRequiresParens@{newOperandRequiresParens}}
+\index{newOperandRequiresParens@{newOperandRequiresParens}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{newOperandRequiresParens()}{newOperandRequiresParens()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_aae6445086fc651951bf4a30ef70f1d37} 
+new\+Operand\+Requires\+Parens (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines whether an expression used in "{}new"{} or "{}instanceof"{} requires parentheses.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & New or instanceof operand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether parentheses are required 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a94e081f27b780fc88252de3884f154c8}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!outdent@{outdent}}
+\index{outdent@{outdent}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{outdent()}{outdent()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a94e081f27b780fc88252de3884f154c8} 
+outdent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Decrease indentation level. \Hypertarget{class_php_parser_1_1_pretty_printer_abstract_aea8177ce50000bbe2321aa1cf7442e43}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pCommaSeparated@{pCommaSeparated}}
+\index{pCommaSeparated@{pCommaSeparated}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pCommaSeparated()}{pCommaSeparated()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_aea8177ce50000bbe2321aa1cf7442e43} 
+p\+Comma\+Separated (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pretty prints an array of nodes and implodes the printed values with commas.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of Nodes to be printed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Comma separated pretty printed nodes 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a2fb83643f7e0d46b98302e8d5ceb0fe0}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pCommaSeparatedMultiline@{pCommaSeparatedMultiline}}
+\index{pCommaSeparatedMultiline@{pCommaSeparatedMultiline}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pCommaSeparatedMultiline()}{pCommaSeparatedMultiline()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a2fb83643f7e0d46b98302e8d5ceb0fe0} 
+p\+Comma\+Separated\+Multiline (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{, }\item[{bool}]{\$trailing\+Comma}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pretty prints a comma-\/separated list of nodes in multiline style, including comments.
+
+The result includes a leading newline and one level of indentation (same as p\+Stmts).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of Nodes to be printed \\
+\hline
+bool & {\em \$trailing\+Comma} & Whether to use a trailing comma\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Comma separated pretty printed nodes in multiline style 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a841e53070a4dd41fd2ca43e9c913d54a}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pComments@{pComments}}
+\index{pComments@{pComments}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pComments()}{pComments()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a841e53070a4dd41fd2ca43e9c913d54a} 
+p\+Comments (\begin{DoxyParamCaption}\item[{array}]{\$comments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prints reformatted text of the passed comments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Comment\mbox{[}$\,$\mbox{]} & {\em \$comments} & List of comments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Reformatted text of comments 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_aa26bcb3cc7535da8c418447297fe3340}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pFallback@{pFallback}}
+\index{pFallback@{pFallback}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pFallback()}{pFallback()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_aa26bcb3cc7535da8c418447297fe3340} 
+p\+Fallback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{, }\item[{int}]{\$precedence}{, }\item[{int}]{\$lhs\+Precedence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a422c7441c0715a46952c6870523fd549}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pFixup@{pFixup}}
+\index{pFixup@{pFixup}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pFixup()}{pFixup()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a422c7441c0715a46952c6870523fd549} 
+p\+Fixup (\begin{DoxyParamCaption}\item[{int}]{\$fixup}{, }\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$sub\+Node}{, }\item[{?string}]{\$parent\+Class}{, }\item[{int}]{\$sub\+Start\+Pos}{, }\item[{int}]{\$sub\+End\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Print node with fixups.
+
+Fixups here refer to the addition of extra parentheses, braces or other characters, that are required to preserve program semantics in a certain context (e.\+g. to maintain precedence or because only certain expressions are allowed in certain places).
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$fixup} & Fixup type \\
+\hline
+Node & {\em \$sub\+Node} & Subnode to print \\
+\hline
+string | null & {\em \$parent\+Class} & Class of parent node \\
+\hline
+int & {\em \$sub\+Start\+Pos} & Original start pos of subnode \\
+\hline
+int & {\em \$sub\+End\+Pos} & Original end pos of subnode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Result of fixed-\/up print of subnode 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a8d2943b62822e271ed9f7bfdad17a6cc}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pImplode@{pImplode}}
+\index{pImplode@{pImplode}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pImplode()}{pImplode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a8d2943b62822e271ed9f7bfdad17a6cc} 
+p\+Implode (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{, }\item[{string}]{\$glue}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pretty prints an array of nodes and implodes the printed values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of Nodes to be printed \\
+\hline
+string & {\em \$glue} & Character to implode with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Imploded pretty printed nodes\texorpdfstring{$>$}{>} \$pre 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a1a7815fa554c68bfe303198ce8d2bae8}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pInfixOp@{pInfixOp}}
+\index{pInfixOp@{pInfixOp}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pInfixOp()}{pInfixOp()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a1a7815fa554c68bfe303198ce8d2bae8} 
+p\+Infix\+Op (\begin{DoxyParamCaption}\item[{string}]{\$class}{, }\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$left\+Node}{, }\item[{string}]{\$operator\+String}{, }\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$right\+Node}{, }\item[{int}]{\$precedence}{, }\item[{int}]{\$lhs\+Precedence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pretty-\/print an infix operation while taking precedence into account.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & Node class of operator \\
+\hline
+Node & {\em \$left\+Node} & Left-\/hand side node \\
+\hline
+string & {\em \$operator\+String} & String representation of the operator \\
+\hline
+Node & {\em \$right\+Node} & Right-\/hand side node \\
+\hline
+int & {\em \$precedence} & Precedence of parent operator \\
+\hline
+int & {\em \$lhs\+Precedence} & Precedence for unary operator on LHS of binary operator\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed infix operation 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a9bdfba1878eedc74cdc21e2455f3a8ef}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pModifiers@{pModifiers}}
+\index{pModifiers@{pModifiers}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pModifiers()}{pModifiers()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a9bdfba1878eedc74cdc21e2455f3a8ef} 
+p\+Modifiers (\begin{DoxyParamCaption}\item[{int}]{\$modifiers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Print modifiers, including trailing whitespace.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$modifiers} & Modifier mask to print\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Printed modifiers 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a85b5c25f106ea6bc6f736d2b52c15c9e}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pPostfixOp@{pPostfixOp}}
+\index{pPostfixOp@{pPostfixOp}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pPostfixOp()}{pPostfixOp()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a85b5c25f106ea6bc6f736d2b52c15c9e} 
+p\+Postfix\+Op (\begin{DoxyParamCaption}\item[{string}]{\$class}{, }\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{, }\item[{string}]{\$operator\+String}{, }\item[{int}]{\$precedence}{, }\item[{int}]{\$lhs\+Precedence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pretty-\/print a postfix operation while taking precedence into account.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & Node class of operator \\
+\hline
+string & {\em \$operator\+String} & String representation of the operator \\
+\hline
+Node & {\em \$node} & Node \\
+\hline
+int & {\em \$precedence} & Precedence of parent operator \\
+\hline
+int & {\em \$lhs\+Precedence} & Precedence for unary operator on LHS of binary operator\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed postfix operation 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_aee83926b788b343b5f675b762425d1b3}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pPrefixOp@{pPrefixOp}}
+\index{pPrefixOp@{pPrefixOp}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pPrefixOp()}{pPrefixOp()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_aee83926b788b343b5f675b762425d1b3} 
+p\+Prefix\+Op (\begin{DoxyParamCaption}\item[{string}]{\$class}{, }\item[{string}]{\$operator\+String}{, }\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{, }\item[{int}]{\$precedence}{, }\item[{int}]{\$lhs\+Precedence}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pretty-\/print a prefix operation while taking precedence into account.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & Node class of operator \\
+\hline
+string & {\em \$operator\+String} & String representation of the operator \\
+\hline
+Node & {\em \$node} & Node \\
+\hline
+int & {\em \$precedence} & Precedence of parent operator \\
+\hline
+int & {\em \$lhs\+Precedence} & Precedence for unary operator on LHS of binary operator\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed prefix operation 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ad7a63f099e67149331735f4cc02d9b0c}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!preprocessNodes@{preprocessNodes}}
+\index{preprocessNodes@{preprocessNodes}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{preprocessNodes()}{preprocessNodes()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ad7a63f099e67149331735f4cc02d9b0c} 
+preprocess\+Nodes (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Preprocesses the top-\/level nodes to initialize pretty printer state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_afec805bb7701c2f30a7d83e5aaabf790}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!prettyPrint@{prettyPrint}}
+\index{prettyPrint@{prettyPrint}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{prettyPrint()}{prettyPrint()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_afec805bb7701c2f30a7d83e5aaabf790} 
+pretty\+Print (\begin{DoxyParamCaption}\item[{array}]{\$stmts}{}\end{DoxyParamCaption})}
+
+Pretty prints an array of statements.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$stmts} & Array of statements\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed statements 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_pretty_printer_afec805bb7701c2f30a7d83e5aaabf790}{Pretty\+Printer}}.
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ab571695b95664b233ebf487fd1167925}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!prettyPrintExpr@{prettyPrintExpr}}
+\index{prettyPrintExpr@{prettyPrintExpr}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{prettyPrintExpr()}{prettyPrintExpr()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ab571695b95664b233ebf487fd1167925} 
+pretty\+Print\+Expr (\begin{DoxyParamCaption}\item[{Expr}]{\$node}{}\end{DoxyParamCaption})}
+
+Pretty prints an expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Expr & {\em \$node} & Expression node\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_pretty_printer_ab571695b95664b233ebf487fd1167925}{Pretty\+Printer}}.
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a18184a824d7ddc0be4570f27350cba20}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!prettyPrintFile@{prettyPrintFile}}
+\index{prettyPrintFile@{prettyPrintFile}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{prettyPrintFile()}{prettyPrintFile()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a18184a824d7ddc0be4570f27350cba20} 
+pretty\+Print\+File (\begin{DoxyParamCaption}\item[{array}]{\$stmts}{}\end{DoxyParamCaption})}
+
+Pretty prints a file of statements (includes the opening \texorpdfstring{$<$}{<}?php tag if it is required).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$stmts} & Array of statements\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed statements 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_pretty_printer_a18184a824d7ddc0be4570f27350cba20}{Pretty\+Printer}}.
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ac6dc16fc7c3a5f2a2a23fb5872ec1841}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!printFormatPreserving@{printFormatPreserving}}
+\index{printFormatPreserving@{printFormatPreserving}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{printFormatPreserving()}{printFormatPreserving()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ac6dc16fc7c3a5f2a2a23fb5872ec1841} 
+print\+Format\+Preserving (\begin{DoxyParamCaption}\item[{array}]{\$stmts}{, }\item[{array}]{\$orig\+Stmts}{, }\item[{array}]{\$orig\+Tokens}{}\end{DoxyParamCaption})}
+
+Perform a format-\/preserving pretty print of an AST.
+
+The format preservation is best effort. For some changes to the AST the formatting will not be preserved (at least not locally).
+
+In order to use this method a number of prerequisites must be satisfied\+:
+\begin{DoxyItemize}
+\item The start\+Token\+Pos and end\+Token\+Pos attributes in the lexer must be enabled.
+\item The Cloning\+Visitor must be run on the AST prior to modification.
+\item The original tokens must be provided, using the get\+Tokens() method on the lexer.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$stmts} & Modified AST with links to original AST \\
+\hline
+Node\mbox{[}$\,$\mbox{]} & {\em \$orig\+Stmts} & Original AST with token offset information \\
+\hline
+Token\mbox{[}$\,$\mbox{]} & {\em \$orig\+Tokens} & Tokens of the original code \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_pretty_printer_ac6dc16fc7c3a5f2a2a23fb5872ec1841}{Pretty\+Printer}}.
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ab21de5db1ead476c07c6fefa90b75cfe}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pStatic@{pStatic}}
+\index{pStatic@{pStatic}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pStatic()}{pStatic()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ab21de5db1ead476c07c6fefa90b75cfe} 
+p\+Static (\begin{DoxyParamCaption}\item[{bool}]{\$static}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a59973b75e81246e1c205cd4568ecccd0}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!pStmts@{pStmts}}
+\index{pStmts@{pStmts}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{pStmts()}{pStmts()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a59973b75e81246e1c205cd4568ecccd0} 
+p\+Stmts (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{, }\item[{bool}]{\$indent}{ = {\ttfamily \mbox{\hyperlink{namespace_php_parser_a930920b2bc42824a5c03be681830f4b2}{true}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pretty prints an array of nodes (statements) and indents them optionally.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes \\
+\hline
+bool & {\em \$indent} & Whether to indent the printed nodes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed statements 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_af3e0425e4fe6c418a0a4b65fe611a0de}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!resetState@{resetState}}
+\index{resetState@{resetState}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{resetState()}{resetState()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_af3e0425e4fe6c418a0a4b65fe611a0de} 
+reset\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reset pretty printing state. \Hypertarget{class_php_parser_1_1_pretty_printer_abstract_abaf8841ad6651ab88a008145487f51ae}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!safeAppend@{safeAppend}}
+\index{safeAppend@{safeAppend}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{safeAppend()}{safeAppend()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_abaf8841ad6651ab88a008145487f51ae} 
+safe\+Append (\begin{DoxyParamCaption}\item[{string \&}]{\$str}{, }\item[{string}]{\$append}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Appends to a string, ensuring whitespace between label characters.
+
+Example\+: "{}echo"{} and "{}\$x"{} result in "{}echo\$x"{}, but "{}echo"{} and "{}x"{} result in "{}echo x"{}. Without safe\+Append the result would be "{}echox"{}, which does not preserve semantics. \Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a9687880609aa29f93cd30c058214181d}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!setIndentLevel@{setIndentLevel}}
+\index{setIndentLevel@{setIndentLevel}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{setIndentLevel()}{setIndentLevel()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a9687880609aa29f93cd30c058214181d} 
+set\+Indent\+Level (\begin{DoxyParamCaption}\item[{int}]{\$level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set indentation level
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & Level in number of spaces \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_af5ee6f0e41dc19364aedcca2bd4b2bc5}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!staticDereferenceLhsRequiresParens@{staticDereferenceLhsRequiresParens}}
+\index{staticDereferenceLhsRequiresParens@{staticDereferenceLhsRequiresParens}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{staticDereferenceLhsRequiresParens()}{staticDereferenceLhsRequiresParens()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_af5ee6f0e41dc19364aedcca2bd4b2bc5} 
+static\+Dereference\+Lhs\+Requires\+Parens (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines whether the LHS of a static operation must be wrapped in parentheses.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & LHS of dereferencing operation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether parentheses are required 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a6903e46c8311d0bfd2d329d7d2be072b}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$canUseSemicolonNamespaces@{\$canUseSemicolonNamespaces}}
+\index{\$canUseSemicolonNamespaces@{\$canUseSemicolonNamespaces}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$canUseSemicolonNamespaces}{\$canUseSemicolonNamespaces}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a6903e46c8311d0bfd2d329d7d2be072b} 
+bool \$can\+Use\+Semicolon\+Namespaces\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a9c9da44df32a2b65deacecff5d685752}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$docStringEndToken@{\$docStringEndToken}}
+\index{\$docStringEndToken@{\$docStringEndToken}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$docStringEndToken}{\$docStringEndToken}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a9c9da44df32a2b65deacecff5d685752} 
+string \$doc\+String\+End\+Token\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a1450916a9ade73333d9db58a22535a17}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$emptyListInsertionMap@{\$emptyListInsertionMap}}
+\index{\$emptyListInsertionMap@{\$emptyListInsertionMap}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$emptyListInsertionMap}{\$emptyListInsertionMap}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a1450916a9ade73333d9db58a22535a17} 
+array \$empty\+List\+Insertion\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a40bf53c0fe38368f26f9972951927fdd}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$fixupMap@{\$fixupMap}}
+\index{\$fixupMap@{\$fixupMap}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$fixupMap}{\$fixupMap}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a40bf53c0fe38368f26f9972951927fdd} 
+array \$fixup\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a88127c8c93f517c426593c4ed6657e34}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$indentLevel@{\$indentLevel}}
+\index{\$indentLevel@{\$indentLevel}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$indentLevel}{\$indentLevel}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a88127c8c93f517c426593c4ed6657e34} 
+int \$indent\+Level\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a51d271276b345504d4fffb8759b3fcc9}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$insertionMap@{\$insertionMap}}
+\index{\$insertionMap@{\$insertionMap}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$insertionMap}{\$insertionMap}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a51d271276b345504d4fffb8759b3fcc9} 
+array \$insertion\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ab76dce3c21cf8faf0f141240a0f8b8c1}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$labelCharMap@{\$labelCharMap}}
+\index{\$labelCharMap@{\$labelCharMap}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$labelCharMap}{\$labelCharMap}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ab76dce3c21cf8faf0f141240a0f8b8c1} 
+array \$label\+Char\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a9787952b85a56eca80e89f970866b443}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$listInsertionMap@{\$listInsertionMap}}
+\index{\$listInsertionMap@{\$listInsertionMap}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$listInsertionMap}{\$listInsertionMap}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a9787952b85a56eca80e89f970866b443} 
+array \$list\+Insertion\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a1b38c0edb0f8727ff4f7969f73cac3b8}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$modifierChangeMap@{\$modifierChangeMap}}
+\index{\$modifierChangeMap@{\$modifierChangeMap}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$modifierChangeMap}{\$modifierChangeMap}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a1b38c0edb0f8727ff4f7969f73cac3b8} 
+array \$modifier\+Change\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a803b85d0e2b0faf32a1ebe2120a4353d}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$newline@{\$newline}}
+\index{\$newline@{\$newline}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$newline}{\$newline}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a803b85d0e2b0faf32a1ebe2120a4353d} 
+string \$newline\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a87e782725bcd9b33a08f2bd65c4edc3d}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$nl@{\$nl}}
+\index{\$nl@{\$nl}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$nl}{\$nl}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a87e782725bcd9b33a08f2bd65c4edc3d} 
+string \$nl\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a3928acdfd63d8551666446f225b987c1}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$nodeListDiffer@{\$nodeListDiffer}}
+\index{\$nodeListDiffer@{\$nodeListDiffer}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$nodeListDiffer}{\$nodeListDiffer}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a3928acdfd63d8551666446f225b987c1} 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_differ}{Differ}} \$node\+List\+Differ\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a69f831c4dcd36fddf254b730faf382d0}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$origTokens@{\$origTokens}}
+\index{\$origTokens@{\$origTokens}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$origTokens}{\$origTokens}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a69f831c4dcd36fddf254b730faf382d0} 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream}{Token\+Stream}} \$orig\+Tokens\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a39f66f5b5901aa93b6344b4b570c3cd0}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$phpVersion@{\$phpVersion}}
+\index{\$phpVersion@{\$phpVersion}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$phpVersion}{\$phpVersion}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a39f66f5b5901aa93b6344b4b570c3cd0} 
+\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \$php\+Version\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ae9a74a90c18c5a293f561a8b1cc1b552}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$precedenceMap@{\$precedenceMap}}
+\index{\$precedenceMap@{\$precedenceMap}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$precedenceMap}{\$precedenceMap}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ae9a74a90c18c5a293f561a8b1cc1b552} 
+array \$precedence\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a010a609726e1f270b0d81e3aada96ed4}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$removalMap@{\$removalMap}}
+\index{\$removalMap@{\$removalMap}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$removalMap}{\$removalMap}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a010a609726e1f270b0d81e3aada96ed4} 
+array \$removal\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ad11f409c72c7395a0f8c79539c589f88}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!\$shortArraySyntax@{\$shortArraySyntax}}
+\index{\$shortArraySyntax@{\$shortArraySyntax}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{\$shortArraySyntax}{\$shortArraySyntax}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ad11f409c72c7395a0f8c79539c589f88} 
+bool \$short\+Array\+Syntax\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ae284ab7fcd434f521995c03440e498c0}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_BRACED\_NAME@{FIXUP\_BRACED\_NAME}}
+\index{FIXUP\_BRACED\_NAME@{FIXUP\_BRACED\_NAME}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_BRACED\_NAME}{FIXUP\_BRACED\_NAME}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ae284ab7fcd434f521995c03440e498c0} 
+const FIXUP\+\_\+\+BRACED\+\_\+\+NAME = 6\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a834f8c57d4f538405b13069f483fa64b}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_CALL\_LHS@{FIXUP\_CALL\_LHS}}
+\index{FIXUP\_CALL\_LHS@{FIXUP\_CALL\_LHS}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_CALL\_LHS}{FIXUP\_CALL\_LHS}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a834f8c57d4f538405b13069f483fa64b} 
+const FIXUP\+\_\+\+CALL\+\_\+\+LHS = 3\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ae716b634fe46c8d6b6a266904f3c170e}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_DEREF\_LHS@{FIXUP\_DEREF\_LHS}}
+\index{FIXUP\_DEREF\_LHS@{FIXUP\_DEREF\_LHS}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_DEREF\_LHS}{FIXUP\_DEREF\_LHS}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ae716b634fe46c8d6b6a266904f3c170e} 
+const FIXUP\+\_\+\+DEREF\+\_\+\+LHS = 4\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_aaef2ccfb530e16f31cf58d3c45f24398}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_ENCAPSED@{FIXUP\_ENCAPSED}}
+\index{FIXUP\_ENCAPSED@{FIXUP\_ENCAPSED}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_ENCAPSED}{FIXUP\_ENCAPSED}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_aaef2ccfb530e16f31cf58d3c45f24398} 
+const FIXUP\+\_\+\+ENCAPSED = 8\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a7e65b2cffca286ca943edcd806133d9e}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_NEW@{FIXUP\_NEW}}
+\index{FIXUP\_NEW@{FIXUP\_NEW}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_NEW}{FIXUP\_NEW}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a7e65b2cffca286ca943edcd806133d9e} 
+const FIXUP\+\_\+\+NEW = 9\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_af38b146ab79d07255764080ee6349730}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_PREC\_LEFT@{FIXUP\_PREC\_LEFT}}
+\index{FIXUP\_PREC\_LEFT@{FIXUP\_PREC\_LEFT}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_PREC\_LEFT}{FIXUP\_PREC\_LEFT}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_af38b146ab79d07255764080ee6349730} 
+const FIXUP\+\_\+\+PREC\+\_\+\+LEFT = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ab82c145b33fb373e5a1bcaa0a71f2c27}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_PREC\_RIGHT@{FIXUP\_PREC\_RIGHT}}
+\index{FIXUP\_PREC\_RIGHT@{FIXUP\_PREC\_RIGHT}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_PREC\_RIGHT}{FIXUP\_PREC\_RIGHT}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ab82c145b33fb373e5a1bcaa0a71f2c27} 
+const FIXUP\+\_\+\+PREC\+\_\+\+RIGHT = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_adc520a08cb71140f4feae1c4b822cded}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_PREC\_UNARY@{FIXUP\_PREC\_UNARY}}
+\index{FIXUP\_PREC\_UNARY@{FIXUP\_PREC\_UNARY}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_PREC\_UNARY}{FIXUP\_PREC\_UNARY}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_adc520a08cb71140f4feae1c4b822cded} 
+const FIXUP\+\_\+\+PREC\+\_\+\+UNARY = 2\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_af83899e9b8fd8b2ad9dbbcb2af00da6c}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_STATIC\_DEREF\_LHS@{FIXUP\_STATIC\_DEREF\_LHS}}
+\index{FIXUP\_STATIC\_DEREF\_LHS@{FIXUP\_STATIC\_DEREF\_LHS}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_STATIC\_DEREF\_LHS}{FIXUP\_STATIC\_DEREF\_LHS}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_af83899e9b8fd8b2ad9dbbcb2af00da6c} 
+const FIXUP\+\_\+\+STATIC\+\_\+\+DEREF\+\_\+\+LHS = 5\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_ad2c10796edd8082fc19606950c5188b0}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!FIXUP\_VAR\_BRACED\_NAME@{FIXUP\_VAR\_BRACED\_NAME}}
+\index{FIXUP\_VAR\_BRACED\_NAME@{FIXUP\_VAR\_BRACED\_NAME}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{FIXUP\_VAR\_BRACED\_NAME}{FIXUP\_VAR\_BRACED\_NAME}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_ad2c10796edd8082fc19606950c5188b0} 
+const FIXUP\+\_\+\+VAR\+\_\+\+BRACED\+\_\+\+NAME = 7\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_pretty_printer_abstract_a7ad2067faf7da56dd1f1a8c80fa6ff45}\index{PrettyPrinterAbstract@{PrettyPrinterAbstract}!MAX\_PRECEDENCE@{MAX\_PRECEDENCE}}
+\index{MAX\_PRECEDENCE@{MAX\_PRECEDENCE}!PrettyPrinterAbstract@{PrettyPrinterAbstract}}
+\doxysubsubsection{\texorpdfstring{MAX\_PRECEDENCE}{MAX\_PRECEDENCE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_pretty_printer_abstract_a7ad2067faf7da56dd1f1a8c80fa6ff45} 
+const MAX\+\_\+\+PRECEDENCE = 1000\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{_pretty_printer_abstract_8php}{Pretty\+Printer\+Abstract.\+php}}\end{DoxyCompactItemize}

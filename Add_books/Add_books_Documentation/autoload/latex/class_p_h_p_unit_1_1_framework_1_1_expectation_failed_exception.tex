@@ -1,0 +1,65 @@
+\doxysection{Expectation\+Failed\+Exception Class Reference}
+\hypertarget{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception}{}\label{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception}\index{ExpectationFailedException@{ExpectationFailedException}}
+Inheritance diagram for Expectation\+Failed\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception_a2bd13966e66cbfeb9e0beaddefd20133}{\+\_\+\+\_\+construct}} (string \$message, ?\mbox{\hyperlink{class_p_h_p_unit_1_1_event_1_1_code_1_1_comparison_failure}{Comparison\+Failure}} \$comparison\+Failure=null, ?\mbox{\hyperlink{interface_p_h_p_unit_1_1_event_1_1_exception}{Exception}} \$previous=null)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception_a8a76bafe677043610bd450454888ce24}{get\+Comparison\+Failure}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assertion_failed_error}{Assertion\+Failed\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assertion_failed_error_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_self_describing}{Self\+Describing}}}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_event_1_1_code_1_1_comparison_failure}{Comparison\+Failure}} \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception_a74837931efe449c249a05b5bbbd03041}{\$comparison\+Failure}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Exception for expectations which failed their check.
+
+The exception contains the error message and optionally a \doxylink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}\textbackslash{}\+Comparator\textbackslash{}\+Comparison\+Failure which is used to generate diff output of the failed expectations.
+
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \doxylink{namespace_p_h_p_unit}{PHPUnit} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception_a2bd13966e66cbfeb9e0beaddefd20133}\index{ExpectationFailedException@{ExpectationFailedException}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ExpectationFailedException@{ExpectationFailedException}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception_a2bd13966e66cbfeb9e0beaddefd20133} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{?\mbox{\hyperlink{class_p_h_p_unit_1_1_event_1_1_code_1_1_comparison_failure}{Comparison\+Failure}}}]{\$comparison\+Failure}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_p_h_p_unit_1_1_event_1_1_exception}{Exception}}}]{\$previous}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception_a8a76bafe677043610bd450454888ce24}\index{ExpectationFailedException@{ExpectationFailedException}!getComparisonFailure@{getComparisonFailure}}
+\index{getComparisonFailure@{getComparisonFailure}!ExpectationFailedException@{ExpectationFailedException}}
+\doxysubsubsection{\texorpdfstring{getComparisonFailure()}{getComparisonFailure()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception_a8a76bafe677043610bd450454888ce24} 
+get\+Comparison\+Failure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception_a74837931efe449c249a05b5bbbd03041}\index{ExpectationFailedException@{ExpectationFailedException}!\$comparisonFailure@{\$comparisonFailure}}
+\index{\$comparisonFailure@{\$comparisonFailure}!ExpectationFailedException@{ExpectationFailedException}}
+\doxysubsubsection{\texorpdfstring{\$comparisonFailure}{\$comparisonFailure}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception_a74837931efe449c249a05b5bbbd03041} 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_event_1_1_code_1_1_comparison_failure}{Comparison\+Failure}} \$comparison\+Failure = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/phpunit/src/\+Framework/\+Exception/\mbox{\hyperlink{_expectation_failed_exception_8php}{Expectation\+Failed\+Exception.\+php}}\end{DoxyCompactItemize}

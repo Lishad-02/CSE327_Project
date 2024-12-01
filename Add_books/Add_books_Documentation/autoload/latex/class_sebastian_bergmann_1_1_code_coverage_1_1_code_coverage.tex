@@ -1,0 +1,302 @@
+\doxysection{Code\+Coverage Class Reference}
+\hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage}{}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage}\index{CodeCoverage@{CodeCoverage}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ad6fb2e47b53d87ca797cb5b04a7ab171}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_driver_1_1_driver}{Driver}} \$driver, \mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter}{Filter}} \$\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a8122d3c1ef2a61359b75a97363a4d89b}{filter}})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a36065960e56a8f2637e2fb05bc233c80}{get\+Report}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aa821bec12eaa7e0f649397c9675ff505}{clear}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ac01828cae86291d0bc8a78b24de6089f}{clear\+Cache}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a8122d3c1ef2a61359b75a97363a4d89b}{filter}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aaab2a2d35d6c134f95a16297f2e9c587}{get\+Data}} (bool \$raw=false)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a0cf0af08602576aa91ebc5b948c46d20}{set\+Data}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_data_1_1_processed_code_coverage_data}{Processed\+Code\+Coverage\+Data}} \$data)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a7e247dd31cc8d37a6c97353a062a0080}{get\+Tests}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a1607846b217222c6cdb30a847bdd0379}{set\+Tests}} (array \$tests)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a579f58c899bf9f93d5b82c7486399677}{start}} (string \$id, ?\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_test_1_1_test_size_1_1_test_size}{Test\+Size}} \$size=null, bool \$\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aa821bec12eaa7e0f649397c9675ff505}{clear}}=false)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ae30e62e988e86c2de3ccd3181b4d0b06}{stop}} (bool \$\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a86c19a38ef4819d2834984bf17e4698c}{append}}=true, ?\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_test_1_1_test_status_1_1_test_status}{Test\+Status}} \$status=null, array\texorpdfstring{$\vert$}{|}false \$lines\+To\+Be\+Covered=\mbox{[}$\,$\mbox{]}, array \$lines\+To\+Be\+Used=\mbox{[}$\,$\mbox{]}, array \$lines\+To\+Be\+Ignored=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a86c19a38ef4819d2834984bf17e4698c}{append}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_data_1_1_raw_code_coverage_data}{Raw\+Code\+Coverage\+Data}} \$raw\+Data, ?string \$id=null, bool \$append=true, ?\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_test_1_1_test_status_1_1_test_status}{Test\+Status}} \$status=null, array\texorpdfstring{$\vert$}{|}false \$lines\+To\+Be\+Covered=\mbox{[}$\,$\mbox{]}, array \$lines\+To\+Be\+Used=\mbox{[}$\,$\mbox{]}, array \$lines\+To\+Be\+Ignored=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a0e328b6815e48a30ca7e561bd22a3886}{merge}} (self \$that)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ae6b8bb9d651555a5a7a45a2686f7b077}{enable\+Check\+For\+Unintentionally\+Covered\+Code}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_afc9072c10fb6d70ae37c540217238dd9}{disable\+Check\+For\+Unintentionally\+Covered\+Code}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a71524e853a2860516537c55fe24a78e5}{include\+Uncovered\+Files}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a61037da7f341e4b93d136b5cb8c446aa}{exclude\+Uncovered\+Files}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a722ae08d5bbbd3a415130cc2b507ffb5}{enable\+Annotations\+For\+Ignoring\+Code}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a6c33e2e933dc28d2215704b693791199}{disable\+Annotations\+For\+Ignoring\+Code}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a3af95559884700a0a8968d40d70d6d78}{ignore\+Deprecated\+Code}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ad20b859a027106a0fcf508803dcb18dc}{do\+Not\+Ignore\+Deprecated\+Code}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aa590262f0b0b30560872a50950efe779}{caches\+Static\+Analysis}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a8972f04f13a6c2d866b7d43a7e6ab35b}{cache\+Static\+Analysis}} (string \$directory)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a55d7899d641b994fb4612d47825326b3}{do\+Not\+Cache\+Static\+Analysis}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a4c12c8dc0fc629ea085b53e2bd3a3b17}{cache\+Directory}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a7b757f5fad108bdee3a00d76ff1ba877}{exclude\+Subclasses\+Of\+This\+Class\+From\+Unintentionally\+Covered\+Code\+Check}} (string \$class\+Name)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a4e76c5948cae4d53799966db73519816}{enable\+Branch\+And\+Path\+Coverage}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a6e7192129a3227d296cf7e7af66fce1d}{disable\+Branch\+And\+Path\+Coverage}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ad0ba162f7cb3cfd0ed98c4d2ff49ea33}{collects\+Branch\+And\+Path\+Coverage}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a6fbb967d808994947a5c57716e238727}{detects\+Dead\+Code}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides collection functionality for PHP code coverage information.
+
+@phpstan-\/type Test\+Type = array\{ size\+: string, status\+: string, \} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ad6fb2e47b53d87ca797cb5b04a7ab171}\index{CodeCoverage@{CodeCoverage}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ad6fb2e47b53d87ca797cb5b04a7ab171} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_driver_1_1_driver}{Driver}}}]{\$driver}{, }\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter}{Filter}}}]{\$filter}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a86c19a38ef4819d2834984bf17e4698c}\index{CodeCoverage@{CodeCoverage}!append@{append}}
+\index{append@{append}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a86c19a38ef4819d2834984bf17e4698c} 
+append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_data_1_1_raw_code_coverage_data}{Raw\+Code\+Coverage\+Data}}}]{\$raw\+Data}{, }\item[{?string}]{\$id}{ = {\ttfamily null}, }\item[{bool}]{\$append}{ = {\ttfamily true}, }\item[{?\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_test_1_1_test_status_1_1_test_status}{Test\+Status}}}]{\$status}{ = {\ttfamily null}, }\item[{array\texorpdfstring{$\vert$}{|}false}]{\$lines\+To\+Be\+Covered}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$lines\+To\+Be\+Used}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$lines\+To\+Be\+Ignored}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,list$<$int$>$$>$} & \$lines\+To\+Be\+Ignored\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+{\em Test\+Id\+Missing\+Exception} & \\
+\hline
+{\em Unintentionally\+Covered\+Code\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a4c12c8dc0fc629ea085b53e2bd3a3b17}\index{CodeCoverage@{CodeCoverage}!cacheDirectory@{cacheDirectory}}
+\index{cacheDirectory@{cacheDirectory}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{cacheDirectory()}{cacheDirectory()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a4c12c8dc0fc629ea085b53e2bd3a3b17} 
+cache\+Directory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Static\+Analysis\+Cache\+Not\+Configured\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aa590262f0b0b30560872a50950efe779}\index{CodeCoverage@{CodeCoverage}!cachesStaticAnalysis@{cachesStaticAnalysis}}
+\index{cachesStaticAnalysis@{cachesStaticAnalysis}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{cachesStaticAnalysis()}{cachesStaticAnalysis()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aa590262f0b0b30560872a50950efe779} 
+caches\+Static\+Analysis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@phpstan-\/assert-\/if-\/true !null \$this-\/\texorpdfstring{$>$}{>}cache\+Directory \Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a8972f04f13a6c2d866b7d43a7e6ab35b}\index{CodeCoverage@{CodeCoverage}!cacheStaticAnalysis@{cacheStaticAnalysis}}
+\index{cacheStaticAnalysis@{cacheStaticAnalysis}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{cacheStaticAnalysis()}{cacheStaticAnalysis()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a8972f04f13a6c2d866b7d43a7e6ab35b} 
+cache\+Static\+Analysis (\begin{DoxyParamCaption}\item[{string}]{\$directory}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aa821bec12eaa7e0f649397c9675ff505}\index{CodeCoverage@{CodeCoverage}!clear@{clear}}
+\index{clear@{clear}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aa821bec12eaa7e0f649397c9675ff505} 
+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clears collected code coverage data. \Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ac01828cae86291d0bc8a78b24de6089f}\index{CodeCoverage@{CodeCoverage}!clearCache@{clearCache}}
+\index{clearCache@{clearCache}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{clearCache()}{clearCache()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ac01828cae86291d0bc8a78b24de6089f} 
+clear\+Cache (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ad0ba162f7cb3cfd0ed98c4d2ff49ea33}\index{CodeCoverage@{CodeCoverage}!collectsBranchAndPathCoverage@{collectsBranchAndPathCoverage}}
+\index{collectsBranchAndPathCoverage@{collectsBranchAndPathCoverage}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{collectsBranchAndPathCoverage()}{collectsBranchAndPathCoverage()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ad0ba162f7cb3cfd0ed98c4d2ff49ea33} 
+collects\+Branch\+And\+Path\+Coverage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a6fbb967d808994947a5c57716e238727}\index{CodeCoverage@{CodeCoverage}!detectsDeadCode@{detectsDeadCode}}
+\index{detectsDeadCode@{detectsDeadCode}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{detectsDeadCode()}{detectsDeadCode()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a6fbb967d808994947a5c57716e238727} 
+detects\+Dead\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a6c33e2e933dc28d2215704b693791199}\index{CodeCoverage@{CodeCoverage}!disableAnnotationsForIgnoringCode@{disableAnnotationsForIgnoringCode}}
+\index{disableAnnotationsForIgnoringCode@{disableAnnotationsForIgnoringCode}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{disableAnnotationsForIgnoringCode()}{disableAnnotationsForIgnoringCode()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a6c33e2e933dc28d2215704b693791199} 
+disable\+Annotations\+For\+Ignoring\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a6e7192129a3227d296cf7e7af66fce1d}\index{CodeCoverage@{CodeCoverage}!disableBranchAndPathCoverage@{disableBranchAndPathCoverage}}
+\index{disableBranchAndPathCoverage@{disableBranchAndPathCoverage}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{disableBranchAndPathCoverage()}{disableBranchAndPathCoverage()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a6e7192129a3227d296cf7e7af66fce1d} 
+disable\+Branch\+And\+Path\+Coverage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_afc9072c10fb6d70ae37c540217238dd9}\index{CodeCoverage@{CodeCoverage}!disableCheckForUnintentionallyCoveredCode@{disableCheckForUnintentionallyCoveredCode}}
+\index{disableCheckForUnintentionallyCoveredCode@{disableCheckForUnintentionallyCoveredCode}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{disableCheckForUnintentionallyCoveredCode()}{disableCheckForUnintentionallyCoveredCode()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_afc9072c10fb6d70ae37c540217238dd9} 
+disable\+Check\+For\+Unintentionally\+Covered\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a55d7899d641b994fb4612d47825326b3}\index{CodeCoverage@{CodeCoverage}!doNotCacheStaticAnalysis@{doNotCacheStaticAnalysis}}
+\index{doNotCacheStaticAnalysis@{doNotCacheStaticAnalysis}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{doNotCacheStaticAnalysis()}{doNotCacheStaticAnalysis()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a55d7899d641b994fb4612d47825326b3} 
+do\+Not\+Cache\+Static\+Analysis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ad20b859a027106a0fcf508803dcb18dc}\index{CodeCoverage@{CodeCoverage}!doNotIgnoreDeprecatedCode@{doNotIgnoreDeprecatedCode}}
+\index{doNotIgnoreDeprecatedCode@{doNotIgnoreDeprecatedCode}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{doNotIgnoreDeprecatedCode()}{doNotIgnoreDeprecatedCode()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ad20b859a027106a0fcf508803dcb18dc} 
+do\+Not\+Ignore\+Deprecated\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a722ae08d5bbbd3a415130cc2b507ffb5}\index{CodeCoverage@{CodeCoverage}!enableAnnotationsForIgnoringCode@{enableAnnotationsForIgnoringCode}}
+\index{enableAnnotationsForIgnoringCode@{enableAnnotationsForIgnoringCode}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{enableAnnotationsForIgnoringCode()}{enableAnnotationsForIgnoringCode()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a722ae08d5bbbd3a415130cc2b507ffb5} 
+enable\+Annotations\+For\+Ignoring\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a4e76c5948cae4d53799966db73519816}\index{CodeCoverage@{CodeCoverage}!enableBranchAndPathCoverage@{enableBranchAndPathCoverage}}
+\index{enableBranchAndPathCoverage@{enableBranchAndPathCoverage}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{enableBranchAndPathCoverage()}{enableBranchAndPathCoverage()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a4e76c5948cae4d53799966db73519816} 
+enable\+Branch\+And\+Path\+Coverage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ae6b8bb9d651555a5a7a45a2686f7b077}\index{CodeCoverage@{CodeCoverage}!enableCheckForUnintentionallyCoveredCode@{enableCheckForUnintentionallyCoveredCode}}
+\index{enableCheckForUnintentionallyCoveredCode@{enableCheckForUnintentionallyCoveredCode}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{enableCheckForUnintentionallyCoveredCode()}{enableCheckForUnintentionallyCoveredCode()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ae6b8bb9d651555a5a7a45a2686f7b077} 
+enable\+Check\+For\+Unintentionally\+Covered\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a7b757f5fad108bdee3a00d76ff1ba877}\index{CodeCoverage@{CodeCoverage}!excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck@{excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck}}
+\index{excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck@{excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck()}{excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a7b757f5fad108bdee3a00d76ff1ba877} 
+exclude\+Subclasses\+Of\+This\+Class\+From\+Unintentionally\+Covered\+Code\+Check (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$class\+Name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a61037da7f341e4b93d136b5cb8c446aa}\index{CodeCoverage@{CodeCoverage}!excludeUncoveredFiles@{excludeUncoveredFiles}}
+\index{excludeUncoveredFiles@{excludeUncoveredFiles}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{excludeUncoveredFiles()}{excludeUncoveredFiles()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a61037da7f341e4b93d136b5cb8c446aa} 
+exclude\+Uncovered\+Files (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000018}{Deprecated}}]\end{DoxyRefDesc}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a8122d3c1ef2a61359b75a97363a4d89b}\index{CodeCoverage@{CodeCoverage}!filter@{filter}}
+\index{filter@{filter}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a8122d3c1ef2a61359b75a97363a4d89b} 
+filter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the filter object used. \Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aaab2a2d35d6c134f95a16297f2e9c587}\index{CodeCoverage@{CodeCoverage}!getData@{getData}}
+\index{getData@{getData}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_aaab2a2d35d6c134f95a16297f2e9c587} 
+get\+Data (\begin{DoxyParamCaption}\item[{bool}]{\$raw}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Returns the collected code coverage data. \Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a36065960e56a8f2637e2fb05bc233c80}\index{CodeCoverage@{CodeCoverage}!getReport@{getReport}}
+\index{getReport@{getReport}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{getReport()}{getReport()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a36065960e56a8f2637e2fb05bc233c80} 
+get\+Report (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the code coverage information as a graph of node objects. \Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a7e247dd31cc8d37a6c97353a062a0080}\index{CodeCoverage@{CodeCoverage}!getTests@{getTests}}
+\index{getTests@{getTests}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{getTests()}{getTests()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a7e247dd31cc8d37a6c97353a062a0080} 
+get\+Tests (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array$<$string, Test\+Type$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a3af95559884700a0a8968d40d70d6d78}\index{CodeCoverage@{CodeCoverage}!ignoreDeprecatedCode@{ignoreDeprecatedCode}}
+\index{ignoreDeprecatedCode@{ignoreDeprecatedCode}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{ignoreDeprecatedCode()}{ignoreDeprecatedCode()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a3af95559884700a0a8968d40d70d6d78} 
+ignore\+Deprecated\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a71524e853a2860516537c55fe24a78e5}\index{CodeCoverage@{CodeCoverage}!includeUncoveredFiles@{includeUncoveredFiles}}
+\index{includeUncoveredFiles@{includeUncoveredFiles}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{includeUncoveredFiles()}{includeUncoveredFiles()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a71524e853a2860516537c55fe24a78e5} 
+include\+Uncovered\+Files (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000017}{Deprecated}}]\end{DoxyRefDesc}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a0e328b6815e48a30ca7e561bd22a3886}\index{CodeCoverage@{CodeCoverage}!merge@{merge}}
+\index{merge@{merge}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a0e328b6815e48a30ca7e561bd22a3886} 
+merge (\begin{DoxyParamCaption}\item[{self}]{\$that}{}\end{DoxyParamCaption})}
+
+Merges the data from another instance. \Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a0cf0af08602576aa91ebc5b948c46d20}\index{CodeCoverage@{CodeCoverage}!setData@{setData}}
+\index{setData@{setData}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a0cf0af08602576aa91ebc5b948c46d20} 
+set\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_data_1_1_processed_code_coverage_data}{Processed\+Code\+Coverage\+Data}}}]{\$data}{}\end{DoxyParamCaption})}
+
+Sets the coverage data. \Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a1607846b217222c6cdb30a847bdd0379}\index{CodeCoverage@{CodeCoverage}!setTests@{setTests}}
+\index{setTests@{setTests}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{setTests()}{setTests()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a1607846b217222c6cdb30a847bdd0379} 
+set\+Tests (\begin{DoxyParamCaption}\item[{array}]{\$tests}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,Test\+Type$>$} & \$tests \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a579f58c899bf9f93d5b82c7486399677}\index{CodeCoverage@{CodeCoverage}!start@{start}}
+\index{start@{start}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_a579f58c899bf9f93d5b82c7486399677} 
+start (\begin{DoxyParamCaption}\item[{string}]{\$id}{, }\item[{?\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_test_1_1_test_size_1_1_test_size}{Test\+Size}}}]{\$size}{ = {\ttfamily null}, }\item[{bool}]{\$clear}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ae30e62e988e86c2de3ccd3181b4d0b06}\index{CodeCoverage@{CodeCoverage}!stop@{stop}}
+\index{stop@{stop}!CodeCoverage@{CodeCoverage}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage_ae30e62e988e86c2de3ccd3181b4d0b06} 
+stop (\begin{DoxyParamCaption}\item[{bool}]{\$append}{ = {\ttfamily true}, }\item[{?\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_test_1_1_test_status_1_1_test_status}{Test\+Status}}}]{\$status}{ = {\ttfamily null}, }\item[{array\texorpdfstring{$\vert$}{|}false}]{\$lines\+To\+Be\+Covered}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$lines\+To\+Be\+Used}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$lines\+To\+Be\+Ignored}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,list$<$int$>$$>$} & \$lines\+To\+Be\+Ignored \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/php-\/code-\/coverage/src/\mbox{\hyperlink{php-code-coverage_2src_2_code_coverage_8php}{Code\+Coverage.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,116 @@
+\doxysection{Test\+Suite\+Sorter Class Reference}
+\hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter}{}\label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter}\index{TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_aee242c8d3e5525239330bcdd51dbb48c}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{interface_p_h_p_unit_1_1_runner_1_1_result_cache_1_1_result_cache}{Result\+Cache}} \$cache=null)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_abd43fb551b901c391989be9bd844244d}{reorder\+Tests\+In\+Suite}} (Test \$suite, int \$order, bool \$resolve\+Dependencies, int \$order\+Defects, bool \$is\+Root\+Test\+Suite=true)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a9e04a927d98cdfa18500f55fc653b16f}{get\+Original\+Execution\+Order}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_af4110f2e0af9b7573909dc4963ab63e0}{get\+Execution\+Order}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a217cf36d44627c3c080a15ab7b86d986}{ORDER\+\_\+\+DEFAULT}} = 0
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_afe291e04ce7026142f29cad87eaa24fd}{ORDER\+\_\+\+RANDOMIZED}} = 1
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a4b1f1e1bccfcb6804f8b72a32e8dda58}{ORDER\+\_\+\+REVERSED}} = 2
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a664dd070c798c75a8f9312da090a2b00}{ORDER\+\_\+\+DEFECTS\+\_\+\+FIRST}} = 3
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a1654e4128add797dadc86fada49504c1}{ORDER\+\_\+\+DURATION}} = 4
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_afd8547c26b0caf6ec045181f8e9c1ea6}{ORDER\+\_\+\+SIZE}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \doxylink{namespace_p_h_p_unit}{PHPUnit} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_aee242c8d3e5525239330bcdd51dbb48c}\index{TestSuiteSorter@{TestSuiteSorter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_aee242c8d3e5525239330bcdd51dbb48c} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_p_h_p_unit_1_1_runner_1_1_result_cache_1_1_result_cache}{Result\+Cache}}}]{\$cache}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_af4110f2e0af9b7573909dc4963ab63e0}\index{TestSuiteSorter@{TestSuiteSorter}!getExecutionOrder@{getExecutionOrder}}
+\index{getExecutionOrder@{getExecutionOrder}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{getExecutionOrder()}{getExecutionOrder()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_af4110f2e0af9b7573909dc4963ab63e0} 
+get\+Execution\+Order (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a9e04a927d98cdfa18500f55fc653b16f}\index{TestSuiteSorter@{TestSuiteSorter}!getOriginalExecutionOrder@{getOriginalExecutionOrder}}
+\index{getOriginalExecutionOrder@{getOriginalExecutionOrder}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{getOriginalExecutionOrder()}{getOriginalExecutionOrder()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a9e04a927d98cdfa18500f55fc653b16f} 
+get\+Original\+Execution\+Order (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_abd43fb551b901c391989be9bd844244d}\index{TestSuiteSorter@{TestSuiteSorter}!reorderTestsInSuite@{reorderTestsInSuite}}
+\index{reorderTestsInSuite@{reorderTestsInSuite}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{reorderTestsInSuite()}{reorderTestsInSuite()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_abd43fb551b901c391989be9bd844244d} 
+reorder\+Tests\+In\+Suite (\begin{DoxyParamCaption}\item[{Test}]{\$suite}{, }\item[{int}]{\$order}{, }\item[{bool}]{\$resolve\+Dependencies}{, }\item[{int}]{\$order\+Defects}{, }\item[{bool}]{\$is\+Root\+Test\+Suite}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a217cf36d44627c3c080a15ab7b86d986}\index{TestSuiteSorter@{TestSuiteSorter}!ORDER\_DEFAULT@{ORDER\_DEFAULT}}
+\index{ORDER\_DEFAULT@{ORDER\_DEFAULT}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{ORDER\_DEFAULT}{ORDER\_DEFAULT}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a217cf36d44627c3c080a15ab7b86d986} 
+const ORDER\+\_\+\+DEFAULT = 0}
+
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a664dd070c798c75a8f9312da090a2b00}\index{TestSuiteSorter@{TestSuiteSorter}!ORDER\_DEFECTS\_FIRST@{ORDER\_DEFECTS\_FIRST}}
+\index{ORDER\_DEFECTS\_FIRST@{ORDER\_DEFECTS\_FIRST}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{ORDER\_DEFECTS\_FIRST}{ORDER\_DEFECTS\_FIRST}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a664dd070c798c75a8f9312da090a2b00} 
+const ORDER\+\_\+\+DEFECTS\+\_\+\+FIRST = 3}
+
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a1654e4128add797dadc86fada49504c1}\index{TestSuiteSorter@{TestSuiteSorter}!ORDER\_DURATION@{ORDER\_DURATION}}
+\index{ORDER\_DURATION@{ORDER\_DURATION}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{ORDER\_DURATION}{ORDER\_DURATION}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a1654e4128add797dadc86fada49504c1} 
+const ORDER\+\_\+\+DURATION = 4}
+
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_afe291e04ce7026142f29cad87eaa24fd}\index{TestSuiteSorter@{TestSuiteSorter}!ORDER\_RANDOMIZED@{ORDER\_RANDOMIZED}}
+\index{ORDER\_RANDOMIZED@{ORDER\_RANDOMIZED}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{ORDER\_RANDOMIZED}{ORDER\_RANDOMIZED}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_afe291e04ce7026142f29cad87eaa24fd} 
+const ORDER\+\_\+\+RANDOMIZED = 1}
+
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a4b1f1e1bccfcb6804f8b72a32e8dda58}\index{TestSuiteSorter@{TestSuiteSorter}!ORDER\_REVERSED@{ORDER\_REVERSED}}
+\index{ORDER\_REVERSED@{ORDER\_REVERSED}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{ORDER\_REVERSED}{ORDER\_REVERSED}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_a4b1f1e1bccfcb6804f8b72a32e8dda58} 
+const ORDER\+\_\+\+REVERSED = 2}
+
+\Hypertarget{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_afd8547c26b0caf6ec045181f8e9c1ea6}\index{TestSuiteSorter@{TestSuiteSorter}!ORDER\_SIZE@{ORDER\_SIZE}}
+\index{ORDER\_SIZE@{ORDER\_SIZE}!TestSuiteSorter@{TestSuiteSorter}}
+\doxysubsubsection{\texorpdfstring{ORDER\_SIZE}{ORDER\_SIZE}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_runner_1_1_test_suite_sorter_afd8547c26b0caf6ec045181f8e9c1ea6} 
+const ORDER\+\_\+\+SIZE = 5}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/phpunit/src/\+Runner/\mbox{\hyperlink{_test_suite_sorter_8php}{Test\+Suite\+Sorter.\+php}}\end{DoxyCompactItemize}

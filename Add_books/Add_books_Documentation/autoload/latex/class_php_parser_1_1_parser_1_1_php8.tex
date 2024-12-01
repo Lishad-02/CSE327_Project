@@ -1,0 +1,1581 @@
+\doxysection{Php8 Class Reference}
+\hypertarget{class_php_parser_1_1_parser_1_1_php8}{}\label{class_php_parser_1_1_parser_1_1_php8}\index{Php8@{Php8}}
+Inheritance diagram for Php8\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_php_parser_1_1_parser_1_1_php8}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a481a031acf57b1b6180b3f0f3f45bc26}{YYERRTOK}} = 256
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_abac96cb09bd1d68c2f1f313766075615}{T\+\_\+\+THROW}} = 257
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ad78ebf4943dd3f635c9fd82ad7fd5ef1}{T\+\_\+\+INCLUDE}} = 258
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a7a1d7cbb7109aa71323749c8bcca4dac}{T\+\_\+\+INCLUDE\+\_\+\+ONCE}} = 259
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a86d1ab9e108fb3884d0e6cd70b1217ed}{T\+\_\+\+EVAL}} = 260
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a80d646f034bb2101f96b647356c4a5a0}{T\+\_\+\+REQUIRE}} = 261
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aafaf3c2385e0181087573b5f9a5fefc4}{T\+\_\+\+REQUIRE\+\_\+\+ONCE}} = 262
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a44de7b190bf0b3f5f9553f1fbae89e6c}{T\+\_\+\+LOGICAL\+\_\+\+OR}} = 263
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a406e45abf9febbb52f27e632969c3e94}{T\+\_\+\+LOGICAL\+\_\+\+XOR}} = 264
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a16181d2b1bdcf5ba03ce03e8993ed383}{T\+\_\+\+LOGICAL\+\_\+\+AND}} = 265
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_afb6f291040be193d7ea73d9ab84c60bd}{T\+\_\+\+PRINT}} = 266
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a8ad3711fa281229e4ccecaf9b14de677}{T\+\_\+\+YIELD}} = 267
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aed9ebb0a856bdd6f2910dd51990e96e0}{T\+\_\+\+DOUBLE\+\_\+\+ARROW}} = 268
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a6439284931f917b38f27f3e2e1c7c1e4}{T\+\_\+\+YIELD\+\_\+\+FROM}} = 269
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aa60c549a32f41089eec4d97592e717c5}{T\+\_\+\+PLUS\+\_\+\+EQUAL}} = 270
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ac616789d62fdffcf32db308ed4f963ee}{T\+\_\+\+MINUS\+\_\+\+EQUAL}} = 271
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a2acd56a06a64f94d12cb8f3fa1d3ae41}{T\+\_\+\+MUL\+\_\+\+EQUAL}} = 272
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a33e7219bbf45c82296792b4cb5db76e4}{T\+\_\+\+DIV\+\_\+\+EQUAL}} = 273
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a62493697e373bfbd675918d55dc36b4d}{T\+\_\+\+CONCAT\+\_\+\+EQUAL}} = 274
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a4f733b1fbe8a1552f0d42dd528d4f8ca}{T\+\_\+\+MOD\+\_\+\+EQUAL}} = 275
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_abf6423d7571cea83292dbecb8e81a791}{T\+\_\+\+AND\+\_\+\+EQUAL}} = 276
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a5dfd57b2e4c91d1b400bf174c146d00f}{T\+\_\+\+OR\+\_\+\+EQUAL}} = 277
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a0733844fba994bdd3110544cc300ce33}{T\+\_\+\+XOR\+\_\+\+EQUAL}} = 278
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_af5fc1607a05c84be6399dc4533ad522c}{T\+\_\+\+SL\+\_\+\+EQUAL}} = 279
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a67f311fa72d9c87e31765e7d1e1dbcb5}{T\+\_\+\+SR\+\_\+\+EQUAL}} = 280
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_afcbb9d9ed10e1c3a91d499bc7ca43f84}{T\+\_\+\+POW\+\_\+\+EQUAL}} = 281
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a6b6701d9a6882785724c0512c98774a2}{T\+\_\+\+COALESCE\+\_\+\+EQUAL}} = 282
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aeffaea23ff300f04d073f9063191c042}{T\+\_\+\+COALESCE}} = 283
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_adfc06a6eb34ed846a551baa4be0d0812}{T\+\_\+\+BOOLEAN\+\_\+\+OR}} = 284
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a7c0985cb8a2a712bd5971f756f20a66e}{T\+\_\+\+BOOLEAN\+\_\+\+AND}} = 285
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_afd063dc652d02f00d1c0a7064031ec91}{T\+\_\+\+AMPERSAND\+\_\+\+NOT\+\_\+\+FOLLOWED\+\_\+\+BY\+\_\+\+VAR\+\_\+\+OR\+\_\+\+VARARG}} = 286
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ac5d3858e3b4991ae76adc22ad3bc438e}{T\+\_\+\+AMPERSAND\+\_\+\+FOLLOWED\+\_\+\+BY\+\_\+\+VAR\+\_\+\+OR\+\_\+\+VARARG}} = 287
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_acd642d285ffba3d2fdf189d7de67dde1}{T\+\_\+\+IS\+\_\+\+EQUAL}} = 288
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aed8c5e4a5f723ef747ace5ac689a8482}{T\+\_\+\+IS\+\_\+\+NOT\+\_\+\+EQUAL}} = 289
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_af60d152d83252a246dcbcb12b4a7d50d}{T\+\_\+\+IS\+\_\+\+IDENTICAL}} = 290
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_afcb6d9b30fcb2a424deb0cdb2f5ae813}{T\+\_\+\+IS\+\_\+\+NOT\+\_\+\+IDENTICAL}} = 291
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aadea628d9012833da7231f087adae22d}{T\+\_\+\+SPACESHIP}} = 292
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a08a33af03bb28fd75dd0a041e5a24992}{T\+\_\+\+IS\+\_\+\+SMALLER\+\_\+\+OR\+\_\+\+EQUAL}} = 293
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a670530d5d0c6dbdd96efc6e484c94987}{T\+\_\+\+IS\+\_\+\+GREATER\+\_\+\+OR\+\_\+\+EQUAL}} = 294
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a0ea3d081448e7629d449afd3c4e60528}{T\+\_\+\+SL}} = 295
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a0625fa59dbed07c4a909843e3b071463}{T\+\_\+\+SR}} = 296
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a6e47f393fde6def1b764340a24869db2}{T\+\_\+\+INSTANCEOF}} = 297
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a34c8fe2153a84e17391da1fee0fff786}{T\+\_\+\+INC}} = 298
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ae9213eda7f1a4856e725edd3017380cd}{T\+\_\+\+DEC}} = 299
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a7481e1b57d9ab6c7bb5908cdf3fd5b9f}{T\+\_\+\+INT\+\_\+\+CAST}} = 300
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_afd091d4438af5564ceb1f803e58b340b}{T\+\_\+\+DOUBLE\+\_\+\+CAST}} = 301
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a554303a3780d53d7d2aa71a6223bc189}{T\+\_\+\+STRING\+\_\+\+CAST}} = 302
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ad06dd6bfa28c7fa4cdab19aa04850c3a}{T\+\_\+\+ARRAY\+\_\+\+CAST}} = 303
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a174d4b178cc44183b26575fc6b0741ca}{T\+\_\+\+OBJECT\+\_\+\+CAST}} = 304
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_acc2ecd8d613fac5a66f45f293f80fb56}{T\+\_\+\+BOOL\+\_\+\+CAST}} = 305
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ae6e162cb9e63e0a5567c50f581537bb9}{T\+\_\+\+UNSET\+\_\+\+CAST}} = 306
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ac7c8759d75cc236cf7b554392ada5c87}{T\+\_\+\+POW}} = 307
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ad305c48565a48c5a7782a10f45cc73e5}{T\+\_\+\+NEW}} = 308
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a7e27cbd3d91ba90e093650b7d9154ac6}{T\+\_\+\+CLONE}} = 309
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a9879bccfe3ec3d33b8271f894068910b}{T\+\_\+\+EXIT}} = 310
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a7e608d628ff0b9246f9ae352f56be5a2}{T\+\_\+\+IF}} = 311
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ae5ad54462f6957b0ed6ed16d18da03d4}{T\+\_\+\+ELSEIF}} = 312
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a5fb5ba85ecbeec7d396be17756884a40}{T\+\_\+\+ELSE}} = 313
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_adaad0829b47390eb0f2e585d849f7589}{T\+\_\+\+ENDIF}} = 314
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_adc84d9c9f3e4f244eb77016fbbf6f1e6}{T\+\_\+\+LNUMBER}} = 315
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ac056b36b72c529937dcf0229d76e104e}{T\+\_\+\+DNUMBER}} = 316
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a301319d23bde4e1cb03a0ece6ba3429d}{T\+\_\+\+STRING}} = 317
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ae1b8735e29b7557bdeb8be0b9b04c002}{T\+\_\+\+STRING\+\_\+\+VARNAME}} = 318
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a50c0f2c8842d4f6810d2671441c86762}{T\+\_\+\+VARIABLE}} = 319
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a1ceea363d61b16e29a8bb7c199bfa2e8}{T\+\_\+\+NUM\+\_\+\+STRING}} = 320
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a7679306bb6915401742cd54b828e1d4e}{T\+\_\+\+INLINE\+\_\+\+HTML}} = 321
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_afc6b7eb1a5e2ca7b12bcc9793b0b1a0b}{T\+\_\+\+ENCAPSED\+\_\+\+AND\+\_\+\+WHITESPACE}} = 322
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a849c2f70d32ff080fb67932c98e147dd}{T\+\_\+\+CONSTANT\+\_\+\+ENCAPSED\+\_\+\+STRING}} = 323
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a6a119d01499d805b0705fe12e11799da}{T\+\_\+\+ECHO}} = 324
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a26c33de663f19f8408e928c990399d5d}{T\+\_\+\+DO}} = 325
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a97dc58d6df07d5f7373df6a897b91317}{T\+\_\+\+WHILE}} = 326
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_adbc85bdfd0050f7c8fd08b0232348c26}{T\+\_\+\+ENDWHILE}} = 327
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a80afa1f2e58ce2a0f01f37065aae994b}{T\+\_\+\+FOR}} = 328
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a8048fbe5f0bfcc8ee1116b3614675809}{T\+\_\+\+ENDFOR}} = 329
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aa339f17b276a371b9c0d9674145ca519}{T\+\_\+\+FOREACH}} = 330
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a8ff4c262b14d902e804b490f08069bef}{T\+\_\+\+ENDFOREACH}} = 331
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_acddb0f3d79c9ee5d63f4f91ae7e5cfee}{T\+\_\+\+DECLARE}} = 332
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ab3c4aba9d753569072119060cbf784f6}{T\+\_\+\+ENDDECLARE}} = 333
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_adccab278127d17fcf65bb286c49858e0}{T\+\_\+\+AS}} = 334
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a84842c092993771b9312cb10ca19db8b}{T\+\_\+\+SWITCH}} = 335
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a89fcaa6e49ff74e75b201ffd92d9d387}{T\+\_\+\+MATCH}} = 336
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_acc7b685915b5ab9ca2ad66aa5eb2ad28}{T\+\_\+\+ENDSWITCH}} = 337
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ad381a8a32d2e9cc91c7604de048cc24f}{T\+\_\+\+CASE}} = 338
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a789fc10f375b2c34f478fb0dd631471c}{T\+\_\+\+DEFAULT}} = 339
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a5c7d59fbdb1d1563259474fb145e436f}{T\+\_\+\+BREAK}} = 340
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a6ec135b3d2cf2805da23c538ef222e09}{T\+\_\+\+CONTINUE}} = 341
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a3d484d694abb7404dde9a7b8f878067e}{T\+\_\+\+GOTO}} = 342
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a4192d08dd8d82121af30543fe4e2e5b6}{T\+\_\+\+FUNCTION}} = 343
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a72a46ea9d79dfb1e2a3a46e1db748509}{T\+\_\+\+FN}} = 344
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a811d97b76a2a6fc20d37f54c2fbd0c51}{T\+\_\+\+CONST}} = 345
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_acaf7bdb7962432496c997e7db4abc747}{T\+\_\+\+RETURN}} = 346
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_af1bcbf343f08d727d1ccc9197c75e003}{T\+\_\+\+TRY}} = 347
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a329f5ed38ae2164bf43cd6f27b587a2c}{T\+\_\+\+CATCH}} = 348
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ab849be190419f8b5ba53881331de5030}{T\+\_\+\+FINALLY}} = 349
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a4d071933348f01b2d188763cdb7ed1d6}{T\+\_\+\+USE}} = 350
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a4ed28687325e12d4c9681a2b2b77babc}{T\+\_\+\+INSTEADOF}} = 351
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a0d268812f4b72b6df0bcd3756583758a}{T\+\_\+\+GLOBAL}} = 352
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a5d2412f3ea943abd82d5320de451348f}{T\+\_\+\+STATIC}} = 353
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a131e96a61fd67df0bdbdeea21f2ec092}{T\+\_\+\+ABSTRACT}} = 354
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ac3763ff83c1df2b2a26dcb2f30fee53b}{T\+\_\+\+FINAL}} = 355
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aafe6d13a3893d4042464fe0bc05fdea0}{T\+\_\+\+PRIVATE}} = 356
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ae903d4988f7287db0e6ea2fa081fc667}{T\+\_\+\+PROTECTED}} = 357
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a2ffd73ab87b57dcdb50285d5653ed8b9}{T\+\_\+\+PUBLIC}} = 358
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_afb319463bbb8a7e1ece1562671712801}{T\+\_\+\+READONLY}} = 359
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_af2b230a930c6e61adb699b470d890618}{T\+\_\+\+PUBLIC\+\_\+\+SET}} = 360
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a518e56f56bb327375056d97a92bf8cee}{T\+\_\+\+PROTECTED\+\_\+\+SET}} = 361
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a3da492061a25f4c7b2278202bb696f14}{T\+\_\+\+PRIVATE\+\_\+\+SET}} = 362
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a1773f7ded3f91dbf4490f6005c5586ac}{T\+\_\+\+VAR}} = 363
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a56f750edd5741180e844859aadf9919c}{T\+\_\+\+UNSET}} = 364
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ab3c97ce1086628141132cf38485ee977}{T\+\_\+\+ISSET}} = 365
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a60834b7dd2391b9a38fabef82e068e74}{T\+\_\+\+EMPTY}} = 366
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a80166f2a1a1e7f3300643f896ae3e801}{T\+\_\+\+HALT\+\_\+\+COMPILER}} = 367
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a909d3f3f85b923b2559d83617284f9bb}{T\+\_\+\+CLASS}} = 368
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ae42ba6180092525d3ac43986bbd8d755}{T\+\_\+\+TRAIT}} = 369
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a7ef173cd76763a323cdd3d8f6d20ad51}{T\+\_\+\+INTERFACE}} = 370
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a317a3f5c4ed1de33ced4ff58b71426c7}{T\+\_\+\+ENUM}} = 371
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a848350aaf5822b3274734ac6ef808888}{T\+\_\+\+EXTENDS}} = 372
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ad80d83662159f7b6fa31da0487b49119}{T\+\_\+\+IMPLEMENTS}} = 373
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a3bc84c65cef799e9add55bcc7ed2e829}{T\+\_\+\+OBJECT\+\_\+\+OPERATOR}} = 374
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a47679f7b9f664e0a951b910e1d96ee5c}{T\+\_\+\+NULLSAFE\+\_\+\+OBJECT\+\_\+\+OPERATOR}} = 375
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ac3a675e21ce0d08e79516f4a8ac4b7bf}{T\+\_\+\+LIST}} = 376
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ab5ee7eeb61127bb9d963c49533bd0bf1}{T\+\_\+\+ARRAY}} = 377
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a87f67a862119abba9ddac71e0fe90b34}{T\+\_\+\+CALLABLE}} = 378
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a2218e88c94fd9c3ea602653245754002}{T\+\_\+\+CLASS\+\_\+C}} = 379
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aa860ccdd30372a11073952070bcfcfaf}{T\+\_\+\+TRAIT\+\_\+C}} = 380
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a6bd4661178ac80f1080c6090cf9a6cfa}{T\+\_\+\+METHOD\+\_\+C}} = 381
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a64e89541a7edd49d41cf1d6a4bec096b}{T\+\_\+\+FUNC\+\_\+C}} = 382
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a9f018613ee41b25206ca00266b250eb6}{T\+\_\+\+PROPERTY\+\_\+C}} = 383
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ac7e87ba12f0a411165089f1a00048554}{T\+\_\+\+LINE}} = 384
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a4c94491df6d91d8c5172e4e6baf1114d}{T\+\_\+\+FILE}} = 385
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_adb385dc707621926e93c412256a4f520}{T\+\_\+\+START\+\_\+\+HEREDOC}} = 386
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a1414be123895477e3923cf7017febcfe}{T\+\_\+\+END\+\_\+\+HEREDOC}} = 387
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a4d25a6ba83c66d73d016e300345ba53a}{T\+\_\+\+DOLLAR\+\_\+\+OPEN\+\_\+\+CURLY\+\_\+\+BRACES}} = 388
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_abbea2068cfd3322e0f62835ee6ed5ce0}{T\+\_\+\+CURLY\+\_\+\+OPEN}} = 389
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aa2008da5f5676435f8fcb3b85361a2ef}{T\+\_\+\+PAAMAYIM\+\_\+\+NEKUDOTAYIM}} = 390
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_adc423626c24714bd4e9691f7223c2874}{T\+\_\+\+NAMESPACE}} = 391
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_af8e9f8450c39f098356797a3fcbe0baf}{T\+\_\+\+NS\+\_\+C}} = 392
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_abda63d735cd60ac77d564134d1b50654}{T\+\_\+\+DIR}} = 393
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ada702c9850e4d8b33f463a1dd5975158}{T\+\_\+\+NS\+\_\+\+SEPARATOR}} = 394
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ab8e68f46b0ce32b76af36f9bf83a649b}{T\+\_\+\+ELLIPSIS}} = 395
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a8836fbcb380bdda8bc0cbe8277b2ac36}{T\+\_\+\+NAME\+\_\+\+FULLY\+\_\+\+QUALIFIED}} = 396
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a3ad10ce3354c8e3e432c1d232bb68a90}{T\+\_\+\+NAME\+\_\+\+QUALIFIED}} = 397
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_acb52d5d0da225b3653cdbdecbe6b3c71}{T\+\_\+\+NAME\+\_\+\+RELATIVE}} = 398
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a1cd2d7084cf5dd7ee96fdb8d3b7f29bf}{T\+\_\+\+ATTRIBUTE}} = 399
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ae39f0682768f46865c153924fd431996}{init\+Reduce\+Callbacks}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_parser_abstract}{Parser\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aae0ab48d2d2687ea37ad2ee03ad53e01}{do\+Parse}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_af70494eee7ae06c4b4c3d3495930f4b5}{emit\+Error}} (\mbox{\hyperlink{class_php_parser_1_1_error}{Error}} \$error)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a843efff4af5a1e0b21d5d7f75069edaa}{get\+Error\+Message}} (int \$symbol, int \$state)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a8173da8af0970201690971836798361e}{get\+Expected\+Tokens}} (int \$state)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a806485a0bc69dfc62dee8522f07d73de}{get\+Attributes}} (int \$token\+Start\+Pos, int \$token\+End\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a5f8fccfb06ff9fe5069893814d0823f7}{get\+Attributes\+For\+Token}} (int \$token\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a02955540c9cf4bca37dff2e4871be625}{handle\+Namespaces}} (array \$stmts)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ae30f5e19a3714fab88ff95040580da32}{handle\+Builtin\+Types}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a523bc725b7ce5f24ce7efe4879c122ad}{get\+Attributes\+At}} (int \$stack\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a1354cf041fe2e2a4cabc631c5ebdc9b0}{get\+Float\+Cast\+Kind}} (string \$cast)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a15bf084be8384fc3674314bfa7abcfc4}{parse\+LNumber}} (string \$str, array \$attributes, bool \$allow\+Invalid\+Octal=false)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a33861f18ee8daee896ee21386ffb561b}{parse\+Num\+String}} (string \$str, array \$attributes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a177b3477d63db2aa30062794d57cf1ec}{strip\+Indentation}} (string \$string, int \$indent\+Len, string \$indent\+Char, bool \$newline\+At\+Start, bool \$newline\+At\+End, array \$attributes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a4dd9ed0b66cc83563bde164b5889be46}{parse\+Doc\+String}} (string \$start\+Token, \$contents, string \$end\+Token, array \$attributes, array \$end\+Token\+Attributes, bool \$parse\+Unicode\+Escape)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a1b42ae0414e4a11a6454bc27935ccc40}{create\+Comment\+From\+Token}} (\mbox{\hyperlink{class_php_parser_1_1_token}{Token}} \$token, int \$token\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ae1c214a2105ef6cec6b65c1c66b82fc6}{get\+Comment\+Before\+Token}} (int \$token\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aa5b320178d54e075c25008c7e8ce7133}{maybe\+Create\+Zero\+Length\+Nop}} (int \$token\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a48929ed3879b03ef82d1f9175f6ded56}{maybe\+Create\+Nop}} (int \$token\+Start\+Pos, int \$token\+End\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ac83469b13bec28fe92b00b833344ce57}{handle\+Halt\+Compiler}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ad781413d9d697a76909d571fa18ff0aa}{inline\+Html\+Has\+Leading\+Newline}} (int \$stack\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ad32e69f1b5ee37bfda811c0d4d2f8110}{create\+Empty\+Elem\+Attributes}} (int \$token\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a5afa176c93e477f85d1e44d2c278a276}{fixup\+Array\+Destructuring}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_array__}{Array\+\_\+}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a3088802a84791d3b588e1d4d0bb09dff}{postprocess\+List}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_list__}{Expr\textbackslash{}\+List\+\_\+}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aef5942fcbf971d49b9527bd2b44c7243}{fixup\+Alternative\+Else}} (\$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aab4d443f7c8886f78b465f77224ab569}{check\+Class\+Modifier}} (int \$a, int \$b, int \$modifier\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a033f84bb0a214652deb5ae19c08b1555}{check\+Modifier}} (int \$a, int \$b, int \$modifier\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aa99f46a671e4a07ca5c25deb5cdd864d}{check\+Param}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_param}{Param}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a93a5a3bbf553b3def4a931310e3ece1e}{check\+Try\+Catch}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_try_catch}{Try\+Catch}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a10b78a9fdd76a66379afa6c72cfb67d6}{check\+Namespace}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_namespace__}{Namespace\+\_\+}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ad8e2e547367b2a59772672e3c0230a40}{check\+Class}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class__}{Class\+\_\+}} \$node, int \$name\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a2eb984b9d14a8145eddc90dbb691bbf0}{check\+Interface}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_interface__}{Interface\+\_\+}} \$node, int \$name\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_acaa55ef359abf78cd8356561979ca6b8}{check\+Enum}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_enum__}{Enum\+\_\+}} \$node, int \$name\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ae58c7475d860ea021b46cba056b70d50}{check\+Class\+Method}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_method}{Class\+Method}} \$node, int \$modifier\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a8fbd91e0d8ddeef6d63c052ea2dc81e7}{check\+Class\+Const}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_const}{Class\+Const}} \$node, int \$modifier\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ab8d3c92dbb12b132d185a0a32ffb3c3f}{check\+Use\+Use}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_use_item}{Use\+Item}} \$node, int \$name\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ab251e7dacf98a44afadc4a769c7063ae}{check\+Property\+Hook\+List}} (array \$hooks, int \$hook\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a3ae6d8fefcc68f34264967492411428d}{check\+Property\+Hook}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_property_hook}{Property\+Hook}} \$hook, ?int \$param\+List\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a788dc26afdaf79e48bbdeea212efffd7}{check\+Property\+Hook\+Modifiers}} (int \$a, int \$b, int \$modifier\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a7d7950679537820edd7c0e6560338f2f}{create\+Exit\+Expr}} (string \$name, int \$name\+Pos, array \$args, array \$attrs)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aac88a2f15ec4d7418846f116b62db8b1}{create\+Token\+Map}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a788789b4d5579c428df4a99b7831a0f0}{\$token\+To\+Symbol\+Map\+Size}} = 400
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_af7789e7db0164cf5b9234d3b03f4a846}{\$action\+Table\+Size}} = 1289
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a63305ef96f94566e439d410c60549c11}{\$goto\+Table\+Size}} = 608
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ab8ed39cb9fba8f4d9a1fb00eae348c7c}{\$invalid\+Symbol}} = 172
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a3257b230857b83c3a159bbe9807fa864}{\$error\+Symbol}} = 1
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a458963491369058d4d014be604f0834a}{\$default\+Action}} = -\/32766
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a65c3d4ee1606ea4623c90141fd2b19e6}{\$unexpected\+Token\+Rule}} = 32767
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a2aa845e48f5f23385fb06e67a297b4cc}{\$\+YY2\+TBLSTATE}} = 442
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aeb67a9d88875034b74983fdc5e79d417}{\$num\+Non\+Leaf\+States}} = 753
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aad69b14f6d497fe239d9735f3600f7de}{\$symbol\+To\+Name}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a9b676c77bfe89b7dd2b037ae1557ec39}{\$token\+To\+Symbol}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_adb5f1422ebdd58cca33a872477b605c5}{\$action}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ad692fe976add27b551733d81ef90304b}{\$action\+Check}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a065442cb58356325e2d3c3efc720da53}{\$action\+Base}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a5968e4c760169dc022109cf21d2602af}{\$action\+Default}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_ab0f048d2c5584942dea7783348e4211b}{\$goto}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a5c871ed2b4644a88a40a48c37a98c381}{\$goto\+Check}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_aadfc4bf935e1918bda272e24ada0b715}{\$goto\+Base}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a751066b38adef2b830311b259530a3d4}{\$goto\+Default}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a2ee2d2e8b50fe41e25af9d92f3dae7b0}{\$rule\+To\+Non\+Terminal}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a63385eeae55401e248e0d94a5fab67a7}{\$rule\+To\+Length}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_php_parser_1_1_parser_abstract}{Parser\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer}{Lexer}} \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ac7061225ff395b0827abcb27386f9704}{\$lexer}}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a39f66f5b5901aa93b6344b4b570c3cd0}{\$php\+Version}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a788789b4d5579c428df4a99b7831a0f0}{\$token\+To\+Symbol\+Map\+Size}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_af7789e7db0164cf5b9234d3b03f4a846}{\$action\+Table\+Size}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a63305ef96f94566e439d410c60549c11}{\$goto\+Table\+Size}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ab8ed39cb9fba8f4d9a1fb00eae348c7c}{\$invalid\+Symbol}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a3257b230857b83c3a159bbe9807fa864}{\$error\+Symbol}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a458963491369058d4d014be604f0834a}{\$default\+Action}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a65c3d4ee1606ea4623c90141fd2b19e6}{\$unexpected\+Token\+Rule}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a2aa845e48f5f23385fb06e67a297b4cc}{\$\+YY2\+TBLSTATE}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aeb67a9d88875034b74983fdc5e79d417}{\$num\+Non\+Leaf\+States}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a899ec39b455a829e77e1fd340cb9ef57}{\$php\+Token\+To\+Symbol}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ad9be3f58480c9ddd6e85cdfcb5d816d0}{\$drop\+Tokens}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a9b676c77bfe89b7dd2b037ae1557ec39}{\$token\+To\+Symbol}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aad69b14f6d497fe239d9735f3600f7de}{\$symbol\+To\+Name}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a600434c46d97e512fe7f3d30749165a7}{\$productions}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a065442cb58356325e2d3c3efc720da53}{\$action\+Base}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_adb5f1422ebdd58cca33a872477b605c5}{\$action}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ad692fe976add27b551733d81ef90304b}{\$action\+Check}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a5968e4c760169dc022109cf21d2602af}{\$action\+Default}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aa97c537219c293da33456bb2f82aa018}{\$reduce\+Callbacks}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aadfc4bf935e1918bda272e24ada0b715}{\$goto\+Base}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ab0f048d2c5584942dea7783348e4211b}{\$goto}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a5c871ed2b4644a88a40a48c37a98c381}{\$goto\+Check}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a751066b38adef2b830311b259530a3d4}{\$goto\+Default}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a2ee2d2e8b50fe41e25af9d92f3dae7b0}{\$rule\+To\+Non\+Terminal}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a63385eeae55401e248e0d94a5fab67a7}{\$rule\+To\+Length}}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a0fd81353a63be4e3e444b5ab4fda1f50}{\$sem\+Value}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a93ac106820c94c6be99187c02be44d82}{\$sem\+Stack}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_abe659d2f32d8c69afbd4bf4fed1ff076}{\$token\+Start\+Stack}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a595bbae8e2d3d74b4e0573e77c2cf587}{\$token\+End\+Stack}}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ae2c226e577bb15f9cc6f04ffa6e56aea}{\$error\+Handler}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a0a4f00d8dc47e30706e5f11b4c99c6dd}{\$error\+State}}
+\item 
+Spl\+Object\+Storage \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a685c42894e8637798a1316f535001698}{\$created\+Arrays}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a1c42792df2d729ab07ed01547234ff30}{\$tokens}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ac685e245a87ced2a9c76a68564d0077b}{\$token\+Pos}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_parser_abstract}{Parser\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a65896935fb0afe548b835e2d398a3cd0}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_php_parser_1_1_lexer}{Lexer}} \$lexer, ?\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \$php\+Version=null)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_acf9954b73753ad08d95c76d5b646a10c}{parse}} (string \$code, ?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} \$error\+Handler=null)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_acf2f05f60b57bd67020d2259a2cf9982}{get\+Tokens}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_parser}{Parser}}}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ae39f0682768f46865c153924fd431996}\index{Php8@{Php8}!initReduceCallbacks@{initReduceCallbacks}}
+\index{initReduceCallbacks@{initReduceCallbacks}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{initReduceCallbacks()}{initReduceCallbacks()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ae39f0682768f46865c153924fd431996} 
+init\+Reduce\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initialize \$reduce\+Callbacks map. 
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ae39f0682768f46865c153924fd431996}{Parser\+Abstract}}.
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_adb5f1422ebdd58cca33a872477b605c5}\index{Php8@{Php8}!\$action@{\$action}}
+\index{\$action@{\$action}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$action}{\$action}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_adb5f1422ebdd58cca33a872477b605c5} 
+array \$action\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a065442cb58356325e2d3c3efc720da53}\index{Php8@{Php8}!\$actionBase@{\$actionBase}}
+\index{\$actionBase@{\$actionBase}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$actionBase}{\$actionBase}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a065442cb58356325e2d3c3efc720da53} 
+array \$action\+Base\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ad692fe976add27b551733d81ef90304b}\index{Php8@{Php8}!\$actionCheck@{\$actionCheck}}
+\index{\$actionCheck@{\$actionCheck}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$actionCheck}{\$actionCheck}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ad692fe976add27b551733d81ef90304b} 
+array \$action\+Check\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a5968e4c760169dc022109cf21d2602af}\index{Php8@{Php8}!\$actionDefault@{\$actionDefault}}
+\index{\$actionDefault@{\$actionDefault}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$actionDefault}{\$actionDefault}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a5968e4c760169dc022109cf21d2602af} 
+array \$action\+Default\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_af7789e7db0164cf5b9234d3b03f4a846}\index{Php8@{Php8}!\$actionTableSize@{\$actionTableSize}}
+\index{\$actionTableSize@{\$actionTableSize}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$actionTableSize}{\$actionTableSize}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_af7789e7db0164cf5b9234d3b03f4a846} 
+int \$action\+Table\+Size = 1289\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a458963491369058d4d014be604f0834a}\index{Php8@{Php8}!\$defaultAction@{\$defaultAction}}
+\index{\$defaultAction@{\$defaultAction}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$defaultAction}{\$defaultAction}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a458963491369058d4d014be604f0834a} 
+int \$default\+Action = -\/32766\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a3257b230857b83c3a159bbe9807fa864}\index{Php8@{Php8}!\$errorSymbol@{\$errorSymbol}}
+\index{\$errorSymbol@{\$errorSymbol}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$errorSymbol}{\$errorSymbol}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a3257b230857b83c3a159bbe9807fa864} 
+int \$error\+Symbol = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ab0f048d2c5584942dea7783348e4211b}\index{Php8@{Php8}!\$goto@{\$goto}}
+\index{\$goto@{\$goto}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$goto}{\$goto}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ab0f048d2c5584942dea7783348e4211b} 
+array \$goto\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aadfc4bf935e1918bda272e24ada0b715}\index{Php8@{Php8}!\$gotoBase@{\$gotoBase}}
+\index{\$gotoBase@{\$gotoBase}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$gotoBase}{\$gotoBase}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aadfc4bf935e1918bda272e24ada0b715} 
+array \$goto\+Base\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ -\/289,\ \ \ \ 0,\ \ \ \ 0,\ \ 203,\ \ 227,\ \ 406,\ \ 569,\ \ \ \ 8,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ 223,\ -\/162,\ \ \ \ 5,\ -\/186,\ -\/143,\ \ \ 93,\ \ 152,\ -\/101,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 102,\ \ \ \ 0,\ \ \ 31,\ \ \ \ 2,\ \ 206,\ \ \ 10,\ \ 188,\ \ 209,\ \ 142,\ \ 172,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ -\/104,\ \ \ \ 0,\ \ 166,\ \ \ \ 0,\ \ 149,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ 90,\ \ \ -\/1,\ \ 234,\ \ \ \ 0,\ \ 237,\ -\/329,\ \ \ \ 0,\ -\/555,\ \ \ -\/9,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 404,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ 274,\ \ \ \ 0,\ \ \ \ 0,\ \ 198,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ 309,\ \ \ \ 0,\ \ 141,\ \ 439,\ \ \ \ 6,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ -\/5,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 1,\ \ \ \ 0,\ \ \ \ 0,\ \ 183,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 146,\ \ -\/28,\ \ \ \ 4,\ \ \ 12,\ -\/475,\ \ \ 82,\ -\/535,\ \ \ \ 0,\ \ \ \ 0,\ \ \ 74,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ 151,\ \ 196,\ \ \ \ 0,\ \ \ \ 0,\ \ \ 89,\ -\/267,\ \ \ \ 0,\ \ 108,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ 291,\ \ 314,\ \ \ \ 0,\ \ \ \ 0,\ \ 158,\ \ 162,\ \ \ \ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 131,\ \ \ \ 0,\ \ \ \ 0,\ \ 145,\ \ 100,\ \ 153,\ \ \ \ 0,\ \ 156,\ \ 243,\ \ 101,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 112,\ \ 167,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ 161,\ \ \ \ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 135,\ \ 165,\ \ \ \ 0,\ \ \ 76,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ -\/209,\ \ \ \ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ -\/44,\ \ \ \ 0,\ \ \ \ 0,\ \ \ 81,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ 157,\ \ 134,\ \ 148,\ \ -\/76,\ \ \ 77,\ \ \ \ 0,\ \ \ \ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ -\/210,\ \ \ \ 0,\ -\/224,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ 129,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ \ \ 0,\ \ -\/33,\ \ \ 84,\ \ 200,\ \ 247,\ \ 265,\ \ 305,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ \ \ \ 0,\ \ 231,\ \ \ \ 0,\ \ \ 36,\ \ 236,\ \ \ \ 0,\ \ 292,\ \ \ \ 7,\ \ \ \ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a5c871ed2b4644a88a40a48c37a98c381}\index{Php8@{Php8}!\$gotoCheck@{\$gotoCheck}}
+\index{\$gotoCheck@{\$gotoCheck}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$gotoCheck}{\$gotoCheck}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a5c871ed2b4644a88a40a48c37a98c381} 
+array \$goto\+Check\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a751066b38adef2b830311b259530a3d4}\index{Php8@{Php8}!\$gotoDefault@{\$gotoDefault}}
+\index{\$gotoDefault@{\$gotoDefault}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$gotoDefault}{\$gotoDefault}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a751066b38adef2b830311b259530a3d4} 
+array \$goto\+Default\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ -\/32768,\ \ 521,\ \ 754,\ \ \ \ 4,\ \ 755,\ \ 949,\ \ 830,\ \ 839,\ \ 585,\ \ 539,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 715,\ \ 347,\ \ 634,\ \ 429,\ 1339,\ \ 925,\ 1155,\ \ 604,\ \ 858,\ 1282,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ 1288,\ \ 464,\ \ 861,\ \ 327,\ \ 741,\ \ 937,\ \ 908,\ \ 909,\ \ 406,\ \ 393,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 874,\ \ 404,\ \ 658,\ \ 635,\ \ 502,\ \ 893,\ \ 460,\ \ 885,\ \ 494,\ \ 888,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 459,\ \ 897,\ \ 162,\ \ 425,\ \ 518,\ \ 901,\ \ \ \ 3,\ \ 904,\ \ 567,\ \ 935,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 988,\ \ 394,\ \ 912,\ \ 395,\ \ 686,\ \ 914,\ \ 588,\ \ 916,\ \ 917,\ \ 401,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 407,\ \ 408,\ 1160,\ \ 596,\ \ 631,\ \ 929,\ \ 254,\ \ 590,\ \ 930,\ \ 392,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 931,\ \ 939,\ \ 397,\ \ 399,\ \ 696,\ \ 474,\ \ 513,\ \ 507,\ \ 418,\ 1121,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 591,\ \ 618,\ \ 655,\ \ 453,\ \ 481,\ \ 629,\ \ 641,\ \ 628,\ \ 488,\ \ 441,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 424,\ \ 326,\ \ 972,\ \ 980,\ \ 495,\ \ 472,\ \ 994,\ \ 349,\ 1002,\ \ 749,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ 1168,\ \ 649,\ \ 497,\ 1010,\ \ 650,\ 1017,\ 1020,\ \ 540,\ \ 541,\ \ 486,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ 1032,\ \ 264,\ 1035,\ \ 498,\ 1044,\ \ \ 23,\ \ 676,\ 1049,\ 1050,\ \ 677,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 651,\ 1072,\ \ 652,\ \ 678,\ \ 653,\ 1074,\ \ 471,\ \ 586,\ 1082,\ \ 461,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ 1090,\ 1328,\ \ 462,\ 1094,\ \ 262,\ 1097,\ \ 277,\ \ 353,\ \ 376,\ \ 442,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ 1104,\ 1105,\ \ \ \ 9,\ 1111,\ \ 706,\ \ 707,\ \ \ 19,\ \ 273,\ \ 517,\ 1139,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 697,\ 1145,\ \ 272,\ 1148,\ \ 458,\ 1167,\ \ 457,\ 1237,\ 1239,\ \ 568,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 499,\ 1257,\ \ 310,\ 1260,\ \ 689,\ \ 514,\ 1265,\ \ 454,\ 1330,\ \ 455,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 542,\ \ 482,\ \ 334,\ \ 543,\ 1373,\ \ 305,\ \ 356,\ \ 331,\ \ 559,\ \ 311,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 357,\ \ 544,\ \ 483,\ 1336,\ 1344,\ \ 328,\ \ \ 31,\ 1363,\ 1374,\ \ 601,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ 623}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a63305ef96f94566e439d410c60549c11}\index{Php8@{Php8}!\$gotoTableSize@{\$gotoTableSize}}
+\index{\$gotoTableSize@{\$gotoTableSize}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$gotoTableSize}{\$gotoTableSize}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a63305ef96f94566e439d410c60549c11} 
+int \$goto\+Table\+Size = 608\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ab8ed39cb9fba8f4d9a1fb00eae348c7c}\index{Php8@{Php8}!\$invalidSymbol@{\$invalidSymbol}}
+\index{\$invalidSymbol@{\$invalidSymbol}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$invalidSymbol}{\$invalidSymbol}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ab8ed39cb9fba8f4d9a1fb00eae348c7c} 
+int \$invalid\+Symbol = 172\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aeb67a9d88875034b74983fdc5e79d417}\index{Php8@{Php8}!\$numNonLeafStates@{\$numNonLeafStates}}
+\index{\$numNonLeafStates@{\$numNonLeafStates}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$numNonLeafStates}{\$numNonLeafStates}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aeb67a9d88875034b74983fdc5e79d417} 
+int \$num\+Non\+Leaf\+States = 753\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a63385eeae55401e248e0d94a5fab67a7}\index{Php8@{Php8}!\$ruleToLength@{\$ruleToLength}}
+\index{\$ruleToLength@{\$ruleToLength}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$ruleToLength}{\$ruleToLength}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a63385eeae55401e248e0d94a5fab67a7} 
+array \$rule\+To\+Length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a2ee2d2e8b50fe41e25af9d92f3dae7b0}\index{Php8@{Php8}!\$ruleToNonTerminal@{\$ruleToNonTerminal}}
+\index{\$ruleToNonTerminal@{\$ruleToNonTerminal}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$ruleToNonTerminal}{\$ruleToNonTerminal}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a2ee2d2e8b50fe41e25af9d92f3dae7b0} 
+array \$rule\+To\+Non\+Terminal\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aad69b14f6d497fe239d9735f3600f7de}\index{Php8@{Php8}!\$symbolToName@{\$symbolToName}}
+\index{\$symbolToName@{\$symbolToName}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$symbolToName}{\$symbolToName}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aad69b14f6d497fe239d9735f3600f7de} 
+array \$symbol\+To\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a9b676c77bfe89b7dd2b037ae1557ec39}\index{Php8@{Php8}!\$tokenToSymbol@{\$tokenToSymbol}}
+\index{\$tokenToSymbol@{\$tokenToSymbol}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$tokenToSymbol}{\$tokenToSymbol}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a9b676c77bfe89b7dd2b037ae1557ec39} 
+array \$token\+To\+Symbol\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a788789b4d5579c428df4a99b7831a0f0}\index{Php8@{Php8}!\$tokenToSymbolMapSize@{\$tokenToSymbolMapSize}}
+\index{\$tokenToSymbolMapSize@{\$tokenToSymbolMapSize}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$tokenToSymbolMapSize}{\$tokenToSymbolMapSize}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a788789b4d5579c428df4a99b7831a0f0} 
+int \$token\+To\+Symbol\+Map\+Size = 400\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a65c3d4ee1606ea4623c90141fd2b19e6}\index{Php8@{Php8}!\$unexpectedTokenRule@{\$unexpectedTokenRule}}
+\index{\$unexpectedTokenRule@{\$unexpectedTokenRule}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$unexpectedTokenRule}{\$unexpectedTokenRule}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a65c3d4ee1606ea4623c90141fd2b19e6} 
+int \$unexpected\+Token\+Rule = 32767\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a2aa845e48f5f23385fb06e67a297b4cc}\index{Php8@{Php8}!\$YY2TBLSTATE@{\$YY2TBLSTATE}}
+\index{\$YY2TBLSTATE@{\$YY2TBLSTATE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{\$YY2TBLSTATE}{\$YY2TBLSTATE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a2aa845e48f5f23385fb06e67a297b4cc} 
+int \$YY2\+TBLSTATE = 442\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a131e96a61fd67df0bdbdeea21f2ec092}\index{Php8@{Php8}!T\_ABSTRACT@{T\_ABSTRACT}}
+\index{T\_ABSTRACT@{T\_ABSTRACT}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ABSTRACT}{T\_ABSTRACT}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a131e96a61fd67df0bdbdeea21f2ec092} 
+const T\+\_\+\+ABSTRACT = 354}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ac5d3858e3b4991ae76adc22ad3bc438e}\index{Php8@{Php8}!T\_AMPERSAND\_FOLLOWED\_BY\_VAR\_OR\_VARARG@{T\_AMPERSAND\_FOLLOWED\_BY\_VAR\_OR\_VARARG}}
+\index{T\_AMPERSAND\_FOLLOWED\_BY\_VAR\_OR\_VARARG@{T\_AMPERSAND\_FOLLOWED\_BY\_VAR\_OR\_VARARG}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_AMPERSAND\_FOLLOWED\_BY\_VAR\_OR\_VARARG}{T\_AMPERSAND\_FOLLOWED\_BY\_VAR\_OR\_VARARG}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ac5d3858e3b4991ae76adc22ad3bc438e} 
+const T\+\_\+\+AMPERSAND\+\_\+\+FOLLOWED\+\_\+\+BY\+\_\+\+VAR\+\_\+\+OR\+\_\+\+VARARG = 287}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_afd063dc652d02f00d1c0a7064031ec91}\index{Php8@{Php8}!T\_AMPERSAND\_NOT\_FOLLOWED\_BY\_VAR\_OR\_VARARG@{T\_AMPERSAND\_NOT\_FOLLOWED\_BY\_VAR\_OR\_VARARG}}
+\index{T\_AMPERSAND\_NOT\_FOLLOWED\_BY\_VAR\_OR\_VARARG@{T\_AMPERSAND\_NOT\_FOLLOWED\_BY\_VAR\_OR\_VARARG}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_AMPERSAND\_NOT\_FOLLOWED\_BY\_VAR\_OR\_VARARG}{T\_AMPERSAND\_NOT\_FOLLOWED\_BY\_VAR\_OR\_VARARG}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_afd063dc652d02f00d1c0a7064031ec91} 
+const T\+\_\+\+AMPERSAND\+\_\+\+NOT\+\_\+\+FOLLOWED\+\_\+\+BY\+\_\+\+VAR\+\_\+\+OR\+\_\+\+VARARG = 286}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_abf6423d7571cea83292dbecb8e81a791}\index{Php8@{Php8}!T\_AND\_EQUAL@{T\_AND\_EQUAL}}
+\index{T\_AND\_EQUAL@{T\_AND\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_AND\_EQUAL}{T\_AND\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_abf6423d7571cea83292dbecb8e81a791} 
+const T\+\_\+\+AND\+\_\+\+EQUAL = 276}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ab5ee7eeb61127bb9d963c49533bd0bf1}\index{Php8@{Php8}!T\_ARRAY@{T\_ARRAY}}
+\index{T\_ARRAY@{T\_ARRAY}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ARRAY}{T\_ARRAY}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ab5ee7eeb61127bb9d963c49533bd0bf1} 
+const T\+\_\+\+ARRAY = 377}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ad06dd6bfa28c7fa4cdab19aa04850c3a}\index{Php8@{Php8}!T\_ARRAY\_CAST@{T\_ARRAY\_CAST}}
+\index{T\_ARRAY\_CAST@{T\_ARRAY\_CAST}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ARRAY\_CAST}{T\_ARRAY\_CAST}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ad06dd6bfa28c7fa4cdab19aa04850c3a} 
+const T\+\_\+\+ARRAY\+\_\+\+CAST = 303}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_adccab278127d17fcf65bb286c49858e0}\index{Php8@{Php8}!T\_AS@{T\_AS}}
+\index{T\_AS@{T\_AS}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_AS}{T\_AS}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_adccab278127d17fcf65bb286c49858e0} 
+const T\+\_\+\+AS = 334}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a1cd2d7084cf5dd7ee96fdb8d3b7f29bf}\index{Php8@{Php8}!T\_ATTRIBUTE@{T\_ATTRIBUTE}}
+\index{T\_ATTRIBUTE@{T\_ATTRIBUTE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ATTRIBUTE}{T\_ATTRIBUTE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a1cd2d7084cf5dd7ee96fdb8d3b7f29bf} 
+const T\+\_\+\+ATTRIBUTE = 399}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_acc2ecd8d613fac5a66f45f293f80fb56}\index{Php8@{Php8}!T\_BOOL\_CAST@{T\_BOOL\_CAST}}
+\index{T\_BOOL\_CAST@{T\_BOOL\_CAST}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_BOOL\_CAST}{T\_BOOL\_CAST}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_acc2ecd8d613fac5a66f45f293f80fb56} 
+const T\+\_\+\+BOOL\+\_\+\+CAST = 305}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a7c0985cb8a2a712bd5971f756f20a66e}\index{Php8@{Php8}!T\_BOOLEAN\_AND@{T\_BOOLEAN\_AND}}
+\index{T\_BOOLEAN\_AND@{T\_BOOLEAN\_AND}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_BOOLEAN\_AND}{T\_BOOLEAN\_AND}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a7c0985cb8a2a712bd5971f756f20a66e} 
+const T\+\_\+\+BOOLEAN\+\_\+\+AND = 285}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_adfc06a6eb34ed846a551baa4be0d0812}\index{Php8@{Php8}!T\_BOOLEAN\_OR@{T\_BOOLEAN\_OR}}
+\index{T\_BOOLEAN\_OR@{T\_BOOLEAN\_OR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_BOOLEAN\_OR}{T\_BOOLEAN\_OR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_adfc06a6eb34ed846a551baa4be0d0812} 
+const T\+\_\+\+BOOLEAN\+\_\+\+OR = 284}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a5c7d59fbdb1d1563259474fb145e436f}\index{Php8@{Php8}!T\_BREAK@{T\_BREAK}}
+\index{T\_BREAK@{T\_BREAK}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_BREAK}{T\_BREAK}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a5c7d59fbdb1d1563259474fb145e436f} 
+const T\+\_\+\+BREAK = 340}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a87f67a862119abba9ddac71e0fe90b34}\index{Php8@{Php8}!T\_CALLABLE@{T\_CALLABLE}}
+\index{T\_CALLABLE@{T\_CALLABLE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CALLABLE}{T\_CALLABLE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a87f67a862119abba9ddac71e0fe90b34} 
+const T\+\_\+\+CALLABLE = 378}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ad381a8a32d2e9cc91c7604de048cc24f}\index{Php8@{Php8}!T\_CASE@{T\_CASE}}
+\index{T\_CASE@{T\_CASE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CASE}{T\_CASE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ad381a8a32d2e9cc91c7604de048cc24f} 
+const T\+\_\+\+CASE = 338}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a329f5ed38ae2164bf43cd6f27b587a2c}\index{Php8@{Php8}!T\_CATCH@{T\_CATCH}}
+\index{T\_CATCH@{T\_CATCH}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CATCH}{T\_CATCH}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a329f5ed38ae2164bf43cd6f27b587a2c} 
+const T\+\_\+\+CATCH = 348}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a909d3f3f85b923b2559d83617284f9bb}\index{Php8@{Php8}!T\_CLASS@{T\_CLASS}}
+\index{T\_CLASS@{T\_CLASS}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CLASS}{T\_CLASS}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a909d3f3f85b923b2559d83617284f9bb} 
+const T\+\_\+\+CLASS = 368}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a2218e88c94fd9c3ea602653245754002}\index{Php8@{Php8}!T\_CLASS\_C@{T\_CLASS\_C}}
+\index{T\_CLASS\_C@{T\_CLASS\_C}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CLASS\_C}{T\_CLASS\_C}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a2218e88c94fd9c3ea602653245754002} 
+const T\+\_\+\+CLASS\+\_\+C = 379}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a7e27cbd3d91ba90e093650b7d9154ac6}\index{Php8@{Php8}!T\_CLONE@{T\_CLONE}}
+\index{T\_CLONE@{T\_CLONE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CLONE}{T\_CLONE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a7e27cbd3d91ba90e093650b7d9154ac6} 
+const T\+\_\+\+CLONE = 309}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aeffaea23ff300f04d073f9063191c042}\index{Php8@{Php8}!T\_COALESCE@{T\_COALESCE}}
+\index{T\_COALESCE@{T\_COALESCE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_COALESCE}{T\_COALESCE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aeffaea23ff300f04d073f9063191c042} 
+const T\+\_\+\+COALESCE = 283}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a6b6701d9a6882785724c0512c98774a2}\index{Php8@{Php8}!T\_COALESCE\_EQUAL@{T\_COALESCE\_EQUAL}}
+\index{T\_COALESCE\_EQUAL@{T\_COALESCE\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_COALESCE\_EQUAL}{T\_COALESCE\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a6b6701d9a6882785724c0512c98774a2} 
+const T\+\_\+\+COALESCE\+\_\+\+EQUAL = 282}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a62493697e373bfbd675918d55dc36b4d}\index{Php8@{Php8}!T\_CONCAT\_EQUAL@{T\_CONCAT\_EQUAL}}
+\index{T\_CONCAT\_EQUAL@{T\_CONCAT\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CONCAT\_EQUAL}{T\_CONCAT\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a62493697e373bfbd675918d55dc36b4d} 
+const T\+\_\+\+CONCAT\+\_\+\+EQUAL = 274}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a811d97b76a2a6fc20d37f54c2fbd0c51}\index{Php8@{Php8}!T\_CONST@{T\_CONST}}
+\index{T\_CONST@{T\_CONST}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CONST}{T\_CONST}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a811d97b76a2a6fc20d37f54c2fbd0c51} 
+const T\+\_\+\+CONST = 345}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a849c2f70d32ff080fb67932c98e147dd}\index{Php8@{Php8}!T\_CONSTANT\_ENCAPSED\_STRING@{T\_CONSTANT\_ENCAPSED\_STRING}}
+\index{T\_CONSTANT\_ENCAPSED\_STRING@{T\_CONSTANT\_ENCAPSED\_STRING}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CONSTANT\_ENCAPSED\_STRING}{T\_CONSTANT\_ENCAPSED\_STRING}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a849c2f70d32ff080fb67932c98e147dd} 
+const T\+\_\+\+CONSTANT\+\_\+\+ENCAPSED\+\_\+\+STRING = 323}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a6ec135b3d2cf2805da23c538ef222e09}\index{Php8@{Php8}!T\_CONTINUE@{T\_CONTINUE}}
+\index{T\_CONTINUE@{T\_CONTINUE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CONTINUE}{T\_CONTINUE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a6ec135b3d2cf2805da23c538ef222e09} 
+const T\+\_\+\+CONTINUE = 341}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_abbea2068cfd3322e0f62835ee6ed5ce0}\index{Php8@{Php8}!T\_CURLY\_OPEN@{T\_CURLY\_OPEN}}
+\index{T\_CURLY\_OPEN@{T\_CURLY\_OPEN}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_CURLY\_OPEN}{T\_CURLY\_OPEN}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_abbea2068cfd3322e0f62835ee6ed5ce0} 
+const T\+\_\+\+CURLY\+\_\+\+OPEN = 389}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ae9213eda7f1a4856e725edd3017380cd}\index{Php8@{Php8}!T\_DEC@{T\_DEC}}
+\index{T\_DEC@{T\_DEC}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DEC}{T\_DEC}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ae9213eda7f1a4856e725edd3017380cd} 
+const T\+\_\+\+DEC = 299}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_acddb0f3d79c9ee5d63f4f91ae7e5cfee}\index{Php8@{Php8}!T\_DECLARE@{T\_DECLARE}}
+\index{T\_DECLARE@{T\_DECLARE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DECLARE}{T\_DECLARE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_acddb0f3d79c9ee5d63f4f91ae7e5cfee} 
+const T\+\_\+\+DECLARE = 332}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a789fc10f375b2c34f478fb0dd631471c}\index{Php8@{Php8}!T\_DEFAULT@{T\_DEFAULT}}
+\index{T\_DEFAULT@{T\_DEFAULT}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DEFAULT}{T\_DEFAULT}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a789fc10f375b2c34f478fb0dd631471c} 
+const T\+\_\+\+DEFAULT = 339}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_abda63d735cd60ac77d564134d1b50654}\index{Php8@{Php8}!T\_DIR@{T\_DIR}}
+\index{T\_DIR@{T\_DIR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DIR}{T\_DIR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_abda63d735cd60ac77d564134d1b50654} 
+const T\+\_\+\+DIR = 393}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a33e7219bbf45c82296792b4cb5db76e4}\index{Php8@{Php8}!T\_DIV\_EQUAL@{T\_DIV\_EQUAL}}
+\index{T\_DIV\_EQUAL@{T\_DIV\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DIV\_EQUAL}{T\_DIV\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a33e7219bbf45c82296792b4cb5db76e4} 
+const T\+\_\+\+DIV\+\_\+\+EQUAL = 273}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ac056b36b72c529937dcf0229d76e104e}\index{Php8@{Php8}!T\_DNUMBER@{T\_DNUMBER}}
+\index{T\_DNUMBER@{T\_DNUMBER}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DNUMBER}{T\_DNUMBER}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ac056b36b72c529937dcf0229d76e104e} 
+const T\+\_\+\+DNUMBER = 316}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a26c33de663f19f8408e928c990399d5d}\index{Php8@{Php8}!T\_DO@{T\_DO}}
+\index{T\_DO@{T\_DO}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DO}{T\_DO}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a26c33de663f19f8408e928c990399d5d} 
+const T\+\_\+\+DO = 325}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a4d25a6ba83c66d73d016e300345ba53a}\index{Php8@{Php8}!T\_DOLLAR\_OPEN\_CURLY\_BRACES@{T\_DOLLAR\_OPEN\_CURLY\_BRACES}}
+\index{T\_DOLLAR\_OPEN\_CURLY\_BRACES@{T\_DOLLAR\_OPEN\_CURLY\_BRACES}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DOLLAR\_OPEN\_CURLY\_BRACES}{T\_DOLLAR\_OPEN\_CURLY\_BRACES}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a4d25a6ba83c66d73d016e300345ba53a} 
+const T\+\_\+\+DOLLAR\+\_\+\+OPEN\+\_\+\+CURLY\+\_\+\+BRACES = 388}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aed9ebb0a856bdd6f2910dd51990e96e0}\index{Php8@{Php8}!T\_DOUBLE\_ARROW@{T\_DOUBLE\_ARROW}}
+\index{T\_DOUBLE\_ARROW@{T\_DOUBLE\_ARROW}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DOUBLE\_ARROW}{T\_DOUBLE\_ARROW}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aed9ebb0a856bdd6f2910dd51990e96e0} 
+const T\+\_\+\+DOUBLE\+\_\+\+ARROW = 268}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_afd091d4438af5564ceb1f803e58b340b}\index{Php8@{Php8}!T\_DOUBLE\_CAST@{T\_DOUBLE\_CAST}}
+\index{T\_DOUBLE\_CAST@{T\_DOUBLE\_CAST}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_DOUBLE\_CAST}{T\_DOUBLE\_CAST}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_afd091d4438af5564ceb1f803e58b340b} 
+const T\+\_\+\+DOUBLE\+\_\+\+CAST = 301}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a6a119d01499d805b0705fe12e11799da}\index{Php8@{Php8}!T\_ECHO@{T\_ECHO}}
+\index{T\_ECHO@{T\_ECHO}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ECHO}{T\_ECHO}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a6a119d01499d805b0705fe12e11799da} 
+const T\+\_\+\+ECHO = 324}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ab8e68f46b0ce32b76af36f9bf83a649b}\index{Php8@{Php8}!T\_ELLIPSIS@{T\_ELLIPSIS}}
+\index{T\_ELLIPSIS@{T\_ELLIPSIS}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ELLIPSIS}{T\_ELLIPSIS}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ab8e68f46b0ce32b76af36f9bf83a649b} 
+const T\+\_\+\+ELLIPSIS = 395}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a5fb5ba85ecbeec7d396be17756884a40}\index{Php8@{Php8}!T\_ELSE@{T\_ELSE}}
+\index{T\_ELSE@{T\_ELSE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ELSE}{T\_ELSE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a5fb5ba85ecbeec7d396be17756884a40} 
+const T\+\_\+\+ELSE = 313}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ae5ad54462f6957b0ed6ed16d18da03d4}\index{Php8@{Php8}!T\_ELSEIF@{T\_ELSEIF}}
+\index{T\_ELSEIF@{T\_ELSEIF}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ELSEIF}{T\_ELSEIF}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ae5ad54462f6957b0ed6ed16d18da03d4} 
+const T\+\_\+\+ELSEIF = 312}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a60834b7dd2391b9a38fabef82e068e74}\index{Php8@{Php8}!T\_EMPTY@{T\_EMPTY}}
+\index{T\_EMPTY@{T\_EMPTY}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_EMPTY}{T\_EMPTY}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a60834b7dd2391b9a38fabef82e068e74} 
+const T\+\_\+\+EMPTY = 366}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_afc6b7eb1a5e2ca7b12bcc9793b0b1a0b}\index{Php8@{Php8}!T\_ENCAPSED\_AND\_WHITESPACE@{T\_ENCAPSED\_AND\_WHITESPACE}}
+\index{T\_ENCAPSED\_AND\_WHITESPACE@{T\_ENCAPSED\_AND\_WHITESPACE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ENCAPSED\_AND\_WHITESPACE}{T\_ENCAPSED\_AND\_WHITESPACE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_afc6b7eb1a5e2ca7b12bcc9793b0b1a0b} 
+const T\+\_\+\+ENCAPSED\+\_\+\+AND\+\_\+\+WHITESPACE = 322}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a1414be123895477e3923cf7017febcfe}\index{Php8@{Php8}!T\_END\_HEREDOC@{T\_END\_HEREDOC}}
+\index{T\_END\_HEREDOC@{T\_END\_HEREDOC}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_END\_HEREDOC}{T\_END\_HEREDOC}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a1414be123895477e3923cf7017febcfe} 
+const T\+\_\+\+END\+\_\+\+HEREDOC = 387}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ab3c4aba9d753569072119060cbf784f6}\index{Php8@{Php8}!T\_ENDDECLARE@{T\_ENDDECLARE}}
+\index{T\_ENDDECLARE@{T\_ENDDECLARE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ENDDECLARE}{T\_ENDDECLARE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ab3c4aba9d753569072119060cbf784f6} 
+const T\+\_\+\+ENDDECLARE = 333}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a8048fbe5f0bfcc8ee1116b3614675809}\index{Php8@{Php8}!T\_ENDFOR@{T\_ENDFOR}}
+\index{T\_ENDFOR@{T\_ENDFOR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ENDFOR}{T\_ENDFOR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a8048fbe5f0bfcc8ee1116b3614675809} 
+const T\+\_\+\+ENDFOR = 329}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a8ff4c262b14d902e804b490f08069bef}\index{Php8@{Php8}!T\_ENDFOREACH@{T\_ENDFOREACH}}
+\index{T\_ENDFOREACH@{T\_ENDFOREACH}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ENDFOREACH}{T\_ENDFOREACH}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a8ff4c262b14d902e804b490f08069bef} 
+const T\+\_\+\+ENDFOREACH = 331}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_adaad0829b47390eb0f2e585d849f7589}\index{Php8@{Php8}!T\_ENDIF@{T\_ENDIF}}
+\index{T\_ENDIF@{T\_ENDIF}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ENDIF}{T\_ENDIF}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_adaad0829b47390eb0f2e585d849f7589} 
+const T\+\_\+\+ENDIF = 314}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_acc7b685915b5ab9ca2ad66aa5eb2ad28}\index{Php8@{Php8}!T\_ENDSWITCH@{T\_ENDSWITCH}}
+\index{T\_ENDSWITCH@{T\_ENDSWITCH}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ENDSWITCH}{T\_ENDSWITCH}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_acc7b685915b5ab9ca2ad66aa5eb2ad28} 
+const T\+\_\+\+ENDSWITCH = 337}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_adbc85bdfd0050f7c8fd08b0232348c26}\index{Php8@{Php8}!T\_ENDWHILE@{T\_ENDWHILE}}
+\index{T\_ENDWHILE@{T\_ENDWHILE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ENDWHILE}{T\_ENDWHILE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_adbc85bdfd0050f7c8fd08b0232348c26} 
+const T\+\_\+\+ENDWHILE = 327}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a317a3f5c4ed1de33ced4ff58b71426c7}\index{Php8@{Php8}!T\_ENUM@{T\_ENUM}}
+\index{T\_ENUM@{T\_ENUM}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ENUM}{T\_ENUM}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a317a3f5c4ed1de33ced4ff58b71426c7} 
+const T\+\_\+\+ENUM = 371}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a86d1ab9e108fb3884d0e6cd70b1217ed}\index{Php8@{Php8}!T\_EVAL@{T\_EVAL}}
+\index{T\_EVAL@{T\_EVAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_EVAL}{T\_EVAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a86d1ab9e108fb3884d0e6cd70b1217ed} 
+const T\+\_\+\+EVAL = 260}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a9879bccfe3ec3d33b8271f894068910b}\index{Php8@{Php8}!T\_EXIT@{T\_EXIT}}
+\index{T\_EXIT@{T\_EXIT}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_EXIT}{T\_EXIT}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a9879bccfe3ec3d33b8271f894068910b} 
+const T\+\_\+\+EXIT = 310}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a848350aaf5822b3274734ac6ef808888}\index{Php8@{Php8}!T\_EXTENDS@{T\_EXTENDS}}
+\index{T\_EXTENDS@{T\_EXTENDS}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_EXTENDS}{T\_EXTENDS}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a848350aaf5822b3274734ac6ef808888} 
+const T\+\_\+\+EXTENDS = 372}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a4c94491df6d91d8c5172e4e6baf1114d}\index{Php8@{Php8}!T\_FILE@{T\_FILE}}
+\index{T\_FILE@{T\_FILE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_FILE}{T\_FILE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a4c94491df6d91d8c5172e4e6baf1114d} 
+const T\+\_\+\+FILE = 385}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ac3763ff83c1df2b2a26dcb2f30fee53b}\index{Php8@{Php8}!T\_FINAL@{T\_FINAL}}
+\index{T\_FINAL@{T\_FINAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_FINAL}{T\_FINAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ac3763ff83c1df2b2a26dcb2f30fee53b} 
+const T\+\_\+\+FINAL = 355}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ab849be190419f8b5ba53881331de5030}\index{Php8@{Php8}!T\_FINALLY@{T\_FINALLY}}
+\index{T\_FINALLY@{T\_FINALLY}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_FINALLY}{T\_FINALLY}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ab849be190419f8b5ba53881331de5030} 
+const T\+\_\+\+FINALLY = 349}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a72a46ea9d79dfb1e2a3a46e1db748509}\index{Php8@{Php8}!T\_FN@{T\_FN}}
+\index{T\_FN@{T\_FN}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_FN}{T\_FN}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a72a46ea9d79dfb1e2a3a46e1db748509} 
+const T\+\_\+\+FN = 344}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a80afa1f2e58ce2a0f01f37065aae994b}\index{Php8@{Php8}!T\_FOR@{T\_FOR}}
+\index{T\_FOR@{T\_FOR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_FOR}{T\_FOR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a80afa1f2e58ce2a0f01f37065aae994b} 
+const T\+\_\+\+FOR = 328}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aa339f17b276a371b9c0d9674145ca519}\index{Php8@{Php8}!T\_FOREACH@{T\_FOREACH}}
+\index{T\_FOREACH@{T\_FOREACH}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_FOREACH}{T\_FOREACH}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aa339f17b276a371b9c0d9674145ca519} 
+const T\+\_\+\+FOREACH = 330}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a64e89541a7edd49d41cf1d6a4bec096b}\index{Php8@{Php8}!T\_FUNC\_C@{T\_FUNC\_C}}
+\index{T\_FUNC\_C@{T\_FUNC\_C}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_FUNC\_C}{T\_FUNC\_C}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a64e89541a7edd49d41cf1d6a4bec096b} 
+const T\+\_\+\+FUNC\+\_\+C = 382}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a4192d08dd8d82121af30543fe4e2e5b6}\index{Php8@{Php8}!T\_FUNCTION@{T\_FUNCTION}}
+\index{T\_FUNCTION@{T\_FUNCTION}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_FUNCTION}{T\_FUNCTION}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a4192d08dd8d82121af30543fe4e2e5b6} 
+const T\+\_\+\+FUNCTION = 343}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a0d268812f4b72b6df0bcd3756583758a}\index{Php8@{Php8}!T\_GLOBAL@{T\_GLOBAL}}
+\index{T\_GLOBAL@{T\_GLOBAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_GLOBAL}{T\_GLOBAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a0d268812f4b72b6df0bcd3756583758a} 
+const T\+\_\+\+GLOBAL = 352}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a3d484d694abb7404dde9a7b8f878067e}\index{Php8@{Php8}!T\_GOTO@{T\_GOTO}}
+\index{T\_GOTO@{T\_GOTO}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_GOTO}{T\_GOTO}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a3d484d694abb7404dde9a7b8f878067e} 
+const T\+\_\+\+GOTO = 342}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a80166f2a1a1e7f3300643f896ae3e801}\index{Php8@{Php8}!T\_HALT\_COMPILER@{T\_HALT\_COMPILER}}
+\index{T\_HALT\_COMPILER@{T\_HALT\_COMPILER}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_HALT\_COMPILER}{T\_HALT\_COMPILER}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a80166f2a1a1e7f3300643f896ae3e801} 
+const T\+\_\+\+HALT\+\_\+\+COMPILER = 367}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a7e608d628ff0b9246f9ae352f56be5a2}\index{Php8@{Php8}!T\_IF@{T\_IF}}
+\index{T\_IF@{T\_IF}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_IF}{T\_IF}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a7e608d628ff0b9246f9ae352f56be5a2} 
+const T\+\_\+\+IF = 311}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ad80d83662159f7b6fa31da0487b49119}\index{Php8@{Php8}!T\_IMPLEMENTS@{T\_IMPLEMENTS}}
+\index{T\_IMPLEMENTS@{T\_IMPLEMENTS}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_IMPLEMENTS}{T\_IMPLEMENTS}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ad80d83662159f7b6fa31da0487b49119} 
+const T\+\_\+\+IMPLEMENTS = 373}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a34c8fe2153a84e17391da1fee0fff786}\index{Php8@{Php8}!T\_INC@{T\_INC}}
+\index{T\_INC@{T\_INC}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_INC}{T\_INC}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a34c8fe2153a84e17391da1fee0fff786} 
+const T\+\_\+\+INC = 298}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ad78ebf4943dd3f635c9fd82ad7fd5ef1}\index{Php8@{Php8}!T\_INCLUDE@{T\_INCLUDE}}
+\index{T\_INCLUDE@{T\_INCLUDE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_INCLUDE}{T\_INCLUDE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ad78ebf4943dd3f635c9fd82ad7fd5ef1} 
+const T\+\_\+\+INCLUDE = 258}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a7a1d7cbb7109aa71323749c8bcca4dac}\index{Php8@{Php8}!T\_INCLUDE\_ONCE@{T\_INCLUDE\_ONCE}}
+\index{T\_INCLUDE\_ONCE@{T\_INCLUDE\_ONCE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_INCLUDE\_ONCE}{T\_INCLUDE\_ONCE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a7a1d7cbb7109aa71323749c8bcca4dac} 
+const T\+\_\+\+INCLUDE\+\_\+\+ONCE = 259}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a7679306bb6915401742cd54b828e1d4e}\index{Php8@{Php8}!T\_INLINE\_HTML@{T\_INLINE\_HTML}}
+\index{T\_INLINE\_HTML@{T\_INLINE\_HTML}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_INLINE\_HTML}{T\_INLINE\_HTML}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a7679306bb6915401742cd54b828e1d4e} 
+const T\+\_\+\+INLINE\+\_\+\+HTML = 321}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a6e47f393fde6def1b764340a24869db2}\index{Php8@{Php8}!T\_INSTANCEOF@{T\_INSTANCEOF}}
+\index{T\_INSTANCEOF@{T\_INSTANCEOF}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_INSTANCEOF}{T\_INSTANCEOF}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a6e47f393fde6def1b764340a24869db2} 
+const T\+\_\+\+INSTANCEOF = 297}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a4ed28687325e12d4c9681a2b2b77babc}\index{Php8@{Php8}!T\_INSTEADOF@{T\_INSTEADOF}}
+\index{T\_INSTEADOF@{T\_INSTEADOF}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_INSTEADOF}{T\_INSTEADOF}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a4ed28687325e12d4c9681a2b2b77babc} 
+const T\+\_\+\+INSTEADOF = 351}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a7481e1b57d9ab6c7bb5908cdf3fd5b9f}\index{Php8@{Php8}!T\_INT\_CAST@{T\_INT\_CAST}}
+\index{T\_INT\_CAST@{T\_INT\_CAST}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_INT\_CAST}{T\_INT\_CAST}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a7481e1b57d9ab6c7bb5908cdf3fd5b9f} 
+const T\+\_\+\+INT\+\_\+\+CAST = 300}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a7ef173cd76763a323cdd3d8f6d20ad51}\index{Php8@{Php8}!T\_INTERFACE@{T\_INTERFACE}}
+\index{T\_INTERFACE@{T\_INTERFACE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_INTERFACE}{T\_INTERFACE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a7ef173cd76763a323cdd3d8f6d20ad51} 
+const T\+\_\+\+INTERFACE = 370}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_acd642d285ffba3d2fdf189d7de67dde1}\index{Php8@{Php8}!T\_IS\_EQUAL@{T\_IS\_EQUAL}}
+\index{T\_IS\_EQUAL@{T\_IS\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_EQUAL}{T\_IS\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_acd642d285ffba3d2fdf189d7de67dde1} 
+const T\+\_\+\+IS\+\_\+\+EQUAL = 288}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a670530d5d0c6dbdd96efc6e484c94987}\index{Php8@{Php8}!T\_IS\_GREATER\_OR\_EQUAL@{T\_IS\_GREATER\_OR\_EQUAL}}
+\index{T\_IS\_GREATER\_OR\_EQUAL@{T\_IS\_GREATER\_OR\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_GREATER\_OR\_EQUAL}{T\_IS\_GREATER\_OR\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a670530d5d0c6dbdd96efc6e484c94987} 
+const T\+\_\+\+IS\+\_\+\+GREATER\+\_\+\+OR\+\_\+\+EQUAL = 294}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_af60d152d83252a246dcbcb12b4a7d50d}\index{Php8@{Php8}!T\_IS\_IDENTICAL@{T\_IS\_IDENTICAL}}
+\index{T\_IS\_IDENTICAL@{T\_IS\_IDENTICAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_IDENTICAL}{T\_IS\_IDENTICAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_af60d152d83252a246dcbcb12b4a7d50d} 
+const T\+\_\+\+IS\+\_\+\+IDENTICAL = 290}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aed8c5e4a5f723ef747ace5ac689a8482}\index{Php8@{Php8}!T\_IS\_NOT\_EQUAL@{T\_IS\_NOT\_EQUAL}}
+\index{T\_IS\_NOT\_EQUAL@{T\_IS\_NOT\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_NOT\_EQUAL}{T\_IS\_NOT\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aed8c5e4a5f723ef747ace5ac689a8482} 
+const T\+\_\+\+IS\+\_\+\+NOT\+\_\+\+EQUAL = 289}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_afcb6d9b30fcb2a424deb0cdb2f5ae813}\index{Php8@{Php8}!T\_IS\_NOT\_IDENTICAL@{T\_IS\_NOT\_IDENTICAL}}
+\index{T\_IS\_NOT\_IDENTICAL@{T\_IS\_NOT\_IDENTICAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_NOT\_IDENTICAL}{T\_IS\_NOT\_IDENTICAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_afcb6d9b30fcb2a424deb0cdb2f5ae813} 
+const T\+\_\+\+IS\+\_\+\+NOT\+\_\+\+IDENTICAL = 291}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a08a33af03bb28fd75dd0a041e5a24992}\index{Php8@{Php8}!T\_IS\_SMALLER\_OR\_EQUAL@{T\_IS\_SMALLER\_OR\_EQUAL}}
+\index{T\_IS\_SMALLER\_OR\_EQUAL@{T\_IS\_SMALLER\_OR\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_IS\_SMALLER\_OR\_EQUAL}{T\_IS\_SMALLER\_OR\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a08a33af03bb28fd75dd0a041e5a24992} 
+const T\+\_\+\+IS\+\_\+\+SMALLER\+\_\+\+OR\+\_\+\+EQUAL = 293}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ab3c97ce1086628141132cf38485ee977}\index{Php8@{Php8}!T\_ISSET@{T\_ISSET}}
+\index{T\_ISSET@{T\_ISSET}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_ISSET}{T\_ISSET}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ab3c97ce1086628141132cf38485ee977} 
+const T\+\_\+\+ISSET = 365}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ac7e87ba12f0a411165089f1a00048554}\index{Php8@{Php8}!T\_LINE@{T\_LINE}}
+\index{T\_LINE@{T\_LINE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_LINE}{T\_LINE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ac7e87ba12f0a411165089f1a00048554} 
+const T\+\_\+\+LINE = 384}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ac3a675e21ce0d08e79516f4a8ac4b7bf}\index{Php8@{Php8}!T\_LIST@{T\_LIST}}
+\index{T\_LIST@{T\_LIST}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_LIST}{T\_LIST}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ac3a675e21ce0d08e79516f4a8ac4b7bf} 
+const T\+\_\+\+LIST = 376}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_adc84d9c9f3e4f244eb77016fbbf6f1e6}\index{Php8@{Php8}!T\_LNUMBER@{T\_LNUMBER}}
+\index{T\_LNUMBER@{T\_LNUMBER}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_LNUMBER}{T\_LNUMBER}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_adc84d9c9f3e4f244eb77016fbbf6f1e6} 
+const T\+\_\+\+LNUMBER = 315}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a16181d2b1bdcf5ba03ce03e8993ed383}\index{Php8@{Php8}!T\_LOGICAL\_AND@{T\_LOGICAL\_AND}}
+\index{T\_LOGICAL\_AND@{T\_LOGICAL\_AND}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_LOGICAL\_AND}{T\_LOGICAL\_AND}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a16181d2b1bdcf5ba03ce03e8993ed383} 
+const T\+\_\+\+LOGICAL\+\_\+\+AND = 265}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a44de7b190bf0b3f5f9553f1fbae89e6c}\index{Php8@{Php8}!T\_LOGICAL\_OR@{T\_LOGICAL\_OR}}
+\index{T\_LOGICAL\_OR@{T\_LOGICAL\_OR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_LOGICAL\_OR}{T\_LOGICAL\_OR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a44de7b190bf0b3f5f9553f1fbae89e6c} 
+const T\+\_\+\+LOGICAL\+\_\+\+OR = 263}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a406e45abf9febbb52f27e632969c3e94}\index{Php8@{Php8}!T\_LOGICAL\_XOR@{T\_LOGICAL\_XOR}}
+\index{T\_LOGICAL\_XOR@{T\_LOGICAL\_XOR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_LOGICAL\_XOR}{T\_LOGICAL\_XOR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a406e45abf9febbb52f27e632969c3e94} 
+const T\+\_\+\+LOGICAL\+\_\+\+XOR = 264}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a89fcaa6e49ff74e75b201ffd92d9d387}\index{Php8@{Php8}!T\_MATCH@{T\_MATCH}}
+\index{T\_MATCH@{T\_MATCH}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_MATCH}{T\_MATCH}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a89fcaa6e49ff74e75b201ffd92d9d387} 
+const T\+\_\+\+MATCH = 336}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a6bd4661178ac80f1080c6090cf9a6cfa}\index{Php8@{Php8}!T\_METHOD\_C@{T\_METHOD\_C}}
+\index{T\_METHOD\_C@{T\_METHOD\_C}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_METHOD\_C}{T\_METHOD\_C}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a6bd4661178ac80f1080c6090cf9a6cfa} 
+const T\+\_\+\+METHOD\+\_\+C = 381}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ac616789d62fdffcf32db308ed4f963ee}\index{Php8@{Php8}!T\_MINUS\_EQUAL@{T\_MINUS\_EQUAL}}
+\index{T\_MINUS\_EQUAL@{T\_MINUS\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_MINUS\_EQUAL}{T\_MINUS\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ac616789d62fdffcf32db308ed4f963ee} 
+const T\+\_\+\+MINUS\+\_\+\+EQUAL = 271}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a4f733b1fbe8a1552f0d42dd528d4f8ca}\index{Php8@{Php8}!T\_MOD\_EQUAL@{T\_MOD\_EQUAL}}
+\index{T\_MOD\_EQUAL@{T\_MOD\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_MOD\_EQUAL}{T\_MOD\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a4f733b1fbe8a1552f0d42dd528d4f8ca} 
+const T\+\_\+\+MOD\+\_\+\+EQUAL = 275}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a2acd56a06a64f94d12cb8f3fa1d3ae41}\index{Php8@{Php8}!T\_MUL\_EQUAL@{T\_MUL\_EQUAL}}
+\index{T\_MUL\_EQUAL@{T\_MUL\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_MUL\_EQUAL}{T\_MUL\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a2acd56a06a64f94d12cb8f3fa1d3ae41} 
+const T\+\_\+\+MUL\+\_\+\+EQUAL = 272}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a8836fbcb380bdda8bc0cbe8277b2ac36}\index{Php8@{Php8}!T\_NAME\_FULLY\_QUALIFIED@{T\_NAME\_FULLY\_QUALIFIED}}
+\index{T\_NAME\_FULLY\_QUALIFIED@{T\_NAME\_FULLY\_QUALIFIED}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_NAME\_FULLY\_QUALIFIED}{T\_NAME\_FULLY\_QUALIFIED}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a8836fbcb380bdda8bc0cbe8277b2ac36} 
+const T\+\_\+\+NAME\+\_\+\+FULLY\+\_\+\+QUALIFIED = 396}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a3ad10ce3354c8e3e432c1d232bb68a90}\index{Php8@{Php8}!T\_NAME\_QUALIFIED@{T\_NAME\_QUALIFIED}}
+\index{T\_NAME\_QUALIFIED@{T\_NAME\_QUALIFIED}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_NAME\_QUALIFIED}{T\_NAME\_QUALIFIED}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a3ad10ce3354c8e3e432c1d232bb68a90} 
+const T\+\_\+\+NAME\+\_\+\+QUALIFIED = 397}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_acb52d5d0da225b3653cdbdecbe6b3c71}\index{Php8@{Php8}!T\_NAME\_RELATIVE@{T\_NAME\_RELATIVE}}
+\index{T\_NAME\_RELATIVE@{T\_NAME\_RELATIVE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_NAME\_RELATIVE}{T\_NAME\_RELATIVE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_acb52d5d0da225b3653cdbdecbe6b3c71} 
+const T\+\_\+\+NAME\+\_\+\+RELATIVE = 398}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_adc423626c24714bd4e9691f7223c2874}\index{Php8@{Php8}!T\_NAMESPACE@{T\_NAMESPACE}}
+\index{T\_NAMESPACE@{T\_NAMESPACE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_NAMESPACE}{T\_NAMESPACE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_adc423626c24714bd4e9691f7223c2874} 
+const T\+\_\+\+NAMESPACE = 391}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ad305c48565a48c5a7782a10f45cc73e5}\index{Php8@{Php8}!T\_NEW@{T\_NEW}}
+\index{T\_NEW@{T\_NEW}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_NEW}{T\_NEW}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ad305c48565a48c5a7782a10f45cc73e5} 
+const T\+\_\+\+NEW = 308}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_af8e9f8450c39f098356797a3fcbe0baf}\index{Php8@{Php8}!T\_NS\_C@{T\_NS\_C}}
+\index{T\_NS\_C@{T\_NS\_C}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_NS\_C}{T\_NS\_C}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_af8e9f8450c39f098356797a3fcbe0baf} 
+const T\+\_\+\+NS\+\_\+C = 392}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ada702c9850e4d8b33f463a1dd5975158}\index{Php8@{Php8}!T\_NS\_SEPARATOR@{T\_NS\_SEPARATOR}}
+\index{T\_NS\_SEPARATOR@{T\_NS\_SEPARATOR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_NS\_SEPARATOR}{T\_NS\_SEPARATOR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ada702c9850e4d8b33f463a1dd5975158} 
+const T\+\_\+\+NS\+\_\+\+SEPARATOR = 394}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a47679f7b9f664e0a951b910e1d96ee5c}\index{Php8@{Php8}!T\_NULLSAFE\_OBJECT\_OPERATOR@{T\_NULLSAFE\_OBJECT\_OPERATOR}}
+\index{T\_NULLSAFE\_OBJECT\_OPERATOR@{T\_NULLSAFE\_OBJECT\_OPERATOR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_NULLSAFE\_OBJECT\_OPERATOR}{T\_NULLSAFE\_OBJECT\_OPERATOR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a47679f7b9f664e0a951b910e1d96ee5c} 
+const T\+\_\+\+NULLSAFE\+\_\+\+OBJECT\+\_\+\+OPERATOR = 375}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a1ceea363d61b16e29a8bb7c199bfa2e8}\index{Php8@{Php8}!T\_NUM\_STRING@{T\_NUM\_STRING}}
+\index{T\_NUM\_STRING@{T\_NUM\_STRING}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_NUM\_STRING}{T\_NUM\_STRING}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a1ceea363d61b16e29a8bb7c199bfa2e8} 
+const T\+\_\+\+NUM\+\_\+\+STRING = 320}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a174d4b178cc44183b26575fc6b0741ca}\index{Php8@{Php8}!T\_OBJECT\_CAST@{T\_OBJECT\_CAST}}
+\index{T\_OBJECT\_CAST@{T\_OBJECT\_CAST}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_OBJECT\_CAST}{T\_OBJECT\_CAST}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a174d4b178cc44183b26575fc6b0741ca} 
+const T\+\_\+\+OBJECT\+\_\+\+CAST = 304}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a3bc84c65cef799e9add55bcc7ed2e829}\index{Php8@{Php8}!T\_OBJECT\_OPERATOR@{T\_OBJECT\_OPERATOR}}
+\index{T\_OBJECT\_OPERATOR@{T\_OBJECT\_OPERATOR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_OBJECT\_OPERATOR}{T\_OBJECT\_OPERATOR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a3bc84c65cef799e9add55bcc7ed2e829} 
+const T\+\_\+\+OBJECT\+\_\+\+OPERATOR = 374}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a5dfd57b2e4c91d1b400bf174c146d00f}\index{Php8@{Php8}!T\_OR\_EQUAL@{T\_OR\_EQUAL}}
+\index{T\_OR\_EQUAL@{T\_OR\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_OR\_EQUAL}{T\_OR\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a5dfd57b2e4c91d1b400bf174c146d00f} 
+const T\+\_\+\+OR\+\_\+\+EQUAL = 277}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aa2008da5f5676435f8fcb3b85361a2ef}\index{Php8@{Php8}!T\_PAAMAYIM\_NEKUDOTAYIM@{T\_PAAMAYIM\_NEKUDOTAYIM}}
+\index{T\_PAAMAYIM\_NEKUDOTAYIM@{T\_PAAMAYIM\_NEKUDOTAYIM}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PAAMAYIM\_NEKUDOTAYIM}{T\_PAAMAYIM\_NEKUDOTAYIM}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aa2008da5f5676435f8fcb3b85361a2ef} 
+const T\+\_\+\+PAAMAYIM\+\_\+\+NEKUDOTAYIM = 390}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aa60c549a32f41089eec4d97592e717c5}\index{Php8@{Php8}!T\_PLUS\_EQUAL@{T\_PLUS\_EQUAL}}
+\index{T\_PLUS\_EQUAL@{T\_PLUS\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PLUS\_EQUAL}{T\_PLUS\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aa60c549a32f41089eec4d97592e717c5} 
+const T\+\_\+\+PLUS\+\_\+\+EQUAL = 270}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ac7c8759d75cc236cf7b554392ada5c87}\index{Php8@{Php8}!T\_POW@{T\_POW}}
+\index{T\_POW@{T\_POW}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_POW}{T\_POW}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ac7c8759d75cc236cf7b554392ada5c87} 
+const T\+\_\+\+POW = 307}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_afcbb9d9ed10e1c3a91d499bc7ca43f84}\index{Php8@{Php8}!T\_POW\_EQUAL@{T\_POW\_EQUAL}}
+\index{T\_POW\_EQUAL@{T\_POW\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_POW\_EQUAL}{T\_POW\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_afcbb9d9ed10e1c3a91d499bc7ca43f84} 
+const T\+\_\+\+POW\+\_\+\+EQUAL = 281}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_afb6f291040be193d7ea73d9ab84c60bd}\index{Php8@{Php8}!T\_PRINT@{T\_PRINT}}
+\index{T\_PRINT@{T\_PRINT}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PRINT}{T\_PRINT}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_afb6f291040be193d7ea73d9ab84c60bd} 
+const T\+\_\+\+PRINT = 266}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aafe6d13a3893d4042464fe0bc05fdea0}\index{Php8@{Php8}!T\_PRIVATE@{T\_PRIVATE}}
+\index{T\_PRIVATE@{T\_PRIVATE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PRIVATE}{T\_PRIVATE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aafe6d13a3893d4042464fe0bc05fdea0} 
+const T\+\_\+\+PRIVATE = 356}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a3da492061a25f4c7b2278202bb696f14}\index{Php8@{Php8}!T\_PRIVATE\_SET@{T\_PRIVATE\_SET}}
+\index{T\_PRIVATE\_SET@{T\_PRIVATE\_SET}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PRIVATE\_SET}{T\_PRIVATE\_SET}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a3da492061a25f4c7b2278202bb696f14} 
+const T\+\_\+\+PRIVATE\+\_\+\+SET = 362}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a9f018613ee41b25206ca00266b250eb6}\index{Php8@{Php8}!T\_PROPERTY\_C@{T\_PROPERTY\_C}}
+\index{T\_PROPERTY\_C@{T\_PROPERTY\_C}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PROPERTY\_C}{T\_PROPERTY\_C}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a9f018613ee41b25206ca00266b250eb6} 
+const T\+\_\+\+PROPERTY\+\_\+C = 383}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ae903d4988f7287db0e6ea2fa081fc667}\index{Php8@{Php8}!T\_PROTECTED@{T\_PROTECTED}}
+\index{T\_PROTECTED@{T\_PROTECTED}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PROTECTED}{T\_PROTECTED}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ae903d4988f7287db0e6ea2fa081fc667} 
+const T\+\_\+\+PROTECTED = 357}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a518e56f56bb327375056d97a92bf8cee}\index{Php8@{Php8}!T\_PROTECTED\_SET@{T\_PROTECTED\_SET}}
+\index{T\_PROTECTED\_SET@{T\_PROTECTED\_SET}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PROTECTED\_SET}{T\_PROTECTED\_SET}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a518e56f56bb327375056d97a92bf8cee} 
+const T\+\_\+\+PROTECTED\+\_\+\+SET = 361}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a2ffd73ab87b57dcdb50285d5653ed8b9}\index{Php8@{Php8}!T\_PUBLIC@{T\_PUBLIC}}
+\index{T\_PUBLIC@{T\_PUBLIC}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PUBLIC}{T\_PUBLIC}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a2ffd73ab87b57dcdb50285d5653ed8b9} 
+const T\+\_\+\+PUBLIC = 358}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_af2b230a930c6e61adb699b470d890618}\index{Php8@{Php8}!T\_PUBLIC\_SET@{T\_PUBLIC\_SET}}
+\index{T\_PUBLIC\_SET@{T\_PUBLIC\_SET}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_PUBLIC\_SET}{T\_PUBLIC\_SET}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_af2b230a930c6e61adb699b470d890618} 
+const T\+\_\+\+PUBLIC\+\_\+\+SET = 360}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_afb319463bbb8a7e1ece1562671712801}\index{Php8@{Php8}!T\_READONLY@{T\_READONLY}}
+\index{T\_READONLY@{T\_READONLY}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_READONLY}{T\_READONLY}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_afb319463bbb8a7e1ece1562671712801} 
+const T\+\_\+\+READONLY = 359}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a80d646f034bb2101f96b647356c4a5a0}\index{Php8@{Php8}!T\_REQUIRE@{T\_REQUIRE}}
+\index{T\_REQUIRE@{T\_REQUIRE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_REQUIRE}{T\_REQUIRE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a80d646f034bb2101f96b647356c4a5a0} 
+const T\+\_\+\+REQUIRE = 261}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aafaf3c2385e0181087573b5f9a5fefc4}\index{Php8@{Php8}!T\_REQUIRE\_ONCE@{T\_REQUIRE\_ONCE}}
+\index{T\_REQUIRE\_ONCE@{T\_REQUIRE\_ONCE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_REQUIRE\_ONCE}{T\_REQUIRE\_ONCE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aafaf3c2385e0181087573b5f9a5fefc4} 
+const T\+\_\+\+REQUIRE\+\_\+\+ONCE = 262}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_acaf7bdb7962432496c997e7db4abc747}\index{Php8@{Php8}!T\_RETURN@{T\_RETURN}}
+\index{T\_RETURN@{T\_RETURN}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_RETURN}{T\_RETURN}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_acaf7bdb7962432496c997e7db4abc747} 
+const T\+\_\+\+RETURN = 346}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a0ea3d081448e7629d449afd3c4e60528}\index{Php8@{Php8}!T\_SL@{T\_SL}}
+\index{T\_SL@{T\_SL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_SL}{T\_SL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a0ea3d081448e7629d449afd3c4e60528} 
+const T\+\_\+\+SL = 295}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_af5fc1607a05c84be6399dc4533ad522c}\index{Php8@{Php8}!T\_SL\_EQUAL@{T\_SL\_EQUAL}}
+\index{T\_SL\_EQUAL@{T\_SL\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_SL\_EQUAL}{T\_SL\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_af5fc1607a05c84be6399dc4533ad522c} 
+const T\+\_\+\+SL\+\_\+\+EQUAL = 279}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aadea628d9012833da7231f087adae22d}\index{Php8@{Php8}!T\_SPACESHIP@{T\_SPACESHIP}}
+\index{T\_SPACESHIP@{T\_SPACESHIP}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_SPACESHIP}{T\_SPACESHIP}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aadea628d9012833da7231f087adae22d} 
+const T\+\_\+\+SPACESHIP = 292}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a0625fa59dbed07c4a909843e3b071463}\index{Php8@{Php8}!T\_SR@{T\_SR}}
+\index{T\_SR@{T\_SR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_SR}{T\_SR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a0625fa59dbed07c4a909843e3b071463} 
+const T\+\_\+\+SR = 296}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a67f311fa72d9c87e31765e7d1e1dbcb5}\index{Php8@{Php8}!T\_SR\_EQUAL@{T\_SR\_EQUAL}}
+\index{T\_SR\_EQUAL@{T\_SR\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_SR\_EQUAL}{T\_SR\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a67f311fa72d9c87e31765e7d1e1dbcb5} 
+const T\+\_\+\+SR\+\_\+\+EQUAL = 280}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_adb385dc707621926e93c412256a4f520}\index{Php8@{Php8}!T\_START\_HEREDOC@{T\_START\_HEREDOC}}
+\index{T\_START\_HEREDOC@{T\_START\_HEREDOC}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_START\_HEREDOC}{T\_START\_HEREDOC}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_adb385dc707621926e93c412256a4f520} 
+const T\+\_\+\+START\+\_\+\+HEREDOC = 386}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a5d2412f3ea943abd82d5320de451348f}\index{Php8@{Php8}!T\_STATIC@{T\_STATIC}}
+\index{T\_STATIC@{T\_STATIC}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_STATIC}{T\_STATIC}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a5d2412f3ea943abd82d5320de451348f} 
+const T\+\_\+\+STATIC = 353}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a301319d23bde4e1cb03a0ece6ba3429d}\index{Php8@{Php8}!T\_STRING@{T\_STRING}}
+\index{T\_STRING@{T\_STRING}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_STRING}{T\_STRING}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a301319d23bde4e1cb03a0ece6ba3429d} 
+const T\+\_\+\+STRING = 317}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a554303a3780d53d7d2aa71a6223bc189}\index{Php8@{Php8}!T\_STRING\_CAST@{T\_STRING\_CAST}}
+\index{T\_STRING\_CAST@{T\_STRING\_CAST}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_STRING\_CAST}{T\_STRING\_CAST}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a554303a3780d53d7d2aa71a6223bc189} 
+const T\+\_\+\+STRING\+\_\+\+CAST = 302}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ae1b8735e29b7557bdeb8be0b9b04c002}\index{Php8@{Php8}!T\_STRING\_VARNAME@{T\_STRING\_VARNAME}}
+\index{T\_STRING\_VARNAME@{T\_STRING\_VARNAME}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_STRING\_VARNAME}{T\_STRING\_VARNAME}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ae1b8735e29b7557bdeb8be0b9b04c002} 
+const T\+\_\+\+STRING\+\_\+\+VARNAME = 318}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a84842c092993771b9312cb10ca19db8b}\index{Php8@{Php8}!T\_SWITCH@{T\_SWITCH}}
+\index{T\_SWITCH@{T\_SWITCH}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_SWITCH}{T\_SWITCH}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a84842c092993771b9312cb10ca19db8b} 
+const T\+\_\+\+SWITCH = 335}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_abac96cb09bd1d68c2f1f313766075615}\index{Php8@{Php8}!T\_THROW@{T\_THROW}}
+\index{T\_THROW@{T\_THROW}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_THROW}{T\_THROW}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_abac96cb09bd1d68c2f1f313766075615} 
+const T\+\_\+\+THROW = 257}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ae42ba6180092525d3ac43986bbd8d755}\index{Php8@{Php8}!T\_TRAIT@{T\_TRAIT}}
+\index{T\_TRAIT@{T\_TRAIT}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_TRAIT}{T\_TRAIT}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ae42ba6180092525d3ac43986bbd8d755} 
+const T\+\_\+\+TRAIT = 369}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_aa860ccdd30372a11073952070bcfcfaf}\index{Php8@{Php8}!T\_TRAIT\_C@{T\_TRAIT\_C}}
+\index{T\_TRAIT\_C@{T\_TRAIT\_C}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_TRAIT\_C}{T\_TRAIT\_C}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_aa860ccdd30372a11073952070bcfcfaf} 
+const T\+\_\+\+TRAIT\+\_\+C = 380}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_af1bcbf343f08d727d1ccc9197c75e003}\index{Php8@{Php8}!T\_TRY@{T\_TRY}}
+\index{T\_TRY@{T\_TRY}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_TRY}{T\_TRY}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_af1bcbf343f08d727d1ccc9197c75e003} 
+const T\+\_\+\+TRY = 347}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a56f750edd5741180e844859aadf9919c}\index{Php8@{Php8}!T\_UNSET@{T\_UNSET}}
+\index{T\_UNSET@{T\_UNSET}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_UNSET}{T\_UNSET}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a56f750edd5741180e844859aadf9919c} 
+const T\+\_\+\+UNSET = 364}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_ae6e162cb9e63e0a5567c50f581537bb9}\index{Php8@{Php8}!T\_UNSET\_CAST@{T\_UNSET\_CAST}}
+\index{T\_UNSET\_CAST@{T\_UNSET\_CAST}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_UNSET\_CAST}{T\_UNSET\_CAST}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_ae6e162cb9e63e0a5567c50f581537bb9} 
+const T\+\_\+\+UNSET\+\_\+\+CAST = 306}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a4d071933348f01b2d188763cdb7ed1d6}\index{Php8@{Php8}!T\_USE@{T\_USE}}
+\index{T\_USE@{T\_USE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_USE}{T\_USE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a4d071933348f01b2d188763cdb7ed1d6} 
+const T\+\_\+\+USE = 350}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a1773f7ded3f91dbf4490f6005c5586ac}\index{Php8@{Php8}!T\_VAR@{T\_VAR}}
+\index{T\_VAR@{T\_VAR}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_VAR}{T\_VAR}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a1773f7ded3f91dbf4490f6005c5586ac} 
+const T\+\_\+\+VAR = 363}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a50c0f2c8842d4f6810d2671441c86762}\index{Php8@{Php8}!T\_VARIABLE@{T\_VARIABLE}}
+\index{T\_VARIABLE@{T\_VARIABLE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_VARIABLE}{T\_VARIABLE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a50c0f2c8842d4f6810d2671441c86762} 
+const T\+\_\+\+VARIABLE = 319}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a97dc58d6df07d5f7373df6a897b91317}\index{Php8@{Php8}!T\_WHILE@{T\_WHILE}}
+\index{T\_WHILE@{T\_WHILE}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_WHILE}{T\_WHILE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a97dc58d6df07d5f7373df6a897b91317} 
+const T\+\_\+\+WHILE = 326}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a0733844fba994bdd3110544cc300ce33}\index{Php8@{Php8}!T\_XOR\_EQUAL@{T\_XOR\_EQUAL}}
+\index{T\_XOR\_EQUAL@{T\_XOR\_EQUAL}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_XOR\_EQUAL}{T\_XOR\_EQUAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a0733844fba994bdd3110544cc300ce33} 
+const T\+\_\+\+XOR\+\_\+\+EQUAL = 278}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a8ad3711fa281229e4ccecaf9b14de677}\index{Php8@{Php8}!T\_YIELD@{T\_YIELD}}
+\index{T\_YIELD@{T\_YIELD}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_YIELD}{T\_YIELD}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a8ad3711fa281229e4ccecaf9b14de677} 
+const T\+\_\+\+YIELD = 267}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a6439284931f917b38f27f3e2e1c7c1e4}\index{Php8@{Php8}!T\_YIELD\_FROM@{T\_YIELD\_FROM}}
+\index{T\_YIELD\_FROM@{T\_YIELD\_FROM}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{T\_YIELD\_FROM}{T\_YIELD\_FROM}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a6439284931f917b38f27f3e2e1c7c1e4} 
+const T\+\_\+\+YIELD\+\_\+\+FROM = 269}
+
+\Hypertarget{class_php_parser_1_1_parser_1_1_php8_a481a031acf57b1b6180b3f0f3f45bc26}\index{Php8@{Php8}!YYERRTOK@{YYERRTOK}}
+\index{YYERRTOK@{YYERRTOK}!Php8@{Php8}}
+\doxysubsubsection{\texorpdfstring{YYERRTOK}{YYERRTOK}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_1_1_php8_a481a031acf57b1b6180b3f0f3f45bc26} 
+const YYERRTOK = 256}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Parser/\mbox{\hyperlink{_php8_8php}{Php8.\+php}}\end{DoxyCompactItemize}

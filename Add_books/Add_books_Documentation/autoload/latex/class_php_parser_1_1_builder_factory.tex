@@ -1,0 +1,474 @@
+\doxysection{Builder\+Factory Class Reference}
+\hypertarget{class_php_parser_1_1_builder_factory}{}\label{class_php_parser_1_1_builder_factory}\index{BuilderFactory@{BuilderFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a5a21c2d2a7ed9411e6a80097240137f2}{attribute}} (\$name, array \$args=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_acc3cc467e7d35a673e6c7770f14dece9}{class}} (string \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_af7a24a40b48e1b38b1fa4fb054cdebed}{interface}} (string \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_ab1d483c81a54a67da8e67a04de3ba403}{trait}} (string \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a3cf591234836e79c15db5363ea02632f}{enum}} (string \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a3578a22e6ea575b5295d697c6854573f}{use\+Trait}} (... \$traits)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_aa180a9ec4c1e3a657e8b3abee032bc29}{trait\+Use\+Adaptation}} (\$trait, \$method=null)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a379e9c23c4043f18f69dfbb7366750c5}{method}} (string \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a0400d6d9ad658ccfec616e7c03849e12}{param}} (string \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_adf966b4600423a2101eb709d8b9b4aee}{property}} (string \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a756eb09bef915c47a390ebe82a12db3a}{function}} (string \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a1fa329a6f257fcaaec2e16e35b784a89}{use\+Function}} (\$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_ad73f8267a9ac2f179741cef621847438}{use\+Const}} (\$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_aa93cab1012aa488e6f2be9016ed1de6f}{class\+Const}} (\$name, \$value)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a4daff62563e6e44592fe4b66671d7a29}{enum\+Case}} (\$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a867de0edd3ba4ebad0fd6771dabf4241}{val}} (\$value)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_ae293bea22612f09db2ec39aa1a3a838f}{var}} (\$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a34f014cb1b844010a6c6c73ba1065f86}{args}} (array \$args)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a66444c3283cddcdc464015aaa17f0d91}{func\+Call}} (\$name, array \$args=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a8af012f45618b3822bc5960a9c36913c}{method\+Call}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}} \$var, \$name, array \$args=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_adbcbf6d2e438098b1fa4f6f2956aa171}{static\+Call}} (\$class, \$name, array \$args=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a2ad9104ebe845eea5a5ec9687b4b7e2f}{new}} (\$class, array \$args=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a1898b38859a7ad021d02e533c7b8128c}{const\+Fetch}} (\$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a145192fc2fa89c1ce4551382e9a63922}{property\+Fetch}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}} \$var, \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_acfd29a658c2d64d0ff6826b457679043}{class\+Const\+Fetch}} (\$class, \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_factory_a33b5cc3ac30c927a522936cd30730b0d}{concat}} (... \$exprs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_builder_factory_a34f014cb1b844010a6c6c73ba1065f86}\index{BuilderFactory@{BuilderFactory}!args@{args}}
+\index{args@{args}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{args()}{args()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a34f014cb1b844010a6c6c73ba1065f86} 
+args (\begin{DoxyParamCaption}\item[{array}]{\$args}{}\end{DoxyParamCaption})}
+
+Normalizes an argument list.
+
+Creates Arg nodes for all arguments and converts literal values to expressions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$args} & List of arguments to normalize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$\+Arg$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_a5a21c2d2a7ed9411e6a80097240137f2}\index{BuilderFactory@{BuilderFactory}!attribute@{attribute}}
+\index{attribute@{attribute}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{attribute()}{attribute()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a5a21c2d2a7ed9411e6a80097240137f2} 
+attribute (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Creates an attribute node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Name & {\em \$name} & Name of the attribute \\
+\hline
+array & {\em \$args} & Attribute named arguments \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_acc3cc467e7d35a673e6c7770f14dece9}\index{BuilderFactory@{BuilderFactory}!class@{class}}
+\index{class@{class}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{class()}{class()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_acc3cc467e7d35a673e6c7770f14dece9} 
+class (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a class builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of the class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Class\+\_\+ The created class builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_aa93cab1012aa488e6f2be9016ed1de6f}\index{BuilderFactory@{BuilderFactory}!classConst@{classConst}}
+\index{classConst@{classConst}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{classConst()}{classConst()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_aa93cab1012aa488e6f2be9016ed1de6f} 
+class\+Const (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Creates a class constant builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Identifier & {\em \$name} & Name \\
+\hline
+Node\textbackslash{}\+Expr | bool | null | int | float | string | array & {\em \$value} & Value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Class\+Const The created use const builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_acfd29a658c2d64d0ff6826b457679043}\index{BuilderFactory@{BuilderFactory}!classConstFetch@{classConstFetch}}
+\index{classConstFetch@{classConstFetch}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{classConstFetch()}{classConstFetch()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_acfd29a658c2d64d0ff6826b457679043} 
+class\+Const\+Fetch (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a class constant fetch node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Name | Expr & {\em \$class} & Class name \\
+\hline
+string | Identifier | Expr & {\em \$name} & Constant name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_a33b5cc3ac30c927a522936cd30730b0d}\index{BuilderFactory@{BuilderFactory}!concat@{concat}}
+\index{concat@{concat}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a33b5cc3ac30c927a522936cd30730b0d} 
+concat (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Creates nested Concat nodes from a list of expressions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Expr\texorpdfstring{$\vert$}{|}string} & ...\$exprs Expressions or literal strings \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_a1898b38859a7ad021d02e533c7b8128c}\index{BuilderFactory@{BuilderFactory}!constFetch@{constFetch}}
+\index{constFetch@{constFetch}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{constFetch()}{constFetch()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a1898b38859a7ad021d02e533c7b8128c} 
+const\+Fetch (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a constant fetch node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Name & {\em \$name} & Constant name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_a3cf591234836e79c15db5363ea02632f}\index{BuilderFactory@{BuilderFactory}!enum@{enum}}
+\index{enum@{enum}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{enum()}{enum()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a3cf591234836e79c15db5363ea02632f} 
+enum (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates an enum builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of the enum\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Enum\+\_\+ The created enum builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_a4daff62563e6e44592fe4b66671d7a29}\index{BuilderFactory@{BuilderFactory}!enumCase@{enumCase}}
+\index{enumCase@{enumCase}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{enumCase()}{enumCase()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a4daff62563e6e44592fe4b66671d7a29} 
+enum\+Case (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates an enum case builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Identifier & {\em \$name} & Name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Enum\+Case The created use const builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_a66444c3283cddcdc464015aaa17f0d91}\index{BuilderFactory@{BuilderFactory}!funcCall@{funcCall}}
+\index{funcCall@{funcCall}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{funcCall()}{funcCall()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a66444c3283cddcdc464015aaa17f0d91} 
+func\+Call (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Creates a function call node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Name | Expr & {\em \$name} & Function name \\
+\hline
+array & {\em \$args} & Function arguments \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_a756eb09bef915c47a390ebe82a12db3a}\index{BuilderFactory@{BuilderFactory}!function@{function}}
+\index{function@{function}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{function()}{function()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a756eb09bef915c47a390ebe82a12db3a} 
+function (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a function builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Function\+\_\+ The created function builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_af7a24a40b48e1b38b1fa4fb054cdebed}\index{BuilderFactory@{BuilderFactory}!interface@{interface}}
+\index{interface@{interface}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{interface()}{interface()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_af7a24a40b48e1b38b1fa4fb054cdebed} 
+interface (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates an interface builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of the interface\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Interface\+\_\+ The created interface builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_a379e9c23c4043f18f69dfbb7366750c5}\index{BuilderFactory@{BuilderFactory}!method@{method}}
+\index{method@{method}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{method()}{method()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a379e9c23c4043f18f69dfbb7366750c5} 
+method (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a method builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of the method\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Method The created method builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_a8af012f45618b3822bc5960a9c36913c}\index{BuilderFactory@{BuilderFactory}!methodCall@{methodCall}}
+\index{methodCall@{methodCall}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{methodCall()}{methodCall()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a8af012f45618b3822bc5960a9c36913c} 
+method\+Call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}}}]{\$var}{, }\item[{}]{\$name}{, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Creates a method call node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Expr & {\em \$var} & Variable the method is called on \\
+\hline
+string | Identifier | Expr & {\em \$name} & Method name \\
+\hline
+array & {\em \$args} & Method arguments \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_a2ad9104ebe845eea5a5ec9687b4b7e2f}\index{BuilderFactory@{BuilderFactory}!new@{new}}
+\index{new@{new}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{new()}{new()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a2ad9104ebe845eea5a5ec9687b4b7e2f} 
+new (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Creates an object creation node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Name | Expr & {\em \$class} & Class name \\
+\hline
+array & {\em \$args} & Constructor arguments \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_a0400d6d9ad658ccfec616e7c03849e12}\index{BuilderFactory@{BuilderFactory}!param@{param}}
+\index{param@{param}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{param()}{param()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a0400d6d9ad658ccfec616e7c03849e12} 
+param (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a parameter builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of the parameter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Param The created parameter builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_adf966b4600423a2101eb709d8b9b4aee}\index{BuilderFactory@{BuilderFactory}!property@{property}}
+\index{property@{property}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{property()}{property()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_adf966b4600423a2101eb709d8b9b4aee} 
+property (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a property builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of the property\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Property The created property builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_a145192fc2fa89c1ce4551382e9a63922}\index{BuilderFactory@{BuilderFactory}!propertyFetch@{propertyFetch}}
+\index{propertyFetch@{propertyFetch}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{propertyFetch()}{propertyFetch()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a145192fc2fa89c1ce4551382e9a63922} 
+property\+Fetch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}}}]{\$var}{, }\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a property fetch node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Expr & {\em \$var} & Variable holding object \\
+\hline
+string | Identifier | Expr & {\em \$name} & Property name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_adbcbf6d2e438098b1fa4f6f2956aa171}\index{BuilderFactory@{BuilderFactory}!staticCall@{staticCall}}
+\index{staticCall@{staticCall}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{staticCall()}{staticCall()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_adbcbf6d2e438098b1fa4f6f2956aa171} 
+static\+Call (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{}]{\$name}{, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Creates a static method call node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Name | Expr & {\em \$class} & Class name \\
+\hline
+string | Identifier | Expr & {\em \$name} & Method name \\
+\hline
+array & {\em \$args} & Method arguments \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_ab1d483c81a54a67da8e67a04de3ba403}\index{BuilderFactory@{BuilderFactory}!trait@{trait}}
+\index{trait@{trait}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{trait()}{trait()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_ab1d483c81a54a67da8e67a04de3ba403} 
+trait (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a trait builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of the trait\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Trait\+\_\+ The created trait builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_aa180a9ec4c1e3a657e8b3abee032bc29}\index{BuilderFactory@{BuilderFactory}!traitUseAdaptation@{traitUseAdaptation}}
+\index{traitUseAdaptation@{traitUseAdaptation}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{traitUseAdaptation()}{traitUseAdaptation()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_aa180a9ec4c1e3a657e8b3abee032bc29} 
+trait\+Use\+Adaptation (\begin{DoxyParamCaption}\item[{}]{\$trait}{, }\item[{}]{\$method}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Creates a trait use adaptation builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Name | string | null & {\em \$trait} & Trait name \\
+\hline
+Node\textbackslash{}\+Identifier | string & {\em \$method} & Method name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Trait\+Use\+Adaptation The created trait use adaptation builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_ad73f8267a9ac2f179741cef621847438}\index{BuilderFactory@{BuilderFactory}!useConst@{useConst}}
+\index{useConst@{useConst}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{useConst()}{useConst()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_ad73f8267a9ac2f179741cef621847438} 
+use\+Const (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a constant use builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Name | string & {\em \$name} & Name of the const to alias\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Use\+\_\+ The created use const builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_a1fa329a6f257fcaaec2e16e35b784a89}\index{BuilderFactory@{BuilderFactory}!useFunction@{useFunction}}
+\index{useFunction@{useFunction}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{useFunction()}{useFunction()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a1fa329a6f257fcaaec2e16e35b784a89} 
+use\+Function (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates a function use builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Name | string & {\em \$name} & Name of the function to alias\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Use\+\_\+ The created use function builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_a3578a22e6ea575b5295d697c6854573f}\index{BuilderFactory@{BuilderFactory}!useTrait@{useTrait}}
+\index{useTrait@{useTrait}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{useTrait()}{useTrait()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a3578a22e6ea575b5295d697c6854573f} 
+use\+Trait (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Creates a trait use builder.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Node} & \\
+\hline
+\end{DoxyParams}
+Name\texorpdfstring{$\vert$}{|}string ...\$traits Trait names
+
+\begin{DoxyReturn}{Returns}
+Builder\textbackslash{}\+Trait\+Use The created trait use builder 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_factory_a867de0edd3ba4ebad0fd6771dabf4241}\index{BuilderFactory@{BuilderFactory}!val@{val}}
+\index{val@{val}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{val()}{val()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_a867de0edd3ba4ebad0fd6771dabf4241} 
+val (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Creates node a for a literal value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Expr | bool | null | int | float | string | array | \textbackslash{}\+Unit\+Enum & {\em \$value} & \$value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_builder_factory_ae293bea22612f09db2ec39aa1a3a838f}\index{BuilderFactory@{BuilderFactory}!var@{var}}
+\index{var@{var}!BuilderFactory@{BuilderFactory}}
+\doxysubsubsection{\texorpdfstring{var()}{var()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_factory_ae293bea22612f09db2ec39aa1a3a838f} 
+var (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates variable node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Expr & {\em \$name} & Name \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{_builder_factory_8php}{Builder\+Factory.\+php}}\end{DoxyCompactItemize}

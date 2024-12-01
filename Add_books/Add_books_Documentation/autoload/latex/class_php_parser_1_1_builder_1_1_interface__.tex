@@ -1,0 +1,171 @@
+\doxysection{Interface\+\_\+ Class Reference}
+\hypertarget{class_php_parser_1_1_builder_1_1_interface__}{}\label{class_php_parser_1_1_builder_1_1_interface__}\index{Interface\_@{Interface\_}}
+Inheritance diagram for Interface\+\_\+\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_php_parser_1_1_builder_1_1_interface__}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___a196b3403dd3fe36fd9617ada22960ff1}{\+\_\+\+\_\+construct}} (string \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___a1c8e7dc9ad635a9fd52147dbb702922f}{extend}} (... \$interfaces)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___a84285314df11d1a21c01569981967d27}{add\+Stmt}} (\$stmt)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___ace927af3c97e66624a7b251c59f2ece2}{add\+Attribute}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___a3a0d17930cbcc57bef84064afcc1a837}{get\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration}{Declaration}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_a5c42f122153c4d02ae24d12b50712f0d}{add\+Stmts}} (array \$stmts)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_a7331d24646c54f9d8f98ecf7bc5827bd}{set\+Doc\+Comment}} (\$doc\+Comment)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_builder}{Builder}}}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___a58551b63ba97fb35b928f11f36b1fac6}{\$name}}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___ae6aff3d13e5b56a0d5b393b0560e8119}{\$extends}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___ac3e8713887ce283b0f3a7b217280304c}{\$constants}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___a5dcd363a405693e0efb69bbd9cd34ab5}{\$methods}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___a6545e4b9fa532870993841cc05875124}{\$attribute\+Groups}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration}{Declaration}}}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_ac89f2733f3f084f1e693e13afbb67739}{\$attributes}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___a196b3403dd3fe36fd9617ada22960ff1}\index{Interface\_@{Interface\_}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___a196b3403dd3fe36fd9617ada22960ff1} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Creates an interface builder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of the interface \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___ace927af3c97e66624a7b251c59f2ece2}\index{Interface\_@{Interface\_}!addAttribute@{addAttribute}}
+\index{addAttribute@{addAttribute}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{addAttribute()}{addAttribute()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___ace927af3c97e66624a7b251c59f2ece2} 
+add\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})}
+
+Adds an attribute group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Attribute | Node\textbackslash{}\+Attribute\+Group & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___a84285314df11d1a21c01569981967d27}\index{Interface\_@{Interface\_}!addStmt@{addStmt}}
+\index{addStmt@{addStmt}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{addStmt()}{addStmt()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___a84285314df11d1a21c01569981967d27} 
+add\+Stmt (\begin{DoxyParamCaption}\item[{}]{\$stmt}{}\end{DoxyParamCaption})}
+
+Adds a statement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stmt | Php\+Parser\textbackslash{}\+Builder & {\em \$stmt} & The statement to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_a84285314df11d1a21c01569981967d27}{Declaration}}.
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___a1c8e7dc9ad635a9fd52147dbb702922f}\index{Interface\_@{Interface\_}!extend@{extend}}
+\index{extend@{extend}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___a1c8e7dc9ad635a9fd52147dbb702922f} 
+extend (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Extends one or more interfaces.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name\texorpdfstring{$\vert$}{|}string} & ...\$interfaces Names of interfaces to extend\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___a3a0d17930cbcc57bef84064afcc1a837}\index{Interface\_@{Interface\_}!getNode@{getNode}}
+\index{getNode@{getNode}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___a3a0d17930cbcc57bef84064afcc1a837} 
+get\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the built interface node.
+
+\begin{DoxyReturn}{Returns}
+Stmt\textbackslash{}\+Interface\+\_\+ The built interface node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_builder_a3a0d17930cbcc57bef84064afcc1a837}{Builder}}.
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___a6545e4b9fa532870993841cc05875124}\index{Interface\_@{Interface\_}!\$attributeGroups@{\$attributeGroups}}
+\index{\$attributeGroups@{\$attributeGroups}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{\$attributeGroups}{\$attributeGroups}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___a6545e4b9fa532870993841cc05875124} 
+array \$attribute\+Groups = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___ac3e8713887ce283b0f3a7b217280304c}\index{Interface\_@{Interface\_}!\$constants@{\$constants}}
+\index{\$constants@{\$constants}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{\$constants}{\$constants}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___ac3e8713887ce283b0f3a7b217280304c} 
+array \$constants = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___ae6aff3d13e5b56a0d5b393b0560e8119}\index{Interface\_@{Interface\_}!\$extends@{\$extends}}
+\index{\$extends@{\$extends}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{\$extends}{\$extends}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___ae6aff3d13e5b56a0d5b393b0560e8119} 
+array \$extends = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___a5dcd363a405693e0efb69bbd9cd34ab5}\index{Interface\_@{Interface\_}!\$methods@{\$methods}}
+\index{\$methods@{\$methods}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{\$methods}{\$methods}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___a5dcd363a405693e0efb69bbd9cd34ab5} 
+array \$methods = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_interface___a58551b63ba97fb35b928f11f36b1fac6}\index{Interface\_@{Interface\_}!\$name@{\$name}}
+\index{\$name@{\$name}!Interface\_@{Interface\_}}
+\doxysubsubsection{\texorpdfstring{\$name}{\$name}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_interface___a58551b63ba97fb35b928f11f36b1fac6} 
+string \$name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Builder/\mbox{\hyperlink{_builder_2_interface___8php}{Interface\+\_\+.\+php}}\end{DoxyCompactItemize}

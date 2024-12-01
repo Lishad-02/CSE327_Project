@@ -1,0 +1,97 @@
+\doxysection{Node\+Finder Class Reference}
+\hypertarget{class_php_parser_1_1_node_finder}{}\label{class_php_parser_1_1_node_finder}\index{NodeFinder@{NodeFinder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_finder_aaf72e357b4ca03224fa89a9b8881d824}{find}} (\$nodes, callable \$filter)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_finder_a388e72acbeca7006761b64c0f95c2b9e}{find\+Instance\+Of}} (\$nodes, string \$class)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_finder_afbad5b55081be65d9fc892fd6d7c6eca}{find\+First}} (\$nodes, callable \$filter)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_finder_ac10662f7d7d13a7e448e42b68faa69e7}{find\+First\+Instance\+Of}} (\$nodes, string \$class)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_node_finder_aaf72e357b4ca03224fa89a9b8881d824}\index{NodeFinder@{NodeFinder}!find@{find}}
+\index{find@{find}!NodeFinder@{NodeFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_finder_aaf72e357b4ca03224fa89a9b8881d824} 
+find (\begin{DoxyParamCaption}\item[{}]{\$nodes}{, }\item[{callable}]{\$filter}{}\end{DoxyParamCaption})}
+
+Find all nodes satisfying a filter callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node | Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Single node or array of nodes to search in \\
+\hline
+callable & {\em \$filter} & Filter callback\+: function(Node \$node) \+: bool\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]} Found nodes satisfying the filter callback 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_node_finder_afbad5b55081be65d9fc892fd6d7c6eca}\index{NodeFinder@{NodeFinder}!findFirst@{findFirst}}
+\index{findFirst@{findFirst}!NodeFinder@{NodeFinder}}
+\doxysubsubsection{\texorpdfstring{findFirst()}{findFirst()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_finder_afbad5b55081be65d9fc892fd6d7c6eca} 
+find\+First (\begin{DoxyParamCaption}\item[{}]{\$nodes}{, }\item[{callable}]{\$filter}{}\end{DoxyParamCaption})}
+
+Find first node satisfying a filter callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node | Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Single node or array of nodes to search in \\
+\hline
+callable & {\em \$filter} & Filter callback\+: function(Node \$node) \+: bool\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Node Found node (or null if none found) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_node_finder_ac10662f7d7d13a7e448e42b68faa69e7}\index{NodeFinder@{NodeFinder}!findFirstInstanceOf@{findFirstInstanceOf}}
+\index{findFirstInstanceOf@{findFirstInstanceOf}!NodeFinder@{NodeFinder}}
+\doxysubsubsection{\texorpdfstring{findFirstInstanceOf()}{findFirstInstanceOf()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_finder_ac10662f7d7d13a7e448e42b68faa69e7} 
+find\+First\+Instance\+Of (\begin{DoxyParamCaption}\item[{}]{\$nodes}{, }\item[{string}]{\$class}{}\end{DoxyParamCaption})}
+
+Find first node that is an instance of a certain class.
+
+@template TNode as Node
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node | Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Single node or array of nodes to search in \\
+\hline
+ & {\em class-\/string$<$\+TNode$>$} & \$class Class name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+TNode Found node, which is an instance of \$class (or null if none found) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_node_finder_a388e72acbeca7006761b64c0f95c2b9e}\index{NodeFinder@{NodeFinder}!findInstanceOf@{findInstanceOf}}
+\index{findInstanceOf@{findInstanceOf}!NodeFinder@{NodeFinder}}
+\doxysubsubsection{\texorpdfstring{findInstanceOf()}{findInstanceOf()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_finder_a388e72acbeca7006761b64c0f95c2b9e} 
+find\+Instance\+Of (\begin{DoxyParamCaption}\item[{}]{\$nodes}{, }\item[{string}]{\$class}{}\end{DoxyParamCaption})}
+
+Find all nodes that are instances of a certain class.
+
+@template TNode as Node
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node | Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Single node or array of nodes to search in \\
+\hline
+ & {\em class-\/string$<$\+TNode$>$} & \$class Class name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TNode\mbox{[}\mbox{]} Found nodes (all instances of \$class) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{_node_finder_8php}{Node\+Finder.\+php}}\end{DoxyCompactItemize}

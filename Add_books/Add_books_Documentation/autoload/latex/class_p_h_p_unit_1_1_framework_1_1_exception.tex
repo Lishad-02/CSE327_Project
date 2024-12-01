@@ -1,0 +1,82 @@
+\doxysection{Exception Class Reference}
+\hypertarget{class_p_h_p_unit_1_1_framework_1_1_exception}{}\label{class_p_h_p_unit_1_1_framework_1_1_exception}\index{Exception@{Exception}}
+Inheritance diagram for Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_p_h_p_unit_1_1_framework_1_1_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_exception_a3b19c781c703056c0e1c9588ad93941b}{\+\_\+\+\_\+construct}} (string \$message=\textquotesingle{}\textquotesingle{}, int\texorpdfstring{$\vert$}{|}string \$code=0, ?\mbox{\hyperlink{class_p_h_p_unit_1_1_event_1_1_code_1_1_throwable}{Throwable}} \$previous=null)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_exception_aaf11785905da71774e052912d784e3b4}{\+\_\+\+\_\+sleep}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_exception_abadc7a6a9083a01ea3a709fb2c532817}{get\+Serializable\+Trace}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_exception_a8c4a742255c9371e390e775429bbb8a6}{\$serializable\+Trace}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all \doxylink{namespace_p_h_p_unit}{PHPUnit} Framework exceptions.
+
+Ensures that exceptions thrown during a test run do not leave stray references behind.
+
+Every Exception contains a stack trace. Each stack frame contains the \textquotesingle{}args\textquotesingle{} of the called function. The function arguments can contain references to instantiated objects. The references prevent the objects from being destructed (until test results are eventually printed), so memory cannot be freed up.
+
+With enabled process isolation, test results are serialized in the child process and unserialized in the parent process. The stack trace of Exceptions may contain objects that cannot be serialized or unserialized (e.\+g., PDO connections). Unserializing user-\/space objects from the child process into the parent would break the intended encapsulation of process isolation.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://fabien.potencier.org/article/9/php-serialization-stack-traces-and-exceptions}{\texttt{ http\+://fabien.\+potencier.\+org/article/9/php-\/serialization-\/stack-\/traces-\/and-\/exceptions}}
+\end{DoxySeeAlso}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \doxylink{namespace_p_h_p_unit}{PHPUnit} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_exception_a3b19c781c703056c0e1c9588ad93941b}\index{Exception@{Exception}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_exception_a3b19c781c703056c0e1c9588ad93941b} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{int\texorpdfstring{$\vert$}{|}string}]{\$code}{ = {\ttfamily 0}, }\item[{?\mbox{\hyperlink{class_p_h_p_unit_1_1_event_1_1_code_1_1_throwable}{Throwable}}}]{\$previous}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/sebastianbergmann/phpunit/issues/5965}{\texttt{ https\+://github.\+com/sebastianbergmann/phpunit/issues/5965}}
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_exception_aaf11785905da71774e052912d784e3b4}\index{Exception@{Exception}!\_\_sleep@{\_\_sleep}}
+\index{\_\_sleep@{\_\_sleep}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{\_\_sleep()}{\_\_sleep()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_exception_aaf11785905da71774e052912d784e3b4} 
+\+\_\+\+\_\+sleep (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_exception_abadc7a6a9083a01ea3a709fb2c532817}\index{Exception@{Exception}!getSerializableTrace@{getSerializableTrace}}
+\index{getSerializableTrace@{getSerializableTrace}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{getSerializableTrace()}{getSerializableTrace()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_exception_abadc7a6a9083a01ea3a709fb2c532817} 
+get\+Serializable\+Trace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the serializable trace (without \textquotesingle{}args\textquotesingle{}).
+
+\begin{DoxyReturn}{Returns}
+list\texorpdfstring{$<$}{<}array\{file\+: string, line\+: int, function\+: string\}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_exception_a8c4a742255c9371e390e775429bbb8a6}\index{Exception@{Exception}!\$serializableTrace@{\$serializableTrace}}
+\index{\$serializableTrace@{\$serializableTrace}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{\$serializableTrace}{\$serializableTrace}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_exception_a8c4a742255c9371e390e775429bbb8a6} 
+array \$serializable\+Trace\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/phpunit/src/\+Framework/\+Exception/\mbox{\hyperlink{phpunit_2phpunit_2src_2_framework_2_exception_2_exception_8php}{Exception.\+php}}\end{DoxyCompactItemize}

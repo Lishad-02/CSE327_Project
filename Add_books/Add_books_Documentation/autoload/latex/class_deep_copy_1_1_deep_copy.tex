@@ -1,0 +1,92 @@
+\doxysection{Deep\+Copy Class Reference}
+\hypertarget{class_deep_copy_1_1_deep_copy}{}\label{class_deep_copy_1_1_deep_copy}\index{DeepCopy@{DeepCopy}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_deep_copy_1_1_deep_copy_ac4e821547796a7f00ba76c9030159529}{\+\_\+\+\_\+construct}} (\$use\+Clone\+Method=false)
+\item 
+\mbox{\hyperlink{class_deep_copy_1_1_deep_copy_a76680d861cd7d4c7604672146b101cbf}{skip\+Uncloneable}} (\$skip\+Uncloneable=true)
+\item 
+\mbox{\hyperlink{class_deep_copy_1_1_deep_copy_a07abdb9b8e783676fd376c8877ada3dc}{copy}} (\$object)
+\item 
+\mbox{\hyperlink{class_deep_copy_1_1_deep_copy_ac0fe38a45487319202e8528ecc7bb868}{add\+Filter}} (\mbox{\hyperlink{interface_deep_copy_1_1_filter_1_1_filter}{Filter}} \$filter, \mbox{\hyperlink{interface_deep_copy_1_1_matcher_1_1_matcher}{Matcher}} \$matcher)
+\item 
+\mbox{\hyperlink{class_deep_copy_1_1_deep_copy_aa0f965f573f6b1cc6881c60aafa7b05a}{prepend\+Filter}} (\mbox{\hyperlink{interface_deep_copy_1_1_filter_1_1_filter}{Filter}} \$filter, \mbox{\hyperlink{interface_deep_copy_1_1_matcher_1_1_matcher}{Matcher}} \$matcher)
+\item 
+\mbox{\hyperlink{class_deep_copy_1_1_deep_copy_a110cd15e70339241896eddb1f359967f}{add\+Type\+Filter}} (\mbox{\hyperlink{interface_deep_copy_1_1_type_filter_1_1_type_filter}{Type\+Filter}} \$filter, \mbox{\hyperlink{class_deep_copy_1_1_type_matcher_1_1_type_matcher}{Type\+Matcher}} \$matcher)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@final 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_deep_copy_1_1_deep_copy_ac4e821547796a7f00ba76c9030159529}\index{DeepCopy@{DeepCopy}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DeepCopy@{DeepCopy}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_deep_copy_1_1_deep_copy_ac4e821547796a7f00ba76c9030159529} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$use\+Clone\+Method}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$use\+Clone\+Method} & If set to true, when an object implements the \+\_\+\+\_\+clone() function, it will be used instead of the regular deep cloning. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_deep_copy_1_1_deep_copy_ac0fe38a45487319202e8528ecc7bb868}\index{DeepCopy@{DeepCopy}!addFilter@{addFilter}}
+\index{addFilter@{addFilter}!DeepCopy@{DeepCopy}}
+\doxysubsubsection{\texorpdfstring{addFilter()}{addFilter()}}
+{\footnotesize\ttfamily \label{class_deep_copy_1_1_deep_copy_ac0fe38a45487319202e8528ecc7bb868} 
+add\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_deep_copy_1_1_filter_1_1_filter}{Filter}}}]{\$filter}{, }\item[{\mbox{\hyperlink{interface_deep_copy_1_1_matcher_1_1_matcher}{Matcher}}}]{\$matcher}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_deep_copy_1_1_deep_copy_a110cd15e70339241896eddb1f359967f}\index{DeepCopy@{DeepCopy}!addTypeFilter@{addTypeFilter}}
+\index{addTypeFilter@{addTypeFilter}!DeepCopy@{DeepCopy}}
+\doxysubsubsection{\texorpdfstring{addTypeFilter()}{addTypeFilter()}}
+{\footnotesize\ttfamily \label{class_deep_copy_1_1_deep_copy_a110cd15e70339241896eddb1f359967f} 
+add\+Type\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_deep_copy_1_1_type_filter_1_1_type_filter}{Type\+Filter}}}]{\$filter}{, }\item[{\mbox{\hyperlink{class_deep_copy_1_1_type_matcher_1_1_type_matcher}{Type\+Matcher}}}]{\$matcher}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_deep_copy_1_1_deep_copy_a07abdb9b8e783676fd376c8877ada3dc}\index{DeepCopy@{DeepCopy}!copy@{copy}}
+\index{copy@{copy}!DeepCopy@{DeepCopy}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{class_deep_copy_1_1_deep_copy_a07abdb9b8e783676fd376c8877ada3dc} 
+copy (\begin{DoxyParamCaption}\item[{}]{\$object}{}\end{DoxyParamCaption})}
+
+Deep copies the given object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_deep_copy_1_1_deep_copy_aa0f965f573f6b1cc6881c60aafa7b05a}\index{DeepCopy@{DeepCopy}!prependFilter@{prependFilter}}
+\index{prependFilter@{prependFilter}!DeepCopy@{DeepCopy}}
+\doxysubsubsection{\texorpdfstring{prependFilter()}{prependFilter()}}
+{\footnotesize\ttfamily \label{class_deep_copy_1_1_deep_copy_aa0f965f573f6b1cc6881c60aafa7b05a} 
+prepend\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_deep_copy_1_1_filter_1_1_filter}{Filter}}}]{\$filter}{, }\item[{\mbox{\hyperlink{interface_deep_copy_1_1_matcher_1_1_matcher}{Matcher}}}]{\$matcher}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_deep_copy_1_1_deep_copy_a76680d861cd7d4c7604672146b101cbf}\index{DeepCopy@{DeepCopy}!skipUncloneable@{skipUncloneable}}
+\index{skipUncloneable@{skipUncloneable}!DeepCopy@{DeepCopy}}
+\doxysubsubsection{\texorpdfstring{skipUncloneable()}{skipUncloneable()}}
+{\footnotesize\ttfamily \label{class_deep_copy_1_1_deep_copy_a76680d861cd7d4c7604672146b101cbf} 
+skip\+Uncloneable (\begin{DoxyParamCaption}\item[{}]{\$skip\+Uncloneable}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+If enabled, will not throw an exception when coming across an uncloneable property.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$skip\+Uncloneable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/myclabs/deep-\/copy/src/\+Deep\+Copy/\mbox{\hyperlink{_deep_copy_8php}{Deep\+Copy.\+php}}\end{DoxyCompactItemize}

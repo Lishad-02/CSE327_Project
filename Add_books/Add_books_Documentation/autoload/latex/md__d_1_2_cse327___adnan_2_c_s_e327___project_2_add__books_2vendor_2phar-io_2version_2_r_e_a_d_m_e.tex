@@ -1,0 +1,57 @@
+\chapter{Version}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e}{}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e}\index{Version@{Version}}
+\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e_autotoc_md71}%
+\Hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e_autotoc_md71}%
+
+
+Library for handling version information and constraints
+
+\href{https://travis-ci.org/phar-io/version}{\texttt{ }}\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e_autotoc_md72}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e_autotoc_md72}
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\texttt{ Composer}}\+: \begin{DoxyVerb}composer require phar-io/version
+\end{DoxyVerb}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+: \begin{DoxyVerb}composer require --dev phar-io/version
+\end{DoxyVerb}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e_autotoc_md73}{}\doxysection{\texorpdfstring{Version constraints}{Version constraints}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e_autotoc_md73}
+A Version constraint describes a range of versions or a discrete version number. The format of version numbers follows the schema of \href{http://semver.org}{\texttt{ semantic versioning}}\+: {\ttfamily \texorpdfstring{$<$}{<}major\texorpdfstring{$>$}{>}.\texorpdfstring{$<$}{<}minor\texorpdfstring{$>$}{>}.\texorpdfstring{$<$}{<}patch\texorpdfstring{$>$}{>}}. A constraint might contain an operator that describes the range.
+
+Beside the typical mathematical operators like {\ttfamily \texorpdfstring{$<$}{<}=}, {\ttfamily \texorpdfstring{$>$}{>}=}, there are two special operators\+:
+
+{\itshape Caret operator}\+: {\ttfamily \texorpdfstring{$^\wedge$}{\string^}1.0} can be written as {\ttfamily \texorpdfstring{$>$}{>}=1.\+0.\+0 \texorpdfstring{$<$}{<}2.\+0.\+0} and read as »every Version within major version {\ttfamily 1}«.
+
+{\itshape Tilde operator}\+: {\ttfamily \texorpdfstring{$\sim$}{\string~}1.0.\+0} can be written as {\ttfamily \texorpdfstring{$>$}{>}=1.\+0.\+0 \texorpdfstring{$<$}{<}1.\+1.\+0} and read as »every version within minor version {\ttfamily 1.\+1}. The behavior of tilde operator depends on whether a patch level version is provided or not. If no patch level is provided, tilde operator behaves like the caret operator\+: {\ttfamily \texorpdfstring{$\sim$}{\string~}1.0} is identical to {\ttfamily \texorpdfstring{$^\wedge$}{\string^}1.0}.\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e_autotoc_md74}{}\doxysection{\texorpdfstring{Usage examples}{Usage examples}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2phar-io_2version_2_r_e_a_d_m_e_autotoc_md74}
+Parsing version constraints and check discrete versions for compliance\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_phar_io_1_1_version_1_1_version}{PharIo\(\backslash\)Version\(\backslash\)Version}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_phar_io_1_1_version_1_1_version_constraint_parser}{PharIo\(\backslash\)Version\(\backslash\)VersionConstraintParser}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$parser\ =\ \textcolor{keyword}{new}\ VersionConstraintParser();}
+\DoxyCodeLine{\$caret\_constraint\ =\ \$parser-\/>parse(\ \textcolor{stringliteral}{'\string^7.0'}\ );}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$caret\_constraint-\/>complies(\ \textcolor{keyword}{new}\ Version(\ \textcolor{stringliteral}{'7.0.17'}\ )\ );\ \textcolor{comment}{//\ true}}
+\DoxyCodeLine{\$caret\_constraint-\/>complies(\ \textcolor{keyword}{new}\ Version(\ \textcolor{stringliteral}{'7.1.0'}\ )\ );\ \textcolor{comment}{//\ true}}
+\DoxyCodeLine{\$caret\_constraint-\/>complies(\ \textcolor{keyword}{new}\ Version(\ \textcolor{stringliteral}{'6.4.34'}\ )\ );\ \textcolor{comment}{//\ false}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$tilde\_constraint\ =\ \$parser-\/>parse(\ \textcolor{stringliteral}{'\string~1.1.0'}\ );}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$tilde\_constraint-\/>complies(\ \textcolor{keyword}{new}\ Version(\ \textcolor{stringliteral}{'1.1.4'}\ )\ );\ \textcolor{comment}{//\ true}}
+\DoxyCodeLine{\$tilde\_constraint-\/>complies(\ \textcolor{keyword}{new}\ Version(\ \textcolor{stringliteral}{'1.2.0'}\ )\ );\ \textcolor{comment}{//\ false}}
+
+\end{DoxyCode}
+
+
+As of version 2.\+0.\+0, pre-\/release labels are supported and taken into account when comparing versions\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$leftVersion\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_phar_io_1_1_version_1_1_version}{PharIo\(\backslash\)Version\(\backslash\)Version}}(\textcolor{stringliteral}{'3.0.0-\/alpha.1'});}
+\DoxyCodeLine{\$rightVersion\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_phar_io_1_1_version_1_1_version}{PharIo\(\backslash\)Version\(\backslash\)Version}}(\textcolor{stringliteral}{'3.0.0-\/alpha.2'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$leftVersion-\/>isGreaterThan(\$rightVersion);\ \textcolor{comment}{//\ false}}
+\DoxyCodeLine{\$rightVersion-\/>isGreaterThan(\$leftVersion);\ \textcolor{comment}{//\ true}}
+
+\end{DoxyCode}
+ 

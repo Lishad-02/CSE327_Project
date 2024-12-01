@@ -1,0 +1,257 @@
+\doxysection{Token\+Stream Class Reference}
+\hypertarget{class_php_parser_1_1_internal_1_1_token_stream}{}\label{class_php_parser_1_1_internal_1_1_token_stream}\index{TokenStream@{TokenStream}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a5c118b11818c756a8ec6b5fb3bc3844e}{\+\_\+\+\_\+construct}} (array \$tokens, int \$tab\+Width)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_aa8f48209de2b1f15d9f88449011dc009}{have\+Parens}} (int \$start\+Pos, int \$end\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a4aaf4d06308e8477ee4371c106e3398c}{have\+Braces}} (int \$start\+Pos, int \$end\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a00d1409f913706b88aed03a959d43e45}{have\+Token\+Immediately\+Before}} (int \$pos, \$expected\+Token\+Type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a8e8c50798a50524f9591eee4ddaf89d3}{have\+Token\+Immediately\+After}} (int \$pos, \$expected\+Token\+Type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a587cf3cda4d9ba909af92cae7b6744a4}{skip\+Left}} (int \$pos, \$skip\+Token\+Type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a85e130343afe0df18c87e8be7ccc45fa}{skip\+Right}} (int \$pos, \$skip\+Token\+Type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a3e1b2664d0127043b3f7483a422ad4d2}{skip\+Left\+Whitespace}} (int \$pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a75749455057360c94c36882e823c28f7}{skip\+Right\+Whitespace}} (int \$pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a085f02004987300ae9f375db9d162d8e}{find\+Right}} (int \$pos, \$find\+Token\+Type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a0bd88f4399da41e327fbb965c9ac4c37}{have\+Token\+In\+Range}} (int \$start\+Pos, int \$end\+Pos, \$token\+Type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a11fbed1ae1cb284e14f4751ce1bfe05b}{have\+Tag\+In\+Range}} (int \$start\+Pos, int \$end\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a526438c0586411fa20761d4c3bbccd5d}{get\+Indentation\+Before}} (int \$pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_stream_a48940c0ea97c67a136fa0c1ec2c2778f}{get\+Token\+Code}} (int \$from, int \$to, int \$indent)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides operations on token streams, for use by pretty printer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a5c118b11818c756a8ec6b5fb3bc3844e}\index{TokenStream@{TokenStream}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a5c118b11818c756a8ec6b5fb3bc3844e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{, }\item[{int}]{\$tab\+Width}{}\end{DoxyParamCaption})}
+
+Create token stream instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Token\mbox{[}$\,$\mbox{]} & {\em \$tokens} & Tokens in Php\+Token\+::tokenize() format \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a085f02004987300ae9f375db9d162d8e}\index{TokenStream@{TokenStream}!findRight@{findRight}}
+\index{findRight@{findRight}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{findRight()}{findRight()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a085f02004987300ae9f375db9d162d8e} 
+find\+Right (\begin{DoxyParamCaption}\item[{int}]{\$pos}{, }\item[{}]{\$find\+Token\+Type}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}(int\texorpdfstring{$\vert$}{|}string)\mbox{[}$\,$\mbox{]}} & \$find\+Token\+Type \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a526438c0586411fa20761d4c3bbccd5d}\index{TokenStream@{TokenStream}!getIndentationBefore@{getIndentationBefore}}
+\index{getIndentationBefore@{getIndentationBefore}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{getIndentationBefore()}{getIndentationBefore()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a526438c0586411fa20761d4c3bbccd5d} 
+get\+Indentation\+Before (\begin{DoxyParamCaption}\item[{int}]{\$pos}{}\end{DoxyParamCaption})}
+
+Get indentation before token position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$pos} & Token position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Indentation depth (in spaces) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a48940c0ea97c67a136fa0c1ec2c2778f}\index{TokenStream@{TokenStream}!getTokenCode@{getTokenCode}}
+\index{getTokenCode@{getTokenCode}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{getTokenCode()}{getTokenCode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a48940c0ea97c67a136fa0c1ec2c2778f} 
+get\+Token\+Code (\begin{DoxyParamCaption}\item[{int}]{\$from}{, }\item[{int}]{\$to}{, }\item[{int}]{\$indent}{}\end{DoxyParamCaption})}
+
+Get the code corresponding to a token offset range, optionally adjusted for indentation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$from} & Token start position (inclusive) \\
+\hline
+int & {\em \$to} & Token end position (exclusive) \\
+\hline
+int & {\em \$indent} & By how much the code should be indented (can be negative as well)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Code corresponding to token range, adjusted for indentation 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a4aaf4d06308e8477ee4371c106e3398c}\index{TokenStream@{TokenStream}!haveBraces@{haveBraces}}
+\index{haveBraces@{haveBraces}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{haveBraces()}{haveBraces()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a4aaf4d06308e8477ee4371c106e3398c} 
+have\+Braces (\begin{DoxyParamCaption}\item[{int}]{\$start\+Pos}{, }\item[{int}]{\$end\+Pos}{}\end{DoxyParamCaption})}
+
+Whether the given position is immediately surrounded by braces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$start\+Pos} & Start position \\
+\hline
+int & {\em \$end\+Pos} & End position \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_aa8f48209de2b1f15d9f88449011dc009}\index{TokenStream@{TokenStream}!haveParens@{haveParens}}
+\index{haveParens@{haveParens}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{haveParens()}{haveParens()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_aa8f48209de2b1f15d9f88449011dc009} 
+have\+Parens (\begin{DoxyParamCaption}\item[{int}]{\$start\+Pos}{, }\item[{int}]{\$end\+Pos}{}\end{DoxyParamCaption})}
+
+Whether the given position is immediately surrounded by parenthesis.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$start\+Pos} & Start position \\
+\hline
+int & {\em \$end\+Pos} & End position \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a11fbed1ae1cb284e14f4751ce1bfe05b}\index{TokenStream@{TokenStream}!haveTagInRange@{haveTagInRange}}
+\index{haveTagInRange@{haveTagInRange}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{haveTagInRange()}{haveTagInRange()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a11fbed1ae1cb284e14f4751ce1bfe05b} 
+have\+Tag\+In\+Range (\begin{DoxyParamCaption}\item[{int}]{\$start\+Pos}{, }\item[{int}]{\$end\+Pos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a8e8c50798a50524f9591eee4ddaf89d3}\index{TokenStream@{TokenStream}!haveTokenImmediatelyAfter@{haveTokenImmediatelyAfter}}
+\index{haveTokenImmediatelyAfter@{haveTokenImmediatelyAfter}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{haveTokenImmediatelyAfter()}{haveTokenImmediatelyAfter()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a8e8c50798a50524f9591eee4ddaf89d3} 
+have\+Token\+Immediately\+After (\begin{DoxyParamCaption}\item[{int}]{\$pos}{, }\item[{}]{\$expected\+Token\+Type}{}\end{DoxyParamCaption})}
+
+Check whether the position is directly followed by a certain token type.
+
+During this check whitespace and comments are skipped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$pos} & Position after which the token should occur \\
+\hline
+int | string & {\em \$expected\+Token\+Type} & Token to check for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether the expected token was found 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a00d1409f913706b88aed03a959d43e45}\index{TokenStream@{TokenStream}!haveTokenImmediatelyBefore@{haveTokenImmediatelyBefore}}
+\index{haveTokenImmediatelyBefore@{haveTokenImmediatelyBefore}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{haveTokenImmediatelyBefore()}{haveTokenImmediatelyBefore()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a00d1409f913706b88aed03a959d43e45} 
+have\+Token\+Immediately\+Before (\begin{DoxyParamCaption}\item[{int}]{\$pos}{, }\item[{}]{\$expected\+Token\+Type}{}\end{DoxyParamCaption})}
+
+Check whether the position is directly preceded by a certain token type.
+
+During this check whitespace and comments are skipped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$pos} & Position before which the token should occur \\
+\hline
+int | string & {\em \$expected\+Token\+Type} & Token to check for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether the expected token was found 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a0bd88f4399da41e327fbb965c9ac4c37}\index{TokenStream@{TokenStream}!haveTokenInRange@{haveTokenInRange}}
+\index{haveTokenInRange@{haveTokenInRange}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{haveTokenInRange()}{haveTokenInRange()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a0bd88f4399da41e327fbb965c9ac4c37} 
+have\+Token\+In\+Range (\begin{DoxyParamCaption}\item[{int}]{\$start\+Pos}{, }\item[{int}]{\$end\+Pos}{, }\item[{}]{\$token\+Type}{}\end{DoxyParamCaption})}
+
+Whether the given position range contains a certain token type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$start\+Pos} & Starting position (inclusive) \\
+\hline
+int & {\em \$end\+Pos} & Ending position (exclusive) \\
+\hline
+int | string & {\em \$token\+Type} & Token type to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether the token occurs in the given range 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a587cf3cda4d9ba909af92cae7b6744a4}\index{TokenStream@{TokenStream}!skipLeft@{skipLeft}}
+\index{skipLeft@{skipLeft}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{skipLeft()}{skipLeft()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a587cf3cda4d9ba909af92cae7b6744a4} 
+skip\+Left (\begin{DoxyParamCaption}\item[{int}]{\$pos}{, }\item[{}]{\$skip\+Token\+Type}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}(int\texorpdfstring{$\vert$}{|}string)\mbox{[}$\,$\mbox{]}} & \$skip\+Token\+Type \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a3e1b2664d0127043b3f7483a422ad4d2}\index{TokenStream@{TokenStream}!skipLeftWhitespace@{skipLeftWhitespace}}
+\index{skipLeftWhitespace@{skipLeftWhitespace}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{skipLeftWhitespace()}{skipLeftWhitespace()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a3e1b2664d0127043b3f7483a422ad4d2} 
+skip\+Left\+Whitespace (\begin{DoxyParamCaption}\item[{int}]{\$pos}{}\end{DoxyParamCaption})}
+
+Return first non-\/whitespace token position smaller or equal to passed position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$pos} & Token position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Non-\/whitespace token position 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a85e130343afe0df18c87e8be7ccc45fa}\index{TokenStream@{TokenStream}!skipRight@{skipRight}}
+\index{skipRight@{skipRight}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{skipRight()}{skipRight()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a85e130343afe0df18c87e8be7ccc45fa} 
+skip\+Right (\begin{DoxyParamCaption}\item[{int}]{\$pos}{, }\item[{}]{\$skip\+Token\+Type}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}(int\texorpdfstring{$\vert$}{|}string)\mbox{[}$\,$\mbox{]}} & \$skip\+Token\+Type \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_stream_a75749455057360c94c36882e823c28f7}\index{TokenStream@{TokenStream}!skipRightWhitespace@{skipRightWhitespace}}
+\index{skipRightWhitespace@{skipRightWhitespace}!TokenStream@{TokenStream}}
+\doxysubsubsection{\texorpdfstring{skipRightWhitespace()}{skipRightWhitespace()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_stream_a75749455057360c94c36882e823c28f7} 
+skip\+Right\+Whitespace (\begin{DoxyParamCaption}\item[{int}]{\$pos}{}\end{DoxyParamCaption})}
+
+Return first non-\/whitespace position greater or equal to passed position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$pos} & Token position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Non-\/whitespace token position 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Internal/\mbox{\hyperlink{_token_stream_8php}{Token\+Stream.\+php}}\end{DoxyCompactItemize}

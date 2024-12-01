@@ -1,0 +1,60 @@
+\doxysection{Parser Interface Reference}
+\hypertarget{interface_php_parser_1_1_parser}{}\label{interface_php_parser_1_1_parser}\index{Parser@{Parser}}
+Inheritance diagram for Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_php_parser_1_1_parser}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_parser_acf9954b73753ad08d95c76d5b646a10c}{parse}} (string \$code, ?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} \$error\+Handler=null)
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_parser_acf2f05f60b57bd67020d2259a2cf9982}{get\+Tokens}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_php_parser_1_1_parser_acf2f05f60b57bd67020d2259a2cf9982}\index{Parser@{Parser}!getTokens@{getTokens}}
+\index{getTokens@{getTokens}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getTokens()}{getTokens()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_parser_acf2f05f60b57bd67020d2259a2cf9982} 
+get\+Tokens (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return tokens for the last parse.
+
+\begin{DoxyReturn}{Returns}
+Token\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_acf2f05f60b57bd67020d2259a2cf9982}{Parser\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_parser_acf9954b73753ad08d95c76d5b646a10c}\index{Parser@{Parser}!parse@{parse}}
+\index{parse@{parse}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_parser_acf9954b73753ad08d95c76d5b646a10c} 
+parse (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}}}]{\$error\+Handler}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Parses PHP code into a node tree.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & The source code to parse \\
+\hline
+Error\+Handler | null & {\em \$error\+Handler} & Error handler to use for lexer/parser errors, defaults to Error\+Handler\textbackslash{}\+Throwing.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\textbackslash{}\+Stmt\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Array of statements (or null non-\/throwing error handler is used and the parser was unable to recover from an error). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_acf9954b73753ad08d95c76d5b646a10c}{Parser\+Abstract}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{nikic_2php-parser_2lib_2_php_parser_2_parser_8php}{Parser.\+php}}\end{DoxyCompactItemize}

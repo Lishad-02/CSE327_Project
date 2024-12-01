@@ -1,0 +1,66 @@
+\doxysection{Reflection\+Helper Class Reference}
+\hypertarget{class_deep_copy_1_1_reflection_1_1_reflection_helper}{}\label{class_deep_copy_1_1_reflection_1_1_reflection_helper}\index{ReflectionHelper@{ReflectionHelper}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_deep_copy_1_1_reflection_1_1_reflection_helper_a7bcfead6b23a2737622241564072d657}{get\+Properties}} (Reflection\+Class \$ref)
+\item 
+static \mbox{\hyperlink{class_deep_copy_1_1_reflection_1_1_reflection_helper_a2cbe7dd2f6c9bc8b41ca4beaffb376a7}{get\+Property}} (\$object, \$name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_deep_copy_1_1_reflection_1_1_reflection_helper_a7bcfead6b23a2737622241564072d657}\index{ReflectionHelper@{ReflectionHelper}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!ReflectionHelper@{ReflectionHelper}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily \label{class_deep_copy_1_1_reflection_1_1_reflection_helper_a7bcfead6b23a2737622241564072d657} 
+static get\+Properties (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$ref}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves all properties (including private ones), from object and all its ancestors.
+
+Standard \textbackslash{}\+Reflection\+Class-\/\texorpdfstring{$>$}{>}get\+Properties() does not return private properties from ancestor classes.
+
+\begin{DoxyAuthor}{Author}
+\href{mailto:muratyaman@gmail.com}{\texttt{ muratyaman@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/manual/en/reflectionclass.getproperties.php}{\texttt{ http\+://php.\+net/manual/en/reflectionclass.\+getproperties.\+php}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+Reflection\+Class & {\em \$ref} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reflection\+Property\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_deep_copy_1_1_reflection_1_1_reflection_helper_a2cbe7dd2f6c9bc8b41ca4beaffb376a7}\index{ReflectionHelper@{ReflectionHelper}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!ReflectionHelper@{ReflectionHelper}}
+\doxysubsubsection{\texorpdfstring{getProperty()}{getProperty()}}
+{\footnotesize\ttfamily \label{class_deep_copy_1_1_reflection_1_1_reflection_helper_a2cbe7dd2f6c9bc8b41ca4beaffb376a7} 
+static get\+Property (\begin{DoxyParamCaption}\item[{}]{\$object}{, }\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves property by name from object and all its ancestors.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$object} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Property\+Exception} & \\
+\hline
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Reflection\+Property 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/myclabs/deep-\/copy/src/\+Deep\+Copy/\+Reflection/\mbox{\hyperlink{_reflection_helper_8php}{Reflection\+Helper.\+php}}\end{DoxyCompactItemize}

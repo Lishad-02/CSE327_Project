@@ -1,0 +1,73 @@
+\doxysection{Array\+Comparator Class Reference}
+\hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator}{}\label{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator}\index{ArrayComparator@{ArrayComparator}}
+Inheritance diagram for Array\+Comparator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.636364cm]{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator_af4c949ee3a9b2fab92fb455c9a8bb764}{accepts}} (mixed \$expected, mixed \$actual)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator_ac193903404fe2428a0c12801c8fda047}{assert\+Equals}} (mixed \$expected, mixed \$actual, float \$delta=0.\+0, bool \$canonicalize=false, bool \$ignore\+Case=false, array \&\$processed=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_acc7c763724e9827d616a324f69a211aa}{set\+Factory}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory}{Factory}} \$\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_a8af39e05bb14429389db5b66ce467565}{factory}})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_a5c13a06527be115ddf6d0454fc0323e1}{assert\+Equals}} (mixed \$expected, mixed \$actual, float \$delta=0.\+0, bool \$canonicalize=false, bool \$ignore\+Case=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_a8af39e05bb14429389db5b66ce467565}{factory}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Arrays are equal if they contain the same key-\/value pairs. The order of the keys does not matter. The types of key-\/value pairs do not matter. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator_af4c949ee3a9b2fab92fb455c9a8bb764}\index{ArrayComparator@{ArrayComparator}!accepts@{accepts}}
+\index{accepts@{accepts}!ArrayComparator@{ArrayComparator}}
+\doxysubsubsection{\texorpdfstring{accepts()}{accepts()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator_af4c949ee3a9b2fab92fb455c9a8bb764} 
+accepts (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_af4c949ee3a9b2fab92fb455c9a8bb764}{Comparator}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_date_time_comparator_af4c949ee3a9b2fab92fb455c9a8bb764}{Date\+Time\+Comparator}}, \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_d_o_m_node_comparator_af4c949ee3a9b2fab92fb455c9a8bb764}{DOMNode\+Comparator}}, \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_exception_comparator_af4c949ee3a9b2fab92fb455c9a8bb764}{Exception\+Comparator}}, \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_mock_object_comparator_af4c949ee3a9b2fab92fb455c9a8bb764}{Mock\+Object\+Comparator}}, and \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_af4c949ee3a9b2fab92fb455c9a8bb764}{Object\+Comparator}}.
+
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator_ac193903404fe2428a0c12801c8fda047}\index{ArrayComparator@{ArrayComparator}!assertEquals@{assertEquals}}
+\index{assertEquals@{assertEquals}!ArrayComparator@{ArrayComparator}}
+\doxysubsubsection{\texorpdfstring{assertEquals()}{assertEquals()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator_ac193903404fe2428a0c12801c8fda047} 
+assert\+Equals (\begin{DoxyParamCaption}\item[{mixed}]{\$expected}{, }\item[{mixed}]{\$actual}{, }\item[{float}]{\$delta}{ = {\ttfamily 0.0}, }\item[{bool}]{\$canonicalize}{ = {\ttfamily false}, }\item[{bool}]{\$ignore\+Case}{ = {\ttfamily false}, }\item[{array \&}]{\$processed}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$mixed$>$} & \$processed\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Comparison\+Failure} & \\
+\hline
+\end{DoxyExceptions}
+@phpstan-\/ignore arguments.\+count
+
+Reimplemented in \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_date_time_comparator_ac193903404fe2428a0c12801c8fda047}{Date\+Time\+Comparator}}, \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_d_o_m_node_comparator_ac193903404fe2428a0c12801c8fda047}{DOMNode\+Comparator}}, and \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_ac193903404fe2428a0c12801c8fda047}{Object\+Comparator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/sebastian/comparator/src/\mbox{\hyperlink{_array_comparator_8php}{Array\+Comparator.\+php}}\end{DoxyCompactItemize}

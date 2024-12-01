@@ -1,0 +1,101 @@
+\doxysection{Executable\+Lines\+Finding\+Visitor Class Reference}
+\hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor}{}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor}\index{ExecutableLinesFindingVisitor@{ExecutableLinesFindingVisitor}}
+Inheritance diagram for Executable\+Lines\+Finding\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_ae090ea8f9d53e664aa113f35d8847d65}{\+\_\+\+\_\+construct}} (string \$source)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (Node \$node)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_a85d622872e004eec9219c62ed111a79b}{after\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_a1aee1e13c21c5d31d5810a173e3dda0e}{executable\+Lines\+Grouped\+By\+Branch}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{Node\+Visitor\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a61cf9be18190b38cbe8e0778f4cb2fd8}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a560dafbb8615947e1fbfa5565bbb832c}{leave\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a6d11bd165a2ecd3a965f1a64df677f96}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a48cbae280b53266294ddbc517de2e59b}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae379b14ba14de6999485d1e6bc22c94f}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_ae5987b64591d5fb77abdcf3c51cbb238}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_afc3479fd9ddf97109031fee9751f6234}{REPLACE\+\_\+\+WITH\+\_\+\+NULL}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_ae090ea8f9d53e664aa113f35d8847d65}\index{ExecutableLinesFindingVisitor@{ExecutableLinesFindingVisitor}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ExecutableLinesFindingVisitor@{ExecutableLinesFindingVisitor}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_ae090ea8f9d53e664aa113f35d8847d65} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$source}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_a85d622872e004eec9219c62ed111a79b}\index{ExecutableLinesFindingVisitor@{ExecutableLinesFindingVisitor}!afterTraverse@{afterTraverse}}
+\index{afterTraverse@{afterTraverse}!ExecutableLinesFindingVisitor@{ExecutableLinesFindingVisitor}}
+\doxysubsubsection{\texorpdfstring{afterTraverse()}{afterTraverse()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_a85d622872e004eec9219c62ed111a79b} 
+after\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+Called once after traversal.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null\+: \$nodes stays as-\/is
+\item otherwise\+: \$nodes is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]} Array of nodes 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a85d622872e004eec9219c62ed111a79b}{Node\+Visitor\+Abstract}}.
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}\index{ExecutableLinesFindingVisitor@{ExecutableLinesFindingVisitor}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!ExecutableLinesFindingVisitor@{ExecutableLinesFindingVisitor}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_a72d9ab2b97095f3bf1c97eb453a386d1} 
+enter\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_a1aee1e13c21c5d31d5810a173e3dda0e}\index{ExecutableLinesFindingVisitor@{ExecutableLinesFindingVisitor}!executableLinesGroupedByBranch@{executableLinesGroupedByBranch}}
+\index{executableLinesGroupedByBranch@{executableLinesGroupedByBranch}!ExecutableLinesFindingVisitor@{ExecutableLinesFindingVisitor}}
+\doxysubsubsection{\texorpdfstring{executableLinesGroupedByBranch()}{executableLinesGroupedByBranch()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_executable_lines_finding_visitor_a1aee1e13c21c5d31d5810a173e3dda0e} 
+executable\+Lines\+Grouped\+By\+Branch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Lines\+Type 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/php-\/code-\/coverage/src/\+Static\+Analysis/\mbox{\hyperlink{_executable_lines_finding_visitor_8php}{Executable\+Lines\+Finding\+Visitor.\+php}}\end{DoxyCompactItemize}

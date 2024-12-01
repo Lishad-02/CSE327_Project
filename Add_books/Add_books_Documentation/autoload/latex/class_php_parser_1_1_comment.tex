@@ -1,0 +1,232 @@
+\doxysection{Comment Class Reference}
+\hypertarget{class_php_parser_1_1_comment}{}\label{class_php_parser_1_1_comment}\index{Comment@{Comment}}
+Inheritance diagram for Comment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_php_parser_1_1_comment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_a599039276f87821c674cb48d4cbfae30}{\+\_\+\+\_\+construct}} (string \$text, int \$start\+Line=-\/1, int \$start\+File\+Pos=-\/1, int \$start\+Token\+Pos=-\/1, int \$end\+Line=-\/1, int \$end\+File\+Pos=-\/1, int \$end\+Token\+Pos=-\/1)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_a8a2999b1d846c0a7bc77187e28facd99}{get\+Text}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_a0c5336ffcf8d85709d6f212bd49c7bb4}{get\+Start\+Line}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_aada4875e3d94d2987234f496bcd86970}{get\+Start\+File\+Pos}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_a2071892dabcf856e81bb5fdf4ea0d365}{get\+Start\+Token\+Pos}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_a7ad149e4075bba710a8933065263fe0e}{get\+End\+Line}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_ada2c7786e2cd53a4f78cf5fbacf84088}{get\+End\+File\+Pos}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_ae97bed5b5ce902777f7c749aea714262}{get\+End\+Token\+Pos}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_a3213443721bc495376bcd9881f4541a8}{get\+Reformatted\+Text}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_comment_ad402d8679325bc514874370f02b5c2ac}{json\+Serialize}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_php_parser_1_1_comment_abb36ce687e769c604ad8bf283ba32a66}{\$text}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_comment_a324999fa661cb5b67a3ce0cb814ef13f}{\$start\+Line}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_comment_a439d7ce00f1f8d70784e741196a76991}{\$start\+File\+Pos}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_comment_afb6708491b1041cac4e2761c23bd8349}{\$start\+Token\+Pos}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_comment_ac5e273193cb9925eb49c1027000072f0}{\$end\+Line}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_comment_a509b1a2abfabff767e8a27101d536773}{\$end\+File\+Pos}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_comment_a4becc10d64d0890c97383e6dde1129f6}{\$end\+Token\+Pos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_comment_a599039276f87821c674cb48d4cbfae30}\index{Comment@{Comment}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a599039276f87821c674cb48d4cbfae30} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$text}{, }\item[{int}]{\$start\+Line}{ = {\ttfamily -\/1}, }\item[{int}]{\$start\+File\+Pos}{ = {\ttfamily -\/1}, }\item[{int}]{\$start\+Token\+Pos}{ = {\ttfamily -\/1}, }\item[{int}]{\$end\+Line}{ = {\ttfamily -\/1}, }\item[{int}]{\$end\+File\+Pos}{ = {\ttfamily -\/1}, }\item[{int}]{\$end\+Token\+Pos}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+Constructs a comment node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & Comment text (including comment delimiters like /\texorpdfstring{$\ast$}{*}) \\
+\hline
+int & {\em \$start\+Line} & Line number the comment started on \\
+\hline
+int & {\em \$start\+File\+Pos} & File offset the comment started on \\
+\hline
+int & {\em \$start\+Token\+Pos} & Token offset the comment started on \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_comment_a7516ca30af0db3cdbf9a7739b48ce91d}\index{Comment@{Comment}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a7516ca30af0db3cdbf9a7739b48ce91d} 
+\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the comment text.
+
+\begin{DoxyReturn}{Returns}
+string The comment text (including comment delimiters like /\texorpdfstring{$\ast$}{*}) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_comment_ada2c7786e2cd53a4f78cf5fbacf84088}\index{Comment@{Comment}!getEndFilePos@{getEndFilePos}}
+\index{getEndFilePos@{getEndFilePos}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{getEndFilePos()}{getEndFilePos()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_ada2c7786e2cd53a4f78cf5fbacf84088} 
+get\+End\+File\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the file offset the comment ends on.
+
+\begin{DoxyReturn}{Returns}
+int File offset (or -\/1 if not available) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_comment_a7ad149e4075bba710a8933065263fe0e}\index{Comment@{Comment}!getEndLine@{getEndLine}}
+\index{getEndLine@{getEndLine}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{getEndLine()}{getEndLine()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a7ad149e4075bba710a8933065263fe0e} 
+get\+End\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the line number the comment ends on.
+
+\begin{DoxyReturn}{Returns}
+int Line number (or -\/1 if not available) @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_comment_ae97bed5b5ce902777f7c749aea714262}\index{Comment@{Comment}!getEndTokenPos@{getEndTokenPos}}
+\index{getEndTokenPos@{getEndTokenPos}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{getEndTokenPos()}{getEndTokenPos()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_ae97bed5b5ce902777f7c749aea714262} 
+get\+End\+Token\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the token offset the comment ends on.
+
+\begin{DoxyReturn}{Returns}
+int Token offset (or -\/1 if not available) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_comment_a3213443721bc495376bcd9881f4541a8}\index{Comment@{Comment}!getReformattedText@{getReformattedText}}
+\index{getReformattedText@{getReformattedText}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{getReformattedText()}{getReformattedText()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a3213443721bc495376bcd9881f4541a8} 
+get\+Reformatted\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the reformatted comment text.
+
+"{}\+Reformatted"{} here means that we try to clean up the whitespace at the starts of the lines. This is necessary because we receive the comments without leading whitespace on the first line, but with leading whitespace on all subsequent lines.
+
+Additionally, this normalizes CRLF newlines to LF newlines. \Hypertarget{class_php_parser_1_1_comment_aada4875e3d94d2987234f496bcd86970}\index{Comment@{Comment}!getStartFilePos@{getStartFilePos}}
+\index{getStartFilePos@{getStartFilePos}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{getStartFilePos()}{getStartFilePos()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_aada4875e3d94d2987234f496bcd86970} 
+get\+Start\+File\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the file offset the comment started on.
+
+\begin{DoxyReturn}{Returns}
+int File offset (or -\/1 if not available) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_comment_a0c5336ffcf8d85709d6f212bd49c7bb4}\index{Comment@{Comment}!getStartLine@{getStartLine}}
+\index{getStartLine@{getStartLine}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{getStartLine()}{getStartLine()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a0c5336ffcf8d85709d6f212bd49c7bb4} 
+get\+Start\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the line number the comment started on.
+
+\begin{DoxyReturn}{Returns}
+int Line number (or -\/1 if not available) @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_comment_a2071892dabcf856e81bb5fdf4ea0d365}\index{Comment@{Comment}!getStartTokenPos@{getStartTokenPos}}
+\index{getStartTokenPos@{getStartTokenPos}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{getStartTokenPos()}{getStartTokenPos()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a2071892dabcf856e81bb5fdf4ea0d365} 
+get\+Start\+Token\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the token offset the comment started on.
+
+\begin{DoxyReturn}{Returns}
+int Token offset (or -\/1 if not available) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_comment_a8a2999b1d846c0a7bc77187e28facd99}\index{Comment@{Comment}!getText@{getText}}
+\index{getText@{getText}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a8a2999b1d846c0a7bc77187e28facd99} 
+get\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the comment text.
+
+\begin{DoxyReturn}{Returns}
+string The comment text (including comment delimiters like /\texorpdfstring{$\ast$}{*}) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_comment_ad402d8679325bc514874370f02b5c2ac}\index{Comment@{Comment}!jsonSerialize@{jsonSerialize}}
+\index{jsonSerialize@{jsonSerialize}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{jsonSerialize()}{jsonSerialize()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_ad402d8679325bc514874370f02b5c2ac} 
+json\+Serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array\{node\+Type\+:string, text\+:mixed, line\+:mixed, file\+Pos\+:mixed\} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_comment_a509b1a2abfabff767e8a27101d536773}\index{Comment@{Comment}!\$endFilePos@{\$endFilePos}}
+\index{\$endFilePos@{\$endFilePos}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\$endFilePos}{\$endFilePos}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a509b1a2abfabff767e8a27101d536773} 
+int \$end\+File\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_comment_ac5e273193cb9925eb49c1027000072f0}\index{Comment@{Comment}!\$endLine@{\$endLine}}
+\index{\$endLine@{\$endLine}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\$endLine}{\$endLine}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_ac5e273193cb9925eb49c1027000072f0} 
+int \$end\+Line\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_comment_a4becc10d64d0890c97383e6dde1129f6}\index{Comment@{Comment}!\$endTokenPos@{\$endTokenPos}}
+\index{\$endTokenPos@{\$endTokenPos}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\$endTokenPos}{\$endTokenPos}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a4becc10d64d0890c97383e6dde1129f6} 
+int \$end\+Token\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_comment_a439d7ce00f1f8d70784e741196a76991}\index{Comment@{Comment}!\$startFilePos@{\$startFilePos}}
+\index{\$startFilePos@{\$startFilePos}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\$startFilePos}{\$startFilePos}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a439d7ce00f1f8d70784e741196a76991} 
+int \$start\+File\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_comment_a324999fa661cb5b67a3ce0cb814ef13f}\index{Comment@{Comment}!\$startLine@{\$startLine}}
+\index{\$startLine@{\$startLine}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\$startLine}{\$startLine}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_a324999fa661cb5b67a3ce0cb814ef13f} 
+int \$start\+Line\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_comment_afb6708491b1041cac4e2761c23bd8349}\index{Comment@{Comment}!\$startTokenPos@{\$startTokenPos}}
+\index{\$startTokenPos@{\$startTokenPos}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\$startTokenPos}{\$startTokenPos}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_afb6708491b1041cac4e2761c23bd8349} 
+int \$start\+Token\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_comment_abb36ce687e769c604ad8bf283ba32a66}\index{Comment@{Comment}!\$text@{\$text}}
+\index{\$text@{\$text}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{\$text}{\$text}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_comment_abb36ce687e769c604ad8bf283ba32a66} 
+string \$text\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{_comment_8php}{Comment.\+php}}\end{DoxyCompactItemize}

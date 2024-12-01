@@ -1,0 +1,116 @@
+\doxysection{Complexity\+Collection Class Reference}
+\hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection}{}\label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection}\index{ComplexityCollection@{ComplexityCollection}}
+Inheritance diagram for Complexity\+Collection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a12b8efb717cb31322bfa4d1d75146979}{as\+Array}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_aedcc52b3673b8df9425e52f13accb2a1}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a9793d35cd7e79cd8151be32ca0e451b3}{cyclomatic\+Complexity}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_ab4a9d4af8b14366c372b16640eb55e2a}{is\+Function}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a2eb81181b132f534b2460c8c2f1b09c8}{is\+Method}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_ab2b957adbceaf87c6d2158d3f1d2c7a6}{merge\+With}} (self \$other)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a34599a260149851d04c79052f101b521}{sort\+By\+Descending\+Cyclomatic\+Complexity}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a04925a599a7d9d708a5827db7d30cc54}{from\+List}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity}{Complexity}} ... \$items)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@template-\/implements Iterator\+Aggregate$<$int, Complexity$>$
+
+@psalm-\/immutable 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a12b8efb717cb31322bfa4d1d75146979}\index{ComplexityCollection@{ComplexityCollection}!asArray@{asArray}}
+\index{asArray@{asArray}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{asArray()}{asArray()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a12b8efb717cb31322bfa4d1d75146979} 
+as\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Complexity$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_ac751e87b3d4c4bf2feb03bee8b092755}\index{ComplexityCollection@{ComplexityCollection}!count@{count}}
+\index{count@{count}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+non-\/negative-\/int 
+\end{DoxyReturn}
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a9793d35cd7e79cd8151be32ca0e451b3}\index{ComplexityCollection@{ComplexityCollection}!cyclomaticComplexity@{cyclomaticComplexity}}
+\index{cyclomaticComplexity@{cyclomaticComplexity}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{cyclomaticComplexity()}{cyclomaticComplexity()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a9793d35cd7e79cd8151be32ca0e451b3} 
+cyclomatic\+Complexity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+non-\/negative-\/int 
+\end{DoxyReturn}
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a04925a599a7d9d708a5827db7d30cc54}\index{ComplexityCollection@{ComplexityCollection}!fromList@{fromList}}
+\index{fromList@{fromList}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{fromList()}{fromList()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a04925a599a7d9d708a5827db7d30cc54} 
+static from\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_complexity_1_1_complexity}{Complexity}} ...}]{\$items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{ComplexityCollection@{ComplexityCollection}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_aedcc52b3673b8df9425e52f13accb2a1}\index{ComplexityCollection@{ComplexityCollection}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_aedcc52b3673b8df9425e52f13accb2a1} 
+is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_ab4a9d4af8b14366c372b16640eb55e2a}\index{ComplexityCollection@{ComplexityCollection}!isFunction@{isFunction}}
+\index{isFunction@{isFunction}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{isFunction()}{isFunction()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_ab4a9d4af8b14366c372b16640eb55e2a} 
+is\+Function (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a2eb81181b132f534b2460c8c2f1b09c8}\index{ComplexityCollection@{ComplexityCollection}!isMethod@{isMethod}}
+\index{isMethod@{isMethod}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{isMethod()}{isMethod()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a2eb81181b132f534b2460c8c2f1b09c8} 
+is\+Method (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_ab2b957adbceaf87c6d2158d3f1d2c7a6}\index{ComplexityCollection@{ComplexityCollection}!mergeWith@{mergeWith}}
+\index{mergeWith@{mergeWith}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{mergeWith()}{mergeWith()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_ab2b957adbceaf87c6d2158d3f1d2c7a6} 
+merge\+With (\begin{DoxyParamCaption}\item[{self}]{\$other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a34599a260149851d04c79052f101b521}\index{ComplexityCollection@{ComplexityCollection}!sortByDescendingCyclomaticComplexity@{sortByDescendingCyclomaticComplexity}}
+\index{sortByDescendingCyclomaticComplexity@{sortByDescendingCyclomaticComplexity}!ComplexityCollection@{ComplexityCollection}}
+\doxysubsubsection{\texorpdfstring{sortByDescendingCyclomaticComplexity()}{sortByDescendingCyclomaticComplexity()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_complexity_1_1_complexity_collection_a34599a260149851d04c79052f101b521} 
+sort\+By\+Descending\+Cyclomatic\+Complexity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/sebastian/complexity/src/\+Complexity/\mbox{\hyperlink{_complexity_collection_8php}{Complexity\+Collection.\+php}}\end{DoxyCompactItemize}

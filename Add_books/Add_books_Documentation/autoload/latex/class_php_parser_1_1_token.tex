@@ -1,0 +1,68 @@
+\doxysection{Token Class Reference}
+\hypertarget{class_php_parser_1_1_token}{}\label{class_php_parser_1_1_token}\index{Token@{Token}}
+Inheritance diagram for Token\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_token}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_token_a4f22ffa34a65a0d3da50cb576249ebcc}{get\+End\+Pos}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_token_a7ad149e4075bba710a8933065263fe0e}{get\+End\+Line}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill}{Token\+Polyfill}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_adcff53e116891c6b108aa6dac3049ef5}{\+\_\+\+\_\+construct}} (int \$id, string \$text, int \$line=-\/1, int \$pos=-\/1)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_a51eb04b6a05f27b329a785501b187d76}{get\+Token\+Name}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_a3c84094e174c1dcf23025b647dcf5850}{is}} (\$kind)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_ad56d4e578b7499866c67bb5253aec07d}{is\+Ignorable}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill}{Token\+Polyfill}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_a7f95b3c54b6384c4fe45d95c2da4109f}{tokenize}} (string \$code, int \$flags=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill}{Token\+Polyfill}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_a3587bd00e5602c1800515b6f9ffbebc5}{\$id}}
+\item 
+string \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_abb36ce687e769c604ad8bf283ba32a66}{\$text}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_a7188199eefbf9dca04917ecada978d42}{\$line}}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_acf7a9a63fb031c16f5e20c27894d940c}{\$pos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A PHP token. On PHP 8.\+0 this extends from Php\+Token. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_token_a7ad149e4075bba710a8933065263fe0e}\index{Token@{Token}!getEndLine@{getEndLine}}
+\index{getEndLine@{getEndLine}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{getEndLine()}{getEndLine()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_token_a7ad149e4075bba710a8933065263fe0e} 
+get\+End\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get 1-\/based end line number of the token. \Hypertarget{class_php_parser_1_1_token_a4f22ffa34a65a0d3da50cb576249ebcc}\index{Token@{Token}!getEndPos@{getEndPos}}
+\index{getEndPos@{getEndPos}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{getEndPos()}{getEndPos()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_token_a4f22ffa34a65a0d3da50cb576249ebcc} 
+get\+End\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get (exclusive) zero-\/based end position of the token. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{nikic_2php-parser_2lib_2_php_parser_2_token_8php}{Token.\+php}}\end{DoxyCompactItemize}

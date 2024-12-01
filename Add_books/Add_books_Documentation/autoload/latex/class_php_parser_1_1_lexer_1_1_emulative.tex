@@ -1,0 +1,70 @@
+\doxysection{Emulative Class Reference}
+\hypertarget{class_php_parser_1_1_lexer_1_1_emulative}{}\label{class_php_parser_1_1_lexer_1_1_emulative}\index{Emulative@{Emulative}}
+Inheritance diagram for Emulative\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_lexer_1_1_emulative}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_emulative_a6ba8b5c388823e3b6f814e50d318f0db}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \$php\+Version=null)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_emulative_a73ce5cbd9e4c4ca98b3aa58c9c20afec}{tokenize}} (string \$code, ?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} \$error\+Handler=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_lexer}{Lexer}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_lexer}{Lexer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_abd2997cc612fe6fb5feb11091ae06516}{postprocess\+Tokens}} (array \&\$tokens, \mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} \$error\+Handler)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_lexer_1_1_emulative_a6ba8b5c388823e3b6f814e50d318f0db}\index{Emulative@{Emulative}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Emulative@{Emulative}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_emulative_a6ba8b5c388823e3b6f814e50d318f0db} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}}}]{\$php\+Version}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Php\+Version | null & {\em \$php\+Version} & PHP version to emulate. Defaults to newest supported. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_lexer_1_1_emulative_a73ce5cbd9e4c4ca98b3aa58c9c20afec}\index{Emulative@{Emulative}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!Emulative@{Emulative}}
+\doxysubsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_emulative_a73ce5cbd9e4c4ca98b3aa58c9c20afec} 
+tokenize (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}}}]{\$error\+Handler}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Tokenize the provided source code.
+
+The token array is in the same format as provided by the Php\+Token\+::tokenize() method in PHP 8.\+0. The tokens are instances of \doxylink{namespace_php_parser}{Php\+Parser}\textbackslash{}\+Token, to abstract over a polyfill implementation in earlier PHP version.
+
+The token array is terminated by a sentinel token with token ID 0. The token array does not discard any tokens (i.\+e. whitespace and comments are included). The token position attributes are against this token array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & The source code to tokenize. \\
+\hline
+Error\+Handler | null & {\em \$error\+Handler} & Error handler to use for lexing errors. Defaults to Error\+Handler\textbackslash{}\+Throwing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Token\mbox{[}\mbox{]} Tokens 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_lexer_a73ce5cbd9e4c4ca98b3aa58c9c20afec}{Lexer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Lexer/\mbox{\hyperlink{_emulative_8php}{Emulative.\+php}}\end{DoxyCompactItemize}

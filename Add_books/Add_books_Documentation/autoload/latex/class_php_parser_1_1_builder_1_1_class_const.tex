@@ -1,0 +1,229 @@
+\doxysection{Class\+Const Class Reference}
+\hypertarget{class_php_parser_1_1_builder_1_1_class_const}{}\label{class_php_parser_1_1_builder_1_1_class_const}\index{ClassConst@{ClassConst}}
+Inheritance diagram for Class\+Const\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_builder_1_1_class_const}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_afd499bc6d5b762833875b19806a0ade6}{\+\_\+\+\_\+construct}} (\$name, \$value)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_a16bdbddf37a174324e1544151b96e2c5}{add\+Const}} (\$name, \$value)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_a41ed4b9d914f6b2eac84909a9f3d4fe4}{make\+Public}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_aef351d1dc94a77a9e4851fbd274b30a0}{make\+Protected}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_a99aa3141cb057030f2aadfb9649aab8e}{make\+Private}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_a196c1fd61671c7b0f571d867c47d2be2}{make\+Final}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_a7331d24646c54f9d8f98ecf7bc5827bd}{set\+Doc\+Comment}} (\$doc\+Comment)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_ace927af3c97e66624a7b251c59f2ece2}{add\+Attribute}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_ade096bf521b5d05dcaff2ba1a42e9f71}{set\+Type}} (\$type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_a3a0d17930cbcc57bef84064afcc1a837}{get\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_builder}{Builder}}}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_a374c616ba2ed6edabbecbec4c1a8a24f}{\$flags}} = 0
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_ac89f2733f3f084f1e693e13afbb67739}{\$attributes}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_ac3e8713887ce283b0f3a7b217280304c}{\$constants}} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_a6545e4b9fa532870993841cc05875124}{\$attribute\+Groups}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class_const_a4ad4ba9bc3f81fabf69f790e1e801f3a}{\$type}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_afd499bc6d5b762833875b19806a0ade6}\index{ClassConst@{ClassConst}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_afd499bc6d5b762833875b19806a0ade6} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Creates a class constant builder
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Identifier & {\em \$name} & Name \\
+\hline
+Node\textbackslash{}\+Expr | bool | null | int | float | string | array | \textbackslash{}\+Unit\+Enum & {\em \$value} & Value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_ace927af3c97e66624a7b251c59f2ece2}\index{ClassConst@{ClassConst}!addAttribute@{addAttribute}}
+\index{addAttribute@{addAttribute}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{addAttribute()}{addAttribute()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_ace927af3c97e66624a7b251c59f2ece2} 
+add\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})}
+
+Adds an attribute group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Attribute | Node\textbackslash{}\+Attribute\+Group & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_a16bdbddf37a174324e1544151b96e2c5}\index{ClassConst@{ClassConst}!addConst@{addConst}}
+\index{addConst@{addConst}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{addConst()}{addConst()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_a16bdbddf37a174324e1544151b96e2c5} 
+add\+Const (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Add another constant to const group
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Identifier & {\em \$name} & Name \\
+\hline
+Node\textbackslash{}\+Expr | bool | null | int | float | string | array | \textbackslash{}\+Unit\+Enum & {\em \$value} & Value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_a3a0d17930cbcc57bef84064afcc1a837}\index{ClassConst@{ClassConst}!getNode@{getNode}}
+\index{getNode@{getNode}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_a3a0d17930cbcc57bef84064afcc1a837} 
+get\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the built class node.
+
+\begin{DoxyReturn}{Returns}
+Stmt\textbackslash{}\+Class\+Const The built constant node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_builder_a3a0d17930cbcc57bef84064afcc1a837}{Builder}}.
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_a196c1fd61671c7b0f571d867c47d2be2}\index{ClassConst@{ClassConst}!makeFinal@{makeFinal}}
+\index{makeFinal@{makeFinal}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{makeFinal()}{makeFinal()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_a196c1fd61671c7b0f571d867c47d2be2} 
+make\+Final (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Makes the constant final.
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_a99aa3141cb057030f2aadfb9649aab8e}\index{ClassConst@{ClassConst}!makePrivate@{makePrivate}}
+\index{makePrivate@{makePrivate}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{makePrivate()}{makePrivate()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_a99aa3141cb057030f2aadfb9649aab8e} 
+make\+Private (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Makes the constant private.
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_aef351d1dc94a77a9e4851fbd274b30a0}\index{ClassConst@{ClassConst}!makeProtected@{makeProtected}}
+\index{makeProtected@{makeProtected}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{makeProtected()}{makeProtected()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_aef351d1dc94a77a9e4851fbd274b30a0} 
+make\+Protected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Makes the constant protected.
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_a41ed4b9d914f6b2eac84909a9f3d4fe4}\index{ClassConst@{ClassConst}!makePublic@{makePublic}}
+\index{makePublic@{makePublic}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{makePublic()}{makePublic()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_a41ed4b9d914f6b2eac84909a9f3d4fe4} 
+make\+Public (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Makes the constant public.
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_a7331d24646c54f9d8f98ecf7bc5827bd}\index{ClassConst@{ClassConst}!setDocComment@{setDocComment}}
+\index{setDocComment@{setDocComment}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{setDocComment()}{setDocComment()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_a7331d24646c54f9d8f98ecf7bc5827bd} 
+set\+Doc\+Comment (\begin{DoxyParamCaption}\item[{}]{\$doc\+Comment}{}\end{DoxyParamCaption})}
+
+Sets doc comment for the constant.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Php\+Parser\textbackslash{}\+Comment\textbackslash{}\+Doc | string & {\em \$doc\+Comment} & Doc comment to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_ade096bf521b5d05dcaff2ba1a42e9f71}\index{ClassConst@{ClassConst}!setType@{setType}}
+\index{setType@{setType}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_ade096bf521b5d05dcaff2ba1a42e9f71} 
+set\+Type (\begin{DoxyParamCaption}\item[{}]{\$type}{}\end{DoxyParamCaption})}
+
+Sets the constant type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Node\textbackslash{}\+Name | Identifier | Node\textbackslash{}\+Complex\+Type & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_a6545e4b9fa532870993841cc05875124}\index{ClassConst@{ClassConst}!\$attributeGroups@{\$attributeGroups}}
+\index{\$attributeGroups@{\$attributeGroups}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{\$attributeGroups}{\$attributeGroups}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_a6545e4b9fa532870993841cc05875124} 
+array \$attribute\+Groups = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_ac89f2733f3f084f1e693e13afbb67739}\index{ClassConst@{ClassConst}!\$attributes@{\$attributes}}
+\index{\$attributes@{\$attributes}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{\$attributes}{\$attributes}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_ac89f2733f3f084f1e693e13afbb67739} 
+array \$attributes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_ac3e8713887ce283b0f3a7b217280304c}\index{ClassConst@{ClassConst}!\$constants@{\$constants}}
+\index{\$constants@{\$constants}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{\$constants}{\$constants}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_ac3e8713887ce283b0f3a7b217280304c} 
+array \$constants = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_a374c616ba2ed6edabbecbec4c1a8a24f}\index{ClassConst@{ClassConst}!\$flags@{\$flags}}
+\index{\$flags@{\$flags}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{\$flags}{\$flags}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_a374c616ba2ed6edabbecbec4c1a8a24f} 
+int \$flags = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_class_const_a4ad4ba9bc3f81fabf69f790e1e801f3a}\index{ClassConst@{ClassConst}!\$type@{\$type}}
+\index{\$type@{\$type}!ClassConst@{ClassConst}}
+\doxysubsubsection{\texorpdfstring{\$type}{\$type}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_class_const_a4ad4ba9bc3f81fabf69f790e1e801f3a} 
+\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$type = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Builder/\mbox{\hyperlink{_builder_2_class_const_8php}{Class\+Const.\+php}}\end{DoxyCompactItemize}

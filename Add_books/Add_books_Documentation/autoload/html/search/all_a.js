@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['8_201_200_208_20a_202020_2010_2026_0',['&lt;a href=&quot;https://github.com/sebastianbergmann/code-unit/compare/1.0.7...1.0.8&quot; &gt;1.0.8&lt;/a&gt; - 2020-10-26',['../md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2code-unit_2_change_log.html#autotoc_md324',1,'']]],
+  ['8_202_200_200_202_200_200_20a_202023_2002_2003_1',['&lt;a href=&quot;https://github.com/sebastianbergmann/code-unit/compare/1.0.8...2.0.0&quot; &gt;2.0.0&lt;/a&gt; - 2023-02-03',['../md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2code-unit_2_change_log.html#autotoc_md321',1,'']]],
+  ['8_204_200_208_20a_202022_2009_2014_2',['&lt;a href=&quot;https://github.com/sebastianbergmann/comparator/compare/4.0.7...4.0.8&quot; &gt;4.0.8&lt;/a&gt; - 2022-09-14',['../md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2comparator_2_change_log.html#autotoc_md369',1,'']]],
+  ['8_205_200_200_205_200_200_20a_202023_2002_2003_3',['&lt;a href=&quot;https://github.com/sebastianbergmann/comparator/compare/4.0.8...5.0.0&quot; &gt;5.0.0&lt;/a&gt; - 2023-02-03',['../md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2comparator_2_change_log.html#autotoc_md366',1,'']]],
+  ['8_20a_202020_2010_2026_4',['&lt;a href=&quot;https://github.com/sebastianbergmann/code-unit/compare/1.0.7...1.0.8&quot; &gt;1.0.8&lt;/a&gt; - 2020-10-26',['../md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2code-unit_2_change_log.html#autotoc_md324',1,'']]],
+  ['8_20a_202022_2009_2014_5',['&lt;a href=&quot;https://github.com/sebastianbergmann/comparator/compare/4.0.7...4.0.8&quot; &gt;4.0.8&lt;/a&gt; - 2022-09-14',['../md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2comparator_2_change_log.html#autotoc_md369',1,'']]]
+];

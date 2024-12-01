@@ -1,0 +1,266 @@
+\chapter{PHP Parser}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2nikic_2php-parser_2_r_e_a_d_m_e}{}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2nikic_2php-parser_2_r_e_a_d_m_e}\index{PHP Parser@{PHP Parser}}
+\href{https://coveralls.io/github/nikic/PHP-Parser?branch=master}{\texttt{ }}
+
+This is a PHP parser written in PHP. Its purpose is to simplify static code analysis and manipulation.
+
+\href{https://github.com/nikic/PHP-Parser/tree/master/doc}{\texttt{ {\bfseries{Documentation for version 5.\+x}}}} (current; for running on PHP \texorpdfstring{$>$}{>}= 7.\+4; for parsing PHP 7.\+0 to PHP 8.\+4, with limited support for parsing PHP 5.\+x).
+
+\href{https://github.com/nikic/PHP-Parser/tree/4.x/doc}{\texttt{ Documentation for version 4.\+x}} (supported; for running on PHP \texorpdfstring{$>$}{>}= 7.\+0; for parsing PHP 5.\+2 to PHP 8.\+3).\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2nikic_2php-parser_2_r_e_a_d_m_e_autotoc_md26}{}\doxysection{\texorpdfstring{Features}{Features}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2nikic_2php-parser_2_r_e_a_d_m_e_autotoc_md26}
+The main features provided by this library are\+:
+
+
+\begin{DoxyItemize}
+\item Parsing PHP 7, and PHP 8 code into an abstract syntax tree (AST).
+\begin{DoxyItemize}
+\item Invalid code can be parsed into a partial AST.
+\item The AST contains accurate location information.
+\end{DoxyItemize}
+\item Dumping the AST in human-\/readable form.
+\item Converting an AST back to PHP code.
+\begin{DoxyItemize}
+\item Formatting can be preserved for partially changed ASTs.
+\end{DoxyItemize}
+\item Infrastructure to traverse and modify ASTs.
+\item Resolution of namespaced names.
+\item Evaluation of constant expressions.
+\item Builders to simplify AST construction for code generation.
+\item Converting an AST into JSON and back.
+\end{DoxyItemize}\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2nikic_2php-parser_2_r_e_a_d_m_e_autotoc_md27}{}\doxysection{\texorpdfstring{Quick Start}{Quick Start}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2nikic_2php-parser_2_r_e_a_d_m_e_autotoc_md27}
+Install the library using \href{https://getcomposer.org}{\texttt{ composer}}\+: \begin{DoxyVerb}php composer.phar require nikic/php-parser
+\end{DoxyVerb}
+
+
+Parse some PHP code into an AST and dump the result in human-\/readable form\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_php_parser_1_1_error}{PhpParser\(\backslash\)Error}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_php_parser_1_1_node_dumper}{PhpParser\(\backslash\)NodeDumper}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_php_parser_1_1_parser_factory}{PhpParser\(\backslash\)ParserFactory}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$code\ =\ <<<\textcolor{stringliteral}{'CODE'}}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{function}\ test(\$foo)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ var\_dump(\$foo);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{CODE;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$parser\ =\ (\textcolor{keyword}{new}\ ParserFactory())-\/>createForNewestSupportedVersion();}
+\DoxyCodeLine{\textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \$ast\ =\ \$parser-\/>parse(\$code);}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{catch}\ (Error\ \$error)\ \{}
+\DoxyCodeLine{\ \ \ \ echo\ \textcolor{stringliteral}{"{}Parse\ error:\ \{\$error-\/>getMessage()\}\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dumper\ =\ \textcolor{keyword}{new}\ NodeDumper;}
+\DoxyCodeLine{echo\ \$dumper-\/>dump(\$ast)\ .\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+
+\end{DoxyCode}
+
+
+This dumps an AST looking something like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{array(}
+\DoxyCodeLine{\ \ \ \ 0:\ Stmt\_Function(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ attrGroups:\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ byRef:\ false}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ name:\ Identifier(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ name:\ test}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ params:\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0:\ Param(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ attrGroups:\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ flags:\ 0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ null}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ byRef:\ false}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ variadic:\ false}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var:\ Expr\_Variable(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ foo}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ default:\ null}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ returnType:\ null}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ stmts:\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0:\ Stmt\_Expression(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ expr:\ Expr\_FuncCall(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ Name(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ var\_dump}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ args:\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0:\ Arg(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ null}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ value:\ Expr\_Variable(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ foo}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ byRef:\ false}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ unpack:\ false}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ )}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+
+
+Let\textquotesingle{}s traverse the AST and perform some kind of modification. For example, drop all function bodies\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{namespace_php_parser_1_1_node}{PhpParser\(\backslash\)Node}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_function__}{PhpParser\(\backslash\)Node\(\backslash\)Stmt\(\backslash\)Function\_}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_php_parser_1_1_node_traverser}{PhpParser\(\backslash\)NodeTraverser}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{PhpParser\(\backslash\)NodeVisitorAbstract}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$traverser\ =\ \textcolor{keyword}{new}\ NodeTraverser();}
+\DoxyCodeLine{\$traverser-\/>addVisitor(\textcolor{keyword}{new}\ \textcolor{keyword}{class}\ extends\ NodeVisitorAbstract\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ enterNode(Node\ \$node)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$node\ instanceof\ Function\_)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Clean\ out\ the\ function\ body}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$node-\/>stmts\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$ast\ =\ \$traverser-\/>traverse(\$ast);}
+\DoxyCodeLine{echo\ \$dumper-\/>dump(\$ast)\ .\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+
+\end{DoxyCode}
+
+
+This gives us an AST where the {\ttfamily Function\+\_\+\+:\+:\$stmts} are empty\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{array(}
+\DoxyCodeLine{\ \ \ \ 0:\ Stmt\_Function(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ attrGroups:\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ byRef:\ false}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ name:\ Identifier(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ name:\ test}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ params:\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0:\ Param(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ attrGroups:\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ type:\ null}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ byRef:\ false}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ variadic:\ false}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var:\ Expr\_Variable(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ foo}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ default:\ null}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ returnType:\ null}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ stmts:\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ )}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+
+
+Finally, we can convert the new AST back to PHP code\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{namespace_php_parser_1_1_pretty_printer}{PhpParser\(\backslash\)PrettyPrinter}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$prettyPrinter\ =\ \textcolor{keyword}{new}\ PrettyPrinter\(\backslash\)Standard;}
+\DoxyCodeLine{echo\ \$prettyPrinter-\/>prettyPrintFile(\$ast);}
+
+\end{DoxyCode}
+
+
+This gives us our original code, minus the {\ttfamily var\+\_\+dump()} call inside the function\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{function}\ test(\$foo)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+For a more comprehensive introduction, see the documentation.\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2nikic_2php-parser_2_r_e_a_d_m_e_autotoc_md28}{}\doxysection{\texorpdfstring{Documentation}{Documentation}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2nikic_2php-parser_2_r_e_a_d_m_e_autotoc_md28}
+
+\begin{DoxyEnumerate}
+\item Introduction
+\item Usage of basic components
+\end{DoxyEnumerate}
+
+Component documentation\+:
+
+
+\begin{DoxyItemize}
+\item Walking the AST
+\begin{DoxyItemize}
+\item Node visitors
+\item Modifying the AST from a visitor
+\item Short-\/circuiting traversals
+\item Interleaved visitors
+\item Simple node finding API
+\item Parent and sibling references
+\end{DoxyItemize}
+\item Name resolution
+\begin{DoxyItemize}
+\item Name resolver options
+\item Name resolution context
+\end{DoxyItemize}
+\item Pretty printing
+\begin{DoxyItemize}
+\item Converting AST back to PHP code
+\item Customizing formatting
+\item Formatting-\/preserving code transformations
+\end{DoxyItemize}
+\item AST builders
+\begin{DoxyItemize}
+\item Fluent builders for AST nodes
+\end{DoxyItemize}
+\item Lexer
+\begin{DoxyItemize}
+\item Emulation
+\item Tokens, positions and attributes
+\end{DoxyItemize}
+\item Error handling
+\begin{DoxyItemize}
+\item Column information for errors
+\item Error recovery (parsing of syntactically incorrect code)
+\end{DoxyItemize}
+\item Constant expression evaluation
+\begin{DoxyItemize}
+\item Evaluating constant/property/etc initializers
+\item Handling errors and unsupported expressions
+\end{DoxyItemize}
+\item JSON representation
+\begin{DoxyItemize}
+\item JSON encoding and decoding of ASTs
+\end{DoxyItemize}
+\item Performance
+\begin{DoxyItemize}
+\item Disabling Xdebug
+\item Reusing objects
+\item Garbage collection impact
+\end{DoxyItemize}
+\item Frequently asked questions
+\begin{DoxyItemize}
+\item Parent and sibling references 
+\end{DoxyItemize}
+\end{DoxyItemize}

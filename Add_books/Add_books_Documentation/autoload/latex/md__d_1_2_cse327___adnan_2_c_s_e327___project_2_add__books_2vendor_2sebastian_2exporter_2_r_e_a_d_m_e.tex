@@ -1,0 +1,181 @@
+\chapter{README}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e}{}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e}\index{README@{README}}
+\href{https://packagist.org/packages/sebastian/exporter}{\texttt{ }} \href{https://github.com/sebastianbergmann/exporter/actions}{\texttt{ }} \href{https://codecov.io/gh/sebastianbergmann/exporter}{\texttt{ }}\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e_autotoc_md616}{}\doxysection{\texorpdfstring{sebastian/exporter}{sebastian/exporter}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e_autotoc_md616}
+This component provides the functionality to export PHP variables for visualization.\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e_autotoc_md617}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e_autotoc_md617}
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\texttt{ Composer}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ sebastian/exporter}
+
+\end{DoxyCode}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer\ require\ -\/-\/dev\ sebastian/exporter}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e_autotoc_md618}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e_autotoc_md618}
+Exporting\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter}{SebastianBergmann\(\backslash\)Exporter\(\backslash\)Exporter}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$exporter\ =\ \textcolor{keyword}{new}\ Exporter;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{/*}}
+\DoxyCodeLine{\textcolor{comment}{Exception\ Object\ \&0000000078de0f0d000000002003a261\ (}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 'message'\ =>\ ''}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 'string'\ =>\ ''}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 'code'\ =>\ 0}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 'file'\ =>\ '/home/sebastianbergmann/test.php'}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 'line'\ =>\ 34}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 'previous'\ =>\ null}}
+\DoxyCodeLine{\textcolor{comment}{)}}
+\DoxyCodeLine{\textcolor{comment}{*/}}
+\DoxyCodeLine{}
+\DoxyCodeLine{print\ \$exporter-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter_af23aed8e450c37e8d18b81480b2249c3}{export}}(\textcolor{keyword}{new}\ Exception);}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e_autotoc_md619}{}\doxysubsection{\texorpdfstring{Data Types}{Data Types}}\label{md__d_1_2_cse327___adnan_2_c_s_e327___project_2_add__books_2vendor_2sebastian_2exporter_2_r_e_a_d_m_e_autotoc_md619}
+Exporting simple types\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter}{SebastianBergmann\(\backslash\)Exporter\(\backslash\)Exporter}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$exporter\ =\ \textcolor{keyword}{new}\ Exporter;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ 46}}
+\DoxyCodeLine{print\ \$exporter-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter_af23aed8e450c37e8d18b81480b2249c3}{export}}(46);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ 4.0}}
+\DoxyCodeLine{print\ \$exporter-\/>export(4.0);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ 'hello,\ world!'}}
+\DoxyCodeLine{print\ \$exporter-\/>export(\textcolor{stringliteral}{'hello,\ world!'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ false}}
+\DoxyCodeLine{print\ \$exporter-\/>export(\textcolor{keyword}{false});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ NAN}}
+\DoxyCodeLine{print\ \$exporter-\/>export(acos(8));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ -\/INF}}
+\DoxyCodeLine{print\ \$exporter-\/>export(log(0));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ null}}
+\DoxyCodeLine{print\ \$exporter-\/>export(\textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ resource(13)\ of\ type\ (stream)}}
+\DoxyCodeLine{print\ \$exporter-\/>export(fopen(\textcolor{stringliteral}{'php://stderr'},\ \textcolor{charliteral}{'w'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Binary\ String:\ 0x000102030405}}
+\DoxyCodeLine{print\ \$exporter-\/>export(chr(0)\ .\ chr(1)\ .\ chr(2)\ .\ chr(3)\ .\ chr(4)\ .\ chr(5));}
+
+\end{DoxyCode}
+
+
+Exporting complex types\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter}{SebastianBergmann\(\backslash\)Exporter\(\backslash\)Exporter}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$exporter\ =\ \textcolor{keyword}{new}\ Exporter;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{/*}}
+\DoxyCodeLine{\textcolor{comment}{Array\ \&0\ (}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 0\ =>\ Array\ \&1\ (}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ \ \ \ \ 0\ =>\ 1}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ \ \ \ \ 1\ =>\ 2}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ \ \ \ \ 2\ =>\ 3}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ )}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 1\ =>\ Array\ \&2\ (}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ \ \ \ \ 0\ =>\ ''}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ \ \ \ \ 1\ =>\ 0}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ \ \ \ \ 2\ =>\ false}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ )}}
+\DoxyCodeLine{\textcolor{comment}{)}}
+\DoxyCodeLine{\textcolor{comment}{*/}}
+\DoxyCodeLine{}
+\DoxyCodeLine{print\ \$exporter-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter_af23aed8e450c37e8d18b81480b2249c3}{export}}(array(array(1,2,3),\ array(\textcolor{stringliteral}{"{}"{}},0,FALSE)));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{/*}}
+\DoxyCodeLine{\textcolor{comment}{Array\ \&0\ (}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 'self'\ =>\ Array\ \&1\ (}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ \ \ \ \ 'self'\ =>\ Array\ \&1}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ )}}
+\DoxyCodeLine{\textcolor{comment}{)}}
+\DoxyCodeLine{\textcolor{comment}{*/}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$array\ =\ array();}
+\DoxyCodeLine{\$array[\textcolor{stringliteral}{'self'}]\ =\ \&\$array;}
+\DoxyCodeLine{print\ \$exporter-\/>export(\$array);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{/*}}
+\DoxyCodeLine{\textcolor{comment}{stdClass\ Object\ \&0000000003a66dcc0000000025e723e2\ (}}
+\DoxyCodeLine{\textcolor{comment}{\ \ \ \ 'self'\ =>\ stdClass\ Object\ \&0000000003a66dcc0000000025e723e2}}
+\DoxyCodeLine{\textcolor{comment}{)}}
+\DoxyCodeLine{\textcolor{comment}{*/}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$obj\ =\ \textcolor{keyword}{new}\ stdClass();}
+\DoxyCodeLine{\$obj-\/>self\ =\ \$obj;}
+\DoxyCodeLine{print\ \$exporter-\/>export(\$obj);}
+
+\end{DoxyCode}
+
+
+Compact exports\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter}{SebastianBergmann\(\backslash\)Exporter\(\backslash\)Exporter}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$exporter\ =\ \textcolor{keyword}{new}\ Exporter;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Array\ ()}}
+\DoxyCodeLine{print\ \$exporter-\/>\mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a51cd95eb293ec63b634df6ea66d6cfec}{shortenedExport}}(array());}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Array\ (...)}}
+\DoxyCodeLine{print\ \$exporter-\/>shortenedExport(array(1,2,3,4,5));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ stdClass\ Object\ ()}}
+\DoxyCodeLine{print\ \$exporter-\/>shortenedExport(\textcolor{keyword}{new}\ stdClass);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Exception\ Object\ (...)}}
+\DoxyCodeLine{print\ \$exporter-\/>shortenedExport(\textcolor{keyword}{new}\ Exception);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ this\(\backslash\)nis\(\backslash\)na\(\backslash\)nsuper\(\backslash\)nlong\(\backslash\)nstring\(\backslash\)nt...\(\backslash\)nspace}}
+\DoxyCodeLine{print\ \$exporter-\/>shortenedExport(}
+\DoxyCodeLine{<<<LONG\_STRING}
+\DoxyCodeLine{\textcolor{keyword}{this}}
+\DoxyCodeLine{is}
+\DoxyCodeLine{a}
+\DoxyCodeLine{super}
+\DoxyCodeLine{\textcolor{keywordtype}{long}}
+\DoxyCodeLine{\textcolor{keywordtype}{string}}
+\DoxyCodeLine{that}
+\DoxyCodeLine{wraps}
+\DoxyCodeLine{a}
+\DoxyCodeLine{lot}
+\DoxyCodeLine{and}
+\DoxyCodeLine{eats}
+\DoxyCodeLine{up}
+\DoxyCodeLine{a}
+\DoxyCodeLine{lot}
+\DoxyCodeLine{of}
+\DoxyCodeLine{space}
+\DoxyCodeLine{LONG\_STRING}
+\DoxyCodeLine{);}
+
+\end{DoxyCode}
+ 

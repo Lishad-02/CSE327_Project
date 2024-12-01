@@ -1,0 +1,98 @@
+\doxysection{Declaration Class Reference}
+\hypertarget{class_php_parser_1_1_builder_1_1_declaration}{}\label{class_php_parser_1_1_builder_1_1_declaration}\index{Declaration@{Declaration}}
+Inheritance diagram for Declaration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_php_parser_1_1_builder_1_1_declaration}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_a84285314df11d1a21c01569981967d27}{add\+Stmt}} (\$stmt)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_a5c42f122153c4d02ae24d12b50712f0d}{add\+Stmts}} (array \$stmts)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_a7331d24646c54f9d8f98ecf7bc5827bd}{set\+Doc\+Comment}} (\$doc\+Comment)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_builder}{Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_builder_a3a0d17930cbcc57bef84064afcc1a837}{get\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_declaration_ac89f2733f3f084f1e693e13afbb67739}{\$attributes}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_declaration_a84285314df11d1a21c01569981967d27}\index{Declaration@{Declaration}!addStmt@{addStmt}}
+\index{addStmt@{addStmt}!Declaration@{Declaration}}
+\doxysubsubsection{\texorpdfstring{addStmt()}{addStmt()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_declaration_a84285314df11d1a21c01569981967d27} 
+add\+Stmt (\begin{DoxyParamCaption}\item[{}]{\$stmt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Adds a statement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Php\+Parser\textbackslash{}\+Node\textbackslash{}\+Stmt | Php\+Parser\textbackslash{}\+Builder & {\em \$stmt} & The statement to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_class___a84285314df11d1a21c01569981967d27}{Class\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_enum___a84285314df11d1a21c01569981967d27}{Enum\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_function___a84285314df11d1a21c01569981967d27}{Function\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_interface___a84285314df11d1a21c01569981967d27}{Interface\+\_\+}}, \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_method_a84285314df11d1a21c01569981967d27}{Method}}, \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_namespace___a84285314df11d1a21c01569981967d27}{Namespace\+\_\+}}, and \mbox{\hyperlink{class_php_parser_1_1_builder_1_1_trait___a84285314df11d1a21c01569981967d27}{Trait\+\_\+}}.
+
+\Hypertarget{class_php_parser_1_1_builder_1_1_declaration_a5c42f122153c4d02ae24d12b50712f0d}\index{Declaration@{Declaration}!addStmts@{addStmts}}
+\index{addStmts@{addStmts}!Declaration@{Declaration}}
+\doxysubsubsection{\texorpdfstring{addStmts()}{addStmts()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_declaration_a5c42f122153c4d02ae24d12b50712f0d} 
+add\+Stmts (\begin{DoxyParamCaption}\item[{array}]{\$stmts}{}\end{DoxyParamCaption})}
+
+Adds multiple statements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (\+Php\+Parser} & \\
+\hline
+\end{DoxyParams}
+Node\textbackslash{}\+Stmt\texorpdfstring{$\vert$}{|}\+Php\+Parser\textbackslash{}\+Builder)\mbox{[}\mbox{]} \$stmts The statements to add
+
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_builder_1_1_declaration_a7331d24646c54f9d8f98ecf7bc5827bd}\index{Declaration@{Declaration}!setDocComment@{setDocComment}}
+\index{setDocComment@{setDocComment}!Declaration@{Declaration}}
+\doxysubsubsection{\texorpdfstring{setDocComment()}{setDocComment()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_declaration_a7331d24646c54f9d8f98ecf7bc5827bd} 
+set\+Doc\+Comment (\begin{DoxyParamCaption}\item[{}]{\$doc\+Comment}{}\end{DoxyParamCaption})}
+
+Sets doc comment for the declaration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Php\+Parser\textbackslash{}\+Comment\textbackslash{}\+Doc | string & {\em \$doc\+Comment} & Doc comment to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this The builder instance (for fluid interface) 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_builder_1_1_declaration_ac89f2733f3f084f1e693e13afbb67739}\index{Declaration@{Declaration}!\$attributes@{\$attributes}}
+\index{\$attributes@{\$attributes}!Declaration@{Declaration}}
+\doxysubsubsection{\texorpdfstring{\$attributes}{\$attributes}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_builder_1_1_declaration_ac89f2733f3f084f1e693e13afbb67739} 
+array \$attributes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Builder/\mbox{\hyperlink{_declaration_8php}{Declaration.\+php}}\end{DoxyCompactItemize}

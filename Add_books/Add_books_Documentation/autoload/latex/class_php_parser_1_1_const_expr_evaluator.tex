@@ -1,0 +1,107 @@
+\doxysection{Const\+Expr\+Evaluator Class Reference}
+\hypertarget{class_php_parser_1_1_const_expr_evaluator}{}\label{class_php_parser_1_1_const_expr_evaluator}\index{ConstExprEvaluator@{ConstExprEvaluator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_const_expr_evaluator_a124afcc464851fd5505d7a603c799726}{\+\_\+\+\_\+construct}} (?callable \$fallback\+Evaluator=null)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_const_expr_evaluator_a926e9a9664604b95ec73cdffa2cd8429}{evaluate\+Silently}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}} \$expr)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_const_expr_evaluator_aca590c5cc9c182a5fc87c0cef6764e33}{evaluate\+Directly}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}} \$expr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Evaluates constant expressions.
+
+This evaluator is able to evaluate all constant expressions (as defined by PHP), which can be evaluated without further context. If a subexpression is not of this type, a user-\/provided fallback evaluator is invoked. To support all constant expressions that are also supported by PHP (and not already handled by this class), the fallback evaluator must be able to handle the following node types\+:
+
+
+\begin{DoxyItemize}
+\item All Scalar\textbackslash{}\+Magic\+Const\texorpdfstring{$\ast$}{*} nodes.
+\item Expr\textbackslash{}\+Const\+Fetch nodes. Only null/false/true are already handled by this class.
+\item Expr\textbackslash{}\+Class\+Const\+Fetch nodes.
+\end{DoxyItemize}
+
+The fallback evaluator should throw Const\+Expr\+Evaluation\+Exception for nodes it cannot evaluate.
+
+The evaluation is dependent on runtime configuration in two respects\+: Firstly, floating point to string conversions are affected by the precision ini setting. Secondly, they are also affected by the LC\+\_\+\+NUMERIC locale. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_const_expr_evaluator_a124afcc464851fd5505d7a603c799726}\index{ConstExprEvaluator@{ConstExprEvaluator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ConstExprEvaluator@{ConstExprEvaluator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_const_expr_evaluator_a124afcc464851fd5505d7a603c799726} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?callable}]{\$fallback\+Evaluator}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a constant expression evaluator.
+
+The provided fallback evaluator is invoked whenever a subexpression cannot be evaluated. See class doc comment for more information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$fallback\+Evaluator} & To call if subexpression cannot be evaluated \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_const_expr_evaluator_aca590c5cc9c182a5fc87c0cef6764e33}\index{ConstExprEvaluator@{ConstExprEvaluator}!evaluateDirectly@{evaluateDirectly}}
+\index{evaluateDirectly@{evaluateDirectly}!ConstExprEvaluator@{ConstExprEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateDirectly()}{evaluateDirectly()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_const_expr_evaluator_aca590c5cc9c182a5fc87c0cef6764e33} 
+evaluate\+Directly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}}}]{\$expr}{}\end{DoxyParamCaption})}
+
+Directly evaluates a constant expression into a PHP value.
+
+May generate Error exceptions, warnings or notices. Use evaluate\+Silently() to convert these into a Const\+Expr\+Evaluation\+Exception.
+
+If some part of the expression cannot be evaluated, the fallback evaluator passed to the constructor will be invoked. By default, if no fallback is provided, an exception of type Const\+Expr\+Evaluation\+Exception is thrown.
+
+See class doc comment for caveats and limitations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Expr & {\em \$expr} & Constant expression to evaluate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Result of evaluation
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Const\+Expr\+Evaluation\+Exception} & if the expression cannot be evaluated \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_php_parser_1_1_const_expr_evaluator_a926e9a9664604b95ec73cdffa2cd8429}\index{ConstExprEvaluator@{ConstExprEvaluator}!evaluateSilently@{evaluateSilently}}
+\index{evaluateSilently@{evaluateSilently}!ConstExprEvaluator@{ConstExprEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateSilently()}{evaluateSilently()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_const_expr_evaluator_a926e9a9664604b95ec73cdffa2cd8429} 
+evaluate\+Silently (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr}{Expr}}}]{\$expr}{}\end{DoxyParamCaption})}
+
+Silently evaluates a constant expression into a PHP value.
+
+Thrown Errors, warnings or notices will be converted into a Const\+Expr\+Evaluation\+Exception. The original source of the exception is available through get\+Previous().
+
+If some part of the expression cannot be evaluated, the fallback evaluator passed to the constructor will be invoked. By default, if no fallback is provided, an exception of type Const\+Expr\+Evaluation\+Exception is thrown.
+
+See class doc comment for caveats and limitations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Expr & {\em \$expr} & Constant expression to evaluate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Result of evaluation
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Const\+Expr\+Evaluation\+Exception} & if the expression cannot be evaluated or an error occurred \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{_const_expr_evaluator_8php}{Const\+Expr\+Evaluator.\+php}}\end{DoxyCompactItemize}

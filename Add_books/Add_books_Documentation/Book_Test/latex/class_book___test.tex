@@ -1,0 +1,79 @@
+\doxysection{Book\+\_\+\+Test Class Reference}
+\hypertarget{class_book___test}{}\label{class_book___test}\index{Book\_Test@{Book\_Test}}
+
+
+A test case for the book-\/related functionalities.  
+
+
+Inheritance diagram for Book\+\_\+\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_book___test}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_book___test_a0bc688732d2b3b162ffebaf7812e78da}{set\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Sets up the database connection for testing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_book___test_a8b3ebf0d65850c901e06b2aadac8d2d1}{test\+\_\+add\+\_\+new\+\_\+book}} ()
+\begin{DoxyCompactList}\small\item\em Tests the addition of a new book. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_book___test_a80fe3d17e658907fc75346a0ec9d6fc7}{tear\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Tears down the database connection after each test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_book___test_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A test case for the book-\/related functionalities. 
+
+This class tests the functionality of adding a new book to the database. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_book___test_a0bc688732d2b3b162ffebaf7812e78da}\index{Book\_Test@{Book\_Test}!setUp@{setUp}}
+\index{setUp@{setUp}!Book\_Test@{Book\_Test}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily \label{class_book___test_a0bc688732d2b3b162ffebaf7812e78da} 
+set\+Up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sets up the database connection for testing. 
+
+This method establishes a connection to the test database before each test. It checks if the connection is successful and halts execution if the connection fails. \Hypertarget{class_book___test_a80fe3d17e658907fc75346a0ec9d6fc7}\index{Book\_Test@{Book\_Test}!tearDown@{tearDown}}
+\index{tearDown@{tearDown}!Book\_Test@{Book\_Test}}
+\doxysubsubsection{\texorpdfstring{tearDown()}{tearDown()}}
+{\footnotesize\ttfamily \label{class_book___test_a80fe3d17e658907fc75346a0ec9d6fc7} 
+tear\+Down (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tears down the database connection after each test. 
+
+This method closes the database connection after the test has finished. \Hypertarget{class_book___test_a8b3ebf0d65850c901e06b2aadac8d2d1}\index{Book\_Test@{Book\_Test}!test\_add\_new\_book@{test\_add\_new\_book}}
+\index{test\_add\_new\_book@{test\_add\_new\_book}!Book\_Test@{Book\_Test}}
+\doxysubsubsection{\texorpdfstring{test\_add\_new\_book()}{test\_add\_new\_book()}}
+{\footnotesize\ttfamily \label{class_book___test_a8b3ebf0d65850c901e06b2aadac8d2d1} 
+test\+\_\+add\+\_\+new\+\_\+book (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tests the addition of a new book. 
+
+This test inserts a new book into the database, then verifies that the book was successfully added. It also performs a cleanup by removing the test book from the database after verification. 
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_book___test_aa8a5a87b9c1a6a0819b88447cbe41877}\index{Book\_Test@{Book\_Test}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!Book\_Test@{Book\_Test}}
+\doxysubsubsection{\texorpdfstring{\$conn}{\$conn}}
+{\footnotesize\ttfamily \label{class_book___test_aa8a5a87b9c1a6a0819b88447cbe41877} 
+\$conn\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/tests/\mbox{\hyperlink{_book___test_8php}{Book\+\_\+\+Test.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,344 @@
+\doxysection{Test\+Suite Class Reference}
+\hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite}{}\label{class_p_h_p_unit_1_1_framework_1_1_test_suite}\index{TestSuite@{TestSuite}}
+Inheritance diagram for Test\+Suite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p_unit_1_1_framework_1_1_test_suite}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a1dcf90ac3f5d43c51af1546dcc0effd6}{add\+Test}} (\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_test}{Test}} \$test, array \$groups=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a88b0f9af45c489da35203697f66fe6da}{add\+Test\+Suite}} (Reflection\+Class \$test\+Class, array \$groups=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_ad7ba420b88178f527ea0ff867ebd585a}{add\+Test\+File}} (string \$filename, array \$groups=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_ae48a22f32160f83b78c5ac9306bc7a79}{add\+Test\+Files}} (iterable \$file\+Names)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_aedcc52b3673b8df9425e52f13accb2a1}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a4b516aaa5fa38da4fed24ab6001627e2}{name}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a588875f15c8c2e84bf94a6a3b75cf562}{groups}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_abd38cbf58ce99ee77abe51199d143d99}{collect}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a4f7cb59970abda717113cc0e51d0b71b}{tests}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a1607846b217222c6cdb30a847bdd0379}{set\+Tests}} (array \$tests)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a029b49773e278e211b6d96db53c36eb5}{mark\+Test\+Suite\+Skipped}} (string \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a3d96a04129ccf3272302c2d1633877d4}{inject\+Filter}} (\mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_filter_1_1_factory}{Factory}} \$filter)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a121c1b201a74841aa007403c17e87c0b}{provides}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a4bee1553847d115c273409bd4ca9e44a}{sort\+Id}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_adf72183f7d1f568a66817cd75866f38a}{is\+For\+Test\+Class}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_reorderable}{Reorderable}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_test}{Test}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_test_afb0fafe7e02a3ae1993c01c19fad2bae}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_af223b1fb63182ed247407f519951f80b}{empty}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a5412bd0f2c2692be8df3a4d9c77ce267}{from\+Class\+Reflector}} (Reflection\+Class \$class, array \$groups=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+function \+: array \{ \mbox{\hyperlink{autoload_8php_a26d062d8da79dc83e81e01fd4d82c715}{if}} (\$this-\/$>$required\+Tests === null) \{ \$this-\/$>$required\+Tests = \mbox{[}$\,$\mbox{]}
+\item 
+foreach(\$this-\/$>$tests as \$test) \$this \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a005a1b6c31c9194b51626f4e4855db14}{required\+Tests}} = Execution\+Order\+Dependency\+::diff(\$this-\/$>$required\+Tests, \$this-\/$>$provides())
+\item 
+return \$this \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a876f9928cf9c5f029947b81ddea767e6}{required\+Tests}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_reorderable}{Reorderable}}}
+\begin{DoxyCompactItemize}
+\item 
+function \+: array
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_suite_a43249df755c7740e99851b3552cb5154}{add\+Test\+Method}} (Reflection\+Class \$class, Reflection\+Method \$method, array \$groups)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@template-\/implements Iterator\+Aggregate$<$int, Test$>$
+
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \doxylink{namespace_p_h_p_unit}{PHPUnit} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a1dcf90ac3f5d43c51af1546dcc0effd6}\index{TestSuite@{TestSuite}!addTest@{addTest}}
+\index{addTest@{addTest}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{addTest()}{addTest()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a1dcf90ac3f5d43c51af1546dcc0effd6} 
+add\+Test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_test}{Test}}}]{\$test}{, }\item[{array}]{\$groups}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a test to the suite.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$non-\/empty-\/string$>$} & \$groups \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_ad7ba420b88178f527ea0ff867ebd585a}\index{TestSuite@{TestSuite}!addTestFile@{addTestFile}}
+\index{addTestFile@{addTestFile}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{addTestFile()}{addTestFile()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_ad7ba420b88178f527ea0ff867ebd585a} 
+add\+Test\+File (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{array}]{\$groups}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Wraps both {\ttfamily add\+Test()} and {\ttfamily add\+Test\+Suite} as well as the separate import statements for the user\textquotesingle{}s convenience.
+
+If the named file cannot be read or there are no new tests that can be added, a {\ttfamily \doxylink{namespace_p_h_p_unit}{PHPUnit}\textbackslash{}\+Framework\textbackslash{}\+Warning\+Test\+Case} will be created instead, leaving the current test run untouched.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$non-\/empty-\/string$>$} & \$groups\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_ae48a22f32160f83b78c5ac9306bc7a79}\index{TestSuite@{TestSuite}!addTestFiles@{addTestFiles}}
+\index{addTestFiles@{addTestFiles}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{addTestFiles()}{addTestFiles()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_ae48a22f32160f83b78c5ac9306bc7a79} 
+add\+Test\+Files (\begin{DoxyParamCaption}\item[{iterable}]{\$file\+Names}{}\end{DoxyParamCaption})}
+
+Wrapper for add\+Test\+File() that adds multiple test files.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$string$>$} & \$file\+Names\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a43249df755c7740e99851b3552cb5154}\index{TestSuite@{TestSuite}!addTestMethod@{addTestMethod}}
+\index{addTestMethod@{addTestMethod}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{addTestMethod()}{addTestMethod()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a43249df755c7740e99851b3552cb5154} 
+add\+Test\+Method (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$class}{, }\item[{Reflection\+Method}]{\$method}{, }\item[{array}]{\$groups}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Reflection\+Class$<$\+Test\+Case$>$} & \$class \\
+\hline
+{\em list$<$non-\/empty-\/string$>$} & \$groups\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a88b0f9af45c489da35203697f66fe6da}\index{TestSuite@{TestSuite}!addTestSuite@{addTestSuite}}
+\index{addTestSuite@{addTestSuite}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{addTestSuite()}{addTestSuite()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a88b0f9af45c489da35203697f66fe6da} 
+add\+Test\+Suite (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$test\+Class}{, }\item[{array}]{\$groups}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds the tests from the given class to the suite.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Reflection\+Class$<$\+Test\+Case$>$} & \$test\+Class \\
+\hline
+{\em list$<$non-\/empty-\/string$>$} & \$groups\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_abd38cbf58ce99ee77abe51199d143d99}\index{TestSuite@{TestSuite}!collect@{collect}}
+\index{collect@{collect}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{collect()}{collect()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_abd38cbf58ce99ee77abe51199d143d99} 
+collect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+list\texorpdfstring{$<$}{<}Phpt\+Test\+Case\texorpdfstring{$\vert$}{|}\+Test\+Case\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_ac751e87b3d4c4bf2feb03bee8b092755}\index{TestSuite@{TestSuite}!count@{count}}
+\index{count@{count}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_ac751e87b3d4c4bf2feb03bee8b092755} 
+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Counts the number of test cases that will be run by this test. \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_af223b1fb63182ed247407f519951f80b}\index{TestSuite@{TestSuite}!empty@{empty}}
+\index{empty@{empty}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_af223b1fb63182ed247407f519951f80b} 
+static empty (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a5412bd0f2c2692be8df3a4d9c77ce267}\index{TestSuite@{TestSuite}!fromClassReflector@{fromClassReflector}}
+\index{fromClassReflector@{fromClassReflector}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{fromClassReflector()}{fromClassReflector()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a5412bd0f2c2692be8df3a4d9c77ce267} 
+static from\+Class\+Reflector (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$class}{, }\item[{array}]{\$groups}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Reflection\+Class$<$\+Test\+Case$>$} & \$class \\
+\hline
+{\em list$<$non-\/empty-\/string$>$} & \$groups \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a7a9f937c2958e6f4dd7b030f86fb70b7}\index{TestSuite@{TestSuite}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a7a9f937c2958e6f4dd7b030f86fb70b7} 
+get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an iterator for this test suite. \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a588875f15c8c2e84bf94a6a3b75cf562}\index{TestSuite@{TestSuite}!groups@{groups}}
+\index{groups@{groups}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{groups()}{groups()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a588875f15c8c2e84bf94a6a3b75cf562} 
+groups (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}non-\/empty-\/string, list\texorpdfstring{$<$}{<}non-\/empty-\/string\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a3d96a04129ccf3272302c2d1633877d4}\index{TestSuite@{TestSuite}!injectFilter@{injectFilter}}
+\index{injectFilter@{injectFilter}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{injectFilter()}{injectFilter()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a3d96a04129ccf3272302c2d1633877d4} 
+inject\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_runner_1_1_filter_1_1_factory}{Factory}}}]{\$filter}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_aedcc52b3673b8df9425e52f13accb2a1}\index{TestSuite@{TestSuite}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_aedcc52b3673b8df9425e52f13accb2a1} 
+is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_adf72183f7d1f568a66817cd75866f38a}\index{TestSuite@{TestSuite}!isForTestClass@{isForTestClass}}
+\index{isForTestClass@{isForTestClass}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{isForTestClass()}{isForTestClass()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_adf72183f7d1f568a66817cd75866f38a} 
+is\+For\+Test\+Class (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@phpstan-\/assert-\/if-\/true class-\/string$<$\+Test\+Case$>$ \$this-\/\texorpdfstring{$>$}{>}name \Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a029b49773e278e211b6d96db53c36eb5}\index{TestSuite@{TestSuite}!markTestSuiteSkipped@{markTestSuiteSkipped}}
+\index{markTestSuiteSkipped@{markTestSuiteSkipped}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{markTestSuiteSkipped()}{markTestSuiteSkipped()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a029b49773e278e211b6d96db53c36eb5} 
+mark\+Test\+Suite\+Skipped (\begin{DoxyParamCaption}\item[{string}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Mark the test suite as skipped.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Skipped\+Test\+Suite\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a4b516aaa5fa38da4fed24ab6001627e2}\index{TestSuite@{TestSuite}!name@{name}}
+\index{name@{name}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a4b516aaa5fa38da4fed24ab6001627e2} 
+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+non-\/empty-\/string 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a121c1b201a74841aa007403c17e87c0b}\index{TestSuite@{TestSuite}!provides@{provides}}
+\index{provides@{provides}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{provides()}{provides()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a121c1b201a74841aa007403c17e87c0b} 
+provides (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Execution\+Order\+Dependency$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_reorderable_a121c1b201a74841aa007403c17e87c0b}{Reorderable}}.
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a1607846b217222c6cdb30a847bdd0379}\index{TestSuite@{TestSuite}!setTests@{setTests}}
+\index{setTests@{setTests}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{setTests()}{setTests()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a1607846b217222c6cdb30a847bdd0379} 
+set\+Tests (\begin{DoxyParamCaption}\item[{array}]{\$tests}{}\end{DoxyParamCaption})}
+
+Set tests of the test suite.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$\+Test$>$} & \$tests \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a4bee1553847d115c273409bd4ca9e44a}\index{TestSuite@{TestSuite}!sortId@{sortId}}
+\index{sortId@{sortId}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{sortId()}{sortId()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a4bee1553847d115c273409bd4ca9e44a} 
+sort\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_reorderable_a4bee1553847d115c273409bd4ca9e44a}{Reorderable}}.
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a4f7cb59970abda717113cc0e51d0b71b}\index{TestSuite@{TestSuite}!tests@{tests}}
+\index{tests@{tests}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{tests()}{tests()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a4f7cb59970abda717113cc0e51d0b71b} 
+tests (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the tests as an enumeration.
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Test$>$ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_aca36b68c12b6c6204e5f925a7ab3233d}\index{TestSuite@{TestSuite}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_aca36b68c12b6c6204e5f925a7ab3233d} 
+function \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Execution\+Order\+Dependency$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a005a1b6c31c9194b51626f4e4855db14}\index{TestSuite@{TestSuite}!requiredTests@{requiredTests}}
+\index{requiredTests@{requiredTests}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{requiredTests}{requiredTests}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a005a1b6c31c9194b51626f4e4855db14} 
+foreach ( \$this-\/$>$tests as \$test) \$this required\+Tests = Execution\+Order\+Dependency\+::diff(\$this-\/$>$required\+Tests, \$this-\/$>$provides())}
+
+\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_suite_a876f9928cf9c5f029947b81ddea767e6}\index{TestSuite@{TestSuite}!requiredTests@{requiredTests}}
+\index{requiredTests@{requiredTests}!TestSuite@{TestSuite}}
+\doxysubsubsection{\texorpdfstring{requiredTests}{requiredTests}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_framework_1_1_test_suite_a876f9928cf9c5f029947b81ddea767e6} 
+return \$this required\+Tests}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/phpunit/src/\+Framework/\mbox{\hyperlink{_framework_2_test_suite_8php}{Test\+Suite.\+php}}\end{DoxyCompactItemize}

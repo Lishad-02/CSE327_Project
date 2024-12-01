@@ -1,0 +1,177 @@
+\doxysection{Php\+Version Class Reference}
+\hypertarget{class_php_parser_1_1_php_version}{}\label{class_php_parser_1_1_php_version}\index{PhpVersion@{PhpVersion}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a8b9ebaf7acccd766ccb9422b020ffc48}{equals}} (\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \$other)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a7abae5c30e4d0b346f80a5eb5fb3f017}{newer\+Or\+Equal}} (\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \$other)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a0b43d5cceec554b2425f1abbe114c89b}{older}} (\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \$other)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a22349af7bc740fccd34e30b74d873e3a}{is\+Host\+Version}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a4af6a8c060efa3ca4aca7e30ba04eb5c}{supports\+Builtin\+Type}} (string \$type)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a3ee1367584ccc1130d8cfeb9c8922755}{supports\+Short\+Array\+Syntax}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_ad1a604be58c5a5826351589252a422ee}{supports\+Short\+Array\+Destructuring}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a269271a642867fa410eef9dce1354818}{supports\+Flexible\+Heredoc}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_ac30f23810e890d0eabafb8bb0829a713}{supports\+Trailing\+Comma\+In\+Param\+List}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a46dfd175b9242d64d6876e7e12d63276}{allows\+Assign\+New\+By\+Reference}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a26df956e85c658b6484b998bff6dfc3c}{allows\+Invalid\+Octals}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_a4e9799984e019657a545003eee326872}{allows\+Del\+In\+Identifiers}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_af4db9a0280f8113dbba56a5f72fb5128}{supports\+Yield\+Without\+Parentheses}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_php_version_ab06238d772c8d0596e2c5d88a55e6293}{supports\+Unicode\+Escapes}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_php_version_a8dc396f49cfceb19f69a7f3ce25e36ab}{from\+Components}} (int \$major, int \$minor)
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_php_version_ae8877e962883bc5555ea096f0bceba51}{get\+Newest\+Supported}} ()
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_php_version_a963b6c819d60622a99158b6dbca7399c}{get\+Host\+Version}} ()
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_php_version_af3dd5230fc4efb06b76a3730ed77bc89}{from\+String}} (string \$version)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_php_parser_1_1_php_version_a3587bd00e5602c1800515b6f9ffbebc5}{\$id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A PHP version, representing only the major and minor version components. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_php_version_a46dfd175b9242d64d6876e7e12d63276}\index{PhpVersion@{PhpVersion}!allowsAssignNewByReference@{allowsAssignNewByReference}}
+\index{allowsAssignNewByReference@{allowsAssignNewByReference}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{allowsAssignNewByReference()}{allowsAssignNewByReference()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a46dfd175b9242d64d6876e7e12d63276} 
+allows\+Assign\+New\+By\+Reference (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether this version allows "{}\$var =\& new Obj"{}. \Hypertarget{class_php_parser_1_1_php_version_a4e9799984e019657a545003eee326872}\index{PhpVersion@{PhpVersion}!allowsDelInIdentifiers@{allowsDelInIdentifiers}}
+\index{allowsDelInIdentifiers@{allowsDelInIdentifiers}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{allowsDelInIdentifiers()}{allowsDelInIdentifiers()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a4e9799984e019657a545003eee326872} 
+allows\+Del\+In\+Identifiers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether this version allows DEL (\textbackslash{}x7f) to occur in identifiers. \Hypertarget{class_php_parser_1_1_php_version_a26df956e85c658b6484b998bff6dfc3c}\index{PhpVersion@{PhpVersion}!allowsInvalidOctals@{allowsInvalidOctals}}
+\index{allowsInvalidOctals@{allowsInvalidOctals}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{allowsInvalidOctals()}{allowsInvalidOctals()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a26df956e85c658b6484b998bff6dfc3c} 
+allows\+Invalid\+Octals (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether this version allows invalid octals like "{}08"{}. \Hypertarget{class_php_parser_1_1_php_version_a8b9ebaf7acccd766ccb9422b020ffc48}\index{PhpVersion@{PhpVersion}!equals@{equals}}
+\index{equals@{equals}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a8b9ebaf7acccd766ccb9422b020ffc48} 
+equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}}}]{\$other}{}\end{DoxyParamCaption})}
+
+Check whether two versions are the same. \Hypertarget{class_php_parser_1_1_php_version_a8dc396f49cfceb19f69a7f3ce25e36ab}\index{PhpVersion@{PhpVersion}!fromComponents@{fromComponents}}
+\index{fromComponents@{fromComponents}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{fromComponents()}{fromComponents()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a8dc396f49cfceb19f69a7f3ce25e36ab} 
+static from\+Components (\begin{DoxyParamCaption}\item[{int}]{\$major}{, }\item[{int}]{\$minor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a Php\+Version object from major and minor version components. \Hypertarget{class_php_parser_1_1_php_version_af3dd5230fc4efb06b76a3730ed77bc89}\index{PhpVersion@{PhpVersion}!fromString@{fromString}}
+\index{fromString@{fromString}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_af3dd5230fc4efb06b76a3730ed77bc89} 
+static from\+String (\begin{DoxyParamCaption}\item[{string}]{\$version}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parse the version from a string like "{}8.\+1"{}. \Hypertarget{class_php_parser_1_1_php_version_a963b6c819d60622a99158b6dbca7399c}\index{PhpVersion@{PhpVersion}!getHostVersion@{getHostVersion}}
+\index{getHostVersion@{getHostVersion}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{getHostVersion()}{getHostVersion()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a963b6c819d60622a99158b6dbca7399c} 
+static get\+Host\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the host PHP version, that is the PHP version we\textquotesingle{}re currently running on. \Hypertarget{class_php_parser_1_1_php_version_ae8877e962883bc5555ea096f0bceba51}\index{PhpVersion@{PhpVersion}!getNewestSupported@{getNewestSupported}}
+\index{getNewestSupported@{getNewestSupported}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{getNewestSupported()}{getNewestSupported()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_ae8877e962883bc5555ea096f0bceba51} 
+static get\+Newest\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the newest PHP version supported by this library. Support for this version may be partial, if it is still under development. \Hypertarget{class_php_parser_1_1_php_version_a22349af7bc740fccd34e30b74d873e3a}\index{PhpVersion@{PhpVersion}!isHostVersion@{isHostVersion}}
+\index{isHostVersion@{isHostVersion}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{isHostVersion()}{isHostVersion()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a22349af7bc740fccd34e30b74d873e3a} 
+is\+Host\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Check whether this is the host PHP version. \Hypertarget{class_php_parser_1_1_php_version_a7abae5c30e4d0b346f80a5eb5fb3f017}\index{PhpVersion@{PhpVersion}!newerOrEqual@{newerOrEqual}}
+\index{newerOrEqual@{newerOrEqual}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{newerOrEqual()}{newerOrEqual()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a7abae5c30e4d0b346f80a5eb5fb3f017} 
+newer\+Or\+Equal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}}}]{\$other}{}\end{DoxyParamCaption})}
+
+Check whether this version is greater than or equal to the argument. \Hypertarget{class_php_parser_1_1_php_version_a0b43d5cceec554b2425f1abbe114c89b}\index{PhpVersion@{PhpVersion}!older@{older}}
+\index{older@{older}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{older()}{older()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a0b43d5cceec554b2425f1abbe114c89b} 
+older (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}}}]{\$other}{}\end{DoxyParamCaption})}
+
+Check whether this version is older than the argument. \Hypertarget{class_php_parser_1_1_php_version_a4af6a8c060efa3ca4aca7e30ba04eb5c}\index{PhpVersion@{PhpVersion}!supportsBuiltinType@{supportsBuiltinType}}
+\index{supportsBuiltinType@{supportsBuiltinType}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{supportsBuiltinType()}{supportsBuiltinType()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a4af6a8c060efa3ca4aca7e30ba04eb5c} 
+supports\+Builtin\+Type (\begin{DoxyParamCaption}\item[{string}]{\$type}{}\end{DoxyParamCaption})}
+
+Check whether this PHP version supports the given builtin type. Type name must be lowercase. \Hypertarget{class_php_parser_1_1_php_version_a269271a642867fa410eef9dce1354818}\index{PhpVersion@{PhpVersion}!supportsFlexibleHeredoc@{supportsFlexibleHeredoc}}
+\index{supportsFlexibleHeredoc@{supportsFlexibleHeredoc}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{supportsFlexibleHeredoc()}{supportsFlexibleHeredoc()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a269271a642867fa410eef9dce1354818} 
+supports\+Flexible\+Heredoc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether this version supports flexible heredoc/nowdoc. \Hypertarget{class_php_parser_1_1_php_version_ad1a604be58c5a5826351589252a422ee}\index{PhpVersion@{PhpVersion}!supportsShortArrayDestructuring@{supportsShortArrayDestructuring}}
+\index{supportsShortArrayDestructuring@{supportsShortArrayDestructuring}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{supportsShortArrayDestructuring()}{supportsShortArrayDestructuring()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_ad1a604be58c5a5826351589252a422ee} 
+supports\+Short\+Array\+Destructuring (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether this version supports \mbox{[}\mbox{]} for destructuring. \Hypertarget{class_php_parser_1_1_php_version_a3ee1367584ccc1130d8cfeb9c8922755}\index{PhpVersion@{PhpVersion}!supportsShortArraySyntax@{supportsShortArraySyntax}}
+\index{supportsShortArraySyntax@{supportsShortArraySyntax}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{supportsShortArraySyntax()}{supportsShortArraySyntax()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a3ee1367584ccc1130d8cfeb9c8922755} 
+supports\+Short\+Array\+Syntax (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether this version supports \mbox{[}\mbox{]} array literals. \Hypertarget{class_php_parser_1_1_php_version_ac30f23810e890d0eabafb8bb0829a713}\index{PhpVersion@{PhpVersion}!supportsTrailingCommaInParamList@{supportsTrailingCommaInParamList}}
+\index{supportsTrailingCommaInParamList@{supportsTrailingCommaInParamList}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{supportsTrailingCommaInParamList()}{supportsTrailingCommaInParamList()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_ac30f23810e890d0eabafb8bb0829a713} 
+supports\+Trailing\+Comma\+In\+Param\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether this version supports trailing commas in parameter lists. \Hypertarget{class_php_parser_1_1_php_version_ab06238d772c8d0596e2c5d88a55e6293}\index{PhpVersion@{PhpVersion}!supportsUnicodeEscapes@{supportsUnicodeEscapes}}
+\index{supportsUnicodeEscapes@{supportsUnicodeEscapes}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{supportsUnicodeEscapes()}{supportsUnicodeEscapes()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_ab06238d772c8d0596e2c5d88a55e6293} 
+supports\+Unicode\+Escapes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether this version supports unicode escape sequences in strings. \Hypertarget{class_php_parser_1_1_php_version_af4db9a0280f8113dbba56a5f72fb5128}\index{PhpVersion@{PhpVersion}!supportsYieldWithoutParentheses@{supportsYieldWithoutParentheses}}
+\index{supportsYieldWithoutParentheses@{supportsYieldWithoutParentheses}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{supportsYieldWithoutParentheses()}{supportsYieldWithoutParentheses()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_af4db9a0280f8113dbba56a5f72fb5128} 
+supports\+Yield\+Without\+Parentheses (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether this version supports yield in expression context without parentheses. 
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_php_parser_1_1_php_version_a3587bd00e5602c1800515b6f9ffbebc5}\index{PhpVersion@{PhpVersion}!\$id@{\$id}}
+\index{\$id@{\$id}!PhpVersion@{PhpVersion}}
+\doxysubsubsection{\texorpdfstring{\$id}{\$id}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_php_version_a3587bd00e5602c1800515b6f9ffbebc5} 
+int \$id}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\mbox{\hyperlink{_php_version_8php}{Php\+Version.\+php}}\end{DoxyCompactItemize}

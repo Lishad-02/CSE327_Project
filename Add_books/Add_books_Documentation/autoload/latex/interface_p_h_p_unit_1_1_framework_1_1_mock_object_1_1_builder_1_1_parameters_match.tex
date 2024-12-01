@@ -1,0 +1,72 @@
+\doxysection{Parameters\+Match Interface Reference}
+\hypertarget{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match}{}\label{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match}\index{ParametersMatch@{ParametersMatch}}
+Inheritance diagram for Parameters\+Match\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match_a42548569dba5db774caded5c039ea7d1}{after}} (string \$\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_identity_ae10c2071df6711b22ade2c9d5f7fbe7e}{id}})
+\item 
+\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match_a881f30db2610e3c34c4fdae09e5292f4}{with}} (mixed ... \$arguments)
+\item 
+\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match_a9d778819e7c191d54326bf56d1910d7c}{with\+Any\+Parameters}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_stub}{Stub}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_stub_a6441a0bcd3646c14140058546788c3aa}{will}} (Base\+Stub \$stub)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_identity}{Identity}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_identity_ae10c2071df6711b22ade2c9d5f7fbe7e}{id}} (string \$id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \doxylink{namespace_p_h_p_unit}{PHPUnit} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match_a42548569dba5db774caded5c039ea7d1}\index{ParametersMatch@{ParametersMatch}!after@{after}}
+\index{after@{after}!ParametersMatch@{ParametersMatch}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match_a42548569dba5db774caded5c039ea7d1} 
+after (\begin{DoxyParamCaption}\item[{string}]{\$id}{}\end{DoxyParamCaption})}
+
+Defines the expectation which must occur before the current is valid. 
+
+Implemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_invocation_mocker_a42548569dba5db774caded5c039ea7d1}{Invocation\+Mocker}}.
+
+\Hypertarget{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match_a881f30db2610e3c34c4fdae09e5292f4}\index{ParametersMatch@{ParametersMatch}!with@{with}}
+\index{with@{with}!ParametersMatch@{ParametersMatch}}
+\doxysubsubsection{\texorpdfstring{with()}{with()}}
+{\footnotesize\ttfamily \label{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match_a881f30db2610e3c34c4fdae09e5292f4} 
+with (\begin{DoxyParamCaption}\item[{mixed ...}]{\$arguments}{}\end{DoxyParamCaption})}
+
+Sets the parameters to match for, each parameter to this function will be part of match. To perform specific matches or constraints create a new \doxylink{namespace_p_h_p_unit}{PHPUnit}\textbackslash{}\+Framework\textbackslash{}\+Constraint\textbackslash{}\+Constraint and use it for the parameter. If the parameter value is not a constraint it will use the \doxylink{namespace_p_h_p_unit}{PHPUnit}\textbackslash{}\+Framework\textbackslash{}\+Constraint\textbackslash{}\+Is\+Equal for the value.
+
+Some examples\+: {\ttfamily  // match first parameter with value 2 \$b-\/\texorpdfstring{$>$}{>}with(2); // match first parameter with value \textquotesingle{}smock\textquotesingle{} and second identical to 42 \$b-\/\texorpdfstring{$>$}{>}with(\textquotesingle{}smock\textquotesingle{}, new \doxylink{namespace_p_h_p_unit}{PHPUnit}\textbackslash{}\+Framework\textbackslash{}\+Constraint\textbackslash{}\+Is\+Equal(42)); } 
+
+Implemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_invocation_mocker_a881f30db2610e3c34c4fdae09e5292f4}{Invocation\+Mocker}}.
+
+\Hypertarget{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match_a9d778819e7c191d54326bf56d1910d7c}\index{ParametersMatch@{ParametersMatch}!withAnyParameters@{withAnyParameters}}
+\index{withAnyParameters@{withAnyParameters}!ParametersMatch@{ParametersMatch}}
+\doxysubsubsection{\texorpdfstring{withAnyParameters()}{withAnyParameters()}}
+{\footnotesize\ttfamily \label{interface_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_parameters_match_a9d778819e7c191d54326bf56d1910d7c} 
+with\+Any\+Parameters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sets a rule which allows any kind of parameters.
+
+Some examples\+: {\ttfamily  // match any number of parameters \$b-\/\texorpdfstring{$>$}{>}with\+Any\+Parameters(); } 
+
+Implemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_builder_1_1_invocation_mocker_a9d778819e7c191d54326bf56d1910d7c}{Invocation\+Mocker}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/phpunit/phpunit/src/\+Framework/\+Mock\+Object/\+Runtime/\+Builder/\mbox{\hyperlink{_parameters_match_8php}{Parameters\+Match.\+php}}\end{DoxyCompactItemize}

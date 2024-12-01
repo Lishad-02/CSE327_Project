@@ -1,0 +1,46 @@
+\doxysection{D\+:/\+New folder/3/db\+\_\+test.php File Reference}
+\hypertarget{db__test_8php}{}\label{db__test_8php}\index{D:/New folder/3/db\_test.php@{D:/New folder/3/db\_test.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{db__test_8php_a580989e8e3521433691a0351287f6315}{\$mysqli}} = new mysqli(\textquotesingle{}localhost\textquotesingle{}, \textquotesingle{}root\textquotesingle{}, \textquotesingle{}\textquotesingle{}, \textquotesingle{}test\textquotesingle{})
+\item 
+\mbox{\hyperlink{db__test_8php_a91e754db53fdcdc0e00ad49b22f2429e}{if}} ( \$mysqli-\/$>$connect\+\_\+error)
+\item 
+\mbox{\hyperlink{db__test_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \$mysqli-\/$>$query("{}SHOW TABLES LIKE \textquotesingle{}books\textquotesingle{}"{})
+\item 
+\mbox{\hyperlink{db__test_8php_a91e754db53fdcdc0e00ad49b22f2429e}{if}}(\$result \&\& \$result-\/$>$num\+\_\+rows $>$ 0 \mbox{\hyperlink{db__test_8php_a5be51cadf484ba8802c115b7073cb770}{else}} )
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{db__test_8php_a580989e8e3521433691a0351287f6315}\index{db\_test.php@{db\_test.php}!\$mysqli@{\$mysqli}}
+\index{\$mysqli@{\$mysqli}!db\_test.php@{db\_test.php}}
+\doxysubsubsection{\texorpdfstring{\$mysqli}{\$mysqli}}
+{\footnotesize\ttfamily \label{db__test_8php_a580989e8e3521433691a0351287f6315} 
+\$mysqli = new mysqli(\textquotesingle{}localhost\textquotesingle{}, \textquotesingle{}root\textquotesingle{}, \textquotesingle{}\textquotesingle{}, \textquotesingle{}test\textquotesingle{})}
+
+\Hypertarget{db__test_8php_a112ef069ddc0454086e3d1e6d8d55d07}\index{db\_test.php@{db\_test.php}!\$result@{\$result}}
+\index{\$result@{\$result}!db\_test.php@{db\_test.php}}
+\doxysubsubsection{\texorpdfstring{\$result}{\$result}}
+{\footnotesize\ttfamily \label{db__test_8php_a112ef069ddc0454086e3d1e6d8d55d07} 
+\$result = \$mysqli-\/$>$query("{}SHOW TABLES LIKE \textquotesingle{}books\textquotesingle{}"{})}
+
+\Hypertarget{db__test_8php_a5be51cadf484ba8802c115b7073cb770}\index{db\_test.php@{db\_test.php}!else@{else}}
+\index{else@{else}!db\_test.php@{db\_test.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \label{db__test_8php_a5be51cadf484ba8802c115b7073cb770} 
+\mbox{\hyperlink{db__test_8php_a91e754db53fdcdc0e00ad49b22f2429e}{if}} ( \$result \&\&\$result-\/$>$num\+\_\+rows $>$ 0 else) }
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ echo\ \textcolor{stringliteral}{"{}The\ 'books'\ table\ does\ NOT\ exist!"{}}}
+
+\end{DoxyCode}
+\Hypertarget{db__test_8php_a91e754db53fdcdc0e00ad49b22f2429e}\index{db\_test.php@{db\_test.php}!if@{if}}
+\index{if@{if}!db\_test.php@{db\_test.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily \label{db__test_8php_a91e754db53fdcdc0e00ad49b22f2429e} 
+if(\$mysqli-\/$>$connect\+\_\+error) (\begin{DoxyParamCaption}\item[{}]{\$mysqli-\/$>$}{}\end{DoxyParamCaption})}
+

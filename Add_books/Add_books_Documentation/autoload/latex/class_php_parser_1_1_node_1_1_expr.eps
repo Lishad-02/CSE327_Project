@@ -1,0 +1,390 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 1648.745483
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.303261 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 46 def
+/cols 3 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text 'arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col 'arg1' to 'arg2' of row 'arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(Expr) cw
+(NodeAbstract) cw
+(Node) cw
+(JsonSerializable) cw
+(PrintableNewAnonClassNode) cw
+(ArrayDimFetch) cw
+(Array_) cw
+(ArrowFunction) cw
+(Assign) cw
+(AssignOp) cw
+(AssignRef) cw
+(BinaryOp) cw
+(BitwiseNot) cw
+(BooleanNot) cw
+(CallLike) cw
+(Cast) cw
+(ClassConstFetch) cw
+(Clone_) cw
+(Closure) cw
+(ConstFetch) cw
+(Empty_) cw
+(Error) cw
+(ErrorSuppress) cw
+(Eval_) cw
+(Exit_) cw
+(Include_) cw
+(Instanceof_) cw
+(Isset_) cw
+(List_) cw
+(Match_) cw
+(NullsafePropertyFetch) cw
+(PostDec) cw
+(PostInc) cw
+(PreDec) cw
+(PreInc) cw
+(Print_) cw
+(PropertyFetch) cw
+(ShellExec) cw
+(StaticPropertyFetch) cw
+(Ternary) cw
+(Throw_) cw
+(UnaryMinus) cw
+(UnaryPlus) cw
+(Variable) cw
+(YieldFrom) cw
+(Yield_) cw
+(Scalar) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (Expr) 0.500000 43.000000 box
+ (NodeAbstract) 0.500000 44.000000 box
+ (Node) 0.000000 45.000000 box
+ (JsonSerializable) 1.000000 45.000000 box
+ (PrintableNewAnonClassNode) 1.500000 42.000000 box
+ (ArrayDimFetch) 1.500000 41.000000 box
+ (Array_) 1.500000 40.000000 box
+ (ArrowFunction) 1.500000 39.000000 box
+ (Assign) 1.500000 38.000000 box
+ (AssignOp) 1.500000 37.000000 box
+1.500000 37.000000 mark
+ (AssignRef) 1.500000 36.000000 box
+ (BinaryOp) 1.500000 35.000000 box
+1.500000 35.000000 mark
+ (BitwiseNot) 1.500000 34.000000 box
+ (BooleanNot) 1.500000 33.000000 box
+ (CallLike) 1.500000 32.000000 box
+1.500000 32.000000 mark
+ (Cast) 1.500000 31.000000 box
+1.500000 31.000000 mark
+ (ClassConstFetch) 1.500000 30.000000 box
+ (Clone_) 1.500000 29.000000 box
+ (Closure) 1.500000 28.000000 box
+ (ConstFetch) 1.500000 27.000000 box
+ (Empty_) 1.500000 26.000000 box
+ (Error) 1.500000 25.000000 box
+ (ErrorSuppress) 1.500000 24.000000 box
+ (Eval_) 1.500000 23.000000 box
+ (Exit_) 1.500000 22.000000 box
+ (Include_) 1.500000 21.000000 box
+ (Instanceof_) 1.500000 20.000000 box
+ (Isset_) 1.500000 19.000000 box
+ (List_) 1.500000 18.000000 box
+ (Match_) 1.500000 17.000000 box
+ (NullsafePropertyFetch) 1.500000 16.000000 box
+ (PostDec) 1.500000 15.000000 box
+ (PostInc) 1.500000 14.000000 box
+ (PreDec) 1.500000 13.000000 box
+ (PreInc) 1.500000 12.000000 box
+ (Print_) 1.500000 11.000000 box
+ (PropertyFetch) 1.500000 10.000000 box
+ (ShellExec) 1.500000 9.000000 box
+ (StaticPropertyFetch) 1.500000 8.000000 box
+ (Ternary) 1.500000 7.000000 box
+ (Throw_) 1.500000 6.000000 box
+ (UnaryMinus) 1.500000 5.000000 box
+ (UnaryPlus) 1.500000 4.000000 box
+ (Variable) 1.500000 3.000000 box
+ (YieldFrom) 1.500000 2.000000 box
+ (Yield_) 1.500000 1.000000 box
+ (Scalar) 1.500000 0.000000 box
+1.500000 0.000000 mark
+
+% ----- relations -----
+
+solid
+0 0.500000 43.000000 out
+solid
+1 0.500000 44.000000 in
+solid
+0 0.500000 44.000000 out
+solid
+0.000000 1.000000 45.000000 conn
+solid
+1 0.000000 45.000000 in
+solid
+1 1.000000 45.000000 in
+solid
+1 0.500000 42.250000 out
+solid
+0 0.500000 42.500000 hedge
+solid
+0 0.500000 41.500000 hedge
+solid
+0 0.500000 40.500000 hedge
+solid
+0 0.500000 39.500000 hedge
+solid
+0 0.500000 38.500000 hedge
+solid
+0 0.500000 37.500000 hedge
+solid
+0 0.500000 36.500000 hedge
+solid
+0 0.500000 35.500000 hedge
+solid
+0 0.500000 34.500000 hedge
+solid
+0 0.500000 33.500000 hedge
+solid
+0 0.500000 32.500000 hedge
+solid
+0 0.500000 31.500000 hedge
+solid
+0 0.500000 30.500000 hedge
+solid
+0 0.500000 29.500000 hedge
+solid
+0 0.500000 28.500000 hedge
+solid
+0 0.500000 27.500000 hedge
+solid
+0 0.500000 26.500000 hedge
+solid
+0 0.500000 25.500000 hedge
+solid
+0 0.500000 24.500000 hedge
+solid
+0 0.500000 23.500000 hedge
+solid
+0 0.500000 22.500000 hedge
+solid
+0 0.500000 21.500000 hedge
+solid
+0 0.500000 20.500000 hedge
+solid
+0 0.500000 19.500000 hedge
+solid
+0 0.500000 18.500000 hedge
+solid
+0 0.500000 17.500000 hedge
+solid
+0 0.500000 16.500000 hedge
+solid
+0 0.500000 15.500000 hedge
+solid
+0 0.500000 14.500000 hedge
+solid
+0 0.500000 13.500000 hedge
+solid
+0 0.500000 12.500000 hedge
+solid
+0 0.500000 11.500000 hedge
+solid
+0 0.500000 10.500000 hedge
+solid
+0 0.500000 9.500000 hedge
+solid
+0 0.500000 8.500000 hedge
+solid
+0 0.500000 7.500000 hedge
+solid
+0 0.500000 6.500000 hedge
+solid
+0 0.500000 5.500000 hedge
+solid
+0 0.500000 4.500000 hedge
+solid
+0 0.500000 3.500000 hedge
+solid
+0 0.500000 2.500000 hedge
+solid
+0 0.500000 1.500000 hedge
+solid
+0 0.500000 0.500000 hedge
+solid
+0.500000 43.000000 0.500000 vedge

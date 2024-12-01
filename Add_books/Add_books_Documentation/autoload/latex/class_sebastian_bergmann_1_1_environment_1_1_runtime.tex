@@ -1,0 +1,159 @@
+\doxysection{Runtime Class Reference}
+\hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime}{}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime}\index{Runtime@{Runtime}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a42325c04455b234a6fe2c82afeaf64ed}{can\+Collect\+Code\+Coverage}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a76c61a15accec77d334a14f46e4e0c41}{discards\+Comments}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a3c3100f016305051ea5b902a6eabfb93}{performs\+Just\+In\+Time\+Compilation}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_ae5462faec6e8b35c79aae6c2702cf5b1}{get\+Raw\+Binary}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a138a1d5494c18de73ffa2e00c3710dee}{get\+Binary}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a5fbc8183397fa91dc5a6ba4ea691249e}{get\+Name\+With\+Version}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a8d724cd824fd0febfdee77dfd3a0135a}{get\+Name\+With\+Version\+And\+Code\+Coverage\+Driver}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_af4f72d653429fc10b3afe1bd6229e592}{get\+Vendor\+Url}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_afa8e7a3a646144eab50188b7a805a389}{get\+Version}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_acecff6f517895e8b29d0fa8c01719cad}{has\+Xdebug}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_ad8d8be550e6fd8c5cb85a0e2e4694775}{is\+PHP}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_acf30ff73d108770a401801df1e1a7a2b}{is\+PHPDBG}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_ac8e0875de214299bd91a0acd2e46ccea}{has\+PHPDBGCode\+Coverage}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a905ffbed87de829e9d8497e6520b4fc8}{has\+PCOV}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_abf6c8451c6f8fcf5b17c00dc8938b326}{get\+Current\+Settings}} (array \$values)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a42325c04455b234a6fe2c82afeaf64ed}\index{Runtime@{Runtime}!canCollectCodeCoverage@{canCollectCodeCoverage}}
+\index{canCollectCodeCoverage@{canCollectCodeCoverage}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{canCollectCodeCoverage()}{canCollectCodeCoverage()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a42325c04455b234a6fe2c82afeaf64ed} 
+can\+Collect\+Code\+Coverage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true when Xdebug or PCOV is available or the runtime used is PHPDBG. \Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a76c61a15accec77d334a14f46e4e0c41}\index{Runtime@{Runtime}!discardsComments@{discardsComments}}
+\index{discardsComments@{discardsComments}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{discardsComments()}{discardsComments()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a76c61a15accec77d334a14f46e4e0c41} 
+discards\+Comments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true when Zend OPcache is loaded, enabled, and is configured to discard comments. \Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a138a1d5494c18de73ffa2e00c3710dee}\index{Runtime@{Runtime}!getBinary@{getBinary}}
+\index{getBinary@{getBinary}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{getBinary()}{getBinary()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a138a1d5494c18de73ffa2e00c3710dee} 
+get\+Binary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the escaped path to the binary of the current runtime.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000055}{Deprecated}}]\end{DoxyRefDesc}
+\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_abf6c8451c6f8fcf5b17c00dc8938b326}\index{Runtime@{Runtime}!getCurrentSettings@{getCurrentSettings}}
+\index{getCurrentSettings@{getCurrentSettings}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{getCurrentSettings()}{getCurrentSettings()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_abf6c8451c6f8fcf5b17c00dc8938b326} 
+get\+Current\+Settings (\begin{DoxyParamCaption}\item[{array}]{\$values}{}\end{DoxyParamCaption})}
+
+Parses the loaded php.\+ini file (if any) as well as all additional php.\+ini files from the additional ini dir for a list of all configuration settings loaded from files at startup. Then checks for each php.\+ini setting passed via the {\ttfamily \$values} parameter whether this setting has been changed at runtime. Returns an array of strings where each string has the format {\ttfamily key=value} denoting the name of a changed php.\+ini setting with its new value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$} & \$values\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a3d0963e68bb313b163a73f2803c64600}\index{Runtime@{Runtime}!getName@{getName}}
+\index{getName@{getName}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a5fbc8183397fa91dc5a6ba4ea691249e}\index{Runtime@{Runtime}!getNameWithVersion@{getNameWithVersion}}
+\index{getNameWithVersion@{getNameWithVersion}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{getNameWithVersion()}{getNameWithVersion()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a5fbc8183397fa91dc5a6ba4ea691249e} 
+get\+Name\+With\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a8d724cd824fd0febfdee77dfd3a0135a}\index{Runtime@{Runtime}!getNameWithVersionAndCodeCoverageDriver@{getNameWithVersionAndCodeCoverageDriver}}
+\index{getNameWithVersionAndCodeCoverageDriver@{getNameWithVersionAndCodeCoverageDriver}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{getNameWithVersionAndCodeCoverageDriver()}{getNameWithVersionAndCodeCoverageDriver()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a8d724cd824fd0febfdee77dfd3a0135a} 
+get\+Name\+With\+Version\+And\+Code\+Coverage\+Driver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_ae5462faec6e8b35c79aae6c2702cf5b1}\index{Runtime@{Runtime}!getRawBinary@{getRawBinary}}
+\index{getRawBinary@{getRawBinary}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{getRawBinary()}{getRawBinary()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_ae5462faec6e8b35c79aae6c2702cf5b1} 
+get\+Raw\+Binary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the raw path to the binary of the current runtime.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000054}{Deprecated}}]\end{DoxyRefDesc}
+\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_af4f72d653429fc10b3afe1bd6229e592}\index{Runtime@{Runtime}!getVendorUrl@{getVendorUrl}}
+\index{getVendorUrl@{getVendorUrl}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{getVendorUrl()}{getVendorUrl()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_af4f72d653429fc10b3afe1bd6229e592} 
+get\+Vendor\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_afa8e7a3a646144eab50188b7a805a389}\index{Runtime@{Runtime}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{getVersion()}{getVersion()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_afa8e7a3a646144eab50188b7a805a389} 
+get\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a905ffbed87de829e9d8497e6520b4fc8}\index{Runtime@{Runtime}!hasPCOV@{hasPCOV}}
+\index{hasPCOV@{hasPCOV}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{hasPCOV()}{hasPCOV()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a905ffbed87de829e9d8497e6520b4fc8} 
+has\+PCOV (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true when the runtime used is PHP with PCOV loaded and enabled. \Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_ac8e0875de214299bd91a0acd2e46ccea}\index{Runtime@{Runtime}!hasPHPDBGCodeCoverage@{hasPHPDBGCodeCoverage}}
+\index{hasPHPDBGCodeCoverage@{hasPHPDBGCodeCoverage}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{hasPHPDBGCodeCoverage()}{hasPHPDBGCodeCoverage()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_ac8e0875de214299bd91a0acd2e46ccea} 
+has\+PHPDBGCode\+Coverage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true when the runtime used is PHP with the PHPDBG SAPI and the phpdbg\+\_\+\texorpdfstring{$\ast$}{*}\+\_\+oplog() functions are available (PHP \texorpdfstring{$>$}{>}= 7.\+0). \Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_acecff6f517895e8b29d0fa8c01719cad}\index{Runtime@{Runtime}!hasXdebug@{hasXdebug}}
+\index{hasXdebug@{hasXdebug}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{hasXdebug()}{hasXdebug()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_acecff6f517895e8b29d0fa8c01719cad} 
+has\+Xdebug (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true when the runtime used is PHP and Xdebug is loaded. \Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_ad8d8be550e6fd8c5cb85a0e2e4694775}\index{Runtime@{Runtime}!isPHP@{isPHP}}
+\index{isPHP@{isPHP}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{isPHP()}{isPHP()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_ad8d8be550e6fd8c5cb85a0e2e4694775} 
+is\+PHP (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true when the runtime used is PHP without the PHPDBG SAPI. \Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_acf30ff73d108770a401801df1e1a7a2b}\index{Runtime@{Runtime}!isPHPDBG@{isPHPDBG}}
+\index{isPHPDBG@{isPHPDBG}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{isPHPDBG()}{isPHPDBG()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_acf30ff73d108770a401801df1e1a7a2b} 
+is\+PHPDBG (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true when the runtime used is PHP with the PHPDBG SAPI. \Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a3c3100f016305051ea5b902a6eabfb93}\index{Runtime@{Runtime}!performsJustInTimeCompilation@{performsJustInTimeCompilation}}
+\index{performsJustInTimeCompilation@{performsJustInTimeCompilation}!Runtime@{Runtime}}
+\doxysubsubsection{\texorpdfstring{performsJustInTimeCompilation()}{performsJustInTimeCompilation()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a3c3100f016305051ea5b902a6eabfb93} 
+performs\+Just\+In\+Time\+Compilation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true when Zend OPcache is loaded, enabled, and is configured to perform just-\/in-\/time compilation. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+books/vendor/sebastian/environment/src/\mbox{\hyperlink{sebastian_2environment_2src_2_runtime_8php}{Runtime.\+php}}\end{DoxyCompactItemize}
