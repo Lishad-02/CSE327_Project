@@ -1,0 +1,59 @@
+body {
+  background-image: url("images/aa.jpg");
+  background-repeat: no-repeat;
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  margin-top: 50px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover { color: white; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.container {
+  height: 800px;
+  width: 85%;
+  background-color: black;
+  opacity: .8;
+  color: white;
+  margin-top: -65px;
+}
+
+.srch { padding-left: 70%; }
+
+.form-control {
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+
+th, td { width: 10%; }
