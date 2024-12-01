@@ -1,29 +1,35 @@
-body {
+body 
+{
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
-h1, h2 {
+h1, h2 
+{
     color: #333;
 }
 
-form {
+form 
+{
     margin-bottom: 20px;
 }
 
-label {
+label 
+{
     display: block;
     margin: 10px 0 5px;
 }
 
-input[type="text"], input[type="date"], textarea {
+input[type="text"], input[type="date"], textarea 
+{
     width: 100%;
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #ccc;
 }
 
-button {
+button 
+{
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
@@ -31,21 +37,25 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover 
+{
     background-color: #45a049;
 }
 
-table {
+table 
+{
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
 }
 
-table, th, td {
+table, th, td 
+{
     border: 1px solid black;
 }
 
-th, td {
+th, td 
+{
     padding: 10px;
     text-align: left;
 }

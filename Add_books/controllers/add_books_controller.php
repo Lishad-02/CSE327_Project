@@ -30,19 +30,23 @@ class AddBooksController
         $book = new Book();
 
         // For single or batch entry
-        if (isset($_POST['books'])) {
+        if (isset($_POST['books'])) 
+        {
             $books = json_decode($_POST['books'], true);
-            foreach ($books as $book_data) {
-                if (!$book->add_new_book($book_data)) {
+            foreach ($books as $book_data) 
+            {
+                if (!$book->add_new_book($book_data)) 
+                {
                     $error = "Error adding book: " . $book_data['title'];
                     include 'views/add_book_error.php';
                     return;
                 }
             }
             include 'views/add_book_success.php';
-        } else {
-            $error = "No book data received.";
-            include 'views/add_book_error.php';
-        }
+        }       else 
+                {
+                  $error = "No book data received.";
+                  include 'views/add_book_error.php';
+                }
     }
 }

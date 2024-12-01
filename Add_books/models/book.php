@@ -16,7 +16,8 @@ class Book
                   VALUES (?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($query);
-        $stmt->bind_param(
+        $stmt->bind_param
+        (
             "ssssss",
             $book_data['title'],
             $book_data['author'],

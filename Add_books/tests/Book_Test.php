@@ -2,27 +2,48 @@
 
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @class Book_Test
+ * @brief A test case for the book-related functionalities.
+ *
+ * @details This class tests the functionality of adding a new book to the database.
+ */
 class Book_Test extends TestCase
 {
+    /**
+     * @var mysqli $conn The database connection object.
+     */
     protected $conn;
 
-    // Set up the database connection
+    /**
+     * @brief Sets up the database connection for testing.
+     *
+     * @details This method establishes a connection to the test database before each test.
+     * It checks if the connection is successful and halts execution if the connection fails.
+     */
     public function setUp(): void
     {
         // Connect to the test database
         $this->conn = new mysqli('localhost', 'root', '', 'test');
         
         // Check connection
-        if ($this->conn->connect_error) {
+        if ($this->conn->connect_error) 
+        {
             die('Connection failed: ' . $this->conn->connect_error);
         }
     }
 
-    // Test function for adding a new book
+    /**
+     * @brief Tests the addition of a new book.
+     *
+     * @details This test inserts a new book into the database, then verifies that the book was successfully added.
+     * It also performs a cleanup by removing the test book from the database after verification.
+     */
     public function test_add_new_book()
     {
         // Book data to be inserted
-        $book_data = [
+        $book_data = 
+        [
             'title' => 'Test Book',
             'author' => 'Test Author',
             'genre' => 'Fiction',
@@ -32,11 +53,14 @@ class Book_Test extends TestCase
         ];
 
         // Prepare the query to prevent SQL injection
-        $stmt = $this->conn->prepare("
-            INSERT INTO books (title, author, genre, description, publication_date, added_by) 
-            VALUES (?, ?, ?, ?, ?, ?)
-        ");
-        $stmt->bind_param(
+        $stmt = $this->conn->prepare
+        (
+            "INSERT INTO books (title, author, genre, description, publication_date, added_by) 
+            VALUES (?, ?, ?, ?, ?, ?)"
+        );
+        
+        $stmt->bind_param
+        (
             'ssssss', 
             $book_data['title'], 
             $book_data['author'], 
@@ -60,7 +84,11 @@ class Book_Test extends TestCase
         $stmt->close();
     }
 
-    // Close the database connection after the test
+    /**
+     * @brief Tears down the database connection after each test.
+     *
+     * @details This method closes the database connection after the test has finished.
+     */
     public function tearDown(): void
     {
         $this->conn->close();
