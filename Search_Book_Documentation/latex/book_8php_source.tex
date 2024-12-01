@@ -1,0 +1,34 @@
+\doxysection{book.\+php}
+\hypertarget{book_8php_source}{}\label{book_8php_source}\index{models/book.php@{models/book.php}}
+\mbox{\hyperlink{book_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00001}00001\ <?php}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00019}\mbox{\hyperlink{classbook__model}{00019}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classbook__model}{book\_model}}}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00020}00020\ \{}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{private}\ \$database\_connection;}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00031}\mbox{\hyperlink{classbook__model_a16ce1e2f1c56ae45b708243304d81a36}{00031}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classbook__model_a16ce1e2f1c56ae45b708243304d81a36}{\_\_construct}}(\$database\_connection)}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00032}00032\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00033}00033\ \ \ \ \ \ \ \ \ \$this-\/>\mbox{\hyperlink{classdatabase__connection}{database\_connection}}\ =\ \$database\_connection;}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00043}\mbox{\hyperlink{classbook__model_ac25a788567ad363e327b76a43655bfa0}{00043}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classbook__model_ac25a788567ad363e327b76a43655bfa0}{search\_books}}(\$search\_term)}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00044}00044\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00045}00045\ \ \ \ \ \ \ \ \ \$query\ =\ \textcolor{stringliteral}{"{}Select\ *\ From\ books\ where\ title\ Like\ ?\ OR\ author\ Like\ ?\ \ "{}};}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00046}00046\ \ \ \ \ \ \ \ \ \$statement\ =\ \$this-\/>\mbox{\hyperlink{classdatabase__connection}{database\_connection}}-\/>prepare(\$query);}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00048}00048\ \ \ \ \ \ \ \ \ \$search\_term\ =\ \textcolor{stringliteral}{"{}\%"{}}\ .\ \$search\_term\ .\ \textcolor{stringliteral}{"{}\%"{}};}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00049}00049\ \ \ \ \ \ \ \ \ \$statement-\/>bind\_param(\textcolor{stringliteral}{'ss'},\ \$search\_term,\ \$search\_term);}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00051}00051\ \ \ \ \ \ \ \ \ \$statement-\/>execute();}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00052}00052\ \ \ \ \ \ \ \ \ \$result\ =\ \$statement-\/>get\_result();}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00054}00054\ \ \ \ \ \ \ \ \ \$books\ =\ \$result-\/>fetch\_all(MYSQLI\_ASSOC);}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00056}00056\ \ \ \ \ \ \ \ \ \$statement-\/>close();}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$books;}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00058}00058\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{book_8php_source_l00059}00059\ \}}
+
+\end{DoxyCode}

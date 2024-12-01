@@ -1,0 +1,43 @@
+\doxysection{index.\+php}
+\hypertarget{index_8php_source}{}\label{index_8php_source}\mbox{\hyperlink{index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00001}00001\ <?php}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00012}00012\ require\_once\ \textcolor{stringliteral}{'controllers/book\_controller.php'};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00019}\mbox{\hyperlink{classindex__controller}{00019}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classindex__controller}{index\_controller}}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00020}00020\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00024}\mbox{\hyperlink{classindex__controller_a114337f8c42339e46471c5fffe4920df}{00024}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classindex__controller_a114337f8c42339e46471c5fffe4920df}{handle\_request}}()}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00025}00025\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isset(\$\_GET[\textcolor{stringliteral}{'search\_term'}]))\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>handle\_search(\$\_GET[\textcolor{stringliteral}{'search\_term'}]);}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00028}00028\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>redirect\_inputView();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00030}00030\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00031}00031\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00038}00038\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ handle\_search(\$search\_term)}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00039}00039\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00040}00040\ \ \ \ \ \ \ \ \ \$book\_controller\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classbook__controller}{book\_controller}}();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00041}00041\ \ \ \ \ \ \ \ \ \$books\ =\ \$book\_controller-\/>search\_books(\$search\_term);}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (empty(\$books))\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \$error\ =\ \textcolor{stringliteral}{"{}No\ search\ results\ found!"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ include\ \textcolor{stringliteral}{'views/search\_book\_input.php'};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00046}00046\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ include\ \textcolor{stringliteral}{'views/search\_book\_result.php'};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00048}00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00054}00054\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ redirect\_inputView()}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00055}00055\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00056}00056\ \ \ \ \ \ \ \ \ include\ \textcolor{stringliteral}{'views/search\_book\_input.php'};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00057}00057\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00058}00058\ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00060}00060\ \textcolor{comment}{//\ Create\ an\ instance\ of\ index\_controller\ and\ handle\ the\ request.}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00061}\mbox{\hyperlink{index_8php_a01dd10eb7e5bb62ee425879e6005c394}{00061}}\ \mbox{\hyperlink{index_8php_a01dd10eb7e5bb62ee425879e6005c394}{\$indexController}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classindex__controller}{index\_controller}}();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00062}00062\ \mbox{\hyperlink{index_8php_a01dd10eb7e5bb62ee425879e6005c394}{\$indexController}}-\/>handle\_request();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00063}00063\ ?>}
+
+\end{DoxyCode}

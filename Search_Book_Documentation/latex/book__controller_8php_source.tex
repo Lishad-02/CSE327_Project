@@ -1,0 +1,34 @@
+\doxysection{book\+\_\+controller.\+php}
+\hypertarget{book__controller_8php_source}{}\label{book__controller_8php_source}\index{controllers/book\_controller.php@{controllers/book\_controller.php}}
+\mbox{\hyperlink{book__controller_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00001}00001\ <?php}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00013}00013\ require\_once\ \textcolor{stringliteral}{'config/database.php'};}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00014}00014\ require\_once\ \textcolor{stringliteral}{'models/book.php'};}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00023}\mbox{\hyperlink{classbook__controller}{00023}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classbook__controller}{book\_controller}}}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00024}00024\ \{}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00028}00028\ \ \ \ \ \textcolor{keyword}{private}\ \$book\_model;}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00036}\mbox{\hyperlink{classbook__controller_a095c5d389db211932136b53f25f39685}{00036}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classbook__controller_a095c5d389db211932136b53f25f39685}{\_\_construct}}()}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00037}00037\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00038}00038\ \ \ \ \ \ \ \ \ \$database\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classdatabase__connection}{database\_connection}}();}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00039}00039\ \ \ \ \ \ \ \ \ \$connection\ =\ \$database-\/>connect\_to\_database();}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00040}00040\ \ \ \ \ \ \ \ \ \$this-\/>\mbox{\hyperlink{classbook__model}{book\_model}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classbook__model}{book\_model}}(\$connection);}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00052}\mbox{\hyperlink{classbook__controller_ac25a788567ad363e327b76a43655bfa0}{00052}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classbook__controller_ac25a788567ad363e327b76a43655bfa0}{search\_books}}(\$search\_term)}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00053}00053\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00054}00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (empty(\$search\_term))}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00055}00055\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [];}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00057}00057\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{classbook__model}{book\_model}}-\/>\mbox{\hyperlink{classbook__model_ac25a788567ad363e327b76a43655bfa0}{search\_books}}(\$search\_term);}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00060}00060\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00061}00061\ \}}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00062}00062\ ?>}
+\DoxyCodeLine{\Hypertarget{book__controller_8php_source_l00063}00063\ }
+
+\end{DoxyCode}

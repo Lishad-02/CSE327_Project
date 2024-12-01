@@ -1,0 +1,26 @@
+\doxysection{database.\+php}
+\hypertarget{database_8php_source}{}\label{database_8php_source}\index{config/database.php@{config/database.php}}
+\mbox{\hyperlink{database_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00001}00001\ <?php}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00016}\mbox{\hyperlink{classdatabase__connection}{00016}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdatabase__connection}{database\_connection}}}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00017}00017\ \{}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{private}\ \$host\ =\ \textcolor{stringliteral}{'localhost'};}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{private}\ \$username\ =\ \textcolor{stringliteral}{'root'};}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{private}\ \$password\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00033}00033\ \ \ \ \ \textcolor{keyword}{private}\ \$db\_name\ =\ \textcolor{stringliteral}{'library\_db2'};}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00044}\mbox{\hyperlink{classdatabase__connection_a382abfe3b5bca53041dc07c6f0a85a3d}{00044}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{classdatabase__connection_a382abfe3b5bca53041dc07c6f0a85a3d}{connect\_to\_database}}()}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00045}00045\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00046}00046\ \ \ \ \ \ \ \ \ \$connection\ =\ \textcolor{keyword}{new}\ mysqli(\$this-\/>host,\ \$this-\/>username,\ \$this-\/>password,\ \$this-\/>db\_name);}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$connection-\/>connect\_error)\ \{}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ die(\textcolor{stringliteral}{"{}Database\ connection\ failed:\ "{}}\ .\ \$connection-\/>connect\_error);}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$connection;}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00053}00053\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{database_8php_source_l00054}00054\ \}}
+
+\end{DoxyCode}

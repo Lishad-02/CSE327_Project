@@ -1,0 +1,63 @@
+\doxysection{book\+\_\+controller Class Reference}
+\hypertarget{classbook__controller}{}\label{classbook__controller}\index{book\_controller@{book\_controller}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbook__controller_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{classbook__controller_ac25a788567ad363e327b76a43655bfa0}{search\+\_\+books}} (\$search\+\_\+term)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \doxylink{classbook__controller}{book\+\_\+controller}
+
+This class acts as a controller to handle book search functionality. It initializes the book model and provides methods to perform operations related to search books. 
+
+Definition at line \mbox{\hyperlink{book__controller_8php_source_l00023}{23}} of file \mbox{\hyperlink{book__controller_8php_source}{book\+\_\+controller.\+php}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classbook__controller_a095c5d389db211932136b53f25f39685}\index{book\_controller@{book\_controller}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!book\_controller@{book\_controller}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classbook__controller_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor for the book model.
+
+The constructor connects to the database using the "{}database\+\_\+connection"{} class and initializes the "{}book\+\_\+model"{} to handle book related operations. 
+
+Definition at line \mbox{\hyperlink{book__controller_8php_source_l00036}{36}} of file \mbox{\hyperlink{book__controller_8php_source}{book\+\_\+controller.\+php}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classbook__controller_ac25a788567ad363e327b76a43655bfa0}\index{book\_controller@{book\_controller}!search\_books@{search\_books}}
+\index{search\_books@{search\_books}!book\_controller@{book\_controller}}
+\doxysubsubsection{\texorpdfstring{search\_books()}{search\_books()}}
+{\footnotesize\ttfamily \label{classbook__controller_ac25a788567ad363e327b76a43655bfa0} 
+search\+\_\+books (\begin{DoxyParamCaption}\item[{}]{\$search\+\_\+term}{}\end{DoxyParamCaption})}
+
+Search books based on a search term.
+
+This method takes a search term as input from user and use the "{}book\+\_\+model"{} to retrieve a list of books that match with the search term. If the search term is empty, it returns an empty array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & "{}search\+\_\+term"{}-\/-\/\texorpdfstring{$>$}{>} The term use to search for the book. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{book__controller_8php_source_l00052}{52}} of file \mbox{\hyperlink{book__controller_8php_source}{book\+\_\+controller.\+php}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+controllers/\mbox{\hyperlink{book__controller_8php}{book\+\_\+controller.\+php}}\end{DoxyCompactItemize}

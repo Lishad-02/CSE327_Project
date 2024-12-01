@@ -1,0 +1,68 @@
+\doxysection{book\+\_\+model Class Reference}
+\hypertarget{classbook__model}{}\label{classbook__model}\index{book\_model@{book\_model}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbook__model_a16ce1e2f1c56ae45b708243304d81a36}{\+\_\+\+\_\+construct}} (\$\mbox{\hyperlink{classdatabase__connection}{database\+\_\+connection}})
+\item 
+\mbox{\hyperlink{classbook__model_ac25a788567ad363e327b76a43655bfa0}{search\+\_\+books}} (\$search\+\_\+term)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \doxylink{classbook__model}{book\+\_\+model}
+
+This class is used to handle all database operations related to books, such as\+: searching for books by title or author. 
+
+Definition at line \mbox{\hyperlink{book_8php_source_l00019}{19}} of file \mbox{\hyperlink{book_8php_source}{book.\+php}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classbook__model_a16ce1e2f1c56ae45b708243304d81a36}\index{book\_model@{book\_model}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!book\_model@{book\_model}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classbook__model_a16ce1e2f1c56ae45b708243304d81a36} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$database\+\_\+connection}{}\end{DoxyParamCaption})}
+
+Constructor to initialize the database connection.
+
+This constructor sets up the database connection for the {\ttfamily \doxylink{classbook__model}{book\+\_\+model}} class
+
+
+\begin{DoxyParams}{Parameters}
+{\em mysqli} & "{}database\+\_\+connection"{} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{book_8php_source_l00031}{31}} of file \mbox{\hyperlink{book_8php_source}{book.\+php}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classbook__model_ac25a788567ad363e327b76a43655bfa0}\index{book\_model@{book\_model}!search\_books@{search\_books}}
+\index{search\_books@{search\_books}!book\_model@{book\_model}}
+\doxysubsubsection{\texorpdfstring{search\_books()}{search\_books()}}
+{\footnotesize\ttfamily \label{classbook__model_ac25a788567ad363e327b76a43655bfa0} 
+search\+\_\+books (\begin{DoxyParamCaption}\item[{}]{\$search\+\_\+term}{}\end{DoxyParamCaption})}
+
+This method is for Search books by title or author.\+For this it send a sql query ,store the results and return that results.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & "{}search\+\_\+term"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{book_8php_source_l00043}{43}} of file \mbox{\hyperlink{book_8php_source}{book.\+php}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+models/\mbox{\hyperlink{book_8php}{book.\+php}}\end{DoxyCompactItemize}
