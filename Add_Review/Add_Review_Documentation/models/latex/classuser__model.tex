@@ -1,0 +1,51 @@
+\doxysection{user\+\_\+model Class Reference}
+\hypertarget{classuser__model}{}\label{classuser__model}\index{user\_model@{user\_model}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classuser__model_a9522abe5d202c1ee55302917d3ec89ff}{get\+\_\+user\+\_\+by\+\_\+id}} (\$user\+\_\+id)
+\item 
+\mbox{\hyperlink{classuser__model_a732744ac0516a485cba19a1fd4e740fb}{add\+\_\+user}} (\$name, \$email)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classuser__model_a732744ac0516a485cba19a1fd4e740fb}\index{user\_model@{user\_model}!add\_user@{add\_user}}
+\index{add\_user@{add\_user}!user\_model@{user\_model}}
+\doxysubsubsection{\texorpdfstring{add\_user()}{add\_user()}}
+{\footnotesize\ttfamily \label{classuser__model_a732744ac0516a485cba19a1fd4e740fb} 
+add\+\_\+user (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+Adds a new user to the database.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & User\textquotesingle{}s name. \\
+\hline
+string & {\em \$email} & User\textquotesingle{}s email. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True on success, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classuser__model_a9522abe5d202c1ee55302917d3ec89ff}\index{user\_model@{user\_model}!get\_user\_by\_id@{get\_user\_by\_id}}
+\index{get\_user\_by\_id@{get\_user\_by\_id}!user\_model@{user\_model}}
+\doxysubsubsection{\texorpdfstring{get\_user\_by\_id()}{get\_user\_by\_id()}}
+{\footnotesize\ttfamily \label{classuser__model_a9522abe5d202c1ee55302917d3ec89ff} 
+get\+\_\+user\+\_\+by\+\_\+id (\begin{DoxyParamCaption}\item[{}]{\$user\+\_\+id}{}\end{DoxyParamCaption})}
+
+Retrieves a user by their ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$user\+\_\+id} & User ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool Associative array of user details or false on failure. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+\+Review/models/\mbox{\hyperlink{user__model_8php}{user\+\_\+model.\+php}}\end{DoxyCompactItemize}

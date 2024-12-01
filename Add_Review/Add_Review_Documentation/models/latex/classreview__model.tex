@@ -1,0 +1,54 @@
+\doxysection{review\+\_\+model Class Reference}
+\hypertarget{classreview__model}{}\label{classreview__model}\index{review\_model@{review\_model}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classreview__model_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\begin{DoxyCompactList}\small\item\em Constructor to initialize the database connection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classreview__model_afa206666896c34afd5d5a695da836cf2}{add\+\_\+review}} (\$book\+\_\+id, \$user\+\_\+id, \$review\+\_\+text, \$rating)
+\begin{DoxyCompactList}\small\item\em Add a new review to the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreview__model_a095c5d389db211932136b53f25f39685}\index{review\_model@{review\_model}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!review\_model@{review\_model}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classreview__model_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize the database connection. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreview__model_afa206666896c34afd5d5a695da836cf2}\index{review\_model@{review\_model}!add\_review@{add\_review}}
+\index{add\_review@{add\_review}!review\_model@{review\_model}}
+\doxysubsubsection{\texorpdfstring{add\_review()}{add\_review()}}
+{\footnotesize\ttfamily \label{classreview__model_afa206666896c34afd5d5a695da836cf2} 
+add\+\_\+review (\begin{DoxyParamCaption}\item[{}]{\$book\+\_\+id}{, }\item[{}]{\$user\+\_\+id}{, }\item[{}]{\$review\+\_\+text}{, }\item[{}]{\$rating}{}\end{DoxyParamCaption})}
+
+
+
+Add a new review to the database. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$book\+\_\+id} & ID of the book being reviewed. \\
+\hline
+int & {\em \$user\+\_\+id} & ID of the user submitting the review. \\
+\hline
+string & {\em \$review\+\_\+text} & The text of the review. \\
+\hline
+int & {\em \$rating} & The rating given by the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the review was added successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+\+Review/models/\mbox{\hyperlink{review__model_8php}{review\+\_\+model.\+php}}\end{DoxyCompactItemize}

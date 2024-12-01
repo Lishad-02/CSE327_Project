@@ -1,0 +1,51 @@
+\doxysection{book\+\_\+model Class Reference}
+\hypertarget{classbook__model}{}\label{classbook__model}\index{book\_model@{book\_model}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbook__model_a35c12a5ca31c78698fddacfc7f7511a1}{get\+\_\+book\+\_\+by\+\_\+id}} (\$book\+\_\+id)
+\item 
+\mbox{\hyperlink{classbook__model_a8034334c16d4b00d3cab9348a38f41fe}{add\+\_\+book}} (\$title, \$author)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classbook__model_a8034334c16d4b00d3cab9348a38f41fe}\index{book\_model@{book\_model}!add\_book@{add\_book}}
+\index{add\_book@{add\_book}!book\_model@{book\_model}}
+\doxysubsubsection{\texorpdfstring{add\_book()}{add\_book()}}
+{\footnotesize\ttfamily \label{classbook__model_a8034334c16d4b00d3cab9348a38f41fe} 
+add\+\_\+book (\begin{DoxyParamCaption}\item[{}]{\$title}{, }\item[{}]{\$author}{}\end{DoxyParamCaption})}
+
+Inserts a new book into the database.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$title} & Book title. \\
+\hline
+string & {\em \$author} & Book author. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True on success, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classbook__model_a35c12a5ca31c78698fddacfc7f7511a1}\index{book\_model@{book\_model}!get\_book\_by\_id@{get\_book\_by\_id}}
+\index{get\_book\_by\_id@{get\_book\_by\_id}!book\_model@{book\_model}}
+\doxysubsubsection{\texorpdfstring{get\_book\_by\_id()}{get\_book\_by\_id()}}
+{\footnotesize\ttfamily \label{classbook__model_a35c12a5ca31c78698fddacfc7f7511a1} 
+get\+\_\+book\+\_\+by\+\_\+id (\begin{DoxyParamCaption}\item[{}]{\$book\+\_\+id}{}\end{DoxyParamCaption})}
+
+Retrieves a book by its ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$book\+\_\+id} & Book ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool Associative array of book details or false on failure. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Cse327\+\_\+\+Adnan/\+CSE327\+\_\+\+Project/\+Add\+\_\+\+Review/models/\mbox{\hyperlink{book__model_8php}{book\+\_\+model.\+php}}\end{DoxyCompactItemize}
