@@ -1,0 +1,45 @@
+body {
+    background-color: #004528;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding-top: 50px;
+}
+
+.form-control {
+    width: 250px;
+    height: 38px;
+    margin-bottom: 10px;
+}
+
+.form1 {
+    margin: 0 540px;
+}
+
+label {
+    color: white;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    background-color: #004528;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #006747;
+}
