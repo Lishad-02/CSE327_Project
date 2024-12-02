@@ -49,7 +49,9 @@ Unit test file: https://github.com/Lishad-02/CSE327_Project/tree/Mou-Deshmukh/re
 
 
 How to Run the Tests:
-Open the command prompt.
+
+
+Open the command prompt
 Run the following command:
 bash
 ./vendor/bin/phpunit  
