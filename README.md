@@ -28,3 +28,8 @@ This is not a complete project so ,we don't have whole project documentaion.Here
 
 2.Search Book Function Documentation:https://github.com/Lishad-02/CSE327_Project/tree/Md_Aurongojeb_Lishad/Search_Book_Documentation
 
+
+3.Return Book Function Documentation:https://github.com/Lishad-02/CSE327_Project/tree/Mou-Deshmukh/Access%20Profile
+
+
+4:Access Profile Function Documentation:https://github.com/Lishad-02/CSE327_Project/tree/Mou-Deshmukh/return%20book
